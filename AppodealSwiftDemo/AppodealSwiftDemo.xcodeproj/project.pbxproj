@@ -14,7 +14,6 @@
 		033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */; };
 		033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */; };
 		0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */; };
-		0330437C1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */; };
 		033043811EE6C89800FBF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033043801EE6C89800FBF3E4 /* Assets.xcassets */; };
 		0357C3681EE69F1200870D61 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357C3671EE69F1200870D61 /* AdSupport.framework */; };
 		0357C36A1EE69F1800870D61 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357C3691EE69F1800870D61 /* AudioToolbox.framework */; };
@@ -52,10 +51,10 @@
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
+		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
+		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
 		B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56CCF1EE7E555009E52EB /* Appodeal.framework */; };
 		B9C56CEB1EE7E555009E52EB /* Appodeal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD11EE7E555009E52EB /* Appodeal.bundle */; };
-		B9C56CEC1EE7E555009E52EB /* button-close-default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD21EE7E555009E52EB /* button-close-default.png */; };
-		B9C56CED1EE7E555009E52EB /* button-close-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD31EE7E555009E52EB /* button-close-highlighted.png */; };
 		B9C56CEE1EE7E555009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */; };
 		B9C56CEF1EE7E555009E52EB /* MPCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */; };
 		B9C56CF01EE7E555009E52EB /* MPCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */; };
@@ -78,6 +77,7 @@
 		B9C56D011EE7E555009E52EB /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE71EE7E555009E52EB /* MRAID.bundle */; };
 		B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE81EE7E555009E52EB /* StartApp.bundle */; };
 		B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */; };
+		B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC73C0202C581E005EA2A7 /* Native.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +90,6 @@
 		033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedVideoViewController.swift; sourceTree = "<group>"; };
 		033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticBannerViewController.swift; sourceTree = "<group>"; };
 		033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBannerViewController.swift; sourceTree = "<group>"; };
-		0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleBannerViewController.swift; sourceTree = "<group>"; };
 		033043801EE6C89800FBF3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		033043821EE6C8BF00FBF3E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0357C3671EE69F1200870D61 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -130,10 +129,10 @@
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
+		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		B9C56CCF1EE7E555009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
 		B9C56CD11EE7E555009E52EB /* Appodeal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Appodeal.bundle; sourceTree = "<group>"; };
-		B9C56CD21EE7E555009E52EB /* button-close-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-close-default.png"; sourceTree = "<group>"; };
-		B9C56CD31EE7E555009E52EB /* button-close-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-close-highlighted.png"; sourceTree = "<group>"; };
 		B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
 		B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseBtn.png; sourceTree = "<group>"; };
 		B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@2x.png"; sourceTree = "<group>"; };
@@ -156,6 +155,7 @@
 		B9C56CE71EE7E555009E52EB /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		B9C56CE81EE7E555009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
+		B9CC73C1202C581E005EA2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,17 +203,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0330435F1EE6AA4F00FBF3E4 /* Config */ = {
+		0330435F1EE6AA4F00FBF3E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				0330436D1EE6AC2400FBF3E4 /* Support */,
 				03DBE1421EE69DFA00549332 /* AppDelegate.swift */,
 				033043801EE6C89800FBF3E4 /* Assets.xcassets */,
 				03BB6E051EE7D98C007638E2 /* Swift.storyboard */,
+				B9CC73C0202C581E005EA2A7 /* Native.xib */,
 				03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */,
 				033043821EE6C8BF00FBF3E4 /* Info.plist */,
 			);
-			name = Config;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		033043621EE6AA9200FBF3E4 /* Interstitial */ = {
@@ -250,7 +251,6 @@
 			children = (
 				033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */,
 				033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */,
-				0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */,
 			);
 			name = Banner;
 			sourceTree = "<group>";
@@ -325,20 +325,28 @@
 		03DBE1411EE69DFA00549332 /* AppodealSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0330435F1EE6AA4F00FBF3E4 /* Config */,
+				0330435F1EE6AA4F00FBF3E4 /* Supporting Files */,
 				033043621EE6AA9200FBF3E4 /* Interstitial */,
 				033043751EE6BEEF00FBF3E4 /* Rewarded Video */,
 				033043781EE6C06A00FBF3E4 /* Banner */,
+				B95571D3202B2A05008A16D4 /* Native */,
 			);
 			path = AppodealSwiftDemo;
+			sourceTree = "<group>";
+		};
+		B95571D3202B2A05008A16D4 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				B95571D4202B2A45008A16D4 /* NativeView.swift */,
+				B95571D6202B30E6008A16D4 /* NativeViewController.swift */,
+			);
+			name = Native;
 			sourceTree = "<group>";
 		};
 		B9C56CD01EE7E555009E52EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				B9C56CD11EE7E555009E52EB /* Appodeal.bundle */,
-				B9C56CD21EE7E555009E52EB /* button-close-default.png */,
-				B9C56CD31EE7E555009E52EB /* button-close-highlighted.png */,
 				B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */,
 				B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */,
 				B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */,
@@ -393,7 +401,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = dtlbox;
 				TargetAttributes = {
 					03DBE13E1EE69DFA00549332 = {
@@ -430,8 +438,8 @@
 				B9C56CF31EE7E555009E52EB /* MPCloseButtonX@2x.png in Resources */,
 				03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */,
 				B9C56CEB1EE7E555009E52EB /* Appodeal.bundle in Resources */,
+				B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */,
 				B9C56CF51EE7E555009E52EB /* MPDAAIcon.png in Resources */,
-				B9C56CED1EE7E555009E52EB /* button-close-highlighted.png in Resources */,
 				B9C56CF91EE7E555009E52EB /* MPMutedBtn@2x.png in Resources */,
 				B9C56CFB1EE7E555009E52EB /* MPPlayBtn.png in Resources */,
 				03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */,
@@ -443,7 +451,6 @@
 				B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */,
 				B9C56CFA1EE7E555009E52EB /* MPMutedBtn@3x.png in Resources */,
 				B9C56CF01EE7E555009E52EB /* MPCloseBtn@2x.png in Resources */,
-				B9C56CEC1EE7E555009E52EB /* button-close-default.png in Resources */,
 				B9C56CF71EE7E555009E52EB /* MPDAAIcon@3x.png in Resources */,
 				B9C56CF61EE7E555009E52EB /* MPDAAIcon@2x.png in Resources */,
 				B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */,
@@ -465,10 +472,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				033043721EE6AC6A00FBF3E4 /* RootViewController.swift in Sources */,
-				0330437C1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift in Sources */,
+				B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */,
 				0330436E1EE6AC2400FBF3E4 /* ASRoundButton.m in Sources */,
 				033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */,
 				03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */,
+				B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */,
 				033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */,
 				033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */,
 				0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */,
@@ -495,6 +503,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		B9CC73C0202C581E005EA2A7 /* Native.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CC73C1202C581E005EA2A7 /* Base */,
+			);
+			name = Native.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -508,7 +524,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -516,7 +534,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -559,7 +581,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -567,7 +591,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

@@ -48,8 +48,8 @@
     
     [Appodeal setLogLevel:APDLogLevelOff];
     
-    [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner |AppodealAdTypeMREC];
-    [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner |AppodealAdTypeMREC];
+    [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
+    [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd];
 }
 
 - (void)configureAppearance {

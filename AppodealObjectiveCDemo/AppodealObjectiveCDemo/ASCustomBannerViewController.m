@@ -12,7 +12,7 @@
 
 @interface ASCustomBannerViewController ()<AppodealBannerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet AppodealBannerView *bannerView;
+@property (strong, nonatomic) IBOutlet APDBannerView *bannerView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *height;
 
 @end

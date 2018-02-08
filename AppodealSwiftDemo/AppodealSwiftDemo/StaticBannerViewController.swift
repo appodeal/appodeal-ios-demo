@@ -50,32 +50,24 @@ class StaticBannerViewController: RootViewController {
 
 extension StaticBannerViewController: AppodealBannerDelegate {
     
-    /*!
-     *  Method called when precache (cheap and fast load) or usual banner view did load
-     *
-     *  @param precache If precache is YES it's mean that precache loaded
-     */
+    /// Method called when precache (cheap and fast load) or usual banner view did load
+    ///
+    /// - Parameter precache: If precache is YES it's mean that precache loaded
     func bannerDidLoadAdIsPrecache(_ precache: Bool) {
         
     }
-    
-    /*!
-     *  Method called if banner mediation failed
-     */
+
+    ///  Method called if banner mediation failed
     func bannerDidFailToLoadAd() {
         
     }
     
-    /*!
-     *  Method called when user tap on banner
-     */
+    /// Method called when user tap on banner
     func bannerDidClick() {
         
     }
     
-    /*!
-     *  Method called when banner did show
-     */
+    /// Method called when banner did show
     func bannerDidShow() {
         
     }

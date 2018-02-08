@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Appodeal.setUserInterests("skydiving, meditation")
         
         
-        let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .MREC]
+        let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
         Appodeal.setLogLevel(.off)
         Appodeal.setAutocache(true, types: adTypes)
         Appodeal.initialize(withApiKey: kAPP_KEY, types: adTypes)
