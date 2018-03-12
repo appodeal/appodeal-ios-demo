@@ -6,10 +6,10 @@
 //
 
 #import "ASAppDelegate.h"
-#import "UIColor+ASColor.h"
 #import <Appodeal/Appodeal.h>
+#import <ASExtentions/ASExtentions.h>
 
-#define APP_KEY @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
+#define APP_KEY @"2356404caf4dbc0314f9605bdf0f164d485086ae5212942e"
 
 @interface ASAppDelegate ()
 

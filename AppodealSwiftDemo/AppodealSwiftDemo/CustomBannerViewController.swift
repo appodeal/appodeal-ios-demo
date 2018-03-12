@@ -45,7 +45,7 @@ class CustomBannerViewController: RootViewController {
         }
         
         bannerView.adSize = bannerSize
-        bannerViewHeightConstraint.constant = bannerSize.height
+//        bannerViewHeightConstraint.constant = bannerSize.height
         
         bannerView.loadAd()
     }

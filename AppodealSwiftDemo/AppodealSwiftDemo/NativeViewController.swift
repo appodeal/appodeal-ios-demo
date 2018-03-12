@@ -7,12 +7,17 @@
 
 import UIKit
 import Appodeal
+import ASExtentions
 
-class NativeViewController: UIViewController {
+class NativeViewController: UITableViewController {
+    
+    let defaultCellName = "kASDefaultCell"
+    let nativeCellName  = "kASNativeCell"
+    let nativePeriod    = 5
     
     @IBOutlet weak var nativeAdContainer: UIView!
     
-    var nativeAdStack : [APDNativeAd]?
+    let nativeAdStack : NSMapTable <NSIndexPath, APDNativeAd> = NSMapTable(keyOptions: .strongMemory, valueOptions: .strongMemory)
     
     
     lazy var nativeAdQueue : APDNativeAdQueue = {
@@ -36,43 +41,41 @@ class NativeViewController: UIViewController {
         nativeAdQueue.loadAd()
     }
     
-    func presentNative() {
-        let nativeAd : APDNativeAd! = nativeAdStack?.first!
-        let nativeAdView = nativeAd .getViewFor(self)
-        nativeAdContainer.addSubview(nativeAdView)
-        nativeAdView.translatesAutoresizingMaskIntoConstraints = false
-
+    func presentNative(onView view: UIView, fromIndex index: NSIndexPath) {
+        var nativeAd: APDNativeAd?;
         
-        NSLayoutConstraint .activate([NSLayoutConstraint.init(item: nativeAdView,
-                                                              attribute: .top,
-                                                              relatedBy: .equal,
-                                                              toItem: nativeAdContainer,
-                                                              attribute: .top,
-                                                              multiplier: 1.0,
-                                                              constant: 0),
-                                      NSLayoutConstraint.init(item: nativeAdView,
-                                                              attribute: .leading,
-                                                              relatedBy: .equal,
-                                                              toItem: nativeAdContainer,
-                                                              attribute: .leading,
-                                                              multiplier: 1.0,
-                                                              constant: 0),
-                                      NSLayoutConstraint.init(item: nativeAdView,
-                                                              attribute: .bottom,
-                                                              relatedBy: .equal,
-                                                              toItem: nativeAdContainer,
-                                                              attribute: .bottom,
-                                                              multiplier: 1.0,
-                                                              constant: 0),
-                                      NSLayoutConstraint.init(item: nativeAdView,
-                                                              attribute: .trailing,
-                                                              relatedBy: .equal,
-                                                              toItem: nativeAdContainer,
-                                                              attribute: .trailing,
-                                                              multiplier: 1.0,
-                                                              constant: 0)])
+        if nativeAdStack.object(forKey: index) != nil {
+            nativeAd = nativeAdStack.object(forKey: index)
+        } else if nativeAdQueue.currentAdCount > 0 {
+            nativeAd = nativeAdQueue.getNativeAds(ofCount: 1).first
+        }
+        
+        guard nativeAd == nil else {
+            let nativeView = nativeAd!.getViewFor(self)
+            view.addSubview(nativeView)
+            nativeView.asxEdgesEqualView(view)
+            return
+        }
+    }
+}
+
+extension NativeViewController {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1000;
     }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell!
+        if indexPath.row != 0 && (indexPath.row % nativePeriod == 0){
+            cell = UITableViewCell(style: .default, reuseIdentifier: nativeCellName)
+            presentNative(onView: cell.contentView, fromIndex: indexPath as NSIndexPath)
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: defaultCellName)
+            cell.contentView.asxRound()
+        }
+        return cell
+    }
 }
 
 extension NativeViewController : APDNativeAdQueueDelegate {
@@ -83,11 +86,7 @@ extension NativeViewController : APDNativeAdQueueDelegate {
     ///   - adQueue: ad queue object
     ///   - count: count of available native ad
     func adQueueAdIsAvailable(_ adQueue: APDNativeAdQueue, ofCount count: UInt) {
-        guard nativeAdStack?.count != nil else {
-            nativeAdStack = nativeAdQueue.getNativeAds(ofCount: 1)
-            presentNative()
-            return
-        }
+
     }
 
     /// Method called when loader fails to receive native ad.

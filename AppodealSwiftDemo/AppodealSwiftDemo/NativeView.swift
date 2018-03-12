@@ -7,6 +7,7 @@
 
 import UIKit
 import Appodeal
+import ASExtentions
 
 class NativeView: UIView {
     @IBOutlet weak var title: UILabel!
@@ -15,14 +16,11 @@ class NativeView: UIView {
     @IBOutlet weak var descr: UILabel!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var mediaContainer: UIView!
-    
     @IBOutlet weak var adChoices: UIView!
+    
     override func draw(_ rect: CGRect) {
-        self.layer.borderColor = UIColor.lightGray.cgColor
-        self.layer.borderWidth = 2.0
-        self.layer.cornerRadius = 20
-        self.layer.masksToBounds = true
-        
+        self.asxRound()
+
         self.icon.layer.cornerRadius = 10.0
         self.icon.layer.masksToBounds = true
 

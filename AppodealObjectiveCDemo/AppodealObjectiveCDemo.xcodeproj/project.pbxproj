@@ -51,7 +51,6 @@
 		B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */; };
 		B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF091EE02C3E00CDFF89 /* AdSupport.framework */; };
 		B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */; };
-		B936CF561EE060F200CDFF89 /* UIColor+ASColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CF551EE060F200CDFF89 /* UIColor+ASColor.m */; };
 		B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56D041EE7E55B009E52EB /* Appodeal.framework */; };
 		B9C56D201EE7E55B009E52EB /* Appodeal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D061EE7E55B009E52EB /* Appodeal.bundle */; };
 		B9C56D231EE7E55B009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */; };
@@ -79,7 +78,21 @@
 		B9CA2A3420298F1000434E37 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA2A3220298F1000434E37 /* Native.xib */; };
 		B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A372029903500434E37 /* ASNativeViewController.m */; };
 		B9CA2A3B2029983100434E37 /* ASNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A3A2029983100434E37 /* ASNativeView.m */; };
+		B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CDF1D32056705B00925C5B /* ASExtentions.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9CDF1D72056705E00925C5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
@@ -135,8 +148,6 @@
 		B936CF4D1EE036D800CDFF89 /* ASRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRoundButton.h; sourceTree = "<group>"; };
 		B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
 		B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		B936CF541EE060F200CDFF89 /* UIColor+ASColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASColor.h"; sourceTree = "<group>"; };
-		B936CF551EE060F200CDFF89 /* UIColor+ASColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASColor.m"; sourceTree = "<group>"; };
 		B9B301681EE191360016F22D /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
 		B9C56D041EE7E55B009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
 		B9C56D061EE7E55B009E52EB /* Appodeal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Appodeal.bundle; sourceTree = "<group>"; };
@@ -167,6 +178,7 @@
 		B9CA2A372029903500434E37 /* ASNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeViewController.m; sourceTree = "<group>"; };
 		B9CA2A392029983100434E37 /* ASNativeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNativeView.h; sourceTree = "<group>"; };
 		B9CA2A3A2029983100434E37 /* ASNativeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeView.m; sourceTree = "<group>"; };
+		B9CDF1D32056705B00925C5B /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +213,7 @@
 				B936CEDA1EE02B9500CDFF89 /* SystemConfiguration.framework in Frameworks */,
 				B936CED81EE02B8D00CDFF89 /* Twitter.framework in Frameworks */,
 				B936CED61EE02B8700CDFF89 /* UIKit.framework in Frameworks */,
+				B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */,
 				B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */,
 				B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */,
 				B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */,
@@ -217,6 +230,7 @@
 		033F6A201EE699B000C933D1 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				B9CDF1D32056705B00925C5B /* ASExtentions.framework */,
 				B9C56D041EE7E55B009E52EB /* Appodeal.framework */,
 				B9C56D051EE7E55B009E52EB /* Resources */,
 			);
@@ -315,8 +329,6 @@
 			children = (
 				B936CF4D1EE036D800CDFF89 /* ASRoundButton.h */,
 				B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */,
-				B936CF541EE060F200CDFF89 /* UIColor+ASColor.h */,
-				B936CF551EE060F200CDFF89 /* UIColor+ASColor.m */,
 				B9B301681EE191360016F22D /* ASRootViewController.h */,
 				0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */,
 			);
@@ -404,6 +416,7 @@
 				B936CE921EE00D8000CDFF89 /* Sources */,
 				B936CE931EE00D8000CDFF89 /* Frameworks */,
 				B936CE941EE00D8000CDFF89 /* Resources */,
+				B9CDF1D72056705E00925C5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,7 +514,6 @@
 				B936CEA11EE00D8000CDFF89 /* ASInterstitialViewController.m in Sources */,
 				B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */,
 				B936CE9B1EE00D8000CDFF89 /* main.m in Sources */,
-				B936CF561EE060F200CDFF89 /* UIColor+ASColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,7 +660,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.pixelart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -665,7 +677,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.pixelart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

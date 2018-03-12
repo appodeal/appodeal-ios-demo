@@ -22,3 +22,4 @@ xcuserdata
 
 SDK/*
 !SDK/.gitkeep
+!SDK/ASExtentions.framework

@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5y-CU-Jjz" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5y-CU-Jjz" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="170" width="343" height="30"/>
                                 <state key="normal" title="Show interstitial"/>
                                 <connections>
@@ -78,14 +78,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qko-Yl-Xvn" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qko-Yl-Xvn" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="85" width="343" height="30"/>
                                 <state key="normal" title="Custom banner"/>
                                 <connections>
                                     <segue destination="wO0-JI-j7V" kind="show" id="b7e-KN-fcH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-kK-40i" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-kK-40i" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="30" width="343" height="30"/>
                                 <state key="normal" title="Static banner"/>
                                 <connections>
@@ -122,14 +122,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl4-DO-qpg" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl4-DO-qpg" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="207" width="343" height="30"/>
                                 <state key="normal" title="Banner top"/>
                                 <connections>
                                     <action selector="bannerTopButtonPressed:" destination="rNw-Tt-ozW" eventType="touchUpInside" id="7gN-jN-aov"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-WR-Cqi" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-WR-Cqi" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="317" width="343" height="30"/>
                                 <state key="normal" title="Banner bottom"/>
                                 <connections>
@@ -186,13 +186,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-zs-uOG" customClass="APDBannerView">
-                                <rect key="frame" x="27.5" y="0.0" width="320" height="50"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-zs-uOG" customClass="APDBannerView">
+                                <rect key="frame" x="28" y="0.0" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Cu9-vu-JKV"/>
-                                    <constraint firstAttribute="height" constant="50" id="qsz-zW-OPx"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="wO0-JI-j7V" id="vD5-BO-hEA"/>
                                     <outlet property="rootViewController" destination="wO0-JI-j7V" id="5OP-nf-6WP"/>
@@ -201,10 +198,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="yOn-zs-uOG" firstAttribute="top" secondItem="yJc-Xb-AG8" secondAttribute="bottom" id="6j8-PA-13m"/>
-                            <constraint firstItem="yOn-zs-uOG" firstAttribute="centerX" secondItem="Fzp-8j-8RV" secondAttribute="centerX" id="wv4-OU-K3E"/>
-                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="B17-Fe-2a0" appends="YES" id="Rzi-k8-qDl"/>
                         </connections>
@@ -212,7 +205,6 @@
                     <navigationItem key="navigationItem" title="Custom banner" id="p9C-r3-l52"/>
                     <connections>
                         <outlet property="bannerView" destination="yOn-zs-uOG" id="cR4-Cm-7Dl"/>
-                        <outlet property="bannerViewHeightConstraint" destination="qsz-zW-OPx" id="l2e-Ae-qsj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxy-PD-AyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +228,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BC-Jr-uh9" customClass="ASRoundButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BC-Jr-uh9" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="170" width="343" height="30"/>
                                 <state key="normal" title="Show rewarded video"/>
                                 <connections>
@@ -293,7 +285,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="uVG-eL-bWZ" kind="relationship" relationship="viewControllers" id="Ymb-Dw-iTe"/>
-                        <segue destination="0oM-df-S7d" kind="relationship" relationship="viewControllers" id="JTV-5X-LOk"/>
+                        <segue destination="bhN-8h-wmM" kind="relationship" relationship="viewControllers" id="6AZ-Qv-fqT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -301,40 +293,84 @@
             <point key="canvasLocation" x="-290" y="-17"/>
         </scene>
         <!--Native-->
-        <scene sceneID="UMf-P6-hbi">
+        <scene sceneID="LVw-zi-7Kk">
             <objects>
-                <viewController id="0oM-df-S7d" customClass="NativeViewController" customModule="AppodealSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hJl-6E-5qE"/>
-                        <viewControllerLayoutGuide type="bottom" id="D29-Z2-Pew"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Sge-DX-Niw">
+                <tableViewController id="bhN-8h-wmM" customClass="NativeViewController" customModule="AppodealSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rgh-TT-Mcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-yh-kF9">
-                                <rect key="frame" x="16" y="89" width="343" height="440"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3IF-yh-kF9" secondAttribute="height" multiplier="343:440" id="sBf-vc-SUP"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="3IF-yh-kF9" firstAttribute="centerY" secondItem="Sge-DX-Niw" secondAttribute="centerY" id="20v-rg-sJQ"/>
-                            <constraint firstItem="3IF-yh-kF9" firstAttribute="trailing" secondItem="Sge-DX-Niw" secondAttribute="trailingMargin" id="30P-hc-GMM"/>
-                            <constraint firstItem="3IF-yh-kF9" firstAttribute="leading" secondItem="Sge-DX-Niw" secondAttribute="leadingMargin" id="dtH-a6-e5q"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Native" image="tab_native" selectedImage="tab_native" id="tKs-Hb-c1U"/>
-                    <connections>
-                        <outlet property="nativeAdContainer" destination="3IF-yh-kF9" id="Zch-3O-iEe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nFA-Jn-Zb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kASDefaultCell" rowHeight="254" id="eeT-Qt-PUm">
+                                <rect key="frame" x="0.0" y="28" width="375" height="254"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eeT-Qt-PUm" id="NaW-33-PHd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lorem_ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="wIt-SJ-cDb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="wIt-SJ-cDb" secondAttribute="height" multiplier="375:149" id="Rwp-oZ-euj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-B6-P9x">
+                                            <rect key="frame" x="16" y="157" width="343" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Lorem ipsum dolor sit amet.">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="BodoniSvtyTwoITCTT-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-fd-ehR">
+                                            <rect key="frame" x="16" y="186" width="343" height="49"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="BradleyHandITCTT-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leadingMargin" id="6BB-Qr-vmb"/>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="top" secondItem="a9B-B6-P9x" secondAttribute="bottom" constant="8" id="K06-fa-sY7"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="trailing" secondItem="NaW-33-PHd" secondAttribute="trailingMargin" id="LJd-Lt-jy3"/>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="trailing" secondItem="NaW-33-PHd" secondAttribute="trailingMargin" id="Mnq-l7-zbW"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zp1-fd-ehR" secondAttribute="bottom" constant="8" id="NjL-cB-sIE"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leadingMargin" id="UpO-9s-LZA"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="top" secondItem="wIt-SJ-cDb" secondAttribute="bottom" constant="8" id="bpt-Rq-koc"/>
+                                        <constraint firstItem="wIt-SJ-cDb" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leading" id="u8U-p4-wDz"/>
+                                        <constraint firstAttribute="trailing" secondItem="wIt-SJ-cDb" secondAttribute="trailing" id="y58-i3-lSf"/>
+                                        <constraint firstItem="wIt-SJ-cDb" firstAttribute="top" secondItem="NaW-33-PHd" secondAttribute="top" id="zFH-Su-ihS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kASNativeCell" id="zUQ-lF-aHs">
+                                <rect key="frame" x="0.0" y="282" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUQ-lF-aHs" id="5TL-hg-JNz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bhN-8h-wmM" id="f2n-xn-LsO"/>
+                            <outlet property="delegate" destination="bhN-8h-wmM" id="g52-W1-EwJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Native" image="tab_native" selectedImage="tab_native" id="nuM-tP-nrt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpn-r4-Qyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-994.39999999999998" y="608.54572713643188"/>
+            <point key="canvasLocation" x="-930" y="749"/>
         </scene>
         <!--Banner-->
         <scene sceneID="IDe-w1-RWE">
@@ -367,6 +403,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lorem_ipsum" width="221" height="161"/>
         <image name="tab_banner" width="32" height="32"/>
         <image name="tab_interstitial" width="25" height="25"/>
         <image name="tab_native" width="25" height="25"/>

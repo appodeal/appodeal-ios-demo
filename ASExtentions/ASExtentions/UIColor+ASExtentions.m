@@ -1,19 +1,18 @@
 //
-//  UIColor+ASColor.m
-//  appodeal_demo
+//  UIColor+ASExtentions.m
 //
-//  Copyright © 2017 appodeal. All rights reserved.
+//  Copyright © 2018 Appodeal. All rights reserved.
 //
 
-#import "UIColor+ASColor.h"
+#import "UIColor+ASExtentions.h"
 
-@implementation UIColor (ASColor)
+@implementation UIColor (ASExtentions)
 
-+ (UIColor *)asMainColor {
++ (UIColor *)asxMainColor {
     return [UIColor colorWithRed:0.94f green:0.18f blue:0.16f alpha:1.0f];
 }
 
-- (UIImage *)asImage{
+- (UIImage *)asxImage {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();

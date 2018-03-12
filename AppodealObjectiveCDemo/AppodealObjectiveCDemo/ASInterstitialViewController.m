@@ -42,7 +42,7 @@
  *
  *  @param precache If precache is YES it's mean that precache loaded
  */
-- (void)interstitialDidLoadAdisPrecache:(BOOL)precache{
+- (void)interstitialDidLoadAdIsPrecache:(BOOL)precache{
     
 }
 

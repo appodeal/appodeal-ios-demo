@@ -6,6 +6,7 @@
 //
 
 #import "ASNativeView.h"
+#import <ASExtentions/ASExtentions.h>
 
 @interface ASNativeView ()
 
@@ -32,11 +33,7 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    self.layer.cornerRadius = 10;
-    self.layer.masksToBounds = YES;
-    self.layer.borderColor = UIColor.lightGrayColor.CGColor;
-    self.layer.borderWidth = 2.0;
-    self.layer.cornerRadius = 20;
+    [self asxRound];
     
     self.iconView.layer.cornerRadius = 10.0;
     self.iconView.layer.masksToBounds = YES;

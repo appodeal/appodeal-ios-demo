@@ -6,14 +6,13 @@
 //
 
 #import "ASRoundButton.h"
-#import "UIColor+ASColor.h"
+#import <ASExtentions/ASExtentions.h>
 
 @implementation ASRoundButton
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    
-    [self setTitleColor:UIColor.asMainColor forState:UIControlStateNormal];
+    [self setTitleColor:UIColor.asxMainColor forState:UIControlStateNormal];
     
     self.layer.borderColor = self.titleLabel.textColor.CGColor;
     self.layer.borderWidth = 1.0;

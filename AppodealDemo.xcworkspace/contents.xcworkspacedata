@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ASExtentions/ASExtentions.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AppodealSwiftDemo/AppodealSwiftDemo.xcodeproj">
    </FileRef>
    <FileRef

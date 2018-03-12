@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043601EE6AA8100FBF3E4 /* InterstitialViewController.swift */; };
-		0330436E1EE6AC2400FBF3E4 /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 033043681EE6AC2400FBF3E4 /* ASRoundButton.m */; };
-		0330436F1EE6AC2400FBF3E4 /* UIColor+ASColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330436A1EE6AC2400FBF3E4 /* UIColor+ASColor.m */; };
-		033043721EE6AC6A00FBF3E4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043711EE6AC6A00FBF3E4 /* RootViewController.swift */; };
 		033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */; };
 		033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */; };
 		0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */; };
@@ -78,15 +75,26 @@
 		B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE81EE7E555009E52EB /* StartApp.bundle */; };
 		B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */; };
 		B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC73C0202C581E005EA2A7 /* Native.xib */; };
+		B9CDF1E1205676EB00925C5B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDF1E0205676EA00925C5B /* RootViewController.swift */; };
+		B9CDF1E32056770A00925C5B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDF1E22056770A00925C5B /* RoundButton.swift */; };
+		B9CDF1E52056877D00925C5B /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CDF1DA2056742C00925C5B /* ASExtentions.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9CDF1DE2056743000925C5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		033043601EE6AA8100FBF3E4 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
-		033043671EE6AC2400FBF3E4 /* ASRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRoundButton.h; sourceTree = "<group>"; };
-		033043681EE6AC2400FBF3E4 /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
-		033043691EE6AC2400FBF3E4 /* UIColor+ASColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ASColor.h"; sourceTree = "<group>"; };
-		0330436A1EE6AC2400FBF3E4 /* UIColor+ASColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ASColor.m"; sourceTree = "<group>"; };
-		033043711EE6AC6A00FBF3E4 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedVideoViewController.swift; sourceTree = "<group>"; };
 		033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticBannerViewController.swift; sourceTree = "<group>"; };
 		033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBannerViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +164,9 @@
 		B9C56CE81EE7E555009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		B9CC73C1202C581E005EA2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
+		B9CDF1DA2056742C00925C5B /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
+		B9CDF1E0205676EA00925C5B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B9CDF1E22056770A00925C5B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CDF1E52056877D00925C5B /* ASExtentions.framework in Frameworks */,
 				0357C3971EE69FCF00870D61 /* CoreBluetooth.framework in Frameworks */,
 				0357C3981EE69FCF00870D61 /* CoreText.framework in Frameworks */,
 				0357C3991EE69FCF00870D61 /* GLKit.framework in Frameworks */,
@@ -206,7 +218,7 @@
 		0330435F1EE6AA4F00FBF3E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0330436D1EE6AC2400FBF3E4 /* Support */,
+				B9CDF1DF205676D800925C5B /* Support */,
 				03DBE1421EE69DFA00549332 /* AppDelegate.swift */,
 				033043801EE6C89800FBF3E4 /* Assets.xcassets */,
 				03BB6E051EE7D98C007638E2 /* Swift.storyboard */,
@@ -223,19 +235,6 @@
 				033043601EE6AA8100FBF3E4 /* InterstitialViewController.swift */,
 			);
 			name = Interstitial;
-			sourceTree = "<group>";
-		};
-		0330436D1EE6AC2400FBF3E4 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				033043671EE6AC2400FBF3E4 /* ASRoundButton.h */,
-				033043681EE6AC2400FBF3E4 /* ASRoundButton.m */,
-				033043691EE6AC2400FBF3E4 /* UIColor+ASColor.h */,
-				0330436A1EE6AC2400FBF3E4 /* UIColor+ASColor.m */,
-				033043711EE6AC6A00FBF3E4 /* RootViewController.swift */,
-			);
-			name = Support;
-			path = ../../AppodealObjectiveCDemo/AppodealObjectiveCDemo;
 			sourceTree = "<group>";
 		};
 		033043751EE6BEEF00FBF3E4 /* Rewarded Video */ = {
@@ -258,6 +257,7 @@
 		0357C3621EE69EB400870D61 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				B9CDF1DA2056742C00925C5B /* ASExtentions.framework */,
 				B9C56CCF1EE7E555009E52EB /* Appodeal.framework */,
 				B9C56CD01EE7E555009E52EB /* Resources */,
 			);
@@ -325,11 +325,11 @@
 		03DBE1411EE69DFA00549332 /* AppodealSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0330435F1EE6AA4F00FBF3E4 /* Supporting Files */,
 				033043621EE6AA9200FBF3E4 /* Interstitial */,
 				033043751EE6BEEF00FBF3E4 /* Rewarded Video */,
 				033043781EE6C06A00FBF3E4 /* Banner */,
 				B95571D3202B2A05008A16D4 /* Native */,
+				0330435F1EE6AA4F00FBF3E4 /* Supporting Files */,
 			);
 			path = AppodealSwiftDemo;
 			sourceTree = "<group>";
@@ -374,6 +374,15 @@
 			path = ../SDK/Resources;
 			sourceTree = "<group>";
 		};
+		B9CDF1DF205676D800925C5B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B9CDF1E0205676EA00925C5B /* RootViewController.swift */,
+				B9CDF1E22056770A00925C5B /* RoundButton.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,6 +393,7 @@
 				03DBE13B1EE69DFA00549332 /* Sources */,
 				03DBE13C1EE69DFA00549332 /* Frameworks */,
 				03DBE13D1EE69DFA00549332 /* Resources */,
+				B9CDF1DE2056743000925C5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -471,16 +481,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033043721EE6AC6A00FBF3E4 /* RootViewController.swift in Sources */,
+				B9CDF1E32056770A00925C5B /* RoundButton.swift in Sources */,
 				B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */,
-				0330436E1EE6AC2400FBF3E4 /* ASRoundButton.m in Sources */,
 				033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */,
 				03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */,
 				B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */,
 				033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */,
 				033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */,
+				B9CDF1E1205676EB00925C5B /* RootViewController.swift in Sources */,
 				0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */,
-				0330436F1EE6AC2400FBF3E4 /* UIColor+ASColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +640,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamelo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -647,7 +656,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gamelo.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

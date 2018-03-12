@@ -9,13 +9,17 @@
 #import "ASNativeView.h"
 
 #import <Appodeal/Appodeal.h>
+#import <ASExtentions/ASExtentions.h>
+
+#define kASDefaultCell @"kASDefaultCell"
+#define kASNativeCell  @"kASNativeCell"
+
+NSUInteger const period = 5;
 
 @interface ASNativeViewController () <APDNativeAdQueueDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *nativeAdContainer;
-
+@property (nonatomic, strong) NSMapTable <NSIndexPath *,__kindof APDNativeAd *>* nativeAdStack;
 @property (nonatomic, strong) APDNativeAdQueue * nativeAdQueue;
-@property (nonatomic, strong) NSArray <__kindof APDNativeAd *> * nativeAdStack;
 
 @end
 
@@ -24,43 +28,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.nativeAdStack = [NSMapTable strongToStrongObjectsMapTable];
     [self.nativeAdQueue loadAd];
 }
 
-- (void)presentNative {
-    APDNativeAd * nativeAd = self.nativeAdStack.firstObject;
-    UIView * nativeAdView = [nativeAd getAdViewForController:self];
-    [self.nativeAdContainer addSubview:nativeAdView];
-    nativeAdView.translatesAutoresizingMaskIntoConstraints = NO;
+- (void)presentNativeOnView:(UIView *)view fromIndex:(NSIndexPath *)index {
+    APDNativeAd * nativeAd = nil;
+    if ([self.nativeAdStack objectForKey:index]) {
+        nativeAd = [self.nativeAdStack objectForKey:index];
+    } else if (self.nativeAdQueue.currentAdCount) {
+        nativeAd = [[self.nativeAdQueue getNativeAdsOfCount:1] firstObject];
+        [self.nativeAdStack setObject:nativeAd forKey:index];
+    }
     
-    [NSLayoutConstraint activateConstraints:@[[NSLayoutConstraint constraintWithItem:nativeAdView
-                                                                           attribute:NSLayoutAttributeTop
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:self.nativeAdContainer
-                                                                           attribute:NSLayoutAttributeTop
-                                                                          multiplier:1.0
-                                                                            constant:0],
-                                              [NSLayoutConstraint constraintWithItem:nativeAdView
-                                                                           attribute:NSLayoutAttributeLeading
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:self.nativeAdContainer
-                                                                           attribute:NSLayoutAttributeLeading
-                                                                          multiplier:1.0
-                                                                            constant:0],
-                                              [NSLayoutConstraint constraintWithItem:self.nativeAdContainer
-                                                                           attribute:NSLayoutAttributeBottom
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:nativeAdView
-                                                                           attribute:NSLayoutAttributeBottom
-                                                                          multiplier:1.0
-                                                                            constant:0],
-                                              [NSLayoutConstraint constraintWithItem:nativeAdView
-                                                                           attribute:NSLayoutAttributeTrailing
-                                                                           relatedBy:NSLayoutRelationEqual
-                                                                              toItem:self.nativeAdContainer
-                                                                           attribute:NSLayoutAttributeTrailing
-                                                                          multiplier:1.0
-                                                                            constant:0]]];
+    if (nativeAd) {
+        UIView *nativeView = [nativeAd getAdViewForController:self];
+        [view addSubview:nativeView];
+        [nativeView asxEdgesEqualView:view];
+    }
 }
 
 - (APDNativeAdQueue *)nativeAdQueue {
@@ -80,6 +65,24 @@
     return _instance;
 }
 
+#pragma mark - UITableView
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10000;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = nil;
+    if (indexPath.row  && (indexPath.row % period == 0)) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kASNativeCell];
+        [self presentNativeOnView:cell.contentView fromIndex:indexPath];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:kASDefaultCell];
+        [cell.contentView asxRound];
+    }
+    return cell;
+}
+
 #pragma mark - APDNativeAdQueueDelegate
 
 /**
@@ -89,10 +92,6 @@
  @param count count of available native ad
  */
 - (void)adQueueAdIsAvailable:(nonnull APDNativeAdQueue *)adQueue ofCount:(NSUInteger)count {
-    if (!self.nativeAdStack.count) {
-        self.nativeAdStack = [self.nativeAdQueue getNativeAdsOfCount:1];
-        [self presentNative];
-    }
 }
 
 /**

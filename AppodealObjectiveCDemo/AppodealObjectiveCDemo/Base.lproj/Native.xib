@@ -39,7 +39,7 @@
                     <attributedString key="attributedText">
                         <fragment content="Label">
                             <attributes>
-                                <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.29413456352515693" green="0.29704678692639608" blue="0.29704678692639608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <font key="NSFont" size="12" name="Futura-Medium"/>
                             </attributes>
                         </fragment>
@@ -48,12 +48,12 @@
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFv-Oj-4qk">
                     <rect key="frame" x="16" y="327" width="286" height="64"/>
-                    <color key="backgroundColor" red="0.74530633789714029" green="0.90075015471438657" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                     <attributedString key="attributedText">
                         <fragment content="Label">
                             <attributes>
-                                <color key="NSColor" red="1" green="0.00033646567800937888" blue="0.13182058469846858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <font key="NSFont" size="18" name="Futura-Medium"/>
+                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="24" name="Futura-Medium"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -76,7 +76,7 @@
                     <attributedString key="attributedText">
                         <fragment content="Title">
                             <attributes>
-                                <color key="NSColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="NSColor" red="0.112404" green="0.120126" blue="0.13025400000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="16" name="Futura-Medium"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
@@ -85,7 +85,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.93725490199999995" green="0.25490196079999999" blue="0.2301303733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="LzW-Tr-Jvp" firstAttribute="top" secondItem="ug7-8P-s42" secondAttribute="bottom" constant="16" id="3Cu-I2-xER"/>
                 <constraint firstItem="ug7-8P-s42" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9gJ-1M-brG"/>

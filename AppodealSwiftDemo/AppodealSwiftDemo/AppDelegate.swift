@@ -5,7 +5,7 @@
 //  Copyright © 2017 appodeal. All rights reserved.
 //
 
-let kAPP_KEY = "dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
+let kAPP_KEY = "bf0c4d48ef9f06862ba563aa70f1977a4351ec9157c70c1f"
 
 import Appodeal
 import UIKit

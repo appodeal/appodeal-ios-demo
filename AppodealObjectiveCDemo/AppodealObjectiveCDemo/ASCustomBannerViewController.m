@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     CGSize bannerSize = kAPDAdSize320x50;
     if (isTablet) {
         bannerSize = kAPDAdSize728x90;

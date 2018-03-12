@@ -5,8 +5,8 @@
 //  Copyright © 2018 appodeal. All rights reserved.
 //
 
-#import "ASRootViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface ASNativeViewController : ASRootViewController
+@interface ASNativeViewController : UITableViewController
 
 @end
