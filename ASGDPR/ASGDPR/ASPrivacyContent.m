@@ -8,9 +8,9 @@
 
 #import "ASPrivacyContent.h"
 
-#define ASK_PRIVACY_URL @"http://www.mocky.io/v2/5af178583000000e00ba7ff5"
-#define ASK_IS_CONSENT_URL @"http://www.mocky.io/v2/5af1a56c3000006c00ba8114"
-#define ASK_NOT_CONSENT_URL @"http://www.mocky.io/v2/5af1a8503000002b00ba8132"
+#define ASK_PRIVACY_URL  @"https://s3-us-west-1.amazonaws.com/appodeal-ios/docs/GDPRPrivacy.html"
+#define ASK_IS_CONSENT_URL @"https://s3-us-west-1.amazonaws.com/appodeal-ios/docs/GDPRHasConsent.html"
+#define ASK_NOT_CONSENT_URL @"https://s3-us-west-1.amazonaws.com/appodeal-ios/docs/GDPRNoConsent.html"
 #define ASK_APPNAME_MAC @"%APP_NAME%"
 
 @implementation ASPrivacyContent

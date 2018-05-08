@@ -109,12 +109,12 @@
 				B9B5813320A1ACBF003ECA93 /* ASPrivacyContent.m */,
 				B9B5812E20A1AB09003ECA93 /* NSAttributedString+ASGDPR.h */,
 				B9B5812F20A1AB09003ECA93 /* NSAttributedString+ASGDPR.m */,
-				B9B5815E20A1DBC3003ECA93 /* Resorces */,
+				B9B5815E20A1DBC3003ECA93 /* Resources */,
 			);
 			path = ASGDPR;
 			sourceTree = "<group>";
 		};
-		B9B5815E20A1DBC3003ECA93 /* Resorces */ = {
+		B9B5815E20A1DBC3003ECA93 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				B9B5816320A1DE6E003ECA93 /* GDPRBoard.storyboard */,
@@ -122,7 +122,7 @@
 				B9B5815920A1DAB7003ECA93 /* appodeal_close.png */,
 				B9B5815A20A1DAB7003ECA93 /* appodeal_header.png */,
 			);
-			name = Resorces;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

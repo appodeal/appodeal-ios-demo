@@ -51,7 +51,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eX-Lu-aMz">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eX-Lu-aMz">
                                                 <rect key="frame" x="16" y="308.5" width="343" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="x3G-41-gYA"/>
@@ -60,8 +60,10 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="NO, THANK YOU">
                                                             <attributes>
-                                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="ArialMT"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -157,23 +159,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KWB-sG-zdj">
-                                <rect key="frame" x="16" y="70" width="343" height="489"/>
+                                <rect key="frame" x="16" y="70" width="343" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appodeal_close.png" translatesAutoresizingMaskIntoConstraints="NO" id="9JU-O6-rH2">
-                                <rect key="frame" x="172.5" y="567" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="568" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="XXc-gP-tZa"/>
                                     <constraint firstAttribute="height" constant="30" id="zP4-9y-7kl"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-Aq-TJE">
-                                <rect key="frame" x="16" y="607" width="343" height="30"/>
-                                <state key="normal" title="CLOSE WINDOW">
-                                    <color key="titleColor" red="0.2941345635" green="0.29704678690000003" blue="0.29704678690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-Aq-TJE">
+                                <rect key="frame" x="16" y="608" width="343" height="29"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="CLOSE WINDOW">
+                                            <attributes>
+                                                <color key="NSColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="ArialMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="closeAction:" destination="mU0-eA-E5b" eventType="touchUpInside" id="DgO-RI-DnE"/>
