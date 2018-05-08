@@ -10,7 +10,6 @@
 
 @interface ASPrivacyController : UIViewController
 
-+ (ASPrivacyController *)controllerWitnConsent:(void(^)(BOOL))consent
-                                    completion:(dispatch_block_t)completion;
++ (ASPrivacyController *)controllerWitConsent:(void(^)(BOOL))consentBlock;
 
 @end

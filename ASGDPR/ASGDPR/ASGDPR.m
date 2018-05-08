@@ -8,20 +8,46 @@
 
 #import "ASGDPR.h"
 #import "ASPrivacyController.h"
+#import "ASBlankController.h"
+#import <AdSupport/AdSupport.h>
+
+#define ASK_USER_CONSENT @"ask_userConsent"
 
 static UIWindow *currentWindow = nil;
 
 @implementation ASGDPR
 
 + (void)present:(ASConsentBlock)consentBlock {
+    [self present:consentBlock legacy:NO];
+}
+
++ (void)present:(ASConsentBlock)consentBlock legacy:(BOOL)legacy {
     
-    dispatch_block_t completionBlock = ^{
-        currentWindow.hidden = YES;
-        currentWindow = nil;
-    };
+    BOOL isLimited = ![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
+    NSNumber *userConsent = self.userConsent;
     
-    ASPrivacyController *controller = [ASPrivacyController controllerWitnConsent:consentBlock
-                                                                      completion:completionBlock];
+    if (!isLimited && userConsent.boolValue) {
+        consentBlock(YES);
+    } else if (!isLimited && !userConsent) {
+        
+        ASConsentBlock consent = ^(BOOL consent) {
+            consentBlock(consent);
+            [self saveUserConsent:consent];
+            
+            currentWindow.hidden = YES;
+            currentWindow = nil;
+            if (!consent) {
+                [self presentViewController:[ASBlankController controller]];
+            }
+        };
+        [self presentViewController:[ASPrivacyController controllerWitConsent:consent]];
+    } else {
+        consentBlock(NO);
+        [self presentViewController:[ASBlankController controller]];
+    }
+}
+
++ (void)presentViewController:(UIViewController *)controller {
     UIWindow *presentedWindow = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
     
     presentedWindow.rootViewController      = controller;
@@ -31,7 +57,13 @@ static UIWindow *currentWindow = nil;
     currentWindow = presentedWindow;
 }
 
++ (NSNumber *)userConsent {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:ASK_USER_CONSENT];
+}
 
++ (void)saveUserConsent:(BOOL)hasConsent {
+    return [[NSUserDefaults standardUserDefaults] setObject:@(hasConsent) forKey:ASK_USER_CONSENT];
+}
 
 @end
 

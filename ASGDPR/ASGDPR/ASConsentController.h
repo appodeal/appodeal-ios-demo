@@ -10,7 +10,6 @@
 
 @interface ASConsentController : UIViewController
 
-+ (ASConsentController *)controllerWithConsent:(BOOL)hasConsent
-                                    completion:(dispatch_block_t)completion;
++ (ASConsentController *)controllerWithConsent:(BOOL)hasConsent consentBlock:(void (^)(BOOL))consentBlock;
 
 @end

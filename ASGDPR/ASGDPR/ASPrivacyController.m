@@ -14,7 +14,6 @@
 @interface ASPrivacyController ()
 
 @property (nonatomic, copy) void (^consentBlock)(BOOL);
-@property (nonatomic, copy) dispatch_block_t completionBlock;
 
 @property (weak, nonatomic) IBOutlet UITextView *privacyTextView;
 
@@ -25,14 +24,12 @@
 
 @implementation ASPrivacyController
 
-+ (ASPrivacyController *)controllerWitnConsent:(void (^)(BOOL))consent
-                                    completion:(dispatch_block_t)completion
++ (ASPrivacyController *)controllerWitConsent:(void (^)(BOOL))consentBlock
 {
     UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"GDPRBoard" bundle: NSBundle.mainBundle];
     ASPrivacyController * controller = [storyBoard instantiateViewControllerWithIdentifier:@"ASPrivacy"];
     
-    controller.completionBlock = completion;
-    controller.consentBlock = consent;
+    controller.consentBlock = consentBlock;
     return controller;
 }
 
@@ -48,8 +45,7 @@
 #pragma mark - Private
 
 - (void)openConsentController:(BOOL)hasConsent {
-    self.consentBlock(hasConsent);
-    ASConsentController *controller = [ASConsentController controllerWithConsent:hasConsent completion:self.completionBlock];
+    ASConsentController *controller = [ASConsentController controllerWithConsent:hasConsent consentBlock:self.consentBlock];
     [self presentViewController:controller animated:YES completion:nil];
 }
 
