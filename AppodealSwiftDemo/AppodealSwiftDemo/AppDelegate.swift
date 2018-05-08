@@ -9,6 +9,7 @@ let kAPP_KEY = "bf0c4d48ef9f06862ba563aa70f1977a4351ec9157c70c1f"
 
 import Appodeal
 import UIKit
+import ASGDPR
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -51,7 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
         Appodeal.setLogLevel(.off)
         Appodeal.setAutocache(true, types: adTypes)
-        Appodeal.initialize(withApiKey: kAPP_KEY, types: adTypes)
+        
+        ASGDPR.present { (consent : Bool) in
+            Appodeal.initialize(withApiKey: kAPP_KEY, types: adTypes)
+        }
     }
     
     // MARK: Config

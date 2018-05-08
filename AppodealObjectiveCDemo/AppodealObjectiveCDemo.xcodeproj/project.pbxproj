@@ -51,6 +51,10 @@
 		B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */; };
 		B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF091EE02C3E00CDFF89 /* AdSupport.framework */; };
 		B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */; };
+		B9B5812720A19329003ECA93 /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5812620A19329003ECA93 /* ASGDPR.framework */; };
+		B9B5812920A19407003ECA93 /* GDPRBoard.storyboardc in Resources */ = {isa = PBXBuildFile; fileRef = B9B5812820A19406003ECA93 /* GDPRBoard.storyboardc */; };
+		B9B5816720A1E327003ECA93 /* appodeal_close.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B5816520A1E326003ECA93 /* appodeal_close.png */; };
+		B9B5816820A1E327003ECA93 /* appodeal_header.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B5816620A1E326003ECA93 /* appodeal_header.png */; };
 		B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56D041EE7E55B009E52EB /* Appodeal.framework */; };
 		B9C56D201EE7E55B009E52EB /* Appodeal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D061EE7E55B009E52EB /* Appodeal.bundle */; };
 		B9C56D231EE7E55B009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */; };
@@ -149,6 +153,10 @@
 		B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
 		B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B9B301681EE191360016F22D /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
+		B9B5812620A19329003ECA93 /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
+		B9B5812820A19406003ECA93 /* GDPRBoard.storyboardc */ = {isa = PBXFileReference; lastKnownFileType = wrapper.storyboardc; path = GDPRBoard.storyboardc; sourceTree = "<group>"; };
+		B9B5816520A1E326003ECA93 /* appodeal_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_close.png; sourceTree = "<group>"; };
+		B9B5816620A1E326003ECA93 /* appodeal_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_header.png; sourceTree = "<group>"; };
 		B9C56D041EE7E55B009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
 		B9C56D061EE7E55B009E52EB /* Appodeal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Appodeal.bundle; sourceTree = "<group>"; };
 		B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 				B936CEF61EE02BFE00CDFF89 /* CoreImage.framework in Frameworks */,
 				B936CEF31EE02BF500CDFF89 /* EventKit.framework in Frameworks */,
 				B936CEF41EE02BF500CDFF89 /* EventKitUI.framework in Frameworks */,
+				B9B5812720A19329003ECA93 /* ASGDPR.framework in Frameworks */,
 				B936CEF01EE02BEA00CDFF89 /* JavaScriptCore.framework in Frameworks */,
 				B936CEEE1EE02BE000CDFF89 /* libc++.tbd in Frameworks */,
 				B936CEEC1EE02BD900CDFF89 /* libsqlite3.tbd in Frameworks */,
@@ -230,6 +239,7 @@
 		033F6A201EE699B000C933D1 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				B9B5812620A19329003ECA93 /* ASGDPR.framework */,
 				B9CDF1D32056705B00925C5B /* ASExtentions.framework */,
 				B9C56D041EE7E55B009E52EB /* Appodeal.framework */,
 				B9C56D051EE7E55B009E52EB /* Resources */,
@@ -367,6 +377,9 @@
 		B9C56D051EE7E55B009E52EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B9B5816520A1E326003ECA93 /* appodeal_close.png */,
+				B9B5816620A1E326003ECA93 /* appodeal_header.png */,
+				B9B5812820A19406003ECA93 /* GDPRBoard.storyboardc */,
 				B9C56D061EE7E55B009E52EB /* Appodeal.bundle */,
 				B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */,
 				B9C56D0A1EE7E55B009E52EB /* MPCloseBtn.png */,
@@ -467,13 +480,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9B5812920A19407003ECA93 /* GDPRBoard.storyboardc in Resources */,
 				B9C56D241EE7E55B009E52EB /* MPCloseBtn.png in Resources */,
+				B9B5816820A1E327003ECA93 /* appodeal_header.png in Resources */,
 				B9C56D281EE7E55B009E52EB /* MPCloseButtonX@2x.png in Resources */,
 				03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */,
 				B9C56D201EE7E55B009E52EB /* Appodeal.bundle in Resources */,
 				B9CA2A3420298F1000434E37 /* Native.xib in Resources */,
 				B9C56D2A1EE7E55B009E52EB /* MPDAAIcon.png in Resources */,
 				B9C56D2E1EE7E55B009E52EB /* MPMutedBtn@2x.png in Resources */,
+				B9B5816720A1E327003ECA93 /* appodeal_close.png in Resources */,
 				B9C56D301EE7E55B009E52EB /* MPPlayBtn.png in Resources */,
 				B936CEAC1EE00D8100CDFF89 /* LaunchScreen.storyboard in Resources */,
 				B9C56D311EE7E55B009E52EB /* MPPlayBtn@2x.png in Resources */,
@@ -657,7 +673,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.pixelart;
@@ -674,7 +690,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcraft.pixelart;

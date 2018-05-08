@@ -8,6 +8,7 @@
 #import "ASAppDelegate.h"
 #import <Appodeal/Appodeal.h>
 #import <ASExtentions/ASExtentions.h>
+#import <ASGDPR/ASGDPR.h>
 
 #define APP_KEY @"2356404caf4dbc0314f9605bdf0f164d485086ae5212942e"
 
@@ -47,9 +48,11 @@
 //    [Appodeal setUserInterests:@"SPORT, KINO"];
     
     [Appodeal setLogLevel:APDLogLevelOff];
-    
     [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
-    [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd];
+    
+    [ASGDPR present:^(BOOL consent) {
+        [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd];
+    }];
 }
 
 - (void)configureAppearance {

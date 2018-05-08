@@ -1,0 +1,6 @@
+framework module ASGDPR {
+  umbrella header "ASGDPR.h"
+
+  export *
+  module * { export * }
+}
