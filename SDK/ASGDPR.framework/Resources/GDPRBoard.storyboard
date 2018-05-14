@@ -91,7 +91,7 @@
                                                     <action selector="agreeAction:" destination="AYr-39-cRh" eventType="touchUpInside" id="xiF-T3-Wht"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I  understand that I will still see ads, but thay may not be as relevant to my interests." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-cq-Qyu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I  understand that I will still see ads, but they may not be as relevant to my interests." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-cq-Qyu">
                                                 <rect key="frame" x="16" y="338.5" width="343" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="tqT-6J-CCF"/>
