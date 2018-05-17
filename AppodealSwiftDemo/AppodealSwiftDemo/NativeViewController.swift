@@ -52,8 +52,8 @@ class NativeViewController: UITableViewController {
         
         guard nativeAd == nil else {
             let nativeView = nativeAd!.getViewFor(self)
-            view.addSubview(nativeView)
-            nativeView.asxEdgesEqualView(view)
+            view.addSubview(nativeView!)
+            nativeView!.asxEdgesEqualView(view)
             return
         }
     }
