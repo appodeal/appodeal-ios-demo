@@ -51,9 +51,10 @@
     [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
     
     [ASGDPR present:^(BOOL consent) {
-        if (consent) {
-            [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd];
-        }
+        AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types
+                            hasConsent:consent];
     }];
 }
 

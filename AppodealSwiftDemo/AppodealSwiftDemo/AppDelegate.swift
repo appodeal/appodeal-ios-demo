@@ -55,7 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         ASGDPR.present { (consent : Bool) in
             if consent == true {
-                Appodeal.initialize(withApiKey: kAPP_KEY, types: adTypes)
+                Appodeal.initialize(withApiKey: kAPP_KEY,
+                                    types: adTypes,
+                                    hasConsent: consent)
             }
         }
     }

@@ -10,6 +10,7 @@
 
 @interface ASConsentController : UIViewController
 
-+ (ASConsentController *)controllerWithConsent:(BOOL)hasConsent consentBlock:(void (^)(BOOL))consentBlock;
+@property (nonatomic, copy) void (^consentBlock)(BOOL);
+@property (nonatomic, assign) BOOL hasConsent;
 
 @end

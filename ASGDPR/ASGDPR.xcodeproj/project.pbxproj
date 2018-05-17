@@ -34,8 +34,6 @@
 		B9B5813520A1ACBF003ECA93 /* ASPrivacyContent.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B5813320A1ACBF003ECA93 /* ASPrivacyContent.m */; };
 		B9B5815B20A1DAB8003ECA93 /* appodeal_close.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9B5815920A1DAB7003ECA93 /* appodeal_close.png */; };
 		B9B5815C20A1DAB8003ECA93 /* appodeal_header.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9B5815A20A1DAB7003ECA93 /* appodeal_header.png */; };
-		B9B5817920A1F6B2003ECA93 /* ASBlankController.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B5817720A1F6B2003ECA93 /* ASBlankController.h */; };
-		B9B5817A20A1F6B2003ECA93 /* ASBlankController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B5817820A1F6B2003ECA93 /* ASBlankController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,8 +66,6 @@
 		B9B5815920A1DAB7003ECA93 /* appodeal_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_close.png; sourceTree = "<group>"; };
 		B9B5815A20A1DAB7003ECA93 /* appodeal_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appodeal_header.png; sourceTree = "<group>"; };
 		B9B5816320A1DE6E003ECA93 /* GDPRBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GDPRBoard.storyboard; sourceTree = "<group>"; };
-		B9B5817720A1F6B2003ECA93 /* ASBlankController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBlankController.h; sourceTree = "<group>"; };
-		B9B5817820A1F6B2003ECA93 /* ASBlankController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBlankController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +104,6 @@
 				B9B5811A20A18AEF003ECA93 /* ASPrivacyController.m */,
 				B9B5811D20A18D61003ECA93 /* ASConsentController.h */,
 				B9B5811E20A18D61003ECA93 /* ASConsentController.m */,
-				B9B5817720A1F6B2003ECA93 /* ASBlankController.h */,
-				B9B5817820A1F6B2003ECA93 /* ASBlankController.m */,
 				B9B5813220A1ACBF003ECA93 /* ASPrivacyContent.h */,
 				B9B5813320A1ACBF003ECA93 /* ASPrivacyContent.m */,
 				B9B5812E20A1AB09003ECA93 /* NSAttributedString+ASGDPR.h */,
@@ -138,7 +132,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9B5810520A1829C003ECA93 /* ASGDPR.h in Headers */,
-				B9B5817920A1F6B2003ECA93 /* ASBlankController.h in Headers */,
 				B9B5813020A1AB09003ECA93 /* NSAttributedString+ASGDPR.h in Headers */,
 				B9B5811F20A18D61003ECA93 /* ASConsentController.h in Headers */,
 				B9B5811B20A18AEF003ECA93 /* ASPrivacyController.h in Headers */,
@@ -237,7 +230,6 @@
 				B9B5812020A18D61003ECA93 /* ASConsentController.m in Sources */,
 				B9B5813120A1AB09003ECA93 /* NSAttributedString+ASGDPR.m in Sources */,
 				B9B5811220A182F0003ECA93 /* ASGDPR.m in Sources */,
-				B9B5817A20A1F6B2003ECA93 /* ASBlankController.m in Sources */,
 				B9B5813520A1ACBF003ECA93 /* ASPrivacyContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

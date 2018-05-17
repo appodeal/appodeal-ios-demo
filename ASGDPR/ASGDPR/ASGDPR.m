@@ -8,10 +8,10 @@
 
 #import "ASGDPR.h"
 #import "ASPrivacyController.h"
-#import "ASBlankController.h"
 #import <AdSupport/AdSupport.h>
 
 #define ASK_USER_CONSENT @"ask_userConsent"
+#define ASK_NAVIGAION_CONTROLLER_ID @"ASNavigationViewController"
 
 static UIWindow *currentWindow = nil;
 
@@ -24,37 +24,38 @@ static UIWindow *currentWindow = nil;
 + (void)present:(ASConsentBlock)consentBlock legacy:(BOOL)legacy {
     
     BOOL isLimited = ![[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled];
-    NSNumber *userConsent = self.userConsent;
+    NSNumber * userConsent = self.userConsent;
     
     if (!isLimited && userConsent.boolValue) {
         consentBlock(YES);
     } else if (!isLimited && !userConsent) {
-        
-        ASConsentBlock consent = ^(BOOL consent) {
-            consentBlock(consent);
+        [self presentPrivacyUserStory:^(BOOL consent){
             [self saveUserConsent:consent];
             
             currentWindow.hidden = YES;
             currentWindow = nil;
-            if (!consent) {
-                [self presentViewController:[ASBlankController controller]];
-            }
-        };
-        [self presentViewController:[ASPrivacyController controllerWitConsent:consent]];
+            consentBlock(consent);
+        }];
     } else {
         consentBlock(NO);
-        [self presentViewController:[ASBlankController controller]];
     }
 }
 
-+ (void)presentViewController:(UIViewController *)controller {
++ (void)presentPrivacyUserStory:(ASConsentBlock)consent {
     UIWindow *presentedWindow = [[UIWindow alloc] initWithFrame: UIScreen.mainScreen.bounds];
     
-    presentedWindow.rootViewController      = controller;
+    UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"GDPRBoard" bundle: NSBundle.mainBundle];
+    UINavigationController * navigation = [storyBoard instantiateViewControllerWithIdentifier: ASK_NAVIGAION_CONTROLLER_ID];
+    ASPrivacyController * controller = [storyBoard instantiateViewControllerWithIdentifier:@"ASPrivacy"];
+    controller.consentBlock = consent;
+    
+    presentedWindow.rootViewController      = navigation;
     presentedWindow.windowLevel             = UIWindowLevelAlert + 1;
     presentedWindow.hidden                  = NO;
-    
+
     currentWindow = presentedWindow;
+    
+    [navigation pushViewController:controller animated:NO];
 }
 
 + (NSNumber *)userConsent {

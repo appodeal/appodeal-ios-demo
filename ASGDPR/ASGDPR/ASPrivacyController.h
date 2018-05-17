@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ASPrivacyController : UIViewController
 
-+ (ASPrivacyController *)controllerWitConsent:(void(^)(BOOL))consentBlock;
+@property (nonatomic, copy) void (^consentBlock)(BOOL);
 
 @end
