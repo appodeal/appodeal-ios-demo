@@ -54,11 +54,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Appodeal.setAutocache(true, types: adTypes)
         
         ASGDPR.present { (consent : Bool) in
-            if consent == true {
-                Appodeal.initialize(withApiKey: kAPP_KEY,
-                                    types: adTypes,
-                                    hasConsent: consent)
-            }
+            Appodeal.initialize(withApiKey: kAPP_KEY,
+                                types: adTypes,
+                                hasConsent: consent)
         }
     }
     
