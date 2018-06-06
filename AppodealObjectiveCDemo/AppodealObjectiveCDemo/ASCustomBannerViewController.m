@@ -12,7 +12,7 @@
 
 @interface ASCustomBannerViewController ()<AppodealBannerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet AppodealBannerView *bannerView;
+@property (strong, nonatomic) IBOutlet APDBannerView *bannerView;
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *height;
 
 @end
@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     CGSize bannerSize = kAPDAdSize320x50;
     if (isTablet) {
         bannerSize = kAPDAdSize728x90;
@@ -45,12 +44,11 @@
 
 #pragma mark - AppodealBannerViewDelegate
 
-/**
- *  Method called when banner did load firstly, after refresh this method not call
- *
- *  @param bannerView Nonnul, ready to show banner
+/*!
+ *  Method called after any banner was ready to present.
+ *  Maybe called twice for precache banner and usual banner
  */
-- (void)bannerViewDidLoadAd:(APDBannerView *)bannerView{
+- (void)bannerViewDidLoadAd:(nonnull APDBannerView *)bannerView isPrecache:(BOOL)precache {
     
 }
 

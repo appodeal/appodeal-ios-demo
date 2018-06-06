@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043601EE6AA8100FBF3E4 /* InterstitialViewController.swift */; };
-		033043721EE6AC6A00FBF3E4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043711EE6AC6A00FBF3E4 /* RootViewController.swift */; };
 		033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */; };
 		033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */; };
 		0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */; };
-		0330437C1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */; };
 		033043811EE6C89800FBF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033043801EE6C89800FBF3E4 /* Assets.xcassets */; };
 		0357C3681EE69F1200870D61 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357C3671EE69F1200870D61 /* AdSupport.framework */; };
 		0357C36A1EE69F1800870D61 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0357C3691EE69F1800870D61 /* AudioToolbox.framework */; };
@@ -50,11 +48,10 @@
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
-		B9B5EE8120C80065005D177A /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5EE8020C80065005D177A /* ASGDPR.framework */; };
-		B9B5EE8520C804A9005D177A /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5EE8420C804A9005D177A /* ASExtentions.framework */; };
-		B9B5EE8A20C80ABC005D177A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EE8920C80ABC005D177A /* RoundButton.swift */; };
+		9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */; };
+		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
+		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
 		B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56CCF1EE7E555009E52EB /* Appodeal.framework */; };
-		B9C56CEB1EE7E555009E52EB /* Appodeal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD11EE7E555009E52EB /* Appodeal.bundle */; };
 		B9C56CEE1EE7E555009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */; };
 		B9C56CEF1EE7E555009E52EB /* MPCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */; };
 		B9C56CF01EE7E555009E52EB /* MPCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */; };
@@ -77,15 +74,30 @@
 		B9C56D011EE7E555009E52EB /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE71EE7E555009E52EB /* MRAID.bundle */; };
 		B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE81EE7E555009E52EB /* StartApp.bundle */; };
 		B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */; };
+		B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC73C0202C581E005EA2A7 /* Native.xib */; };
+		B9CDF1E1205676EB00925C5B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDF1E0205676EA00925C5B /* RootViewController.swift */; };
+		B9CDF1E32056770A00925C5B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDF1E22056770A00925C5B /* RoundButton.swift */; };
+		B9CDF1E52056877D00925C5B /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CDF1DA2056742C00925C5B /* ASExtentions.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9CDF1DE2056743000925C5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		033043601EE6AA8100FBF3E4 /* InterstitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
-		033043711EE6AC6A00FBF3E4 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		033043731EE6BD7000FBF3E4 /* RewardedVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardedVideoViewController.swift; sourceTree = "<group>"; };
 		033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticBannerViewController.swift; sourceTree = "<group>"; };
 		033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBannerViewController.swift; sourceTree = "<group>"; };
-		0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleBannerViewController.swift; sourceTree = "<group>"; };
 		033043801EE6C89800FBF3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		033043821EE6C8BF00FBF3E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0357C3671EE69F1200870D61 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -125,11 +137,10 @@
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B9B5EE8020C80065005D177A /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
-		B9B5EE8420C804A9005D177A /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
-		B9B5EE8920C80ABC005D177A /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
+		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		B9C56CCF1EE7E555009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
-		B9C56CD11EE7E555009E52EB /* Appodeal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Appodeal.bundle; sourceTree = "<group>"; };
 		B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
 		B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseBtn.png; sourceTree = "<group>"; };
 		B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@2x.png"; sourceTree = "<group>"; };
@@ -152,6 +163,10 @@
 		B9C56CE71EE7E555009E52EB /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		B9C56CE81EE7E555009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
+		B9CC73C1202C581E005EA2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
+		B9CDF1DA2056742C00925C5B /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
+		B9CDF1E0205676EA00925C5B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B9CDF1E22056770A00925C5B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */,
+				B9CDF1E52056877D00925C5B /* ASExtentions.framework in Frameworks */,
 				0357C3971EE69FCF00870D61 /* CoreBluetooth.framework in Frameworks */,
 				0357C3981EE69FCF00870D61 /* CoreText.framework in Frameworks */,
 				0357C3991EE69FCF00870D61 /* GLKit.framework in Frameworks */,
@@ -186,11 +203,9 @@
 				0357C3801EE69F6800870D61 /* CoreTelephony.framework in Frameworks */,
 				0357C3811EE69F6800870D61 /* EventKit.framework in Frameworks */,
 				0357C3821EE69F6800870D61 /* EventKitUI.framework in Frameworks */,
-				B9B5EE8520C804A9005D177A /* ASExtentions.framework in Frameworks */,
 				0357C3831EE69F6800870D61 /* JavaScriptCore.framework in Frameworks */,
 				0357C3841EE69F6800870D61 /* libc++.tbd in Frameworks */,
 				0357C36D1EE69F2600870D61 /* AVFoundation.framework in Frameworks */,
-				B9B5EE8120C80065005D177A /* ASGDPR.framework in Frameworks */,
 				B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */,
 				0357C36E1EE69F2600870D61 /* CFNetwork.framework in Frameworks */,
 				0357C36A1EE69F1800870D61 /* AudioToolbox.framework in Frameworks */,
@@ -204,11 +219,12 @@
 		0330435F1EE6AA4F00FBF3E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9CDF1E0205676EA00925C5B /* RootViewController.swift */,
+				B9CDF1E22056770A00925C5B /* RoundButton.swift */,
 				03DBE1421EE69DFA00549332 /* AppDelegate.swift */,
-				033043711EE6AC6A00FBF3E4 /* RootViewController.swift */,
-				B9B5EE8920C80ABC005D177A /* RoundButton.swift */,
 				033043801EE6C89800FBF3E4 /* Assets.xcassets */,
 				03BB6E051EE7D98C007638E2 /* Swift.storyboard */,
+				B9CC73C0202C581E005EA2A7 /* Native.xib */,
 				03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */,
 				033043821EE6C8BF00FBF3E4 /* Info.plist */,
 			);
@@ -236,7 +252,6 @@
 			children = (
 				033043761EE6BF2A00FBF3E4 /* StaticBannerViewController.swift */,
 				033043791EE6C1B000FBF3E4 /* CustomBannerViewController.swift */,
-				0330437B1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift */,
 			);
 			name = Banner;
 			sourceTree = "<group>";
@@ -244,8 +259,7 @@
 		0357C3621EE69EB400870D61 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				B9B5EE8420C804A9005D177A /* ASExtentions.framework */,
-				B9B5EE8020C80065005D177A /* ASGDPR.framework */,
+				B9CDF1DA2056742C00925C5B /* ASExtentions.framework */,
 				B9C56CCF1EE7E555009E52EB /* Appodeal.framework */,
 				B9C56CD01EE7E555009E52EB /* Resources */,
 			);
@@ -255,6 +269,7 @@
 		0357C3661EE69F1200870D61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */,
 				0357C3851EE69FCF00870D61 /* CoreBluetooth.framework */,
 				0357C3861EE69FCF00870D61 /* CoreText.framework */,
 				0357C3871EE69FCF00870D61 /* GLKit.framework */,
@@ -313,18 +328,27 @@
 		03DBE1411EE69DFA00549332 /* AppodealSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0330435F1EE6AA4F00FBF3E4 /* Supporting Files */,
 				033043621EE6AA9200FBF3E4 /* Interstitial */,
 				033043751EE6BEEF00FBF3E4 /* Rewarded Video */,
 				033043781EE6C06A00FBF3E4 /* Banner */,
+				B95571D3202B2A05008A16D4 /* Native */,
+				0330435F1EE6AA4F00FBF3E4 /* Supporting Files */,
 			);
 			path = AppodealSwiftDemo;
+			sourceTree = "<group>";
+		};
+		B95571D3202B2A05008A16D4 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				B95571D4202B2A45008A16D4 /* NativeView.swift */,
+				B95571D6202B30E6008A16D4 /* NativeViewController.swift */,
+			);
+			name = Native;
 			sourceTree = "<group>";
 		};
 		B9C56CD01EE7E555009E52EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9C56CD11EE7E555009E52EB /* Appodeal.bundle */,
 				B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */,
 				B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */,
 				B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */,
@@ -362,6 +386,7 @@
 				03DBE13B1EE69DFA00549332 /* Sources */,
 				03DBE13C1EE69DFA00549332 /* Frameworks */,
 				03DBE13D1EE69DFA00549332 /* Resources */,
+				B9CDF1DE2056743000925C5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,13 +404,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = dtlbox;
 				TargetAttributes = {
 					03DBE13E1EE69DFA00549332 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3UBVG2WUJQ;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -416,7 +441,7 @@
 				B9C56CEF1EE7E555009E52EB /* MPCloseBtn.png in Resources */,
 				B9C56CF31EE7E555009E52EB /* MPCloseButtonX@2x.png in Resources */,
 				03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */,
-				B9C56CEB1EE7E555009E52EB /* Appodeal.bundle in Resources */,
+				B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */,
 				B9C56CF51EE7E555009E52EB /* MPDAAIcon.png in Resources */,
 				B9C56CF91EE7E555009E52EB /* MPMutedBtn@2x.png in Resources */,
 				B9C56CFB1EE7E555009E52EB /* MPPlayBtn.png in Resources */,
@@ -449,13 +474,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9B5EE8A20C80ABC005D177A /* RoundButton.swift in Sources */,
-				033043721EE6AC6A00FBF3E4 /* RootViewController.swift in Sources */,
-				0330437C1EE6C51E00FBF3E4 /* RectangleBannerViewController.swift in Sources */,
+				B9CDF1E32056770A00925C5B /* RoundButton.swift in Sources */,
+				B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */,
 				033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */,
 				03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */,
+				B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */,
 				033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */,
 				033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */,
+				B9CDF1E1205676EB00925C5B /* RootViewController.swift in Sources */,
 				0330437A1EE6C1B000FBF3E4 /* CustomBannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +503,14 @@
 				03DBE14C1EE69DFA00549332 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9CC73C0202C581E005EA2A7 /* Native.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CC73C1202C581E005EA2A7 /* Base */,
+			);
+			name = Native.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -537,7 +571,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -589,7 +622,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -602,7 +634,7 @@
 				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
@@ -619,7 +651,7 @@
 				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;

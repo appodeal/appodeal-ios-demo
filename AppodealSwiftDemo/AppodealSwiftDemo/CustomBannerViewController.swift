@@ -12,7 +12,7 @@ import UIKit
 
 class CustomBannerViewController: RootViewController {
 
-    @IBOutlet weak var bannerView: AppodealBannerView!
+    @IBOutlet weak var bannerView: APDBannerView!
     @IBOutlet weak var bannerViewHeightConstraint: NSLayoutConstraint!
     
     // MARK: Controller Life Cycle
@@ -45,7 +45,7 @@ class CustomBannerViewController: RootViewController {
         }
         
         bannerView.adSize = bannerSize
-        bannerViewHeightConstraint.constant = bannerSize.height
+//        bannerViewHeightConstraint.constant = bannerSize.height
         
         bannerView.loadAd()
     }
@@ -53,42 +53,37 @@ class CustomBannerViewController: RootViewController {
 }
 
 extension CustomBannerViewController: AppodealBannerViewDelegate {
-    
-    /**
-     *  Method called when banner did load firstly, after refresh this method not call
-     *
-     *  @param bannerView Nonnul, ready to show banner
-     */
-    func bannerViewDidLoadAd(_ bannerView: APDBannerView!) {
+
+    /// Method called when banner did load firstly, after refresh this method not call
+    ///
+    /// - Parameters:
+    ///   - bannerView: ready to show banner
+    ///   - precache: is precache
+    func bannerViewDidLoadAd(_ bannerView: APDBannerView, isPrecache precache: Bool) {
         
     }
     
-    /**
-     *  Method called in case that banner mediation failed
-     *
-     *  @param bannerView Nonnul failed banner view
-     *  @param error      Error occured while mediation
-     */
-    func bannerView(_ bannerView: APDBannerView!, didFailToLoadAdWithError error: Error!) {
+    /// Method called in case that banner mediation failed
+    ///
+    /// - Parameters:
+    ///   - bannerView: failed banner view
+    ///   - error: Error occured while mediation
+    func bannerView(_ bannerView: APDBannerView, didFailToLoadAdWithError error: Error) {
+        
+    }
+
+    /// Called when user tap on banner
+    ///
+    /// - Parameter bannerView: banner view
+    func bannerViewDidInteract(_ bannerView: APDBannerView) {
         
     }
     
-    /**
-     *  Method called when user tap on banner
-     *
-     *  @param bannerView Nonnul banner view
-     */
-    func bannerViewDidInteract(_ bannerView: APDBannerView!) {
+    
+    /// Method called after any banner was show
+    ///
+    /// - Parameter bannerView: on screen banner view
+    func bannerViewDidShow(_ bannerView: APDBannerView) {
         
     }
-    
-    /*!
-     *  Method called after any banner was show
-     *
-     *  @param bannerView On screen banner view
-     */
-    func bannerViewDidShow(_ bannerView: APDBannerView!) {
-        
-    }
-    
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0330437F1EE6C71A00FBF3E4 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */; };
 		03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E021EE7D97F007638E2 /* ObjC.storyboard */; };
+		9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */; };
+		9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1597C20C179070052C56F /* ASGDPR.framework */; };
 		B936CE9B1EE00D8000CDFF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9A1EE00D8000CDFF89 /* main.m */; };
 		B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */; };
 		B936CEA11EE00D8000CDFF89 /* ASInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEA01EE00D8000CDFF89 /* ASInterstitialViewController.m */; };
@@ -17,7 +19,6 @@
 		B936CEAC1EE00D8100CDFF89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936CEAA1EE00D8100CDFF89 /* LaunchScreen.storyboard */; };
 		B936CEBB1EE0180C00CDFF89 /* ASStaticBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEBA1EE0180C00CDFF89 /* ASStaticBannerViewController.m */; };
 		B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEBD1EE0183200CDFF89 /* ASCustomBannerViewController.m */; };
-		B936CEC11EE0184800CDFF89 /* ASRectangleBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEC01EE0184800CDFF89 /* ASRectangleBannerViewController.m */; };
 		B936CECA1EE02B5E00CDFF89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEC91EE02B5D00CDFF89 /* StoreKit.framework */; };
 		B936CECC1EE02B6300CDFF89 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CECB1EE02B6300CDFF89 /* CoreText.framework */; };
 		B936CECE1EE02B6D00CDFF89 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CECD1EE02B6D00CDFF89 /* MessageUI.framework */; };
@@ -51,11 +52,8 @@
 		B936CF061EE02C3200CDFF89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF051EE02C3200CDFF89 /* AVFoundation.framework */; };
 		B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */; };
 		B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF091EE02C3E00CDFF89 /* AdSupport.framework */; };
-		B9B5EE7F20C8005D005D177A /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5EE7E20C8005D005D177A /* ASGDPR.framework */; };
-		B9B5EE8320C804A0005D177A /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5EE8220C804A0005D177A /* ASExtentions.framework */; };
-		B9B5EE8820C80AB4005D177A /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B5EE8720C80AB4005D177A /* ASRoundButton.m */; };
+		B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */; };
 		B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56D041EE7E55B009E52EB /* Appodeal.framework */; };
-		B9C56D201EE7E55B009E52EB /* Appodeal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D061EE7E55B009E52EB /* Appodeal.bundle */; };
 		B9C56D231EE7E55B009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */; };
 		B9C56D241EE7E55B009E52EB /* MPCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D0A1EE7E55B009E52EB /* MPCloseBtn.png */; };
 		B9C56D251EE7E55B009E52EB /* MPCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D0B1EE7E55B009E52EB /* MPCloseBtn@2x.png */; };
@@ -78,11 +76,30 @@
 		B9C56D361EE7E55B009E52EB /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D1C1EE7E55B009E52EB /* MRAID.bundle */; };
 		B9C56D371EE7E55B009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D1D1EE7E55B009E52EB /* StartApp.bundle */; };
 		B9C56D381EE7E55B009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D1E1EE7E55B009E52EB /* TapjoyResources.bundle */; };
+		B9CA2A3420298F1000434E37 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA2A3220298F1000434E37 /* Native.xib */; };
+		B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A372029903500434E37 /* ASNativeViewController.m */; };
+		B9CA2A3B2029983100434E37 /* ASNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A3A2029983100434E37 /* ASNativeView.m */; };
+		B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CDF1D32056705B00925C5B /* ASExtentions.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9CDF1D72056705E00925C5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
 		03BB6E031EE7D97F007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ObjC.storyboard; sourceTree = "<group>"; };
+		9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		9CA1597C20C179070052C56F /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
 		B936CE961EE00D8000CDFF89 /* AppodealObjectiveCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealObjectiveCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B936CE9A1EE00D8000CDFF89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B936CE9C1EE00D8000CDFF89 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
@@ -98,8 +115,6 @@
 		B936CEBA1EE0180C00CDFF89 /* ASStaticBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASStaticBannerViewController.m; sourceTree = "<group>"; };
 		B936CEBC1EE0183200CDFF89 /* ASCustomBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCustomBannerViewController.h; sourceTree = "<group>"; };
 		B936CEBD1EE0183200CDFF89 /* ASCustomBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCustomBannerViewController.m; sourceTree = "<group>"; };
-		B936CEBF1EE0184800CDFF89 /* ASRectangleBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRectangleBannerViewController.h; sourceTree = "<group>"; };
-		B936CEC01EE0184800CDFF89 /* ASRectangleBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRectangleBannerViewController.m; sourceTree = "<group>"; };
 		B936CEC91EE02B5D00CDFF89 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B936CECB1EE02B6300CDFF89 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B936CECD1EE02B6D00CDFF89 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -133,14 +148,11 @@
 		B936CF051EE02C3200CDFF89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		B936CF091EE02C3E00CDFF89 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		B936CF4D1EE036D800CDFF89 /* ASRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRoundButton.h; sourceTree = "<group>"; };
+		B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
 		B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B9B301681EE191360016F22D /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
-		B9B5EE7E20C8005D005D177A /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
-		B9B5EE8220C804A0005D177A /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
-		B9B5EE8620C80AB4005D177A /* ASRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRoundButton.h; sourceTree = "<group>"; };
-		B9B5EE8720C80AB4005D177A /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
 		B9C56D041EE7E55B009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
-		B9C56D061EE7E55B009E52EB /* Appodeal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Appodeal.bundle; sourceTree = "<group>"; };
 		B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
 		B9C56D0A1EE7E55B009E52EB /* MPCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseBtn.png; sourceTree = "<group>"; };
 		B9C56D0B1EE7E55B009E52EB /* MPCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@2x.png"; sourceTree = "<group>"; };
@@ -163,6 +175,12 @@
 		B9C56D1C1EE7E55B009E52EB /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		B9C56D1D1EE7E55B009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		B9C56D1E1EE7E55B009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
+		B9CA2A3320298F1000434E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
+		B9CA2A362029903500434E37 /* ASNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNativeViewController.h; sourceTree = "<group>"; };
+		B9CA2A372029903500434E37 /* ASNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeViewController.m; sourceTree = "<group>"; };
+		B9CA2A392029983100434E37 /* ASNativeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNativeView.h; sourceTree = "<group>"; };
+		B9CA2A3A2029983100434E37 /* ASNativeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeView.m; sourceTree = "<group>"; };
+		B9CDF1D32056705B00925C5B /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */,
 				B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */,
 				B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */,
 				B936CF061EE02C3200CDFF89 /* AVFoundation.framework in Frameworks */,
@@ -189,6 +208,7 @@
 				B936CEEA1EE02BD000CDFF89 /* libxml2.2.tbd in Frameworks */,
 				B936CEE81EE02BC700CDFF89 /* libz.tbd in Frameworks */,
 				B936CEE61EE02BBD00CDFF89 /* MediaPlayer.framework in Frameworks */,
+				9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */,
 				B936CEE41EE02BB500CDFF89 /* MobileCoreServices.framework in Frameworks */,
 				B936CEE21EE02BAF00CDFF89 /* QuartzCore.framework in Frameworks */,
 				B936CEE01EE02BA800CDFF89 /* SafariServices.framework in Frameworks */,
@@ -197,11 +217,10 @@
 				B936CEDA1EE02B9500CDFF89 /* SystemConfiguration.framework in Frameworks */,
 				B936CED81EE02B8D00CDFF89 /* Twitter.framework in Frameworks */,
 				B936CED61EE02B8700CDFF89 /* UIKit.framework in Frameworks */,
-				B9B5EE8320C804A0005D177A /* ASExtentions.framework in Frameworks */,
+				B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */,
 				B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */,
 				B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */,
 				B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */,
-				B9B5EE7F20C8005D005D177A /* ASGDPR.framework in Frameworks */,
 				B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */,
 				B936CECE1EE02B6D00CDFF89 /* MessageUI.framework in Frameworks */,
 				B936CECC1EE02B6300CDFF89 /* CoreText.framework in Frameworks */,
@@ -215,8 +234,8 @@
 		033F6A201EE699B000C933D1 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				B9B5EE8220C804A0005D177A /* ASExtentions.framework */,
-				B9B5EE7E20C8005D005D177A /* ASGDPR.framework */,
+				9CA1597C20C179070052C56F /* ASGDPR.framework */,
+				B9CDF1D32056705B00925C5B /* ASExtentions.framework */,
 				B9C56D041EE7E55B009E52EB /* Appodeal.framework */,
 				B9C56D051EE7E55B009E52EB /* Resources */,
 			);
@@ -247,6 +266,7 @@
 				B936CF581EE0640E00CDFF89 /* Interstitial */,
 				B936CF591EE0641600CDFF89 /* RewardedVideo */,
 				B936CF5A1EE0641F00CDFF89 /* Banner */,
+				B9CA2A3520298F5300434E37 /* Native */,
 				B936CE991EE00D8000CDFF89 /* Supporting Files */,
 			);
 			path = AppodealObjectiveCDemo;
@@ -257,13 +277,14 @@
 			children = (
 				B936CE9C1EE00D8000CDFF89 /* ASAppDelegate.h */,
 				B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */,
+				B936CF4D1EE036D800CDFF89 /* ASRoundButton.h */,
+				B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */,
 				B9B301681EE191360016F22D /* ASRootViewController.h */,
 				0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */,
-				B9B5EE8620C80AB4005D177A /* ASRoundButton.h */,
-				B9B5EE8720C80AB4005D177A /* ASRoundButton.m */,
 				B936CEA81EE00D8100CDFF89 /* Assets.xcassets */,
 				03BB6E021EE7D97F007638E2 /* ObjC.storyboard */,
 				B936CEAA1EE00D8100CDFF89 /* LaunchScreen.storyboard */,
+				B9CA2A3220298F1000434E37 /* Native.xib */,
 				B936CEAD1EE00D8100CDFF89 /* Info.plist */,
 				B936CE9A1EE00D8000CDFF89 /* main.m */,
 			);
@@ -273,6 +294,7 @@
 		B936CEC81EE02B5D00CDFF89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */,
 				B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */,
 				B936CF091EE02C3E00CDFF89 /* AdSupport.framework */,
 				B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */,
@@ -336,8 +358,6 @@
 				B936CEBA1EE0180C00CDFF89 /* ASStaticBannerViewController.m */,
 				B936CEBC1EE0183200CDFF89 /* ASCustomBannerViewController.h */,
 				B936CEBD1EE0183200CDFF89 /* ASCustomBannerViewController.m */,
-				B936CEBF1EE0184800CDFF89 /* ASRectangleBannerViewController.h */,
-				B936CEC01EE0184800CDFF89 /* ASRectangleBannerViewController.m */,
 			);
 			name = Banner;
 			sourceTree = "<group>";
@@ -345,7 +365,6 @@
 		B9C56D051EE7E55B009E52EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9C56D061EE7E55B009E52EB /* Appodeal.bundle */,
 				B9C56D091EE7E55B009E52EB /* MPAdBrowserController.xib */,
 				B9C56D0A1EE7E55B009E52EB /* MPCloseBtn.png */,
 				B9C56D0B1EE7E55B009E52EB /* MPCloseBtn@2x.png */,
@@ -373,6 +392,17 @@
 			path = ../SDK/Resources;
 			sourceTree = "<group>";
 		};
+		B9CA2A3520298F5300434E37 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA2A392029983100434E37 /* ASNativeView.h */,
+				B9CA2A3A2029983100434E37 /* ASNativeView.m */,
+				B9CA2A362029903500434E37 /* ASNativeViewController.h */,
+				B9CA2A372029903500434E37 /* ASNativeViewController.m */,
+			);
+			name = Native;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -383,6 +413,7 @@
 				B936CE921EE00D8000CDFF89 /* Sources */,
 				B936CE931EE00D8000CDFF89 /* Frameworks */,
 				B936CE941EE00D8000CDFF89 /* Resources */,
+				B9CDF1D72056705E00925C5B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +431,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AS;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = appodeal;
 				TargetAttributes = {
 					B936CE951EE00D8000CDFF89 = {
@@ -436,7 +467,7 @@
 				B9C56D241EE7E55B009E52EB /* MPCloseBtn.png in Resources */,
 				B9C56D281EE7E55B009E52EB /* MPCloseButtonX@2x.png in Resources */,
 				03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */,
-				B9C56D201EE7E55B009E52EB /* Appodeal.bundle in Resources */,
+				B9CA2A3420298F1000434E37 /* Native.xib in Resources */,
 				B9C56D2A1EE7E55B009E52EB /* MPDAAIcon.png in Resources */,
 				B9C56D2E1EE7E55B009E52EB /* MPMutedBtn@2x.png in Resources */,
 				B9C56D301EE7E55B009E52EB /* MPPlayBtn.png in Resources */,
@@ -469,11 +500,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B936CEC11EE0184800CDFF89 /* ASRectangleBannerViewController.m in Sources */,
 				0330437F1EE6C71A00FBF3E4 /* ASRootViewController.m in Sources */,
 				B936CEA41EE00D8000CDFF89 /* ASRewardedViewController.m in Sources */,
-				B9B5EE8820C80AB4005D177A /* ASRoundButton.m in Sources */,
+				B9CA2A3B2029983100434E37 /* ASNativeView.m in Sources */,
 				B936CEBB1EE0180C00CDFF89 /* ASStaticBannerViewController.m in Sources */,
+				B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */,
+				B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */,
 				B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */,
 				B936CEA11EE00D8000CDFF89 /* ASInterstitialViewController.m in Sources */,
 				B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */,
@@ -498,6 +530,14 @@
 				B936CEAB1EE00D8100CDFF89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9CA2A3220298F1000434E37 /* Native.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9CA2A3320298F1000434E37 /* Base */,
+			);
+			name = Native.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -615,9 +655,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
@@ -632,9 +672,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;

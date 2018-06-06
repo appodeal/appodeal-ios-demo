@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -77,13 +78,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKv-fX-bLv" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
-                                <rect key="frame" x="16" y="140" width="343" height="30"/>
-                                <state key="normal" title="MREC banner"/>
-                                <connections>
-                                    <segue destination="N0W-HX-4F5" kind="show" id="GzM-cg-faf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qko-Yl-Xvn" customClass="RoundButton" customModule="AppodealSwiftDemo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="85" width="343" height="30"/>
                                 <state key="normal" title="Custom banner"/>
@@ -104,11 +98,8 @@
                         <constraints>
                             <constraint firstItem="qko-Yl-Xvn" firstAttribute="top" secondItem="G9f-kK-40i" secondAttribute="bottom" constant="25" id="A2n-7k-bgN"/>
                             <constraint firstItem="qko-Yl-Xvn" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="A6F-0o-1YF"/>
-                            <constraint firstItem="OKv-fX-bLv" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="MjF-ou-NUJ"/>
-                            <constraint firstItem="OKv-fX-bLv" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="Nbx-fS-uQu"/>
                             <constraint firstItem="qko-Yl-Xvn" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="ahA-4i-b5n"/>
                             <constraint firstItem="G9f-kK-40i" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="fuy-gG-R2m"/>
-                            <constraint firstItem="OKv-fX-bLv" firstAttribute="top" secondItem="qko-Yl-Xvn" secondAttribute="bottom" constant="25" id="hfa-He-yO3"/>
                             <constraint firstItem="G9f-kK-40i" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="ka1-oU-ljv"/>
                             <constraint firstItem="G9f-kK-40i" firstAttribute="top" secondItem="XgU-2Q-61f" secondAttribute="bottom" constant="30" id="xGu-Og-IuN"/>
                         </constraints>
@@ -186,7 +177,7 @@
         <!--Delegate-->
         <scene sceneID="fGN-d7-iPK">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="wO0-JI-j7V" customClass="CustomBannerViewController" customModule="AppodealSwiftDemo" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="wO0-JI-j7V" customClass="CustomBannerViewController" customModule="AppodealSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yJc-Xb-AG8"/>
                         <viewControllerLayoutGuide type="bottom" id="PSX-mI-Fli"/>
@@ -195,13 +186,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-zs-uOG" customClass="AppodealBannerView">
-                                <rect key="frame" x="27.5" y="0.0" width="320" height="50"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-zs-uOG" customClass="APDBannerView">
+                                <rect key="frame" x="28" y="0.0" width="320" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Cu9-vu-JKV"/>
-                                    <constraint firstAttribute="height" constant="50" id="qsz-zW-OPx"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="wO0-JI-j7V" id="vD5-BO-hEA"/>
                                     <outlet property="rootViewController" destination="wO0-JI-j7V" id="5OP-nf-6WP"/>
@@ -210,10 +198,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="yOn-zs-uOG" firstAttribute="top" secondItem="yJc-Xb-AG8" secondAttribute="bottom" id="6j8-PA-13m"/>
-                            <constraint firstItem="yOn-zs-uOG" firstAttribute="centerX" secondItem="Fzp-8j-8RV" secondAttribute="centerX" id="wv4-OU-K3E"/>
-                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="B17-Fe-2a0" appends="YES" id="Rzi-k8-qDl"/>
                         </connections>
@@ -221,7 +205,6 @@
                     <navigationItem key="navigationItem" title="Custom banner" id="p9C-r3-l52"/>
                     <connections>
                         <outlet property="bannerView" destination="yOn-zs-uOG" id="cR4-Cm-7Dl"/>
-                        <outlet property="bannerViewHeightConstraint" destination="qsz-zW-OPx" id="l2e-Ae-qsj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qxy-PD-AyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -232,60 +215,6 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2205.5999999999999" y="1382.1589205397302"/>
-        </scene>
-        <!--Delegate-->
-        <scene sceneID="oBT-DH-nRw">
-            <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="N0W-HX-4F5" customClass="RectangleBannerViewController" customModule="AppodealSwiftDemo" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2XF-fT-B5x"/>
-                        <viewControllerLayoutGuide type="bottom" id="PaE-07-aiw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Qh6-P5-eRu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-1S-3fI" customClass="AppodealMRECView">
-                                <rect key="frame" x="37.5" y="152" width="300" height="250"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="JrI-1C-tl2"/>
-                                    <constraint firstAttribute="height" constant="250" id="Qqj-P2-0gx"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="adSize">
-                                        <size key="value" width="300" height="250"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="delegate" destination="N0W-HX-4F5" id="eyN-1p-8bJ"/>
-                                    <outlet property="rootViewController" destination="N0W-HX-4F5" id="Wkn-PX-jhr"/>
-                                </connections>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="jZX-1S-3fI" firstAttribute="centerX" secondItem="Qh6-P5-eRu" secondAttribute="centerX" id="Z1v-4b-hbr"/>
-                            <constraint firstItem="jZX-1S-3fI" firstAttribute="centerY" secondItem="Qh6-P5-eRu" secondAttribute="centerY" id="s1W-so-lvc"/>
-                        </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="dR3-aO-DkQ" appends="YES" id="Vf3-eI-B8d"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" title="MREC banner" id="guf-fX-IYY"/>
-                    <connections>
-                        <outlet property="bannerView" destination="jZX-1S-3fI" id="PQx-Bs-s2T"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qJ7-RK-AQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="dR3-aO-DkQ">
-                    <connections>
-                        <action selector="tapOnView:" destination="N0W-HX-4F5" id="gFM-ZA-94G"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="2206" y="2047"/>
         </scene>
         <!--Rewarded video-->
         <scene sceneID="wg7-f3-ORb">
@@ -356,11 +285,92 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="uVG-eL-bWZ" kind="relationship" relationship="viewControllers" id="Ymb-Dw-iTe"/>
+                        <segue destination="bhN-8h-wmM" kind="relationship" relationship="viewControllers" id="6AZ-Qv-fqT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-290" y="-17"/>
+        </scene>
+        <!--Native-->
+        <scene sceneID="LVw-zi-7Kk">
+            <objects>
+                <tableViewController id="bhN-8h-wmM" customClass="NativeViewController" customModule="AppodealSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rgh-TT-Mcy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kASDefaultCell" rowHeight="254" id="eeT-Qt-PUm">
+                                <rect key="frame" x="0.0" y="28" width="375" height="254"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eeT-Qt-PUm" id="NaW-33-PHd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lorem_ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="wIt-SJ-cDb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="wIt-SJ-cDb" secondAttribute="height" multiplier="375:149" id="Rwp-oZ-euj"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-B6-P9x">
+                                            <rect key="frame" x="16" y="157" width="343" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Lorem ipsum dolor sit amet.">
+                                                    <attributes>
+                                                        <font key="NSFont" size="17" name="BodoniSvtyTwoITCTT-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-fd-ehR">
+                                            <rect key="frame" x="16" y="186" width="343" height="49"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="BradleyHandITCTT-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leadingMargin" id="6BB-Qr-vmb"/>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="top" secondItem="a9B-B6-P9x" secondAttribute="bottom" constant="8" id="K06-fa-sY7"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="trailing" secondItem="NaW-33-PHd" secondAttribute="trailingMargin" id="LJd-Lt-jy3"/>
+                                        <constraint firstItem="Zp1-fd-ehR" firstAttribute="trailing" secondItem="NaW-33-PHd" secondAttribute="trailingMargin" id="Mnq-l7-zbW"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zp1-fd-ehR" secondAttribute="bottom" constant="8" id="NjL-cB-sIE"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leadingMargin" id="UpO-9s-LZA"/>
+                                        <constraint firstItem="a9B-B6-P9x" firstAttribute="top" secondItem="wIt-SJ-cDb" secondAttribute="bottom" constant="8" id="bpt-Rq-koc"/>
+                                        <constraint firstItem="wIt-SJ-cDb" firstAttribute="leading" secondItem="NaW-33-PHd" secondAttribute="leading" id="u8U-p4-wDz"/>
+                                        <constraint firstAttribute="trailing" secondItem="wIt-SJ-cDb" secondAttribute="trailing" id="y58-i3-lSf"/>
+                                        <constraint firstItem="wIt-SJ-cDb" firstAttribute="top" secondItem="NaW-33-PHd" secondAttribute="top" id="zFH-Su-ihS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kASNativeCell" id="zUQ-lF-aHs">
+                                <rect key="frame" x="0.0" y="282" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUQ-lF-aHs" id="5TL-hg-JNz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bhN-8h-wmM" id="f2n-xn-LsO"/>
+                            <outlet property="delegate" destination="bhN-8h-wmM" id="g52-W1-EwJ"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Native" image="tab_native" selectedImage="tab_native" id="nuM-tP-nrt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpn-r4-Qyv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-930" y="749"/>
         </scene>
         <!--Banner-->
         <scene sceneID="IDe-w1-RWE">
@@ -393,8 +403,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="lorem_ipsum" width="221" height="161"/>
         <image name="tab_banner" width="32" height="32"/>
         <image name="tab_interstitial" width="25" height="25"/>
+        <image name="tab_native" width="25" height="25"/>
         <image name="tab_rewarded" width="25" height="25"/>
     </resources>
 </document>

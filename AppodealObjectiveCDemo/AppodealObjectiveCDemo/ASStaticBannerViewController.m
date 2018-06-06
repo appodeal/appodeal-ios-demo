@@ -33,7 +33,7 @@
 //    }
     
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal canShowAd:AppodealShowStyleBannerTop forPlacement:placement]) {
+    if ([Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleBannerTop forPlacement:placement rootViewController:self];
     }
 }
@@ -44,7 +44,7 @@
 //    }
     
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal canShowAd:AppodealShowStyleBannerBottom forPlacement:placement]) {
+    if ([Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleBannerBottom forPlacement:placement rootViewController:self];
     }
 }

@@ -5,9 +5,11 @@
 //  Copyright © 2017 appodeal. All rights reserved.
 //
 
+
 import Appodeal
 import UIKit
 import ASGDPR
+
 
 struct Constants {
     static let appKey = "dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
@@ -51,8 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Appodeal.setUserAlcoholAttitude(.neutral)
 //        Appodeal.setUserInterests("skydiving, meditation")
         
-        
-        let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .MREC]
+        let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
         Appodeal.setLogLevel(.off)
         Appodeal.setAutocache(true, types: adTypes)
         
@@ -60,11 +61,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // you need to replace this value with your publisher id
         let publisherIds = [Constants.publisherId]
         ASGDPR.presentConsentDialog(forPublisherIds: publisherIds) { (status) in
-            let consent : Bool = status != .notPersonalized
-            if consent {
-                Appodeal.initialize(withApiKey: Constants.appKey,
-                                    types: adTypes)
-            }
+            let consent = status != .notPersonalized
+            Appodeal.initialize(withApiKey: Constants.appKey,
+                                types: adTypes,
+                                hasConsent: consent)
         }
     }
     

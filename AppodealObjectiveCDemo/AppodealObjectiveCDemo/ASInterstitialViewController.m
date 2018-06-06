@@ -29,7 +29,7 @@
 //    }
     
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal canShowAd:AppodealShowStyleInterstitial forPlacement:placement]) {
+    if ([Appodeal canShow:AppodealAdTypeInterstitial forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleInterstitial forPlacement:placement rootViewController:self];
     }
 }
@@ -42,7 +42,7 @@
  *
  *  @param precache If precache is YES it's mean that precache loaded
  */
-- (void)interstitialDidLoadAdisPrecache:(BOOL)precache{
+- (void)interstitialDidLoadAdIsPrecache:(BOOL)precache{
     
 }
 
