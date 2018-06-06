@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interstitial-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="9pv-A4-QxB" customClass="ASInterstitialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5y-CU-Jjz" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <state key="normal" title="Show interstitial"/>
+                                <connections>
+                                    <action selector="showClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Iwp-BE-8Iy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PLACEMENT_NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpO-KY-Ti7">
+                                <rect key="frame" x="16" y="115" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZpO-KY-Ti7" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="8uI-Qn-5w5"/>
+                            <constraint firstItem="Y5y-CU-Jjz" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="150" id="CUu-25-lF4"/>
+                            <constraint firstItem="Y5y-CU-Jjz" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="bCL-VF-aAD"/>
+                            <constraint firstItem="ZpO-KY-Ti7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="hHe-fm-xjy"/>
+                            <constraint firstItem="Y5y-CU-Jjz" firstAttribute="top" secondItem="ZpO-KY-Ti7" secondAttribute="bottom" constant="25" id="jTJ-ft-eoF"/>
+                            <constraint firstItem="Y5y-CU-Jjz" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="w7l-8y-MEk"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3ia-My-AoO" appends="YES" id="OKc-ts-zMg"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Interstitial" image="tab_interstitial" selectedImage="tab_interstitial" id="acW-dT-cKf"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="placementField" destination="ZpO-KY-Ti7" id="KuN-mT-viG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3ia-My-AoO">
+                    <connections>
+                        <action selector="tapOnView:" destination="9pv-A4-QxB" id="fCj-G7-3RO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="486" y="-740"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bg4-nd-vWT">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="Bah-nL-nL0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XgU-2Q-61f"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Yl-Ti-06S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PIK-ai-O0m">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKv-fX-bLv" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="140" width="343" height="30"/>
+                                <state key="normal" title="MREC banner"/>
+                                <connections>
+                                    <segue destination="N0W-HX-4F5" kind="show" id="GzM-cg-faf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qko-Yl-Xvn" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="85" width="343" height="30"/>
+                                <state key="normal" title="Custom banner"/>
+                                <connections>
+                                    <segue destination="wO0-JI-j7V" kind="show" id="b7e-KN-fcH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-kK-40i" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="30" width="343" height="30"/>
+                                <state key="normal" title="Static banner"/>
+                                <connections>
+                                    <segue destination="rNw-Tt-ozW" kind="show" id="ePp-hO-T5b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="qko-Yl-Xvn" firstAttribute="top" secondItem="G9f-kK-40i" secondAttribute="bottom" constant="25" id="A2n-7k-bgN"/>
+                            <constraint firstItem="qko-Yl-Xvn" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="A6F-0o-1YF"/>
+                            <constraint firstItem="OKv-fX-bLv" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="MjF-ou-NUJ"/>
+                            <constraint firstItem="OKv-fX-bLv" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="Nbx-fS-uQu"/>
+                            <constraint firstItem="qko-Yl-Xvn" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="ahA-4i-b5n"/>
+                            <constraint firstItem="G9f-kK-40i" firstAttribute="trailing" secondItem="PIK-ai-O0m" secondAttribute="trailingMargin" id="fuy-gG-R2m"/>
+                            <constraint firstItem="OKv-fX-bLv" firstAttribute="top" secondItem="qko-Yl-Xvn" secondAttribute="bottom" constant="25" id="hfa-He-yO3"/>
+                            <constraint firstItem="G9f-kK-40i" firstAttribute="leading" secondItem="PIK-ai-O0m" secondAttribute="leadingMargin" id="ka1-oU-ljv"/>
+                            <constraint firstItem="G9f-kK-40i" firstAttribute="top" secondItem="XgU-2Q-61f" secondAttribute="bottom" constant="30" id="xGu-Og-IuN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rIi-bR-uAv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6B-HQ-lIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424.8" y="728.18590704647681"/>
+        </scene>
+        <!--Static banner-->
+        <scene sceneID="P4x-iB-nTs">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="rNw-Tt-ozW" customClass="ASStaticBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gUq-Xg-XHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="JqM-IQ-cjJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JBL-uo-eov">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl4-DO-qpg" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="207" width="343" height="30"/>
+                                <state key="normal" title="Banner top"/>
+                                <connections>
+                                    <action selector="topClick:" destination="rNw-Tt-ozW" eventType="touchUpInside" id="tgU-Mj-nBY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7X-WR-Cqi" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="317" width="343" height="30"/>
+                                <state key="normal" title="Banner bottom"/>
+                                <connections>
+                                    <action selector="bottomClick:" destination="rNw-Tt-ozW" eventType="touchUpInside" id="vjU-xY-ukd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PLACEMENT_NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l9m-NS-ABw">
+                                <rect key="frame" x="16" y="262" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="m7X-WR-Cqi" firstAttribute="top" secondItem="l9m-NS-ABw" secondAttribute="bottom" constant="25" id="7Ne-rL-u5F"/>
+                            <constraint firstItem="l9m-NS-ABw" firstAttribute="centerY" secondItem="JBL-uo-eov" secondAttribute="centerY" id="9ta-Co-u3K"/>
+                            <constraint firstItem="Fl4-DO-qpg" firstAttribute="leading" secondItem="JBL-uo-eov" secondAttribute="leadingMargin" id="JKi-29-k23"/>
+                            <constraint firstItem="m7X-WR-Cqi" firstAttribute="trailing" secondItem="JBL-uo-eov" secondAttribute="trailingMargin" id="Zle-l3-416"/>
+                            <constraint firstItem="Fl4-DO-qpg" firstAttribute="trailing" secondItem="JBL-uo-eov" secondAttribute="trailingMargin" id="Zv4-EV-2Ka"/>
+                            <constraint firstItem="l9m-NS-ABw" firstAttribute="leading" secondItem="JBL-uo-eov" secondAttribute="leadingMargin" id="n6O-nt-ejh"/>
+                            <constraint firstItem="l9m-NS-ABw" firstAttribute="trailing" secondItem="JBL-uo-eov" secondAttribute="trailingMargin" id="tAn-b9-ISE"/>
+                            <constraint firstItem="m7X-WR-Cqi" firstAttribute="leading" secondItem="JBL-uo-eov" secondAttribute="leadingMargin" id="vZy-Kv-ef9"/>
+                            <constraint firstItem="l9m-NS-ABw" firstAttribute="top" secondItem="Fl4-DO-qpg" secondAttribute="bottom" constant="25" id="yyE-bK-M0a"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JWp-zG-0yI" appends="YES" id="74r-4z-wv6"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Static banner" id="b8f-nI-1tl"/>
+                    <connections>
+                        <outlet property="placementField" destination="l9m-NS-ABw" id="dGA-yQ-wTV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGU-0V-yMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JWp-zG-0yI">
+                    <connections>
+                        <action selector="tapOnView:" destination="rNw-Tt-ozW" id="GLF-pG-Da4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2207" y="728"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="fGN-d7-iPK">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="wO0-JI-j7V" customClass="ASCustomBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJc-Xb-AG8"/>
+                        <viewControllerLayoutGuide type="bottom" id="PSX-mI-Fli"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fzp-8j-8RV">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-zs-uOG" customClass="AppodealBannerView">
+                                <rect key="frame" x="27.5" y="0.0" width="320" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Cu9-vu-JKV"/>
+                                    <constraint firstAttribute="height" constant="50" id="qsz-zW-OPx"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="wO0-JI-j7V" id="vD5-BO-hEA"/>
+                                    <outlet property="rootViewController" destination="wO0-JI-j7V" id="5OP-nf-6WP"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yOn-zs-uOG" firstAttribute="top" secondItem="yJc-Xb-AG8" secondAttribute="bottom" id="6j8-PA-13m"/>
+                            <constraint firstItem="yOn-zs-uOG" firstAttribute="centerX" secondItem="Fzp-8j-8RV" secondAttribute="centerX" id="wv4-OU-K3E"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="B17-Fe-2a0" appends="YES" id="Rzi-k8-qDl"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom banner" id="p9C-r3-l52"/>
+                    <connections>
+                        <outlet property="bannerView" destination="yOn-zs-uOG" id="cR4-Cm-7Dl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxy-PD-AyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="B17-Fe-2a0">
+                    <connections>
+                        <action selector="tapOnView:" destination="wO0-JI-j7V" id="HX1-XS-Mf4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2205.5999999999999" y="1382.1589205397302"/>
+        </scene>
+        <!--Delegate-->
+        <scene sceneID="oBT-DH-nRw">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="N0W-HX-4F5" customClass="ASRectangleBannerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2XF-fT-B5x"/>
+                        <viewControllerLayoutGuide type="bottom" id="PaE-07-aiw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qh6-P5-eRu">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-1S-3fI" customClass="AppodealMRECView">
+                                <rect key="frame" x="37.5" y="152" width="300" height="250"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JrI-1C-tl2"/>
+                                    <constraint firstAttribute="height" constant="250" id="Qqj-P2-0gx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="adSize">
+                                        <size key="value" width="300" height="250"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="N0W-HX-4F5" id="eyN-1p-8bJ"/>
+                                    <outlet property="rootViewController" destination="N0W-HX-4F5" id="Wkn-PX-jhr"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jZX-1S-3fI" firstAttribute="centerX" secondItem="Qh6-P5-eRu" secondAttribute="centerX" id="Z1v-4b-hbr"/>
+                            <constraint firstItem="jZX-1S-3fI" firstAttribute="centerY" secondItem="Qh6-P5-eRu" secondAttribute="centerY" id="s1W-so-lvc"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dR3-aO-DkQ" appends="YES" id="Vf3-eI-B8d"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="MREC banner" id="guf-fX-IYY"/>
+                    <connections>
+                        <outlet property="bannerView" destination="jZX-1S-3fI" id="PQx-Bs-s2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJ7-RK-AQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dR3-aO-DkQ">
+                    <connections>
+                        <action selector="tapOnView:" destination="N0W-HX-4F5" id="gFM-ZA-94G"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2206" y="2047"/>
+        </scene>
+        <!--Rewarded video-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="8rJ-Kc-sve" customClass="ASRewardedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BC-Jr-uh9" customClass="ASRoundButton">
+                                <rect key="frame" x="16" y="170" width="343" height="30"/>
+                                <state key="normal" title="Show rewarded video"/>
+                                <connections>
+                                    <action selector="showClick:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="WbG-ZZ-Ep4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PLACEMENT_NAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRD-qx-ALW">
+                                <rect key="frame" x="16" y="115" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="4BC-Jr-uh9" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="150" id="0kD-wt-W3R"/>
+                            <constraint firstItem="IRD-qx-ALW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="71P-Kp-mAz"/>
+                            <constraint firstItem="4BC-Jr-uh9" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="Uea-fk-vlY"/>
+                            <constraint firstItem="4BC-Jr-uh9" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="WPF-l9-unY"/>
+                            <constraint firstItem="IRD-qx-ALW" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="m6b-LR-0KL"/>
+                            <constraint firstItem="4BC-Jr-uh9" firstAttribute="top" secondItem="IRD-qx-ALW" secondAttribute="bottom" constant="25" id="y5T-33-lOR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="63w-tw-bKm" appends="YES" id="1hr-LH-7sx"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rewarded video" image="tab_rewarded" selectedImage="tab_rewarded" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="placementField" destination="IRD-qx-ALW" id="rXN-1y-2nU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="63w-tw-bKm">
+                    <connections>
+                        <action selector="tapOnView:" destination="8rJ-Kc-sve" id="VPQ-Mh-tXn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="486" y="-58"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController autoresizesArchivedViewToFullSize="NO" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.93796551169999998" green="0.21179601819999999" blue="0.2301303733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="uVG-eL-bWZ" kind="relationship" relationship="viewControllers" id="Ymb-Dw-iTe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290" y="-17"/>
+        </scene>
+        <!--Banner-->
+        <scene sceneID="IDe-w1-RWE">
+            <objects>
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="uVG-eL-bWZ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Banner" image="tab_banner" selectedImage="tab_banner" id="pX3-ep-o7w"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="QLA-ZD-nEc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.9382818341255188" green="0.21338838338851929" blue="0.23215025663375854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="jzw-xq-PVl">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Bah-nL-nL0" kind="relationship" relationship="rootViewController" id="ScD-AD-jqT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9E-Fu-A7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="727"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_banner" width="32" height="32"/>
+        <image name="tab_interstitial" width="25" height="25"/>
+        <image name="tab_rewarded" width="25" height="25"/>
+    </resources>
+</document>
