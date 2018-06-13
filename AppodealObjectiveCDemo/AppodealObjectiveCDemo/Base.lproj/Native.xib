@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,14 +24,14 @@
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzW-Tr-Jvp">
-                    <rect key="frame" x="16" y="82" width="286" height="202"/>
+                    <rect key="frame" x="16" y="82" width="286" height="149.5"/>
                     <color key="backgroundColor" red="0.9508248730964467" green="0.9508248730964467" blue="0.9508248730964467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="LzW-Tr-Jvp" secondAttribute="height" multiplier="143:101" id="MaU-Ss-hK5"/>
+                        <constraint firstAttribute="width" secondItem="LzW-Tr-Jvp" secondAttribute="height" multiplier="1200:627" id="MaU-Ss-hK5"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-4R-bDh">
-                    <rect key="frame" x="16" y="285" width="286" height="41"/>
+                    <rect key="frame" x="16" y="232.5" width="286" height="41"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="41" id="5dM-ki-T4u"/>
                     </constraints>
@@ -47,7 +46,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFv-Oj-4qk">
-                    <rect key="frame" x="16" y="327" width="286" height="64"/>
+                    <rect key="frame" x="16" y="274.5" width="286" height="116.5"/>
                     <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                     <attributedString key="attributedText">
                         <fragment content="Label">
