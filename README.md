@@ -14,6 +14,6 @@ Swift documentation: [swift docs](https://www.appodeal.com/sdk/documentation?fra
 Stable version of Appodeal SDK is **2.1.10**. 
 You can download it here: [SDK](http://bit.ly/appodeal-ios-sdk-2-1-10-release)
 
-Beta version of Appodeal SDK is **2.3.2**. 
+Beta version of Appodeal SDK is **2.4.3**. 
 You can find beta documentation here: [beta docs](https://www.appodeal.com/sdk/ios_beta).
-And download SDK here: [betaSDK](http://bit.ly/appodeal-ios-sdk-2-3-2)
+And download SDK here: [betaSDK](http://bit.ly/appodeal-ios-2-4-3-beta)
