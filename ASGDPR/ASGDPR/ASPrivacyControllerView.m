@@ -103,7 +103,7 @@
 - (UILabel *)informLabel {
     if (!_informLabel) {
         _informLabel = UILabel.asg_label(^(NSMutableString *text, NSMutableDictionary * attributes){
-            [text appendString:@"I  understand that I will still see ads, but thay may not be as relevant to my interests."];
+            [text appendString:@"I  understand that I will still see ads, but they may not be as relevant to my interests."];
             attributes[NSFontAttributeName]             = [UIFont systemFontOfSize:14.0];
             attributes[NSForegroundColorAttributeName]  = UIColor.grayColor;
             attributes[NSParagraphStyleAttributeName]   = NSParagraphStyle.asg_style(^(NSMutableParagraphStyle *paragraph){
