@@ -31,6 +31,11 @@
 
 - (void)setupSubviews {
     
+    UIView *topContainer = UIView.new;
+    
+    [self addSubview:self.headerView];
+    [self addSubview:topContainer];
+    
     [self addSubview:self.privacyTextView];
     [self addSubview:self.closeView];
     [self addSubview:self.closeButton];
@@ -40,18 +45,25 @@
         make.top.equalTo(self);
         make.left.equalTo(self);
         make.right.equalTo(self);
+        
         if (UIDevice.asg_isIphoneX) {
-            make.height.equalTo(@(80));
+            make.height.equalTo(self).with.multiPlier(@0.1);
         } else {
-            make.height.equalTo(@(50));
+            make.height.equalTo(@ASG_SIZE(20));
         }
     });
     
-    self.privacyTextView.asc_make(^(ASConstraintMaker *make) {
+    topContainer.asc_make(^(ASConstraintMaker *make) {
         make.top.equalTo(self.headerView.asc_bottom);
-        make.left.equalTo(self).with.offset(@(16));
-        make.right.equalTo(self).with.offset(@(-16));
-        make.bottom.equalTo(self.closeView).with.offset(@(-10));
+        make.width.equalTo(self).with.multiPlier(ASG_TABLETE_CHOICE(@0.6, @0.9));
+        make.height.equalTo(self).with.multiPlier(ASG_TABLETE_CHOICE(@0.6, @0.6));
+        make.centerX.equalTo(self);
+    });
+    
+    self.privacyTextView.asc_make(^(ASConstraintMaker *make) {
+        make.left.equalTo(topContainer);
+        make.right.equalTo(topContainer);
+        make.centerY.equalTo(topContainer);
     });
     
     self.closeView.asc_make(^(ASConstraintMaker *make) {

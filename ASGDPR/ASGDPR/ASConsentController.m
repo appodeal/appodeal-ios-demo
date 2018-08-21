@@ -1,8 +1,6 @@
 //
 //  ASConsentController.m
-//  ASGDPR
 //
-//  Created by Lozhkin Ilya on 5/8/18.
 //  Copyright © 2018 Appodeal. All rights reserved.
 //
 
@@ -18,17 +16,13 @@
     [self configureContentView];
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
-}
-
 #pragma mark - Private
 
 - (void)configureContentView {
     ASConsentControllerView *contentView = [ASConsentControllerView new];
     self.view = contentView;
     
-    NSData *data = [[ASPrivacyContent consentContent:self.hasConsent] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [ASPrivacyContent.consentContent(self.hasConsent, ASGCurrentSize().scale) dataUsingEncoding:NSUTF8StringEncoding];
     contentView.privacyTextView.dataDetectorTypes = UIDataDetectorTypeLink;
     contentView.privacyTextView.attributedText    = NSAttributedString.asg_attributedFromData(data);
     

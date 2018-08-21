@@ -19,17 +19,13 @@
     [self configureContentView];
 }
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
-}
-
 #pragma mark - Private
 
 - (void)configureContentView {
     ASPrivacyControllerView *contentView = [ASPrivacyControllerView new];
     self.view = contentView;
-    
-    NSData *data = [ASPrivacyContent.privacyContent dataUsingEncoding:NSUTF8StringEncoding];
+
+    NSData *data = [ASPrivacyContent.privacyContent(ASGCurrentSize().scale) dataUsingEncoding:NSUTF8StringEncoding];
     contentView.privacyTextView.dataDetectorTypes = UIDataDetectorTypeLink;
     contentView.privacyTextView.attributedText    = NSAttributedString.asg_attributedFromData(data);
     

@@ -17,6 +17,7 @@
 @property (nonatomic, readonly) ASConstraint *(^greaterThanOrEqualTo)(id);
 
 @property (nonatomic, readonly) ASConstraint *(^offset)(NSNumber *);
+@property (nonatomic, readonly) ASConstraint *(^multiPlier)(NSNumber *);
 
 @property (nonatomic, readonly) ASConstraint *with;
 
@@ -31,6 +32,7 @@
 @property (nonatomic, assign) NSLayoutAttribute relationAttribute;
 
 @property (nonatomic, assign) CGFloat constraint;
+@property (nonatomic, assign) CGFloat multiValue;
 @property (nonatomic, assign) NSLayoutRelation relation;
 
 @end
