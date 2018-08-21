@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+struct ASGSize {
+    float scale;
+    float invertScale;
+    BOOL tablete;
+};
+typedef struct ASGSize ASGSize;
+
+extern ASGSize ASGCurrentSize(void);
+
+#define ASG_SIZE(_v1) (ASGCurrentSize().scale * _v1)
+#define ASG_TABLETE_CHOICE(_v1, _v2) UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ? _v1 : _v2
+
 @interface UIColor (Extensions)
 
 @property (class, readonly) UIColor *asg_redColor;
@@ -33,6 +45,10 @@
 @interface UIDevice (Extensions)
 
 @property (class, readonly) BOOL asg_isIphoneX;
+
+@property (class, readonly) BOOL asg_oldPhone;
+
+@property (class, readonly) BOOL asg_sePhone;
 
 @end
 

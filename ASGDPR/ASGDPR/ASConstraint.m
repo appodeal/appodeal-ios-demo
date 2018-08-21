@@ -14,6 +14,7 @@
     if (self = [super init]) {
         _attribute          = NSLayoutAttributeNotAnAttribute;
         _relationAttribute  = NSLayoutAttributeNotAnAttribute;
+        _multiValue         = 1.0f;
     }
     return self;
 }
@@ -44,6 +45,13 @@
 - (ASConstraint *(^)(NSNumber *))offset {
     return ^ASConstraint *(NSNumber * offset){
         self.constraint = offset.floatValue;
+        return self;
+    };
+}
+
+- (ASConstraint *(^)(NSNumber *))multiPlier {
+    return ^ASConstraint *(NSNumber *multiPlier){
+        self.multiValue = multiPlier.floatValue;
         return self;
     };
 }

@@ -1,8 +1,6 @@
 //
 //  HeaderView.m
-//  ASGDPR
 //
-//  Created by Lozhkin Ilya on 6/5/18.
 //  Copyright © 2018 Appodeal. All rights reserved.
 //
 
@@ -36,8 +34,8 @@
     self.titleImage.asc_make(^(ASConstraintMaker *make) {
         make.bottom.equalTo(self).with.offset(@(-4));
         make.left.equalTo(self).with.offset(@16);
-        make.width.equalTo(@40);
-        make.height.equalTo(@40);
+        make.height.equalTo(@ASG_SIZE(13));
+        make.width.equalTo(@ASG_SIZE(13));
     });
     
     self.titleLabel.asc_make(^(ASConstraintMaker *make) {
@@ -59,10 +57,10 @@
         _titleLabel = UILabel.asg_label(^(NSMutableString *text, NSMutableDictionary * attributes){
             [text appendString:@"appodeal".uppercaseString];
             
-            UIFont *font = [UIFont boldSystemFontOfSize:30]; // [UIFont fontWithName:@"Arial-BoldMT" size:30];
+            UIFont *font = [UIFont fontWithName:@"Arial-BoldMT" size:ASG_SIZE(10)];
             attributes[NSFontAttributeName]             = font;
             attributes[NSForegroundColorAttributeName]  = UIColor.whiteColor;
-            attributes[NSExpansionAttributeName]  = @(-0.2f);
+            attributes[NSExpansionAttributeName]  = @(-0.4f);
         });
     }
     return _titleLabel;

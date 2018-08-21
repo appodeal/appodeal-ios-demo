@@ -10,8 +10,8 @@
 
 @interface ASPrivacyContent : NSObject
 
-+ (NSString *)privacyContent;
++ (NSString *(^)(float))privacyContent;
 
-+ (NSString *)consentContent:(BOOL)consent;
++ (NSString *(^)(BOOL, float))consentContent;
 
 @end

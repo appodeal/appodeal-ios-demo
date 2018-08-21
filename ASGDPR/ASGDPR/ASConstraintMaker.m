@@ -97,7 +97,7 @@
                                                         relatedBy:constraint.relation
                                                            toItem:constraint.relationItem
                                                         attribute:constraint.relationAttribute
-                                                       multiplier:1.0f
+                                                       multiplier:constraint.multiValue
                                                          constant:constraint.constraint];
         return systemConstraint;
     };

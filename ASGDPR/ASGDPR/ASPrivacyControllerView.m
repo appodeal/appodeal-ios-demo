@@ -14,10 +14,9 @@
 @interface ASPrivacyControllerView ()
 
 @property (strong, nonatomic) ASHeaderView *headerView;
-
-@property (nonatomic, strong) UIScrollView *scrollView;
-@property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UILabel *informLabel;
+
+@property (nonatomic, strong) UIView *bottomContainer;
 
 @end
 
@@ -33,68 +32,76 @@
     return self;
 }
 
+- (void)layoutSubviews {
+    self.agreeButton.asc_make(^(ASConstraintMaker *make) {
+        make.top.equalTo(self.bottomContainer);
+        make.left.equalTo(self.bottomContainer);
+        make.right.equalTo(self.bottomContainer);
+        if (UIApplication.sharedApplication.statusBarOrientation == UIInterfaceOrientationPortrait) {
+            make.height.equalTo(@ASG_SIZE(20));
+        } else {
+            make.height.equalTo(@ASG_SIZE(15));
+        }
+        
+    });
+}
+
 - (void)setupSubviews {
+    self.bottomContainer = UIView.new;
+    UIView *topContainer = UIView.new;
+    UIView *bottomContainer = self.bottomContainer;
     
     [self addSubview:self.headerView];
-    [self addSubview:self.scrollView];
-    [self.scrollView addSubview:self.contentView];
-    [self.contentView addSubview:self.privacyTextView];
-    [self.contentView  addSubview:self.agreeButton];
-    [self.contentView  addSubview:self.rejectButton];
-    [self.contentView  addSubview:self.informLabel];
+    [self addSubview:topContainer];
+    [self addSubview:bottomContainer];
+    
+    [topContainer addSubview:self.privacyTextView];
+    [bottomContainer  addSubview:self.agreeButton];
+    [bottomContainer  addSubview:self.rejectButton];
+    [bottomContainer  addSubview:self.informLabel];
     
     self.headerView.asc_make(^(ASConstraintMaker *make) {
         make.top.equalTo(self);
         make.left.equalTo(self);
         make.right.equalTo(self);
+
         if (UIDevice.asg_isIphoneX) {
-            make.height.equalTo(@(80));
+            make.height.equalTo(self).with.multiPlier(@0.1);
         } else {
-            make.height.equalTo(@(50));
+            make.height.equalTo(@ASG_SIZE(20));
         }
     });
     
-    self.scrollView.asc_make(^(ASConstraintMaker *make) {
+    topContainer.asc_make(^(ASConstraintMaker *make) {
         make.top.equalTo(self.headerView.asc_bottom);
-        make.left.equalTo(self);
-        make.right.equalTo(self);
+        make.width.equalTo(self).with.multiPlier(ASG_TABLETE_CHOICE(@0.6, @0.9));
+        make.height.equalTo(self).with.multiPlier(ASG_TABLETE_CHOICE(@0.6, @0.6));
+        make.centerX.equalTo(self);
+    });
+    
+    bottomContainer.asc_make(^(ASConstraintMaker *make) {
+        make.top.equalTo(topContainer.asc_bottom);
+        make.width.equalTo(topContainer);
+        make.centerX.equalTo(self);
         make.bottom.equalTo(self);
     });
     
-    self.contentView.asc_make(^(ASConstraintMaker *make) {
-        make.top.equalTo(self.scrollView);
-        make.left.equalTo(self.scrollView);
-        make.right.equalTo(self.scrollView);
-        make.bottom.equalTo(self.scrollView);
-        make.width.equalTo(self.scrollView);
-    });
-    
     self.privacyTextView.asc_make(^(ASConstraintMaker *make) {
-        make.top.equalTo(self.contentView);
-        make.left.equalTo(self.contentView).with.offset(@(16));
-        make.right.equalTo(self.contentView).with.offset(@(-16));
-    });
-    
-    self.agreeButton.asc_make(^(ASConstraintMaker *make) {
-        make.top.equalTo(self.privacyTextView.asc_bottom).with.offset(@10);
-        make.left.equalTo(self.contentView).with.offset(@(16));
-        make.right.equalTo(self.contentView).with.offset(@(-16));
-        make.height.equalTo(@60);
+        make.left.equalTo(topContainer);
+        make.right.equalTo(topContainer);
+        make.centerY.equalTo(topContainer);
     });
     
     self.rejectButton.asc_make(^(ASConstraintMaker *make) {
-        make.top.equalTo(self.agreeButton.asc_bottom).with.offset(@40);
-        make.left.equalTo(self.contentView).with.offset(@(16));
-        make.right.equalTo(self.contentView).with.offset(@(-16));
-        make.height.equalTo(@30);
+        make.top.equalTo(self.agreeButton.asc_bottom).with.offset(@ASG_SIZE(4));
+        make.left.equalTo(bottomContainer);
+        make.right.equalTo(bottomContainer);
     });
     
     self.informLabel.asc_make(^(ASConstraintMaker *make) {
-        make.top.equalTo(self.rejectButton.asc_bottom).with.offset(@0);
-        make.left.equalTo(self.contentView).with.offset(@(16));
-        make.right.equalTo(self.contentView).with.offset(@(-16));
-        make.bottom.equalTo(self.contentView);
-        make.height.equalTo(@50);
+        make.top.equalTo(self.rejectButton.asc_bottom).with.offset(@ASG_SIZE(1));
+        make.left.equalTo(bottomContainer);
+        make.right.equalTo(bottomContainer);
     });
 }
 
@@ -104,7 +111,7 @@
     if (!_informLabel) {
         _informLabel = UILabel.asg_label(^(NSMutableString *text, NSMutableDictionary * attributes){
             [text appendString:@"I  understand that I will still see ads, but they may not be as relevant to my interests."];
-            attributes[NSFontAttributeName]             = [UIFont systemFontOfSize:14.0];
+            attributes[NSFontAttributeName]             = [UIFont systemFontOfSize:ASG_SIZE(4)];
             attributes[NSForegroundColorAttributeName]  = UIColor.grayColor;
             attributes[NSParagraphStyleAttributeName]   = NSParagraphStyle.asg_style(^(NSMutableParagraphStyle *paragraph){
                 paragraph.alignment = NSTextAlignmentCenter;
@@ -126,22 +133,14 @@
 
 - (UITextView *)privacyTextView {
     !_privacyTextView ? _privacyTextView = UITextView.new.asg_scrollable(NO).asg_editable(NO) : nil;
+    _privacyTextView.tintColor = UIColor.asg_redColor;
+    _privacyTextView.backgroundColor = UIColor.clearColor;
     return _privacyTextView;
 }
 
 - (ASHeaderView *)headerView {
     !_headerView ? _headerView = ASHeaderView.new : nil;
     return _headerView;
-}
-
-- (UIScrollView *)scrollView {
-    !_scrollView ? _scrollView = UIScrollView.new : nil;
-    return _scrollView;
-}
-
-- (UIView *)contentView {
-    !_contentView ? _contentView = UIView.new : nil;
-    return _contentView;
 }
 
 @end

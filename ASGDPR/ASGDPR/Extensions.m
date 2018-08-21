@@ -11,6 +11,23 @@
 #import <sys/utsname.h>
 #import <objc/runtime.h>
 
+ASGSize ASGCurrentSize (void){
+    ASGSize size;
+    size.tablete =  UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    size.scale = 2.5;
+    size.invertScale = 1.0;
+    
+    if (size.tablete) {
+        size.scale = 4.0f;
+    } else if (UIDevice.asg_isIphoneX) {
+        size.scale = 2.7f;
+    } else if (UIDevice.asg_oldPhone || UIDevice.asg_sePhone) {
+        size.scale = 2.0;
+    }
+    
+    return size;
+};
+
 @implementation UIColor (Extensions)
 
 + (UIColor *)asg_redColor {
@@ -64,20 +81,31 @@
 @implementation UIDevice (Extensions)
 
 + (NSString *)asg_deviceName {
+#if TARGET_IPHONE_SIMULATOR
+    return NSProcessInfo.processInfo.environment[@"SIMULATOR_MODEL_IDENTIFIER"];
+#else
     struct utsname systemInfo;
     uname(&systemInfo);
     
     return [NSString stringWithCString:systemInfo.machine
                               encoding:NSUTF8StringEncoding];
+#endif
 }
 
 + (BOOL)asg_isIphoneX {
-#if TARGET_IPHONE_SIMULATOR
-    NSString * device = NSProcessInfo.processInfo.environment[@"SIMULATOR_MODEL_IDENTIFIER"];
-#else
     NSString * device = self.asg_deviceName;
-#endif
     return  [device isEqualToString:@"iPhone10,3"] || [device isEqualToString:@"iPhone10,6"];
+}
+
++ (BOOL)asg_oldPhone {
+    NSString * device = self.asg_deviceName;
+    device = [device stringByReplacingOccurrencesOfString:@"iPhone" withString:@""];
+    return [device floatValue] < 7;
+}
+
++ (BOOL)asg_sePhone {
+    NSString * device = self.asg_deviceName;
+    return [device isEqualToString:@"iPhone8,4"];
 }
 
 @end
@@ -123,7 +151,7 @@ static const NSString *ASG_KEY_ACTION_BLOCK = @"kASGButtonActionBlock";
 
         NSAttributedString * attributeTitle = NSAttributedString.asg_attributedString(^(NSMutableString *text, NSMutableDictionary * attributes){
             [text appendString:title];
-            attributes[NSFontAttributeName]             = [UIFont boldSystemFontOfSize:16.0];
+            attributes[NSFontAttributeName]             = [UIFont boldSystemFontOfSize:ASG_SIZE(5)];
             attributes[NSForegroundColorAttributeName]  = UIColor.whiteColor;
         });
         
@@ -139,8 +167,8 @@ static const NSString *ASG_KEY_ACTION_BLOCK = @"kASGButtonActionBlock";
 
         NSAttributedString * attributeTitle = NSAttributedString.asg_attributedString(^(NSMutableString *text, NSMutableDictionary * attributes){
             [text appendString:title];
-            attributes[NSFontAttributeName]             = [UIFont boldSystemFontOfSize:16.0];
-            attributes[NSForegroundColorAttributeName]  = UIColor.blackColor;
+            attributes[NSFontAttributeName]             = [UIFont boldSystemFontOfSize:ASG_SIZE(5)];
+            attributes[NSForegroundColorAttributeName]  = UIColor.darkGrayColor;
             attributes[NSUnderlineStyleAttributeName]   = @1;
         });
         
