@@ -6,13 +6,13 @@
 //
 
 #import "ASAppDelegate.h"
-
-#import <ASGDPR/ASGDPR.h>
 #import <Appodeal/Appodeal.h>
 #import <ASExtentions/ASExtentions.h>
+#import <ASGDPR/ASGDPR.h>
 
 #define APP_KEY                 @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
 #define ADMOB_PUBLISHER_ID      @"pub-0123456789012345"
+
 
 @interface ASAppDelegate ()
 
@@ -50,22 +50,18 @@
 //    [Appodeal setUserInterests:@"SPORT, KINO"];
     
     [Appodeal setLogLevel:APDLogLevelOff];
-    
-    AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeMREC;
-    [Appodeal setAutocache:YES types:types];
+    [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
     
     // Google mobile ads publisher id from https://developers.google.com/admob/ios/eu-consent
     // you need to replace this value with your publisher id
     NSArray <NSString *> * publisherIds = @[ADMOB_PUBLISHER_ID];
     [ASGDPR presentConsentDialogForPublisherIds:publisherIds consentBlock:^(ASConsentStatus status) {
+        AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
         BOOL consent = status != ASConsentStatusNotPersonalized;
-        if (consent) {
-            [Appodeal initializeWithApiKey:APP_KEY
-                                     types:types];
-        }
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types
+                            hasConsent:consent];
     }];
-    
-    [Appodeal initializeWithApiKey:APP_KEY types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner |AppodealAdTypeMREC];
 }
 
 - (void)configureAppearance {

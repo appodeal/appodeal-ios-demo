@@ -26,7 +26,7 @@ class InterstitialViewController: RootViewController {
         guard let placement = placementField.text else {
             return
         }
-        if Appodeal.canShowAd(.interstitial, forPlacement: placement) {
+        if Appodeal.canShow(.interstitial, forPlacement: placement) {
             Appodeal.showAd(.interstitial, forPlacement: placement, rootViewController: self)
         }
     }
@@ -35,48 +35,36 @@ class InterstitialViewController: RootViewController {
 
 extension InterstitialViewController: AppodealInterstitialDelegate {
     
-    /*!
-     *  Method called when precache (cheap and fast load) or usual interstitial view did load
-     *  @warning If you want show only expensive ad, ignore this callback call with precache equal to YES
-     *
-     *  @param precache If precache is YES it's mean that precache loaded
-     */
-    func interstitialDidLoadAdisPrecache(_ precache: Bool) {
+    /// Method called when precache (cheap and fast load) or usual interstitial view did load
+    ///
+    /// - Warning: If you want show only expensive ad, ignore this callback call with precache equal to YES
+    /// - Parameter precache: If precache is YES it's mean that precache loaded
+    func interstitialDidLoadAdIsPrecache(_ precache: Bool) {
         
     }
-    
-    /*!
-     *  Method called if interstitial mediation failed
-     */
+
+    /// Method called if interstitial mediation failed
     func interstitialDidFailToLoadAd() {
         
     }
     
-    /*!
-     *  Method called if interstitial mediation was success, but ready ad network can't show ad or
-     *  ad presentation was to frequently according your placement settings
-     */
+    /// Method called if interstitial mediation was success, but ready ad network can't show ad or
+    /// ad presentation was to frequently according your placement settings
     func interstitialDidFailToPresent() {
         
     }
     
-    /*!
-     *  Method called when interstitial will display on screen
-     */
+    /// Method called when interstitial will display on screen
     func interstitialWillPresent() {
         
     }
-    
-    /*!
-     *  Method called after interstitial leave screeen
-     */
+
+    /// Method called after interstitial leave screeen
     func interstitialDidDismiss() {
         
     }
-    
-    /*!
-     *  Method called when user tap on interstitial
-     */
+
+    /// Method called when user tap on interstitial
     func interstitialDidClick() {
         
     }

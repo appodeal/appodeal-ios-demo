@@ -31,7 +31,7 @@
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
     
 //    id<APDReward> reward = [Appodeal rewardForPlacement:placement];
-    if ([Appodeal canShowAd:AppodealShowStyleRewardedVideo forPlacement:placement]) {
+    if ([Appodeal canShow:AppodealAdTypeRewardedVideo forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleRewardedVideo forPlacement:placement rootViewController:self];
     }
 }
@@ -41,14 +41,14 @@
 /*!
  *  Method called when rewarded video did load
  */
-- (void)rewardedVideoDidLoadAd{
+- (void)rewardedVideoDidLoadAdIsPrecache:(BOOL)precache {
     
 }
 
 /*!
  *  Mehtod called if rewarded video mediation failed
  */
-- (void)rewardedVideoDidFailToLoadAd{
+- (void)rewardedVideoDidFailToLoadAd {
     
 }
 
@@ -56,7 +56,7 @@
  *  Method called if interstitial mediation was success, but ready ad network can't show ad or
  *  ad presentation was to frequently according your placement settings
  */
-- (void)rewardedVideoDidFailToPresent{
+- (void)rewardedVideoDidFailToPresentWithError:(NSError *)error {
     
 }
 
@@ -70,7 +70,7 @@
 /*!
  *  Methof called before rewarded video leave screen
  */
-- (void)rewardedVideoWillDismiss{
+- (void)rewardedVideoWillDismissAndWasFullyWatched:(BOOL)wasFullyWatched {
     
 }
 
