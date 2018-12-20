@@ -48,6 +48,7 @@
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
+		42BFEAF921CBCF28002F41B7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */; };
 		9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */; };
 		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
 		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
@@ -137,6 +138,7 @@
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
 		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BFEAF921CBCF28002F41B7 /* VideoToolbox.framework in Frameworks */,
 				9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */,
 				B9CDF1E52056877D00925C5B /* ASExtentions.framework in Frameworks */,
 				0357C3971EE69FCF00870D61 /* CoreBluetooth.framework in Frameworks */,
@@ -269,6 +272,7 @@
 		0357C3661EE69F1200870D61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */,
 				9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */,
 				0357C3851EE69FCF00870D61 /* CoreBluetooth.framework */,
 				0357C3861EE69FCF00870D61 /* CoreText.framework */,
