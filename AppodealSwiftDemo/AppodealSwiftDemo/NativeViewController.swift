@@ -10,14 +10,13 @@ import Appodeal
 import ASExtentions
 
 class NativeViewController: UITableViewController {
-    
     let defaultCellName = "kASDefaultCell"
     let nativeCellName  = "kASNativeCell"
     let nativePeriod    = 5
     
     @IBOutlet weak var nativeAdContainer: UIView!
     
-    let nativeAdStack : NSMapTable <NSIndexPath, APDNativeAd> = NSMapTable(keyOptions: .strongMemory, valueOptions: .strongMemory)
+    let nativeAdStack: NSMapTable <NSIndexPath, APDNativeAd> = NSMapTable(keyOptions: .strongMemory, valueOptions: .strongMemory)
     
     
     lazy var nativeAdQueue : APDNativeAdQueue = {
@@ -59,8 +58,8 @@ class NativeViewController: UITableViewController {
     }
 }
 
+
 extension NativeViewController {
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1000;
     }
@@ -78,24 +77,8 @@ extension NativeViewController {
     }
 }
 
+
 extension NativeViewController : APDNativeAdQueueDelegate {
-    
-    /// Method called when loader receives native ad.
-    ///
-    /// - Parameters:
-    ///   - adQueue: ad queue object
-    ///   - count: count of available native ad
-    func adQueueAdIsAvailable(_ adQueue: APDNativeAdQueue, ofCount count: UInt) {
-
-    }
-
-    /// Method called when loader fails to receive native ad.
-    ///
-    /// - Parameters:
-    ///   - adQueue: ad queue object
-    ///   - error: Error occurred
-    func adQueue(_ adQueue: APDNativeAdQueue, failedWithError error: Error) {
-         
-    }
-    
+    func adQueueAdIsAvailable(_ adQueue: APDNativeAdQueue, ofCount count: UInt) {}
+    func adQueue(_ adQueue: APDNativeAdQueue, failedWithError error: Error) {}
 }

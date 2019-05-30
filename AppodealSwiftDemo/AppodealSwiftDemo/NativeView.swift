@@ -30,7 +30,6 @@ class NativeView: UIView {
 }
 
 extension NativeView : APDNativeAdView {
-    
     func titleLabel() -> UILabel {
         return title
     }

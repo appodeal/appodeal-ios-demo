@@ -18,13 +18,10 @@ struct Constants {
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-    // MARK: Controller Life Cycle
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+    // MARK: Controller Life Cycle
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initializeAppodealSDK()
         configureAppearance()
         
@@ -32,29 +29,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: Appodeal Initialization
-    
     func initializeAppodealSDK() {
-//        ~~> Custom settings <~~
-//        Appodeal.setFramework(.native)
-//        Appodeal.setPluginVersion("1.1.1")
-//            
-//        ~~> Test Mode <~~
-//        Appodeal.setTestingEnabled(true)
-//                
-//        ~~> User Data <~~
-//        Appodeal.setUserId("userID")
-//        Appodeal.setUserEmail("user@email.com")
-//        Appodeal.setUserBirthday(Date())
-//        Appodeal.setUserAge(25)
-//        Appodeal.setUserGender(.male)
-//        Appodeal.setUserOccupation(.work)
-//        Appodeal.setUserRelationship(.searching)
-//        Appodeal.setUserSmokingAttitude(.neutral)
-//        Appodeal.setUserAlcoholAttitude(.neutral)
-//        Appodeal.setUserInterests("skydiving, meditation")
+        /// Custom settings
+        // Appodeal.setFramework(.native, version: "1.0.0")
+        // Appodeal.setTriggerPrecacheCallbacks(true)
+        // Appodeal.setLocationTracking(true)
         
+        /// Test Mode
+        // Appodeal.setTestingEnabled(true)
+        
+        /// User Data
+        // Appodeal.setUserId("userID")
+        // Appodeal.setUserAge(25)
+        // Appodeal.setUserGender(.male)
+        Appodeal.setLogLevel(.debug)
         let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
-        Appodeal.setLogLevel(.off)
         Appodeal.setAutocache(true, types: adTypes)
         
         // Google mobile ads publisher id from https://developers.google.com/admob/ios/eu-consent
@@ -68,20 +57,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    // MARK: Config
-    
+    // MARK: Appearance
     func configureAppearance() {
-        let navBarAttributes = [NSAttributedStringKey.foregroundColor: UIColor.clear]
+        let navBarAttributes = [NSAttributedString.Key.foregroundColor: UIColor.clear]
         
         UINavigationBar.appearance().tintColor = .white
-        
         UIBarButtonItem.appearance().setTitleTextAttributes(navBarAttributes, for: .normal)
         UIBarButtonItem.appearance().setTitleTextAttributes(navBarAttributes, for: .highlighted)
         
+        UITabBar.appearance().tintColor = .white
         if #available(iOS 10.0, *) {
             UITabBar.appearance().unselectedItemTintColor = .lightGray
         }
-        UITabBar.appearance().tintColor = .white
     }
 }
 

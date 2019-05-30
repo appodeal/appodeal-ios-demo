@@ -8,6 +8,7 @@
 #import "ASRewardedViewController.h"
 #import <Appodeal/Appodeal.h>
 
+
 @interface ASRewardedViewController ()<AppodealRewardedVideoDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *placementField;
@@ -23,14 +24,7 @@
 }
 
 - (IBAction)showClick:(UIButton *)sender {
-    
-//    if ([Appodeal isReadyForShowWithStyle:AppodealShowStyleRewardedVideo]) {
-//        [Appodeal showAd:AppodealShowStyleRewardedVideo rootViewController:self];
-//    }
-    
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    
-//    id<APDReward> reward = [Appodeal rewardForPlacement:placement];
     if ([Appodeal canShow:AppodealAdTypeRewardedVideo forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleRewardedVideo forPlacement:placement rootViewController:self];
     }
@@ -38,51 +32,11 @@
 
 #pragma mark - AppodealRewardedVideoDelegate
 
-/*!
- *  Method called when rewarded video did load
- */
-- (void)rewardedVideoDidLoadAdIsPrecache:(BOOL)precache {
-    
-}
-
-/*!
- *  Mehtod called if rewarded video mediation failed
- */
-- (void)rewardedVideoDidFailToLoadAd {
-    
-}
-
-/*!
- *  Method called if interstitial mediation was success, but ready ad network can't show ad or
- *  ad presentation was to frequently according your placement settings
- */
-- (void)rewardedVideoDidFailToPresentWithError:(NSError *)error {
-    
-}
-
-/*!
- *  Method called after rewarded video start displaying
- */
-- (void)rewardedVideoDidPresent{
-    
-}
-
-/*!
- *  Methof called before rewarded video leave screen
- */
-- (void)rewardedVideoWillDismissAndWasFullyWatched:(BOOL)wasFullyWatched {
-    
-}
-
-/*!
- *  Method called after fully watch of video
- *  @warning After call this method rewarded video can stay on screen and show postbanner
- *
- *  @param rewardAmount Amount of app curency tuned via Appodeal Dashboard
- *  @param rewardName   Name of app curency tuned via Appodeal Dashboard
- */
-- (void)rewardedVideoDidFinish:(NSUInteger)rewardAmount name:(NSString *)rewardName{
-    
-}
+- (void)rewardedVideoDidLoadAdIsPrecache:(BOOL)precache {}
+- (void)rewardedVideoDidFailToLoadAd {}
+- (void)rewardedVideoDidFailToPresentWithError:(NSError *)error {}
+- (void)rewardedVideoDidPresent {}
+- (void)rewardedVideoWillDismissAndWasFullyWatched:(BOOL)wasFullyWatched {}
+- (void)rewardedVideoDidFinish:(float)rewardAmount name:(NSString *)rewardName {}
 
 @end
