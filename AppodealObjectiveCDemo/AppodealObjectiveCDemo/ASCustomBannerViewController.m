@@ -10,6 +10,7 @@
 
 #define isTablet UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
 
+
 @interface ASCustomBannerViewController ()<AppodealBannerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet APDBannerView *bannerView;
@@ -26,15 +27,14 @@
         bannerSize = kAPDAdSize728x90;
     }
     
-//    If you don't use storyboard - need create, add to subviews and set delegate
-//    
-//    self.bannerView = [[AppodealBannerView alloc] initWithSize:bannerSize rootViewController:self];
-//    self.bannerView.delegate = self;
-//    [self.view addSubview:self.bannerView];
-//
-//    You can set custom seettings
-//    [self.bannerView setBackgroundVisible:YES];
-//    [self.bannerView setUsesSmartSizing:YES];
+    /// If you don't use storyboard - need create, add to subviews and set delegate
+    // self.bannerView = [[AppodealBannerView alloc] initWithSize:bannerSize rootViewController:self];
+    // self.bannerView.delegate = self;
+    // [self.view addSubview:self.bannerView];
+    
+    /// Configure banner ads appearance
+    // [self.bannerView setBackgroundVisible:YES];
+    // [self.bannerView setUsesSmartSizing:YES];
     
     [self.bannerView setAdSize:bannerSize];
     self.height.constant = bannerSize.height;
@@ -44,40 +44,9 @@
 
 #pragma mark - AppodealBannerViewDelegate
 
-/*!
- *  Method called after any banner was ready to present.
- *  Maybe called twice for precache banner and usual banner
- */
-- (void)bannerViewDidLoadAd:(nonnull APDBannerView *)bannerView isPrecache:(BOOL)precache {
-    
-}
-
-/**
- *  Method called in case that banner mediation failed
- *
- *  @param bannerView Nonnul failed banner view
- *  @param error      Error occured while mediation
- */
-- (void)bannerView:(APDBannerView *)bannerView didFailToLoadAdWithError:(NSError *)error{
-    
-}
-
-/**
- *  Method called when user tap on banner
- *
- *  @param bannerView Nonnul banner view
- */
-- (void)bannerViewDidInteract:(APDBannerView *)bannerView{
-    
-}
-
-/*!
- *  Method called after any banner was show
- *
- *  @param bannerView On screen banner view
- */
-- (void)bannerViewDidShow:(APDBannerView *)bannerView{
-    
-}
+- (void)bannerViewDidLoadAd:(APDBannerView *)bannerView isPrecache:(BOOL)precache {}
+- (void)bannerView:(APDBannerView *)bannerView didFailToLoadAdWithError:(NSError *)error {}
+- (void)bannerViewDidInteract:(APDBannerView *)bannerView {}
+- (void)bannerViewDidShow:(APDBannerView *)bannerView {}
 
 @end

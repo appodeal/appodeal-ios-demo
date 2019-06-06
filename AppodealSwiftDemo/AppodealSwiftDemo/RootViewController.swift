@@ -12,5 +12,4 @@ class RootViewController: UIViewController {
     @IBAction func tapOnView(_ sender: UITapGestureRecognizer) {
         view.viewWithTag(10)?.resignFirstResponder()
     }
-
 }

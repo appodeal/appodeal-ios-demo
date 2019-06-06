@@ -49,30 +49,15 @@
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
 		42BFEAF921CBCF28002F41B7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */; };
+		42D84686229FD59700D36F34 /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84685229FD59700D36F34 /* ASGDPR.framework */; };
+		42D84688229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */; };
+		42D8468F229FDAEF00D36F34 /* MoPubSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84689229FD5AF00D36F34 /* MoPubSDKFramework.framework */; };
+		42D84691229FDC5A00D36F34 /* MoPubSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84689229FD5AF00D36F34 /* MoPubSDKFramework.framework */; };
+		42D84692229FDC5A00D36F34 /* MoPubSDKFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84689229FD5AF00D36F34 /* MoPubSDKFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */; };
 		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
 		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
 		B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56CCF1EE7E555009E52EB /* Appodeal.framework */; };
-		B9C56CEE1EE7E555009E52EB /* MPAdBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */; };
-		B9C56CEF1EE7E555009E52EB /* MPCloseBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */; };
-		B9C56CF01EE7E555009E52EB /* MPCloseBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */; };
-		B9C56CF11EE7E555009E52EB /* MPCloseBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD71EE7E555009E52EB /* MPCloseBtn@3x.png */; };
-		B9C56CF21EE7E555009E52EB /* MPCloseButtonX.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD81EE7E555009E52EB /* MPCloseButtonX.png */; };
-		B9C56CF31EE7E555009E52EB /* MPCloseButtonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CD91EE7E555009E52EB /* MPCloseButtonX@2x.png */; };
-		B9C56CF41EE7E555009E52EB /* MPCloseButtonX@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDA1EE7E555009E52EB /* MPCloseButtonX@3x.png */; };
-		B9C56CF51EE7E555009E52EB /* MPDAAIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDB1EE7E555009E52EB /* MPDAAIcon.png */; };
-		B9C56CF61EE7E555009E52EB /* MPDAAIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDC1EE7E555009E52EB /* MPDAAIcon@2x.png */; };
-		B9C56CF71EE7E555009E52EB /* MPDAAIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDD1EE7E555009E52EB /* MPDAAIcon@3x.png */; };
-		B9C56CF81EE7E555009E52EB /* MPMutedBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDE1EE7E555009E52EB /* MPMutedBtn.png */; };
-		B9C56CF91EE7E555009E52EB /* MPMutedBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CDF1EE7E555009E52EB /* MPMutedBtn@2x.png */; };
-		B9C56CFA1EE7E555009E52EB /* MPMutedBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE01EE7E555009E52EB /* MPMutedBtn@3x.png */; };
-		B9C56CFB1EE7E555009E52EB /* MPPlayBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE11EE7E555009E52EB /* MPPlayBtn.png */; };
-		B9C56CFC1EE7E555009E52EB /* MPPlayBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE21EE7E555009E52EB /* MPPlayBtn@2x.png */; };
-		B9C56CFD1EE7E555009E52EB /* MPPlayBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE31EE7E555009E52EB /* MPPlayBtn@3x.png */; };
-		B9C56CFE1EE7E555009E52EB /* MPUnmutedBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE41EE7E555009E52EB /* MPUnmutedBtn.png */; };
-		B9C56CFF1EE7E555009E52EB /* MPUnmutedBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE51EE7E555009E52EB /* MPUnmutedBtn@2x.png */; };
-		B9C56D001EE7E555009E52EB /* MPUnmutedBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE61EE7E555009E52EB /* MPUnmutedBtn@3x.png */; };
-		B9C56D011EE7E555009E52EB /* MRAID.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE71EE7E555009E52EB /* MRAID.bundle */; };
 		B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE81EE7E555009E52EB /* StartApp.bundle */; };
 		B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */; };
 		B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CC73C0202C581E005EA2A7 /* Native.xib */; };
@@ -82,15 +67,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B9CDF1DE2056743000925C5B /* Embed Frameworks */ = {
+		42D84693229FDC5A00D36F34 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				42D84692229FDC5A00D36F34 /* MoPubSDKFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -139,30 +125,13 @@
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		42D84685229FD59700D36F34 /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
+		42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
+		42D84689229FD5AF00D36F34 /* MoPubSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDKFramework.framework; path = ../SDK/MoPubSDKFramework.framework; sourceTree = "<group>"; };
 		9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
 		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		B9C56CCF1EE7E555009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
-		B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPAdBrowserController.xib; sourceTree = "<group>"; };
-		B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseBtn.png; sourceTree = "<group>"; };
-		B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@2x.png"; sourceTree = "<group>"; };
-		B9C56CD71EE7E555009E52EB /* MPCloseBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseBtn@3x.png"; sourceTree = "<group>"; };
-		B9C56CD81EE7E555009E52EB /* MPCloseButtonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPCloseButtonX.png; sourceTree = "<group>"; };
-		B9C56CD91EE7E555009E52EB /* MPCloseButtonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@2x.png"; sourceTree = "<group>"; };
-		B9C56CDA1EE7E555009E52EB /* MPCloseButtonX@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPCloseButtonX@3x.png"; sourceTree = "<group>"; };
-		B9C56CDB1EE7E555009E52EB /* MPDAAIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPDAAIcon.png; sourceTree = "<group>"; };
-		B9C56CDC1EE7E555009E52EB /* MPDAAIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPDAAIcon@2x.png"; sourceTree = "<group>"; };
-		B9C56CDD1EE7E555009E52EB /* MPDAAIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPDAAIcon@3x.png"; sourceTree = "<group>"; };
-		B9C56CDE1EE7E555009E52EB /* MPMutedBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPMutedBtn.png; sourceTree = "<group>"; };
-		B9C56CDF1EE7E555009E52EB /* MPMutedBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPMutedBtn@2x.png"; sourceTree = "<group>"; };
-		B9C56CE01EE7E555009E52EB /* MPMutedBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPMutedBtn@3x.png"; sourceTree = "<group>"; };
-		B9C56CE11EE7E555009E52EB /* MPPlayBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPPlayBtn.png; sourceTree = "<group>"; };
-		B9C56CE21EE7E555009E52EB /* MPPlayBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPPlayBtn@2x.png"; sourceTree = "<group>"; };
-		B9C56CE31EE7E555009E52EB /* MPPlayBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPPlayBtn@3x.png"; sourceTree = "<group>"; };
-		B9C56CE41EE7E555009E52EB /* MPUnmutedBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPUnmutedBtn.png; sourceTree = "<group>"; };
-		B9C56CE51EE7E555009E52EB /* MPUnmutedBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPUnmutedBtn@2x.png"; sourceTree = "<group>"; };
-		B9C56CE61EE7E555009E52EB /* MPUnmutedBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MPUnmutedBtn@3x.png"; sourceTree = "<group>"; };
-		B9C56CE71EE7E555009E52EB /* MRAID.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MRAID.bundle; sourceTree = "<group>"; };
 		B9C56CE81EE7E555009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
 		B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		B9CC73C1202C581E005EA2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
@@ -195,8 +164,10 @@
 				0357C3A41EE69FCF00870D61 /* StoreKit.framework in Frameworks */,
 				0357C3A51EE69FCF00870D61 /* SystemConfiguration.framework in Frameworks */,
 				0357C3A61EE69FCF00870D61 /* Twitter.framework in Frameworks */,
+				42D84688229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */,
 				0357C3A71EE69FCF00870D61 /* UIKit.framework in Frameworks */,
 				0357C3A81EE69FCF00870D61 /* WebKit.framework in Frameworks */,
+				42D84686229FD59700D36F34 /* ASGDPR.framework in Frameworks */,
 				0357C37A1EE69F6800870D61 /* CoreFoundation.framework in Frameworks */,
 				0357C37B1EE69F6800870D61 /* CoreGraphics.framework in Frameworks */,
 				0357C37C1EE69F6800870D61 /* CoreImage.framework in Frameworks */,
@@ -207,6 +178,8 @@
 				0357C3811EE69F6800870D61 /* EventKit.framework in Frameworks */,
 				0357C3821EE69F6800870D61 /* EventKitUI.framework in Frameworks */,
 				0357C3831EE69F6800870D61 /* JavaScriptCore.framework in Frameworks */,
+				42D84691229FDC5A00D36F34 /* MoPubSDKFramework.framework in Frameworks */,
+				42D8468F229FDAEF00D36F34 /* MoPubSDKFramework.framework in Frameworks */,
 				0357C3841EE69F6800870D61 /* libc++.tbd in Frameworks */,
 				0357C36D1EE69F2600870D61 /* AVFoundation.framework in Frameworks */,
 				B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */,
@@ -262,6 +235,9 @@
 		0357C3621EE69EB400870D61 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */,
+				42D84689229FD5AF00D36F34 /* MoPubSDKFramework.framework */,
+				42D84685229FD59700D36F34 /* ASGDPR.framework */,
 				B9CDF1DA2056742C00925C5B /* ASExtentions.framework */,
 				B9C56CCF1EE7E555009E52EB /* Appodeal.framework */,
 				B9C56CD01EE7E555009E52EB /* Resources */,
@@ -353,26 +329,6 @@
 		B9C56CD01EE7E555009E52EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B9C56CD41EE7E555009E52EB /* MPAdBrowserController.xib */,
-				B9C56CD51EE7E555009E52EB /* MPCloseBtn.png */,
-				B9C56CD61EE7E555009E52EB /* MPCloseBtn@2x.png */,
-				B9C56CD71EE7E555009E52EB /* MPCloseBtn@3x.png */,
-				B9C56CD81EE7E555009E52EB /* MPCloseButtonX.png */,
-				B9C56CD91EE7E555009E52EB /* MPCloseButtonX@2x.png */,
-				B9C56CDA1EE7E555009E52EB /* MPCloseButtonX@3x.png */,
-				B9C56CDB1EE7E555009E52EB /* MPDAAIcon.png */,
-				B9C56CDC1EE7E555009E52EB /* MPDAAIcon@2x.png */,
-				B9C56CDD1EE7E555009E52EB /* MPDAAIcon@3x.png */,
-				B9C56CDE1EE7E555009E52EB /* MPMutedBtn.png */,
-				B9C56CDF1EE7E555009E52EB /* MPMutedBtn@2x.png */,
-				B9C56CE01EE7E555009E52EB /* MPMutedBtn@3x.png */,
-				B9C56CE11EE7E555009E52EB /* MPPlayBtn.png */,
-				B9C56CE21EE7E555009E52EB /* MPPlayBtn@2x.png */,
-				B9C56CE31EE7E555009E52EB /* MPPlayBtn@3x.png */,
-				B9C56CE41EE7E555009E52EB /* MPUnmutedBtn.png */,
-				B9C56CE51EE7E555009E52EB /* MPUnmutedBtn@2x.png */,
-				B9C56CE61EE7E555009E52EB /* MPUnmutedBtn@3x.png */,
-				B9C56CE71EE7E555009E52EB /* MRAID.bundle */,
 				B9C56CE81EE7E555009E52EB /* StartApp.bundle */,
 				B9C56CE91EE7E555009E52EB /* TapjoyResources.bundle */,
 			);
@@ -390,7 +346,7 @@
 				03DBE13B1EE69DFA00549332 /* Sources */,
 				03DBE13C1EE69DFA00549332 /* Frameworks */,
 				03DBE13D1EE69DFA00549332 /* Resources */,
-				B9CDF1DE2056743000925C5B /* Embed Frameworks */,
+				42D84693229FDC5A00D36F34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,20 +364,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = dtlbox;
 				TargetAttributes = {
 					03DBE13E1EE69DFA00549332 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 3UBVG2WUJQ;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 03DBE13A1EE69DFA00549332 /* Build configuration list for PBXProject "AppodealSwiftDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -442,31 +398,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9C56CEF1EE7E555009E52EB /* MPCloseBtn.png in Resources */,
-				B9C56CF31EE7E555009E52EB /* MPCloseButtonX@2x.png in Resources */,
 				03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */,
 				B9CC73C2202C581E005EA2A7 /* Native.xib in Resources */,
-				B9C56CF51EE7E555009E52EB /* MPDAAIcon.png in Resources */,
-				B9C56CF91EE7E555009E52EB /* MPMutedBtn@2x.png in Resources */,
-				B9C56CFB1EE7E555009E52EB /* MPPlayBtn.png in Resources */,
 				03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */,
-				B9C56CFC1EE7E555009E52EB /* MPPlayBtn@2x.png in Resources */,
-				B9C56D001EE7E555009E52EB /* MPUnmutedBtn@3x.png in Resources */,
-				B9C56CEE1EE7E555009E52EB /* MPAdBrowserController.xib in Resources */,
-				B9C56CFD1EE7E555009E52EB /* MPPlayBtn@3x.png in Resources */,
-				B9C56CF81EE7E555009E52EB /* MPMutedBtn.png in Resources */,
 				B9C56D021EE7E555009E52EB /* StartApp.bundle in Resources */,
-				B9C56CFA1EE7E555009E52EB /* MPMutedBtn@3x.png in Resources */,
-				B9C56CF01EE7E555009E52EB /* MPCloseBtn@2x.png in Resources */,
-				B9C56CF71EE7E555009E52EB /* MPDAAIcon@3x.png in Resources */,
-				B9C56CF61EE7E555009E52EB /* MPDAAIcon@2x.png in Resources */,
 				B9C56D031EE7E555009E52EB /* TapjoyResources.bundle in Resources */,
-				B9C56CFE1EE7E555009E52EB /* MPUnmutedBtn.png in Resources */,
-				B9C56CFF1EE7E555009E52EB /* MPUnmutedBtn@2x.png in Resources */,
-				B9C56D011EE7E555009E52EB /* MRAID.bundle in Resources */,
-				B9C56CF41EE7E555009E52EB /* MPCloseButtonX@3x.png in Resources */,
-				B9C56CF11EE7E555009E52EB /* MPCloseBtn@3x.png in Resources */,
-				B9C56CF21EE7E555009E52EB /* MPCloseButtonX.png in Resources */,
 				033043811EE6C89800FBF3E4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -583,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -640,11 +578,11 @@
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -657,11 +595,11 @@
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

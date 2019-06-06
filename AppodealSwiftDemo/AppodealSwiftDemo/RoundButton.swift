@@ -15,5 +15,4 @@ class RoundButton: UIButton {
         self.layer.borderWidth = 1.0;
         self.layer.cornerRadius = 3.0;
     }
-    
 }

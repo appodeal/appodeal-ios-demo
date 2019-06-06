@@ -11,6 +11,7 @@
 #import <Appodeal/Appodeal.h>
 #import <ASExtentions/ASExtentions.h>
 
+
 #define kASDefaultCell @"kASDefaultCell"
 #define kASNativeCell  @"kASNativeCell"
 
@@ -85,22 +86,7 @@ NSUInteger const period = 5;
 
 #pragma mark - APDNativeAdQueueDelegate
 
-/**
- Method called when loader receives native ad.
- 
- @param adQueue ad queue object
- @param count count of available native ad
- */
-- (void)adQueueAdIsAvailable:(nonnull APDNativeAdQueue *)adQueue ofCount:(NSUInteger)count {
-}
-
-/**
- Method called when loader fails to receive native ad.
- 
- @param adQueue ad queue object
- @param error Error occurred
- */
-- (void)adQueue:(nonnull APDNativeAdQueue *)adQueue failedWithError:(nonnull NSError *)error {
-}
+- (void)adQueueAdIsAvailable:(APDNativeAdQueue *)adQueue ofCount:(NSUInteger)count {}
+- (void)adQueue:(APDNativeAdQueue *)adQueue failedWithError:(NSError *)error {}
 
 @end

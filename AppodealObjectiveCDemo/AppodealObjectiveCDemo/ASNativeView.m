@@ -9,7 +9,6 @@
 #import <ASExtentions/ASExtentions.h>
 
 @interface ASNativeView ()
-
 //required
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *callToActionLabel;
