@@ -33,7 +33,7 @@ class CustomBannerViewController: RootViewController {
         // bannerView.usesSmartSizing = true
         // bannerViewHeightConstraint.constant = bannerSize.height
 
-        let bannerSize = kIsTablet ? kAPDAdSize320x50 : kAPDAdSize728x90
+        let bannerSize = kIsTablet ? kAPDAdSize728x90 : kAPDAdSize320x50
         bannerView.adSize = bannerSize
         bannerView.loadAd()
     }
