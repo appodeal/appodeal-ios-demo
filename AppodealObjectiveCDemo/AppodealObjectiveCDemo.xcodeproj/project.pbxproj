@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		0330437F1EE6C71A00FBF3E4 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */; };
 		03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E021EE7D97F007638E2 /* ObjC.storyboard */; };
-		42C05A9C229FE83400C52D0D /* MoPubSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468B229FD5B900D36F34 /* MoPubSDKFramework.framework */; };
-		42C05A9D229FE83400C52D0D /* MoPubSDKFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468B229FD5B900D36F34 /* MoPubSDKFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		42D8468C229FD5B900D36F34 /* MoPubSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468B229FD5B900D36F34 /* MoPubSDKFramework.framework */; };
+		423BCA472328DA7400FE6850 /* MoPubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BCA462328DA7400FE6850 /* MoPubSDK.framework */; };
 		42D8468E229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */; };
 		9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */; };
 		9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1597C20C179070052C56F /* ASGDPR.framework */; };
 		B936CE9B1EE00D8000CDFF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9A1EE00D8000CDFF89 /* main.m */; };
 		B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */; };
-		B936CEA11EE00D8000CDFF89 /* ASInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEA01EE00D8000CDFF89 /* ASInterstitialViewController.m */; };
+		B936CEA11EE00D8000CDFF89 /* ASInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEA01EE00D8000CDFF89 /* ASInterstitialAdViewController.m */; };
 		B936CEA41EE00D8000CDFF89 /* ASRewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEA31EE00D8000CDFF89 /* ASRewardedViewController.m */; };
 		B936CEA91EE00D8100CDFF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B936CEA81EE00D8100CDFF89 /* Assets.xcassets */; };
 		B936CEAC1EE00D8100CDFF89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936CEAA1EE00D8100CDFF89 /* LaunchScreen.storyboard */; };
@@ -73,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				42C05A9D229FE83400C52D0D /* MoPubSDKFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +80,7 @@
 /* Begin PBXFileReference section */
 		0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
 		03BB6E031EE7D97F007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ObjC.storyboard; sourceTree = "<group>"; };
-		42D8468B229FD5B900D36F34 /* MoPubSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDKFramework.framework; path = ../SDK/MoPubSDKFramework.framework; sourceTree = "<group>"; };
+		423BCA462328DA7400FE6850 /* MoPubSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDK.framework; path = ../SDK/MoPubSDK.framework; sourceTree = "<group>"; };
 		42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
 		9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		9CA1597C20C179070052C56F /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
@@ -91,8 +88,8 @@
 		B936CE9A1EE00D8000CDFF89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B936CE9C1EE00D8000CDFF89 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
-		B936CE9F1EE00D8000CDFF89 /* ASInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASInterstitialViewController.h; sourceTree = "<group>"; };
-		B936CEA01EE00D8000CDFF89 /* ASInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASInterstitialViewController.m; sourceTree = "<group>"; };
+		B936CE9F1EE00D8000CDFF89 /* ASInterstitialAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASInterstitialAdViewController.h; sourceTree = "<group>"; };
+		B936CEA01EE00D8000CDFF89 /* ASInterstitialAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASInterstitialAdViewController.m; sourceTree = "<group>"; };
 		B936CEA21EE00D8000CDFF89 /* ASRewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASRewardedViewController.h; sourceTree = "<group>"; };
 		B936CEA31EE00D8000CDFF89 /* ASRewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASRewardedViewController.m; sourceTree = "<group>"; };
 		B936CEA81EE00D8100CDFF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,8 +162,8 @@
 				B936CEFF1EE02C2200CDFF89 /* CoreLocation.framework in Frameworks */,
 				B936CF001EE02C2200CDFF89 /* CoreMedia.framework in Frameworks */,
 				B936CF011EE02C2200CDFF89 /* CoreMotion.framework in Frameworks */,
-				42D8468C229FD5B900D36F34 /* MoPubSDKFramework.framework in Frameworks */,
 				B936CF021EE02C2200CDFF89 /* CoreTelephony.framework in Frameworks */,
+				423BCA472328DA7400FE6850 /* MoPubSDK.framework in Frameworks */,
 				B936CEF61EE02BFE00CDFF89 /* CoreImage.framework in Frameworks */,
 				B936CEF31EE02BF500CDFF89 /* EventKit.framework in Frameworks */,
 				B936CEF41EE02BF500CDFF89 /* EventKitUI.framework in Frameworks */,
@@ -189,7 +186,6 @@
 				B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */,
 				B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */,
 				B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */,
-				42C05A9C229FE83400C52D0D /* MoPubSDKFramework.framework in Frameworks */,
 				B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */,
 				B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */,
 				B936CECE1EE02B6D00CDFF89 /* MessageUI.framework in Frameworks */,
@@ -205,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */,
-				42D8468B229FD5B900D36F34 /* MoPubSDKFramework.framework */,
+				423BCA462328DA7400FE6850 /* MoPubSDK.framework */,
 				9CA1597C20C179070052C56F /* ASGDPR.framework */,
 				B9CDF1D32056705B00925C5B /* ASExtentions.framework */,
 				B9C56D041EE7E55B009E52EB /* Appodeal.framework */,
@@ -308,8 +304,8 @@
 		B936CF581EE0640E00CDFF89 /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				B936CE9F1EE00D8000CDFF89 /* ASInterstitialViewController.h */,
-				B936CEA01EE00D8000CDFF89 /* ASInterstitialViewController.m */,
+				B936CE9F1EE00D8000CDFF89 /* ASInterstitialAdViewController.h */,
+				B936CEA01EE00D8000CDFF89 /* ASInterstitialAdViewController.m */,
 			);
 			name = Interstitial;
 			sourceTree = "<group>";
@@ -388,7 +384,7 @@
 				TargetAttributes = {
 					B936CE951EE00D8000CDFF89 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 3UBVG2WUJQ;
+						DevelopmentTeam = WG4VFF78ZM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -440,7 +436,7 @@
 				B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */,
 				B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */,
 				B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */,
-				B936CEA11EE00D8000CDFF89 /* ASInterstitialViewController.m in Sources */,
+				B936CEA11EE00D8000CDFF89 /* ASInterstitialAdViewController.m in Sources */,
 				B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */,
 				B936CE9B1EE00D8000CDFF89 /* main.m in Sources */,
 			);
@@ -588,7 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
@@ -606,7 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3UBVG2WUJQ;
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";

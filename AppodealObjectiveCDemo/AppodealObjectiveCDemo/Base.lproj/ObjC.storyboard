@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Interstitial-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" id="9pv-A4-QxB" customClass="ASInterstitialViewController" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" id="9pv-A4-QxB" customClass="ASInterstitialAdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -310,54 +308,44 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" red="0.42629679568527923" green="0.42629679568527923" blue="0.42629679568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kASDefaultCell" rowHeight="254" id="X3b-zr-9ad">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="kASDefaultCell" rowHeight="254" id="Ehf-Qy-xG8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="254"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X3b-zr-9ad" id="yac-rY-nna">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ehf-Qy-xG8" id="Z8c-X6-tS1">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lorem_ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="Ece-ZN-ulZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4ts-gX-PjY">
+                                            <rect key="frame" x="0.0" y="0.0" width="1200" height="800.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Ece-ZN-ulZ" secondAttribute="height" multiplier="375:149" id="N6g-fm-ed9"/>
+                                                <constraint firstAttribute="width" secondItem="4ts-gX-PjY" secondAttribute="height" multiplier="12:8" id="3g6-36-pQN"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d33-Nt-8hX">
-                                            <rect key="frame" x="16" y="157" width="343" height="21"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Lorem ipsum dolor sit amet.">
-                                                    <attributes>
-                                                        <font key="NSFont" size="17" name="BodoniSvtyTwoITCTT-Bold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j86-K1-TWl">
+                                            <rect key="frame" x="16" y="808.5" width="343" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbc-ap-ZwT">
-                                            <rect key="frame" x="16" y="186" width="343" height="49"/>
-                                            <attributedString key="attributedText">
-                                                <fragment>
-                                                    <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="BradleyHandITCTT-Bold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7f-l3-dbK">
+                                            <rect key="frame" x="16" y="836" width="343" height="43"/>
+                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Ece-ZN-ulZ" firstAttribute="top" secondItem="yac-rY-nna" secondAttribute="top" id="9hy-cZ-10m"/>
-                                        <constraint firstItem="Ece-ZN-ulZ" firstAttribute="leading" secondItem="yac-rY-nna" secondAttribute="leading" id="Smj-Li-Euj"/>
-                                        <constraint firstItem="pbc-ap-ZwT" firstAttribute="top" secondItem="d33-Nt-8hX" secondAttribute="bottom" constant="8" id="Tta-Zh-k7U"/>
-                                        <constraint firstItem="pbc-ap-ZwT" firstAttribute="trailing" secondItem="yac-rY-nna" secondAttribute="trailingMargin" id="XQu-iP-32k"/>
-                                        <constraint firstItem="d33-Nt-8hX" firstAttribute="trailing" secondItem="yac-rY-nna" secondAttribute="trailingMargin" id="YMY-kY-FQS"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="pbc-ap-ZwT" secondAttribute="bottom" constant="8" id="a56-9e-9dq"/>
-                                        <constraint firstItem="pbc-ap-ZwT" firstAttribute="leading" secondItem="yac-rY-nna" secondAttribute="leadingMargin" id="aRW-py-ZBK"/>
-                                        <constraint firstItem="d33-Nt-8hX" firstAttribute="leading" secondItem="yac-rY-nna" secondAttribute="leadingMargin" id="kMz-6n-dDn"/>
-                                        <constraint firstItem="d33-Nt-8hX" firstAttribute="top" secondItem="Ece-ZN-ulZ" secondAttribute="bottom" constant="8" id="kaA-Qc-fnr"/>
-                                        <constraint firstAttribute="trailing" secondItem="Ece-ZN-ulZ" secondAttribute="trailing" id="sxj-Ai-hC4"/>
+                                        <constraint firstAttribute="trailing" secondItem="4ts-gX-PjY" secondAttribute="trailing" id="Pnb-bB-dQk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="P7f-l3-dbK" secondAttribute="bottom" constant="8" id="Qhb-b0-WHU"/>
+                                        <constraint firstItem="P7f-l3-dbK" firstAttribute="leading" secondItem="Z8c-X6-tS1" secondAttribute="leadingMargin" id="RNy-lt-T2u"/>
+                                        <constraint firstItem="j86-K1-TWl" firstAttribute="trailing" secondItem="Z8c-X6-tS1" secondAttribute="trailingMargin" id="VpS-yW-gIy"/>
+                                        <constraint firstItem="4ts-gX-PjY" firstAttribute="leading" secondItem="Z8c-X6-tS1" secondAttribute="leading" id="Xdp-Tz-9bi"/>
+                                        <constraint firstItem="j86-K1-TWl" firstAttribute="top" secondItem="4ts-gX-PjY" secondAttribute="bottom" constant="8" id="dx2-Ey-3fM"/>
+                                        <constraint firstItem="4ts-gX-PjY" firstAttribute="top" secondItem="Z8c-X6-tS1" secondAttribute="top" id="fvu-t1-3o7"/>
+                                        <constraint firstItem="j86-K1-TWl" firstAttribute="leading" secondItem="Z8c-X6-tS1" secondAttribute="leadingMargin" id="krf-wz-ZNL"/>
+                                        <constraint firstItem="P7f-l3-dbK" firstAttribute="top" secondItem="j86-K1-TWl" secondAttribute="bottom" constant="8" id="uYA-j4-heA"/>
+                                        <constraint firstItem="P7f-l3-dbK" firstAttribute="trailing" secondItem="Z8c-X6-tS1" secondAttribute="trailingMargin" id="xDn-cE-U2l"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -413,7 +401,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lorem_ipsum" width="221" height="161"/>
+        <image name="placeholder" width="1200" height="800"/>
         <image name="tab_banner" width="32" height="32"/>
         <image name="tab_interstitial" width="25" height="25"/>
         <image name="tab_native" width="25" height="25"/>

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -308,33 +306,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="254"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lorem_ipsum" translatesAutoresizingMaskIntoConstraints="NO" id="wIt-SJ-cDb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="wIt-SJ-cDb">
+                                            <rect key="frame" x="0.0" y="0.0" width="1200" height="800.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="wIt-SJ-cDb" secondAttribute="height" multiplier="375:149" id="Rwp-oZ-euj"/>
+                                                <constraint firstAttribute="width" secondItem="wIt-SJ-cDb" secondAttribute="height" multiplier="12:8" id="Rwp-oZ-euj"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-B6-P9x">
-                                            <rect key="frame" x="16" y="157" width="343" height="21"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="Lorem ipsum dolor sit amet.">
-                                                    <attributes>
-                                                        <font key="NSFont" size="17" name="BodoniSvtyTwoITCTT-Bold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-B6-P9x">
+                                            <rect key="frame" x="16" y="808.5" width="343" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-fd-ehR">
-                                            <rect key="frame" x="16" y="186" width="343" height="49"/>
-                                            <attributedString key="attributedText">
-                                                <fragment>
-                                                    <string key="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
-                                                    <attributes>
-                                                        <font key="NSFont" size="12" name="BradleyHandITCTT-Bold"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp1-fd-ehR">
+                                            <rect key="frame" x="16" y="836" width="343" height="43"/>
+                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum venenatis nunc, sed condimentum turpis pretium gravida. Pellentesque vehicula, eros id tincidunt lobortis, nunc mauris scelerisque ex, tempor mollis massa lorem quis elit. Aenean ultrices tellus vehicula sem blandit volutpat. Nunc ut nibh lacus. Pellentesque posuere in nunc sed ornare. Praesent molestie finibus magna eget fermentum. Phasellus luctus lobortis ex, ac viverra est mattis vitae. Mauris posuere, sem nec posuere placerat, est turpis posuere tortor, nec placerat neque nisl at mi. Suspendisse maximus gravida semper. Vivamus ultricies odio sit amet leo imperdiet viverra. Fusce eu quam a justo pretium pulvinar sit amet a nibh.</string>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -403,7 +391,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lorem_ipsum" width="221" height="161"/>
+        <image name="placeholder" width="1200" height="800"/>
         <image name="tab_banner" width="32" height="32"/>
         <image name="tab_interstitial" width="25" height="25"/>
         <image name="tab_native" width="25" height="25"/>

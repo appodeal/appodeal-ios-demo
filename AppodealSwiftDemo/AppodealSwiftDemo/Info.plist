@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -28,15 +30,9 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Advertising</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Advertising</string>
-	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME)</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Advertising</string>
+	<string>$(PRODUCT_NAME)  needs your calendar to provide personalised advertising experience tailored to you</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Advertising</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>$(PRODUCT_NAME) needs your location for analytics and advertising purposes</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

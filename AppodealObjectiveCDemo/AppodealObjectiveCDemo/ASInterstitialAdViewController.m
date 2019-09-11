@@ -5,17 +5,17 @@
 //  Copyright © 2017 appodeal. All rights reserved.
 //
 
-#import "ASInterstitialViewController.h"
+#import "ASInterstitialAdViewController.h"
 #import <Appodeal/Appodeal.h>
 
 
-@interface ASInterstitialViewController ()<AppodealInterstitialDelegate>
+@interface ASInterstitialAdViewController ()<AppodealInterstitialDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *placementField;
 
 @end
 
-@implementation ASInterstitialViewController
+@implementation ASInterstitialAdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

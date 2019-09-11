@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "image-placeholder-1200x800.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "lorem.jpg",
       "scale" : "2x"
     },
     {

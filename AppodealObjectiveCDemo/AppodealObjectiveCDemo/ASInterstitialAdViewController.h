@@ -7,7 +7,7 @@
 
 #import "ASRootViewController.h"
 
-@interface ASInterstitialViewController : ASRootViewController
+@interface ASInterstitialAdViewController : ASRootViewController
 
 
 @end
