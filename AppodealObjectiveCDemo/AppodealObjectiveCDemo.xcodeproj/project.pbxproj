@@ -10,6 +10,7 @@
 		0330437F1EE6C71A00FBF3E4 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */; };
 		03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E021EE7D97F007638E2 /* ObjC.storyboard */; };
 		423BCA472328DA7400FE6850 /* MoPubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BCA462328DA7400FE6850 /* MoPubSDK.framework */; };
+		426932292355A64F005CFB02 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426932282355A64F005CFB02 /* VideoToolbox.framework */; };
 		42D8468E229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */; };
 		9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */; };
 		9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1597C20C179070052C56F /* ASGDPR.framework */; };
@@ -81,6 +82,7 @@
 		0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
 		03BB6E031EE7D97F007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ObjC.storyboard; sourceTree = "<group>"; };
 		423BCA462328DA7400FE6850 /* MoPubSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDK.framework; path = ../SDK/MoPubSDK.framework; sourceTree = "<group>"; };
+		426932282355A64F005CFB02 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
 		9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		9CA1597C20C179070052C56F /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				B936CED81EE02B8D00CDFF89 /* Twitter.framework in Frameworks */,
 				B936CED61EE02B8700CDFF89 /* UIKit.framework in Frameworks */,
 				B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */,
+				426932292355A64F005CFB02 /* VideoToolbox.framework in Frameworks */,
 				B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */,
 				B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */,
 				B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */,
@@ -262,6 +265,7 @@
 		B936CEC81EE02B5D00CDFF89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				426932282355A64F005CFB02 /* VideoToolbox.framework */,
 				9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */,
 				B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */,
 				B936CF091EE02C3E00CDFF89 /* AdSupport.framework */,

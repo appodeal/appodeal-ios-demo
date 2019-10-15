@@ -48,10 +48,10 @@
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
-		423BCA452328DA5D00FE6850 /* MoPubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BCA442328DA5D00FE6850 /* MoPubSDK.framework */; };
+		426932262355A0FF005CFB02 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 426932242355A0FF005CFB02 /* libAPDTwitterMoPubAdapter.a */; };
+		426932272355A0FF005CFB02 /* MoPubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426932252355A0FF005CFB02 /* MoPubSDK.framework */; };
 		42BFEAF921CBCF28002F41B7 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */; };
 		42D84686229FD59700D36F34 /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84685229FD59700D36F34 /* ASGDPR.framework */; };
-		42D84688229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */; };
 		9C1CAA3220AD642B00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */; };
 		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
 		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
@@ -121,10 +121,10 @@
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		423BCA442328DA5D00FE6850 /* MoPubSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDK.framework; path = ../SDK/MoPubSDK.framework; sourceTree = "<group>"; };
+		426932242355A0FF005CFB02 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
+		426932252355A0FF005CFB02 /* MoPubSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDK.framework; path = ../SDK/MoPubSDK.framework; sourceTree = "<group>"; };
 		42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		42D84685229FD59700D36F34 /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
-		42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
 		9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
 		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				0357C3A41EE69FCF00870D61 /* StoreKit.framework in Frameworks */,
 				0357C3A51EE69FCF00870D61 /* SystemConfiguration.framework in Frameworks */,
 				0357C3A61EE69FCF00870D61 /* Twitter.framework in Frameworks */,
-				42D84688229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */,
+				426932262355A0FF005CFB02 /* libAPDTwitterMoPubAdapter.a in Frameworks */,
 				0357C3A71EE69FCF00870D61 /* UIKit.framework in Frameworks */,
 				0357C3A81EE69FCF00870D61 /* WebKit.framework in Frameworks */,
 				42D84686229FD59700D36F34 /* ASGDPR.framework in Frameworks */,
@@ -177,7 +177,7 @@
 				0357C3831EE69F6800870D61 /* JavaScriptCore.framework in Frameworks */,
 				0357C3841EE69F6800870D61 /* libc++.tbd in Frameworks */,
 				0357C36D1EE69F2600870D61 /* AVFoundation.framework in Frameworks */,
-				423BCA452328DA5D00FE6850 /* MoPubSDK.framework in Frameworks */,
+				426932272355A0FF005CFB02 /* MoPubSDK.framework in Frameworks */,
 				B9C56CEA1EE7E555009E52EB /* Appodeal.framework in Frameworks */,
 				0357C36E1EE69F2600870D61 /* CFNetwork.framework in Frameworks */,
 				0357C36A1EE69F1800870D61 /* AudioToolbox.framework in Frameworks */,
@@ -231,8 +231,8 @@
 		0357C3621EE69EB400870D61 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				42D84687229FD5A200D36F34 /* libAPDTwitterMoPubAdapter.a */,
-				423BCA442328DA5D00FE6850 /* MoPubSDK.framework */,
+				426932242355A0FF005CFB02 /* libAPDTwitterMoPubAdapter.a */,
+				426932252355A0FF005CFB02 /* MoPubSDK.framework */,
 				42D84685229FD59700D36F34 /* ASGDPR.framework */,
 				B9CDF1DA2056742C00925C5B /* ASExtentions.framework */,
 				B9C56CCF1EE7E555009E52EB /* Appodeal.framework */,

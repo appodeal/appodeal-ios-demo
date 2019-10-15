@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Appodeal.setLocationTracking(true)
         
         /// Test Mode
-        // Appodeal.setTestingEnabled(true)
+         Appodeal.setTestingEnabled(true)
         
         /// User Data
         // Appodeal.setUserId("userID")

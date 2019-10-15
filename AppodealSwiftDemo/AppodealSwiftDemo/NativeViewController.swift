@@ -9,15 +9,15 @@ import UIKit
 import Appodeal
 import ASExtentions
 
-class NativeViewController: UITableViewController {
+
+final class NativeViewController: UITableViewController {
     let defaultCellName = "kASDefaultCell"
     let nativeCellName  = "kASNativeCell"
     let nativePeriod    = 5
     
     @IBOutlet weak var nativeAdContainer: UIView!
     
-    let nativeAdStack: NSMapTable <NSIndexPath, APDNativeAd> = NSMapTable(keyOptions: .strongMemory, valueOptions: .strongMemory)
-    
+    private let adCache: NSMapTable <NSIndexPath, APDNativeAd> = NSMapTable.strongToStrongObjects()
     
     lazy var nativeAdQueue : APDNativeAdQueue = {
         return APDNativeAdQueue(sdk: nil,
@@ -40,21 +40,18 @@ class NativeViewController: UITableViewController {
         nativeAdQueue.loadAd()
     }
     
-    func presentNative(onView view: UIView, fromIndex index: NSIndexPath) {
-        var nativeAd: APDNativeAd?;
-        
-        if nativeAdStack.object(forKey: index) != nil {
-            nativeAd = nativeAdStack.object(forKey: index)
-        } else if nativeAdQueue.currentAdCount > 0 {
-            nativeAd = nativeAdQueue.getNativeAds(ofCount: 1).first
-        }
-        
-        guard nativeAd == nil else {
-            let nativeView = nativeAd!.getViewFor(self)
-            view.addSubview(nativeView!)
-            nativeView!.asxEdgesEqualView(view)
+    func presentNative(onView view: UIView,
+                       fromIndex index: NSIndexPath) {
+        // Get ad from cache
+        if let nativeAd = adCache.object(forKey: index) {
+            nativeAd.show(on: view, controller: self)
             return
         }
+        
+        guard let nativeAd = nativeAdQueue.getNativeAds(ofCount: 1).first else { return }
+        // Cache ads for correct viewability tracking
+        adCache.setObject(nativeAd, forKey: index)
+        nativeAd.show(on: view, controller: self)
     }
 }
 
@@ -81,4 +78,14 @@ extension NativeViewController {
 extension NativeViewController : APDNativeAdQueueDelegate {
     func adQueueAdIsAvailable(_ adQueue: APDNativeAdQueue, ofCount count: UInt) {}
     func adQueue(_ adQueue: APDNativeAdQueue, failedWithError error: Error) {}
+}
+
+
+private extension APDNativeAd {
+    func show(on superview: UIView, controller: UIViewController) {
+        getViewFor(controller).map {
+            superview.addSubview($0)
+            $0.asxEdgesEqualView(superview)
+        }
+    }
 }

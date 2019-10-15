@@ -19,8 +19,8 @@ NSUInteger const period = 5;
 
 @interface ASNativeViewController () <APDNativeAdQueueDelegate>
 
-@property (nonatomic, strong) NSMapTable <NSIndexPath *,__kindof APDNativeAd *>* nativeAdStack;
-@property (nonatomic, strong) APDNativeAdQueue * nativeAdQueue;
+@property (nonatomic, strong) NSMapTable <NSIndexPath *, APDNativeAd *> *adCache;
+@property (nonatomic, strong) APDNativeAdQueue *nativeAdQueue;
 
 @end
 
@@ -29,23 +29,32 @@ NSUInteger const period = 5;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.nativeAdStack = [NSMapTable strongToStrongObjectsMapTable];
+    self.adCache = [NSMapTable strongToStrongObjectsMapTable];
     [self.nativeAdQueue loadAd];
 }
 
 - (void)presentNativeOnView:(UIView *)view fromIndex:(NSIndexPath *)index {
-    APDNativeAd * nativeAd = nil;
-    if ([self.nativeAdStack objectForKey:index]) {
-        nativeAd = [self.nativeAdStack objectForKey:index];
-    } else if (self.nativeAdQueue.currentAdCount) {
-        nativeAd = [[self.nativeAdQueue getNativeAdsOfCount:1] firstObject];
-        [self.nativeAdStack setObject:nativeAd forKey:index];
+    APDNativeAd *nativeAd = [self.adCache objectForKey:index];
+    // Get ad from cache
+    if (nativeAd != nil) {
+        UIView *adView = [nativeAd getAdViewForController:self];
+        [self layoutAdView:adView superview:view];
+        return;
     }
-    
-    if (nativeAd) {
-        UIView *nativeView = [nativeAd getAdViewForController:self];
-        [view addSubview:nativeView];
-        [nativeView asxEdgesEqualView:view];
+    // Get ad from queue
+    nativeAd = [[self.nativeAdQueue getNativeAdsOfCount:1] firstObject];
+    if (nativeAd != nil) {
+        // Save native ad for future use
+        [self.adCache setObject:nativeAd forKey:index];
+        UIView *adView = [nativeAd getAdViewForController:self];
+        [self layoutAdView:adView superview:view];
+    }
+}
+
+- (void)layoutAdView:(UIView *)adView superview:(UIView *)superview {
+    if (adView) {
+        [superview addSubview:adView];
+        [adView asxEdgesEqualView:superview];
     }
 }
 

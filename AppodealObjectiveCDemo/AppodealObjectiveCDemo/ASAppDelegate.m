@@ -35,7 +35,7 @@
     // [Appodeal setTriggerPrecacheCallbacks:YES];
     // [Appodeal setLocationTracking:YES];
     /// Test Mode
-    // [Appodeal setTestingEnabled:YES];
+     [Appodeal setTestingEnabled:YES];
     
     /// User Data
     // [Appodeal setUserId:@"user_id"];
