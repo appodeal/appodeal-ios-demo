@@ -7,5 +7,5 @@ Appodeal iOS SDK Demo Project
 [![](https://img.shields.io/badge/download-betaSDK-red.svg)](https://drive.google.com/file/d/0B3q5WYBKiFTCMnBvZ1VkVlBsdkE/view)
 
 
-Stable version of Appodeal SDK is **2.5.11** 
-SDK integration documentation: [docs](https://wiki.appodeal.com/en/ios/2-5-11-ios-sdk-integration-guide)
+Stable version of Appodeal SDK is **2.5.14** 
+SDK integration documentation: [docs](https://wiki.appodeal.com/en/ios/2-5-14-ios-sdk-integration-guide)
