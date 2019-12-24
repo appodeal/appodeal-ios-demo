@@ -24,20 +24,32 @@ class StaticBannerViewController: RootViewController {
     
     // MARK: Actions
     @IBAction func bannerTopButtonPressed(_ sender: UIButton) {
-        guard let placement = placementField.text, Appodeal.canShow(.banner, forPlacement: placement) else { return }
-        Appodeal.showAd(.bannerTop, forPlacement: placement, rootViewController: self)
+        guard
+            let placement = placementField.text,
+            Appodeal.isInitalized(for: . banner),
+            Appodeal.canShow(.banner, forPlacement: placement)
+        else {
+            return
+        }
+        Appodeal.showAd(.bannerTop,
+                        forPlacement: placement,
+                        rootViewController: self)
     }
     
     @IBAction func bannerBottomButtonPressed(_ sender: UIButton) {
-        guard let placement = placementField.text else {
+        guard
+            let placement = placementField.text,
+            Appodeal.isInitalized(for: . banner),
+            Appodeal.canShow(.banner, forPlacement: placement)
+        else {
             return
         }
-        if Appodeal.canShow(.banner, forPlacement: placement) {
-            Appodeal.showAd(.bannerBottom, forPlacement: placement, rootViewController: self)
-        }
+        Appodeal.showAd(.bannerBottom,
+                        forPlacement: placement,
+                        rootViewController: self)
     }
-    
 }
+
 
 extension StaticBannerViewController: AppodealBannerDelegate {
     func bannerDidLoadAdIsPrecache(_ precache: Bool) {}

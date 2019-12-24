@@ -6,59 +6,78 @@
 //
 
 
-import Appodeal
 import UIKit
-import ASGDPR
+import Appodeal
+import StackConsentManager
 
-
-struct Constants {
-    static let appKey = "dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
-    static let publisherId = "pub-0123456789012345"
-}
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+    private struct AppodealConstants {
+        static let key: String = "dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
+        static let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
+        static let logLevel: APDLogLevel = .debug
+        static let testMode: Bool = true
+    }
+    
     var window: UIWindow?
     
     // MARK: Controller Life Cycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        initializeAppodealSDK()
+        synchroniseConsent()
         configureAppearance()
-        
         return true
     }
     
     // MARK: Appodeal Initialization
-    func initializeAppodealSDK() {
+    private func initializeAppodealSDK() {
         /// Custom settings
         // Appodeal.setFramework(.native, version: "1.0.0")
         // Appodeal.setTriggerPrecacheCallbacks(true)
         // Appodeal.setLocationTracking(true)
         
         /// Test Mode
-         Appodeal.setTestingEnabled(true)
+        Appodeal.setTestingEnabled(AppodealConstants.testMode)
         
         /// User Data
         // Appodeal.setUserId("userID")
         // Appodeal.setUserAge(25)
         // Appodeal.setUserGender(.male)
-        Appodeal.setLogLevel(.debug)
-        let adTypes: AppodealAdType = [.interstitial, .rewardedVideo, .banner, .nativeAd]
-        Appodeal.setAutocache(true, types: adTypes)
+        Appodeal.setLogLevel(AppodealConstants.logLevel)
+        Appodeal.setAutocache(true, types: AppodealConstants.adTypes)
         
-        // Google mobile ads publisher id from https://developers.google.com/admob/ios/eu-consent
-        // you need to replace this value with your publisher id
-        let publisherIds = [Constants.publisherId]
-        ASGDPR.presentConsentDialog(forPublisherIds: publisherIds) { (status) in
-            let consent = status != .notPersonalized
-            Appodeal.initialize(withApiKey: Constants.appKey,
-                                types: adTypes,
-                                hasConsent: consent)
+        let consent = STKConsentManager.shared().consentStatus != .nonPersonalized
+        Appodeal.initialize(
+            withApiKey: AppodealConstants.key,
+            types: AppodealConstants.adTypes,
+            hasConsent: consent
+        )
+    }
+    
+    // MARK: Consent manager
+    private func synchroniseConsent() {
+        STKConsentManager.shared().synchronize(withAppKey: AppodealConstants.key) { error in
+            error.map { print("Error while synchronising consent manager: \($0)") }
+            guard STKConsentManager.shared().shouldShowConsentDialog == .true else {
+                self.initializeAppodealSDK()
+                return
+            }
+            
+            STKConsentManager.shared().loadConsentDialog { [unowned self] error in
+                error.map { print("Error while loading consent dialog: \($0)") }
+                guard let controller = self.window?.rootViewController, STKConsentManager.shared().isConsentDialogReady else {
+                    self.initializeAppodealSDK()
+                    return
+                }
+                
+                STKConsentManager.shared().showConsentDialog(fromRootViewController: controller,
+                                                             delegate: self)
+            }
         }
     }
     
     // MARK: Appearance
-    func configureAppearance() {
+    private func configureAppearance() {
         let navBarAttributes = [NSAttributedString.Key.foregroundColor: UIColor.clear]
         
         UINavigationBar.appearance().tintColor = .white
@@ -72,3 +91,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+
+extension AppDelegate: STKConsentManagerDisplayDelegate {
+    func consentManagerWillShowDialog(_ consentManager: STKConsentManager) {}
+    
+    func consentManager(_ consentManager: STKConsentManager, didFailToPresent error: Error) {
+        initializeAppodealSDK()
+    }
+    
+    func consentManagerDidDismissDialog(_ consentManager: STKConsentManager) {
+        initializeAppodealSDK()
+    }
+}

@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import ASExtentions
 
-class RoundButton: UIButton {
+
+final class RoundButton: UIButton {
     override func draw(_ rect: CGRect) {
-        self.setTitleColor(UIColor.asxMain(), for:.normal)
+        self.setTitleColor(UIColor.systemRed, for:.normal)
         self.layer.borderColor = self.titleLabel?.textColor.cgColor
         self.layer.borderWidth = 1.0;
         self.layer.cornerRadius = 3.0;

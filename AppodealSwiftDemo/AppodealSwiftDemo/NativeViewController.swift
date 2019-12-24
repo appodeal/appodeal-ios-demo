@@ -7,7 +7,6 @@
 
 import UIKit
 import Appodeal
-import ASExtentions
 
 
 final class NativeViewController: UITableViewController {
@@ -68,7 +67,8 @@ extension NativeViewController {
             presentNative(onView: cell.contentView, fromIndex: indexPath as NSIndexPath)
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: defaultCellName)
-            cell.contentView.asxRound()
+            cell.contentView.layer.cornerRadius = 16
+            cell.contentView.layer.masksToBounds = true
         }
         return cell
     }
@@ -85,7 +85,13 @@ private extension APDNativeAd {
     func show(on superview: UIView, controller: UIViewController) {
         getViewFor(controller).map {
             superview.addSubview($0)
-            $0.asxEdgesEqualView(superview)
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                $0.leftAnchor.constraint(equalTo: superview.leftAnchor),
+                $0.rightAnchor.constraint(equalTo: superview.rightAnchor),
+                $0.topAnchor.constraint(equalTo: superview.topAnchor),
+                $0.bottomAnchor.constraint(equalTo: superview.bottomAnchor)
+            ])
         }
     }
 }

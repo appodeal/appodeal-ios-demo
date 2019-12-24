@@ -9,7 +9,6 @@
 #import "ASNativeView.h"
 
 #import <Appodeal/Appodeal.h>
-#import <ASExtentions/ASExtentions.h>
 
 
 #define kASDefaultCell @"kASDefaultCell"
@@ -29,7 +28,7 @@ NSUInteger const period = 5;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.adCache = [NSMapTable strongToStrongObjectsMapTable];
+    self.adCache = [NSMapTable strongToStrongObjectsMapTable];    
     [self.nativeAdQueue loadAd];
 }
 
@@ -54,7 +53,13 @@ NSUInteger const period = 5;
 - (void)layoutAdView:(UIView *)adView superview:(UIView *)superview {
     if (adView) {
         [superview addSubview:adView];
-        [adView asxEdgesEqualView:superview];
+        adView.translatesAutoresizingMaskIntoConstraints = NO;
+        [NSLayoutConstraint activateConstraints:@[
+            [adView.leftAnchor constraintEqualToAnchor:superview.leftAnchor],
+            [adView.rightAnchor constraintEqualToAnchor:superview.rightAnchor],
+            [adView.topAnchor constraintEqualToAnchor:superview.topAnchor],
+            [adView.bottomAnchor constraintEqualToAnchor:superview.bottomAnchor]
+        ]];
     }
 }
 
@@ -82,13 +87,14 @@ NSUInteger const period = 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell * cell = nil;
+    UITableViewCell *cell = nil;
     if (indexPath.row  && (indexPath.row % period == 0)) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kASNativeCell];
         [self presentNativeOnView:cell.contentView fromIndex:indexPath];
     } else {
         cell = [tableView dequeueReusableCellWithIdentifier:kASDefaultCell];
-        [cell.contentView asxRound];
+        cell.contentView.layer.masksToBounds = YES;
+        cell.contentView.layer.cornerRadius = 16;
     }
     return cell;
 }

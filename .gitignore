@@ -9,6 +9,9 @@
 build/
 DerivedData
 
+## CocoaPods
+Pods/
+
 ## Carthage
 Carthage
 Cartfile.resolved

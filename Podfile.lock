@@ -1,0 +1,161 @@
+PODS:
+  - Appodeal (2.5.14):
+    - Appodeal/Full (= 2.5.14)
+  - Appodeal/AdColonyAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/AmazonAdsAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/AppLovinAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/AppodealAdExchangeAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/Banner (2.5.14):
+    - Appodeal/AmazonAdsAdapter
+    - Appodeal/AppLovinAdapter
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/GoogleAdMobAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/InnerActiveAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/OpenXAdapter
+    - Appodeal/SmaatoAdapter
+    - Appodeal/StartAppAdapter
+    - Appodeal/YandexAdapter
+  - Appodeal/ChartboostAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/Core (2.5.14)
+  - Appodeal/FacebookAudienceAdapter (2.5.14):
+    - Appodeal/Core
+    - FBSDKCoreKit/Basics (>= 5.6.0)
+  - Appodeal/Full (2.5.14):
+    - Appodeal/Banner
+    - Appodeal/Core
+    - Appodeal/Interstitial
+    - Appodeal/Native
+    - Appodeal/Video
+  - Appodeal/GoogleAdMobAdapter (2.5.14):
+    - Appodeal/Core
+    - Google-Mobile-Ads-SDK (>= 7.50.0)
+  - Appodeal/InMobiAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/InnerActiveAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/Interstitial (2.5.14):
+    - Appodeal/AmazonAdsAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/Video
+    - Appodeal/YandexAdapter
+  - Appodeal/IronSourceAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/MintegralAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/MyTargetAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/Native (2.5.14):
+    - Appodeal/AppLovinAdapter
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/GoogleAdMobAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/InnerActiveAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/PubnativeAdapter
+    - Appodeal/SmaatoAdapter
+    - Appodeal/StartAppAdapter
+  - Appodeal/OpenXAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/PubnativeAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/SmaatoAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/StartAppAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/UnityAdapter (2.5.14):
+    - Appodeal/Core
+  - Appodeal/Video (2.5.14):
+    - Appodeal/AdColonyAdapter
+    - Appodeal/AppLovinAdapter
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/ChartboostAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/GoogleAdMobAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/InnerActiveAdapter
+    - Appodeal/IronSourceAdapter
+    - Appodeal/MintegralAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/OpenXAdapter
+    - Appodeal/SmaatoAdapter
+    - Appodeal/StartAppAdapter
+    - Appodeal/UnityAdapter
+    - Appodeal/VungleAdapter
+  - Appodeal/VungleAdapter (2.5.14):
+    - Appodeal/AppodealAdExchangeAdapter
+    - Appodeal/Core
+  - Appodeal/YandexAdapter (2.5.14):
+    - Appodeal/Core
+  - FBSDKCoreKit/Basics (5.13.1)
+  - Google-Mobile-Ads-SDK (7.53.1):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.7):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.4.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.4.0)
+  - GoogleUtilities/Logger (6.4.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.4.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.4.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.4.0)"
+  - GoogleUtilities/Reachability (6.4.0):
+    - GoogleUtilities/Logger
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - StackConsentManager (1.0.0)
+
+DEPENDENCIES:
+  - Appodeal (~> 2.5.14)
+  - StackConsentManager (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Appodeal
+    - FBSDKCoreKit
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - nanopb
+    - StackConsentManager
+
+SPEC CHECKSUMS:
+  Appodeal: dda1f27911cf08c34ec487efae883fba76670c56
+  FBSDKCoreKit: 8fb98209109fb684937f05d534305edb18c20207
+  Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
+  GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
+  GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  StackConsentManager: 101bbc360716024c4a1b48c2012ae64b447d69d3
+
+PODFILE CHECKSUM: 8e8590e84db30cfeea6922b3cf6e34b3981c22c6
+
+COCOAPODS: 1.8.1

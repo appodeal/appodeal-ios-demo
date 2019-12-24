@@ -7,9 +7,9 @@
 
 import UIKit
 import Appodeal
-import ASExtentions
 
-class NativeView: UIView {
+
+final class NativeView: UIView {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var callToAction: UILabel!
 
@@ -19,12 +19,13 @@ class NativeView: UIView {
     @IBOutlet weak var adChoices: UIView!
     
     override func draw(_ rect: CGRect) {
-        self.asxRound()
-
-        self.icon.layer.cornerRadius = 10.0
+        self.layer.cornerRadius = 16
+        self.layer.masksToBounds = true
+        
+        self.icon.layer.cornerRadius = 8.0
         self.icon.layer.masksToBounds = true
 
-        self.callToAction.layer.cornerRadius = 10.0
+        self.callToAction.layer.cornerRadius = 8.0
         self.callToAction.layer.masksToBounds = true
     }
 }

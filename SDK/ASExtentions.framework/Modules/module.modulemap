@@ -1,6 +1,0 @@
-framework module ASExtentions {
-  umbrella header "ASExtentions.h"
-
-  export *
-  module * { export * }
-}

@@ -20,8 +20,16 @@ class RewardedVideoViewController: RootViewController {
     
     // MARK: Actions
     @IBAction func showButtonPressed(_ sender: UIButton) {
-        guard let placement = placementField.text, Appodeal.canShow(.rewardedVideo, forPlacement: placement) else { return }
-        Appodeal.showAd(.rewardedVideo, forPlacement: placement, rootViewController: self)
+        guard
+            let placement = placementField.text,
+            Appodeal.isInitalized(for: .rewardedVideo),
+            Appodeal.canShow(.rewardedVideo, forPlacement: placement)
+        else {
+            return
+        }
+        Appodeal.showAd(.rewardedVideo,
+                        forPlacement: placement,
+                        rootViewController: self)
     }
 }
 

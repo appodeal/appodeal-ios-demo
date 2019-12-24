@@ -6,7 +6,7 @@
 //
 
 #import "ASNativeView.h"
-#import <ASExtentions/ASExtentions.h>
+
 
 @interface ASNativeView ()
 //required
@@ -32,12 +32,13 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    [self asxRound];
+    self.layer.cornerRadius = 16.0;
+    self.layer.masksToBounds = YES;
     
-    self.iconView.layer.cornerRadius = 10.0;
+    self.iconView.layer.cornerRadius = 8.0;
     self.iconView.layer.masksToBounds = YES;
     
-    self.callToActionLabel.layer.cornerRadius = 10.0;
+    self.callToActionLabel.layer.cornerRadius = 8.0;
     self.callToActionLabel.layer.masksToBounds = YES;
 }
 

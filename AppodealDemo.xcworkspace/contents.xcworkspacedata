@@ -7,4 +7,7 @@
    <FileRef
       location = "group:AppodealObjectiveCDemo/AppodealObjectiveCDemo.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

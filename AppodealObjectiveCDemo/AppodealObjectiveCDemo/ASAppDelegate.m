@@ -7,25 +7,22 @@
 
 #import "ASAppDelegate.h"
 #import <Appodeal/Appodeal.h>
-#import <ASExtentions/ASExtentions.h>
-#import <ASGDPR/ASGDPR.h>
+#import <StackConsentManager/StackConsentManager.h>
+
 
 #define APP_KEY                 @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
-#define ADMOB_PUBLISHER_ID      @"pub-0123456789012345"
 
 
-@interface ASAppDelegate ()
+@interface ASAppDelegate () <STKConsentManagerDisplayDelegate>
 
 @end
 
+
 @implementation ASAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    [self initializeSDK];
+    [self synchoniseConsent];
     [self configureAppearance];
-    
     return YES;
 }
 
@@ -45,15 +42,39 @@
     [Appodeal setLogLevel:APDLogLevelDebug];
     [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
     
-    // Google mobile ads publisher id from https://developers.google.com/admob/ios/eu-consent
-    // you need to replace this value with your publisher id
-    NSArray <NSString *> *publisherIds = @[ADMOB_PUBLISHER_ID];
-    [ASGDPR presentConsentDialogForPublisherIds:publisherIds consentBlock:^(ASConsentStatus status) {
-        AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
-        BOOL consent = status != ASConsentStatusNotPersonalized;
-        [Appodeal initializeWithApiKey:APP_KEY
-                                 types:types
-                            hasConsent:consent];
+    AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
+    BOOL consent = STKConsentManager.sharedManager.consentStatus != STKConsentStatusNonPersonalized;
+    [Appodeal initializeWithApiKey:APP_KEY
+                             types:types
+                        hasConsent:consent];
+}
+
+- (void)synchoniseConsent {
+    __weak typeof(self) weakSelf = self;
+    [STKConsentManager.sharedManager synchronizeWithAppKey:APP_KEY completion:^(NSError *error) {
+        __strong typeof(self) strongSelf = weakSelf;
+        if (error) {
+            NSLog(@"Error while synchronising consent manager: %@", error);
+        }
+        
+        if (STKConsentManager.sharedManager.shouldShowConsentDialog != STKConsentBoolTrue) {
+            [strongSelf initializeSDK];
+            return ;
+        }
+        
+        [STKConsentManager.sharedManager loadConsentDialog:^(NSError *error) {
+            if (error) {
+                NSLog(@"Error while loading consent dialog: %@", error);
+            }
+            
+            if (!STKConsentManager.sharedManager.isConsentDialogReady) {
+                [strongSelf initializeSDK];
+                return ;
+            }
+            UIViewController *rootViewController = strongSelf.window.rootViewController;
+            [STKConsentManager.sharedManager showConsentDialogFromRootViewController:rootViewController
+                                                                            delegate:strongSelf];
+        }];
     }];
 }
 
@@ -66,6 +87,18 @@
     if ([[UITabBar appearance] respondsToSelector:@selector(setUnselectedItemTintColor:)]) {
         [[UITabBar appearance] setUnselectedItemTintColor:UIColor.lightGrayColor];
     }
+}
+
+#pragma mark - STKConsentManagerDisplayDelegate
+
+- (void)consentManagerWillShowDialog:(STKConsentManager *)consentManager {}
+
+- (void)consentManagerDidDismissDialog:(STKConsentManager *)consentManager {
+    [self initializeSDK];
+}
+
+- (void)consentManager:(STKConsentManager *)consentManager didFailToPresent:(NSError *)error {
+    [self initializeSDK];
 }
 
 @end

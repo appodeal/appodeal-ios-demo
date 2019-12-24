@@ -9,11 +9,7 @@
 /* Begin PBXBuildFile section */
 		0330437F1EE6C71A00FBF3E4 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */; };
 		03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E021EE7D97F007638E2 /* ObjC.storyboard */; };
-		423BCA472328DA7400FE6850 /* MoPubSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 423BCA462328DA7400FE6850 /* MoPubSDK.framework */; };
-		426932292355A64F005CFB02 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426932282355A64F005CFB02 /* VideoToolbox.framework */; };
-		42D8468E229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */; };
-		9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */; };
-		9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1597C20C179070052C56F /* ASGDPR.framework */; };
+		3B57D37B49A0557F20ABCF52 /* Pods_AppodealObjectiveCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469519F04830FC20B77706F /* Pods_AppodealObjectiveCDemo.framework */; };
 		B936CE9B1EE00D8000CDFF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9A1EE00D8000CDFF89 /* main.m */; };
 		B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */; };
 		B936CEA11EE00D8000CDFF89 /* ASInterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEA01EE00D8000CDFF89 /* ASInterstitialAdViewController.m */; };
@@ -22,47 +18,10 @@
 		B936CEAC1EE00D8100CDFF89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B936CEAA1EE00D8100CDFF89 /* LaunchScreen.storyboard */; };
 		B936CEBB1EE0180C00CDFF89 /* ASStaticBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEBA1EE0180C00CDFF89 /* ASStaticBannerViewController.m */; };
 		B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CEBD1EE0183200CDFF89 /* ASCustomBannerViewController.m */; };
-		B936CECA1EE02B5E00CDFF89 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEC91EE02B5D00CDFF89 /* StoreKit.framework */; };
-		B936CECC1EE02B6300CDFF89 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CECB1EE02B6300CDFF89 /* CoreText.framework */; };
-		B936CECE1EE02B6D00CDFF89 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CECD1EE02B6D00CDFF89 /* MessageUI.framework */; };
-		B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CECF1EE02B7200CDFF89 /* WebKit.framework */; };
-		B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CED11EE02B7700CDFF89 /* GLKit.framework */; };
-		B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CED31EE02B8100CDFF89 /* CoreBluetooth.framework */; };
-		B936CED61EE02B8700CDFF89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CED51EE02B8700CDFF89 /* UIKit.framework */; };
-		B936CED81EE02B8D00CDFF89 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CED71EE02B8D00CDFF89 /* Twitter.framework */; };
-		B936CEDA1EE02B9500CDFF89 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CED91EE02B9500CDFF89 /* SystemConfiguration.framework */; };
-		B936CEDC1EE02B9D00CDFF89 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEDB1EE02B9D00CDFF89 /* Social.framework */; };
-		B936CEDE1EE02BA300CDFF89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEDD1EE02BA300CDFF89 /* Security.framework */; };
-		B936CEE01EE02BA800CDFF89 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEDF1EE02BA800CDFF89 /* SafariServices.framework */; };
-		B936CEE21EE02BAF00CDFF89 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEE11EE02BAF00CDFF89 /* QuartzCore.framework */; };
-		B936CEE41EE02BB500CDFF89 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEE31EE02BB500CDFF89 /* MobileCoreServices.framework */; };
-		B936CEE61EE02BBD00CDFF89 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEE51EE02BBD00CDFF89 /* MediaPlayer.framework */; };
-		B936CEE81EE02BC700CDFF89 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEE71EE02BC700CDFF89 /* libz.tbd */; };
-		B936CEEA1EE02BD000CDFF89 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEE91EE02BD000CDFF89 /* libxml2.2.tbd */; };
-		B936CEEC1EE02BD900CDFF89 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEEB1EE02BD900CDFF89 /* libsqlite3.tbd */; };
-		B936CEEE1EE02BE000CDFF89 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEED1EE02BE000CDFF89 /* libc++.tbd */; };
-		B936CEF01EE02BEA00CDFF89 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEEF1EE02BEA00CDFF89 /* JavaScriptCore.framework */; };
-		B936CEF31EE02BF500CDFF89 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF11EE02BF500CDFF89 /* EventKit.framework */; };
-		B936CEF41EE02BF500CDFF89 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF21EE02BF500CDFF89 /* EventKitUI.framework */; };
-		B936CEF61EE02BFE00CDFF89 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF51EE02BFE00CDFF89 /* CoreImage.framework */; };
-		B936CEFD1EE02C2200CDFF89 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF71EE02C2200CDFF89 /* CoreFoundation.framework */; };
-		B936CEFE1EE02C2200CDFF89 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF81EE02C2200CDFF89 /* CoreGraphics.framework */; };
-		B936CEFF1EE02C2200CDFF89 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEF91EE02C2200CDFF89 /* CoreLocation.framework */; };
-		B936CF001EE02C2200CDFF89 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEFA1EE02C2200CDFF89 /* CoreMedia.framework */; };
-		B936CF011EE02C2200CDFF89 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEFB1EE02C2200CDFF89 /* CoreMotion.framework */; };
-		B936CF021EE02C2200CDFF89 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CEFC1EE02C2200CDFF89 /* CoreTelephony.framework */; };
-		B936CF041EE02C2A00CDFF89 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF031EE02C2A00CDFF89 /* CFNetwork.framework */; };
-		B936CF061EE02C3200CDFF89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF051EE02C3200CDFF89 /* AVFoundation.framework */; };
-		B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF071EE02C3800CDFF89 /* AudioToolbox.framework */; };
-		B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936CF091EE02C3E00CDFF89 /* AdSupport.framework */; };
 		B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */; };
-		B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C56D041EE7E55B009E52EB /* Appodeal.framework */; };
-		B9C56D371EE7E55B009E52EB /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D1D1EE7E55B009E52EB /* StartApp.bundle */; };
-		B9C56D381EE7E55B009E52EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B9C56D1E1EE7E55B009E52EB /* TapjoyResources.bundle */; };
 		B9CA2A3420298F1000434E37 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA2A3220298F1000434E37 /* Native.xib */; };
 		B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A372029903500434E37 /* ASNativeViewController.m */; };
 		B9CA2A3B2029983100434E37 /* ASNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A3A2029983100434E37 /* ASNativeView.m */; };
-		B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CDF1D32056705B00925C5B /* ASExtentions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,11 +40,11 @@
 /* Begin PBXFileReference section */
 		0330437E1EE6C71900FBF3E4 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
 		03BB6E031EE7D97F007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ObjC.storyboard; sourceTree = "<group>"; };
-		423BCA462328DA7400FE6850 /* MoPubSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoPubSDK.framework; path = ../SDK/MoPubSDK.framework; sourceTree = "<group>"; };
+		2D3FEA5068E69279DD6EC47F /* Pods-AppodealObjectiveCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealObjectiveCDemo.release.xcconfig"; path = "Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		426932282355A64F005CFB02 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPDTwitterMoPubAdapter.a; path = ../SDK/libAPDTwitterMoPubAdapter.a; sourceTree = "<group>"; };
+		7469519F04830FC20B77706F /* Pods_AppodealObjectiveCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppodealObjectiveCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8019B1683D2E313A5D4C8311 /* Pods-AppodealObjectiveCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealObjectiveCDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1CAA3320AD669E00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
-		9CA1597C20C179070052C56F /* ASGDPR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASGDPR.framework; path = ../SDK/ASGDPR.framework; sourceTree = "<group>"; };
 		B936CE961EE00D8000CDFF89 /* AppodealObjectiveCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealObjectiveCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B936CE9A1EE00D8000CDFF89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B936CE9C1EE00D8000CDFF89 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
@@ -138,15 +97,11 @@
 		B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRoundButton.m; sourceTree = "<group>"; };
 		B936CF501EE03D3B00CDFF89 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B9B301681EE191360016F22D /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
-		B9C56D041EE7E55B009E52EB /* Appodeal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Appodeal.framework; path = ../SDK/Appodeal.framework; sourceTree = "<group>"; };
-		B9C56D1D1EE7E55B009E52EB /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
-		B9C56D1E1EE7E55B009E52EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		B9CA2A3320298F1000434E37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
 		B9CA2A362029903500434E37 /* ASNativeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNativeViewController.h; sourceTree = "<group>"; };
 		B9CA2A372029903500434E37 /* ASNativeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeViewController.m; sourceTree = "<group>"; };
 		B9CA2A392029983100434E37 /* ASNativeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASNativeView.h; sourceTree = "<group>"; };
 		B9CA2A3A2029983100434E37 /* ASNativeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASNativeView.m; sourceTree = "<group>"; };
-		B9CDF1D32056705B00925C5B /* ASExtentions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ASExtentions.framework; path = ../SDK/ASExtentions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,72 +109,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1CAA3420AD669E00C20A3A /* WatchConnectivity.framework in Frameworks */,
-				B936CF0A1EE02C3E00CDFF89 /* AdSupport.framework in Frameworks */,
-				B936CF081EE02C3800CDFF89 /* AudioToolbox.framework in Frameworks */,
-				B936CF061EE02C3200CDFF89 /* AVFoundation.framework in Frameworks */,
-				B936CF041EE02C2A00CDFF89 /* CFNetwork.framework in Frameworks */,
-				B936CEFD1EE02C2200CDFF89 /* CoreFoundation.framework in Frameworks */,
-				B936CEFE1EE02C2200CDFF89 /* CoreGraphics.framework in Frameworks */,
-				B936CEFF1EE02C2200CDFF89 /* CoreLocation.framework in Frameworks */,
-				B936CF001EE02C2200CDFF89 /* CoreMedia.framework in Frameworks */,
-				B936CF011EE02C2200CDFF89 /* CoreMotion.framework in Frameworks */,
-				B936CF021EE02C2200CDFF89 /* CoreTelephony.framework in Frameworks */,
-				423BCA472328DA7400FE6850 /* MoPubSDK.framework in Frameworks */,
-				B936CEF61EE02BFE00CDFF89 /* CoreImage.framework in Frameworks */,
-				B936CEF31EE02BF500CDFF89 /* EventKit.framework in Frameworks */,
-				B936CEF41EE02BF500CDFF89 /* EventKitUI.framework in Frameworks */,
-				B936CEF01EE02BEA00CDFF89 /* JavaScriptCore.framework in Frameworks */,
-				B936CEEE1EE02BE000CDFF89 /* libc++.tbd in Frameworks */,
-				B936CEEC1EE02BD900CDFF89 /* libsqlite3.tbd in Frameworks */,
-				B936CEEA1EE02BD000CDFF89 /* libxml2.2.tbd in Frameworks */,
-				42D8468E229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a in Frameworks */,
-				B936CEE81EE02BC700CDFF89 /* libz.tbd in Frameworks */,
-				B936CEE61EE02BBD00CDFF89 /* MediaPlayer.framework in Frameworks */,
-				9CA1597D20C179070052C56F /* ASGDPR.framework in Frameworks */,
-				B936CEE41EE02BB500CDFF89 /* MobileCoreServices.framework in Frameworks */,
-				B936CEE21EE02BAF00CDFF89 /* QuartzCore.framework in Frameworks */,
-				B936CEE01EE02BA800CDFF89 /* SafariServices.framework in Frameworks */,
-				B936CEDE1EE02BA300CDFF89 /* Security.framework in Frameworks */,
-				B936CEDC1EE02B9D00CDFF89 /* Social.framework in Frameworks */,
-				B936CEDA1EE02B9500CDFF89 /* SystemConfiguration.framework in Frameworks */,
-				B936CED81EE02B8D00CDFF89 /* Twitter.framework in Frameworks */,
-				B936CED61EE02B8700CDFF89 /* UIKit.framework in Frameworks */,
-				B9CDF1D82056731200925C5B /* ASExtentions.framework in Frameworks */,
-				426932292355A64F005CFB02 /* VideoToolbox.framework in Frameworks */,
-				B936CED41EE02B8100CDFF89 /* CoreBluetooth.framework in Frameworks */,
-				B936CED21EE02B7700CDFF89 /* GLKit.framework in Frameworks */,
-				B936CED01EE02B7200CDFF89 /* WebKit.framework in Frameworks */,
-				B9C56D1F1EE7E55B009E52EB /* Appodeal.framework in Frameworks */,
-				B936CECE1EE02B6D00CDFF89 /* MessageUI.framework in Frameworks */,
-				B936CECC1EE02B6300CDFF89 /* CoreText.framework in Frameworks */,
-				B936CECA1EE02B5E00CDFF89 /* StoreKit.framework in Frameworks */,
+				3B57D37B49A0557F20ABCF52 /* Pods_AppodealObjectiveCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		033F6A201EE699B000C933D1 /* SDK */ = {
+		7CA562E2A33961482AF2C422 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42D8468D229FD5C300D36F34 /* libAPDTwitterMoPubAdapter.a */,
-				423BCA462328DA7400FE6850 /* MoPubSDK.framework */,
-				9CA1597C20C179070052C56F /* ASGDPR.framework */,
-				B9CDF1D32056705B00925C5B /* ASExtentions.framework */,
-				B9C56D041EE7E55B009E52EB /* Appodeal.framework */,
-				B9C56D051EE7E55B009E52EB /* Resources */,
+				8019B1683D2E313A5D4C8311 /* Pods-AppodealObjectiveCDemo.debug.xcconfig */,
+				2D3FEA5068E69279DD6EC47F /* Pods-AppodealObjectiveCDemo.release.xcconfig */,
 			);
-			name = SDK;
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 		B936CE8D1EE00D8000CDFF89 = {
 			isa = PBXGroup;
 			children = (
-				033F6A201EE699B000C933D1 /* SDK */,
 				B936CE981EE00D8000CDFF89 /* AppodealObjectiveCDemo */,
 				B936CE971EE00D8000CDFF89 /* Products */,
 				B936CEC81EE02B5D00CDFF89 /* Frameworks */,
+				7CA562E2A33961482AF2C422 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,6 +214,7 @@
 				B936CECD1EE02B6D00CDFF89 /* MessageUI.framework */,
 				B936CECB1EE02B6300CDFF89 /* CoreText.framework */,
 				B936CEC91EE02B5D00CDFF89 /* StoreKit.framework */,
+				7469519F04830FC20B77706F /* Pods_AppodealObjectiveCDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,16 +248,6 @@
 			name = Banner;
 			sourceTree = "<group>";
 		};
-		B9C56D051EE7E55B009E52EB /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B9C56D1D1EE7E55B009E52EB /* StartApp.bundle */,
-				B9C56D1E1EE7E55B009E52EB /* TapjoyResources.bundle */,
-			);
-			name = Resources;
-			path = ../SDK/Resources;
-			sourceTree = "<group>";
-		};
 		B9CA2A3520298F5300434E37 /* Native */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,10 +266,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B936CEB01EE00D8100CDFF89 /* Build configuration list for PBXNativeTarget "AppodealObjectiveCDemo" */;
 			buildPhases = (
+				E74CAE5A685CFE15B626BF04 /* [CP] Check Pods Manifest.lock */,
 				B936CE921EE00D8000CDFF89 /* Sources */,
 				B936CE931EE00D8000CDFF89 /* Frameworks */,
 				B936CE941EE00D8000CDFF89 /* Resources */,
 				42C05A9E229FE83400C52D0D /* Embed Frameworks */,
+				39EAC02A5398F87139772B9C /* [CP] Embed Pods Frameworks */,
+				D6EA5B901E2C453B529CF775 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -388,7 +295,6 @@
 				TargetAttributes = {
 					B936CE951EE00D8000CDFF89 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = WG4VFF78ZM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -420,13 +326,78 @@
 				03BB6E041EE7D97F007638E2 /* ObjC.storyboard in Resources */,
 				B9CA2A3420298F1000434E37 /* Native.xib in Resources */,
 				B936CEAC1EE00D8100CDFF89 /* LaunchScreen.storyboard in Resources */,
-				B9C56D371EE7E55B009E52EB /* StartApp.bundle in Resources */,
-				B9C56D381EE7E55B009E52EB /* TapjoyResources.bundle in Resources */,
 				B936CEA91EE00D8100CDFF89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39EAC02A5398F87139772B9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6EA5B901E2C453B529CF775 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-resources.sh",
+				"${PODS_ROOT}/Appodeal/APDAppLovinAdapter.embeddedframework/Resources/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/Appodeal/APDStartAppAdapter.embeddedframework/Resources/StartApp.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppLovinSDKResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StartApp.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74CAE5A685CFE15B626BF04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppodealObjectiveCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B936CE921EE00D8000CDFF89 /* Sources */ = {
@@ -586,16 +557,17 @@
 		};
 		B936CEB11EE00D8100CDFF89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8019B1683D2E313A5D4C8311 /* Pods-AppodealObjectiveCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,16 +576,17 @@
 		};
 		B936CEB21EE00D8100CDFF89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D3FEA5068E69279DD6EC47F /* Pods-AppodealObjectiveCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK/";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(PROJECT_DIR)/AppodealObjectiveCDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../SDK";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appodeal.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
