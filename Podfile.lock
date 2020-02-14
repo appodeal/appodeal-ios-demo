@@ -1,50 +1,50 @@
 PODS:
-  - APDAdColonyAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDAmazonAdsAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDAppLovinAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDAppodealAdExchangeAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDChartboostAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDFacebookAudienceAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
+  - APDAdColonyAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDAmazonAdsAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDAppLovinAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDAppodealAdExchangeAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDChartboostAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDFacebookAudienceAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
     - FBSDKCoreKit/Basics (~> 5.6.0)
-  - APDGoogleAdMobAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
+  - APDGoogleAdMobAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
     - Google-Mobile-Ads-SDK (~> 7.53.1)
-  - APDInMobiAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDInnerActiveAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDIronSourceAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDMintegralAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDMyTargetAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDOguryAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDOpenXAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDPubnativeAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDSmaatoAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDStartAppAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDTapjoyAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDUnityAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDVungleAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
-  - APDYandexAdapter (2.6.1.1):
-    - Appodeal (= 2.6.1)
+  - APDInMobiAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDInnerActiveAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDIronSourceAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDMintegralAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDMyTargetAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDOguryAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDOpenXAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDPubnativeAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDSmaatoAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDStartAppAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDTapjoyAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDUnityAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDVungleAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
+  - APDYandexAdapter (2.6.2.1):
+    - Appodeal (= 2.6.2)
     - YandexMobileMetrica (< 4.0.0, >= 3.2.0)
-  - Appodeal (2.6.1)
+  - Appodeal (2.6.2)
   - FBSDKCoreKit/Basics (5.6.0)
   - Google-Mobile-Ads-SDK (7.53.1):
     - GoogleAppMeasurement (~> 6.0)
@@ -86,27 +86,27 @@ PODS:
     - YandexMobileMetrica/Static/Core
 
 DEPENDENCIES:
-  - APDAdColonyAdapter (= 2.6.1.1)
-  - APDAmazonAdsAdapter (= 2.6.1.1)
-  - APDAppLovinAdapter (= 2.6.1.1)
-  - APDAppodealAdExchangeAdapter (= 2.6.1.1)
-  - APDChartboostAdapter (= 2.6.1.1)
-  - APDFacebookAudienceAdapter (= 2.6.1.1)
-  - APDGoogleAdMobAdapter (= 2.6.1.1)
-  - APDInMobiAdapter (= 2.6.1.1)
-  - APDInnerActiveAdapter (= 2.6.1.1)
-  - APDIronSourceAdapter (= 2.6.1.1)
-  - APDMintegralAdapter (= 2.6.1.1)
-  - APDMyTargetAdapter (= 2.6.1.1)
-  - APDOguryAdapter (= 2.6.1.1)
-  - APDOpenXAdapter (= 2.6.1.1)
-  - APDPubnativeAdapter (= 2.6.1.1)
-  - APDSmaatoAdapter (= 2.6.1.1)
-  - APDStartAppAdapter (= 2.6.1.1)
-  - APDTapjoyAdapter (= 2.6.1.1)
-  - APDUnityAdapter (= 2.6.1.1)
-  - APDVungleAdapter (= 2.6.1.1)
-  - APDYandexAdapter (= 2.6.1.1)
+  - APDAdColonyAdapter (= 2.6.2.1)
+  - APDAmazonAdsAdapter (= 2.6.2.1)
+  - APDAppLovinAdapter (= 2.6.2.1)
+  - APDAppodealAdExchangeAdapter (= 2.6.2.1)
+  - APDChartboostAdapter (= 2.6.2.1)
+  - APDFacebookAudienceAdapter (= 2.6.2.1)
+  - APDGoogleAdMobAdapter (= 2.6.2.1)
+  - APDInMobiAdapter (= 2.6.2.1)
+  - APDInnerActiveAdapter (= 2.6.2.1)
+  - APDIronSourceAdapter (= 2.6.2.1)
+  - APDMintegralAdapter (= 2.6.2.1)
+  - APDMyTargetAdapter (= 2.6.2.1)
+  - APDOguryAdapter (= 2.6.2.1)
+  - APDOpenXAdapter (= 2.6.2.1)
+  - APDPubnativeAdapter (= 2.6.2.1)
+  - APDSmaatoAdapter (= 2.6.2.1)
+  - APDStartAppAdapter (= 2.6.2.1)
+  - APDTapjoyAdapter (= 2.6.2.1)
+  - APDUnityAdapter (= 2.6.2.1)
+  - APDVungleAdapter (= 2.6.2.1)
+  - APDYandexAdapter (= 2.6.2.1)
   - StackConsentManager (~> 1.0)
 
 SPEC REPOS:
@@ -142,28 +142,28 @@ SPEC REPOS:
     - YandexMobileMetrica
 
 SPEC CHECKSUMS:
-  APDAdColonyAdapter: 2a41be27c822d972ecea127dd6eb4a9f78c7e4fd
-  APDAmazonAdsAdapter: 7ae6c2e4fced2db08e6de635250a15c5632ae7b8
-  APDAppLovinAdapter: 10015683070cdab09f58dd9a8a7aea7ce2d56e52
-  APDAppodealAdExchangeAdapter: 922f6367443aeb7a52f22dc2da5b11ab8d0d12fa
-  APDChartboostAdapter: 85034c032e6953a7413bdc7a74fa8d8d16b47e8e
-  APDFacebookAudienceAdapter: da3eafb924e306488036c387eee4113a35bcf7ef
-  APDGoogleAdMobAdapter: b9b64a9bd1067e059fcc1f0209d21205090bfd37
-  APDInMobiAdapter: f7543b166f7302c27d5d51e10c159d357e37b7bf
-  APDInnerActiveAdapter: 38fb7e9fb307984ce6a0ca1a65ef7ebe58498c96
-  APDIronSourceAdapter: a3a639b992d828ea16c1291e48c7973c12ea0f9f
-  APDMintegralAdapter: 4c596fa96c71964c117923351dbb9e8b6cc5b208
-  APDMyTargetAdapter: 09ec51f1b172b17fb890a176ba5cb3ddb96800d2
-  APDOguryAdapter: 6e51aaa2e26a0d167551bfa117dc9baf259f1bc4
-  APDOpenXAdapter: 05d813c01bee2665828eed9c75d3cc8e07a7049d
-  APDPubnativeAdapter: a1ab7b28852679a5c7e52b8f8ff472a8b624e8e6
-  APDSmaatoAdapter: 9415e12a2fffeb25bf1323f5448ff577c7ebb4dc
-  APDStartAppAdapter: 8661267127b923f52860e9615a4e1f84199e2682
-  APDTapjoyAdapter: 20af2687fa15a5379f2d585e5c25e056dc75b0e9
-  APDUnityAdapter: cd04a5ef6ed68bf106aefd6263711d8ce065bc27
-  APDVungleAdapter: 6f3b02e9d9f895a5654c140ceb193eeb1ddbfeec
-  APDYandexAdapter: cf1aa9dde4a71166fc3fdcb356c18a7a58010cea
-  Appodeal: fa6c035ae21fcc068b30ed5339a2b928a8a3c58b
+  APDAdColonyAdapter: 2ffa5e367accbf6226174c9799fb58041f145870
+  APDAmazonAdsAdapter: a8e25ebcc7d71da70a3e445062dd8fdefdeb6afc
+  APDAppLovinAdapter: 3066fa2c365cd54624500029d5c6e86b364e1ce0
+  APDAppodealAdExchangeAdapter: fdb3f33ca97370eec7ed0493b206c6ad67482c43
+  APDChartboostAdapter: aa3f1a4d424fa4616ff4d93ac78e67fca7f2a42c
+  APDFacebookAudienceAdapter: db962200a10896c6d630cf4d91e88b9a7367408c
+  APDGoogleAdMobAdapter: eee5473a90f9e5aafd21087a92b11af759a00d9a
+  APDInMobiAdapter: 4e6473f70c8d728a2bc208161fd85999e917d84f
+  APDInnerActiveAdapter: 59b2f9eebf22e80507f095780b9869f0509e1f4e
+  APDIronSourceAdapter: dab07fc534cb11e82d4d916252d8125c321bf09a
+  APDMintegralAdapter: 54cb9bbc79c4a9b7c6fb050888fe28785db24ada
+  APDMyTargetAdapter: 9061afc1c971fc9ad95746fd47c2ff6be3872273
+  APDOguryAdapter: 28dbe0876c7fa2a1a922a5421e7c2115edffdf59
+  APDOpenXAdapter: 4b9b4ff74964d480aaa641508369f24e906064c4
+  APDPubnativeAdapter: 74efea58dce877ab007cb6df8bd1e5e3a588ab27
+  APDSmaatoAdapter: 792c19059275751687685359282381aa78551349
+  APDStartAppAdapter: 7faa53dde0146bb84e7bd4297814a9ea63b268ce
+  APDTapjoyAdapter: 1e58d102082af05ea2d8333873ef4f7ba7036ffb
+  APDUnityAdapter: 6f5ebb59353e66d19d7bb20de8fc578ae2b57017
+  APDVungleAdapter: ed49956fc3469b1f8167f2b4091a6818e8864911
+  APDYandexAdapter: a056e973b13b2ea5ace78fa832c3ed503e241e46
+  Appodeal: e3dc1c93baf8a23fc3b90e8201fcc64ecb57f61e
   FBSDKCoreKit: d6655a343868d4bb5c29a60859bab07c3be14a0b
   Google-Mobile-Ads-SDK: fac081606dbd438d8db57198b83ba8b5f875a601
   GoogleAppMeasurement: d0560d915abf15e692e8538ba1d58442217b6aff
@@ -172,6 +172,6 @@ SPEC CHECKSUMS:
   StackConsentManager: 101bbc360716024c4a1b48c2012ae64b447d69d3
   YandexMobileMetrica: 1030df2959c886a7be3bc3d274eb54c8e86afd6f
 
-PODFILE CHECKSUM: 9929f84d8336ae32d4230bad9b270d1b05439f69
+PODFILE CHECKSUM: 6b14e9511fa9fc42aba6ca3bc379783b82be365c
 
 COCOAPODS: 1.8.1
