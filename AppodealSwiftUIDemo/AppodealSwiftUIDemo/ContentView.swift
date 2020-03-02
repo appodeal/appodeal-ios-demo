@@ -39,6 +39,7 @@ struct ContentView: View {
                         maxHeight: ad.bannerHeight
                 )
             }
+            .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarTitle("SwiftUI Sample")
         }
     }

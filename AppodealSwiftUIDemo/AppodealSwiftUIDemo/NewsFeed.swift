@@ -80,6 +80,7 @@ extension NewsFeed.Coordinator: APDNativeAdQueueDelegate {
     }
 }
 
+
 struct FeedEntity {
     var title: String
     var description: String
@@ -90,14 +91,24 @@ struct FeedEntity {
             GeometryReader { proxy in
                 ZStack(alignment: .top) {
                     Image(self.image).resizable()
-                    VStack(alignment: .leading) {
-                        Text(self.title).font(.headline).padding([.leading, .top], 16)
-                        Text(self.description).font(.subheadline).padding([.leading, .bottom], 16)
+                    VStack {
+                        Text(self.title)
+                            .font(.headline)
+                            .foregroundColor(.primary)
+                            .padding([.leading, .top], 16)
+                        Text(self.description)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .padding([.leading, .bottom], 16)
+                            .multilineTextAlignment(.leading)
                     }
                     .frame(width: proxy.size.width)
                     .background(Color.red.opacity(0.2))
                 }.frame(width: proxy.size.width)
-            }.frame(height: 300)
+            }
+            .cornerRadius(16)
+            .shadow(radius: 8)
+            .frame(height: UIDevice.current.isPad ? 500 : 300)
         )
     }
     

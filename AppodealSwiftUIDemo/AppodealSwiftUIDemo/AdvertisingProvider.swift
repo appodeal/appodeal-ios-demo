@@ -199,14 +199,6 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     }
 }
 
-
-extension APDNativeAd {
-    var view: AnyView {
-        AnyView(AdvertisingProvider.Native(ad: self).frame(height: 400))
-    }
-}
-
-
 // MARK: Protocols implementations
 extension AdvertisingProvider: APDBannerViewDelegate {
     func bannerViewDidLoadAd(_ bannerView: APDBannerView,

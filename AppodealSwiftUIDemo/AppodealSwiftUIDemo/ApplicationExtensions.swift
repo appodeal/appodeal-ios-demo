@@ -30,3 +30,7 @@ extension UIApplication {
         return controller
     }
 }
+
+extension UIDevice {
+    var isPad: Bool { userInterfaceIdiom == .pad }
+}

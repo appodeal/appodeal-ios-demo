@@ -63,3 +63,13 @@ extension NativeView : APDNativeAdView {
     }
 }
 
+
+extension APDNativeAd {
+    var view: AnyView {
+        AnyView(
+            AdvertisingProvider.Native(ad: self)
+                .shadow(color: .red, radius: 8)
+                .frame(height: UIDevice.current.isPad ? 700 : 400)
+        )
+    }
+}
