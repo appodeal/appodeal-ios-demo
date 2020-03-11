@@ -41,3 +41,8 @@ target 'AppodealObjectiveCDemo' do
     project 'AppodealObjectiveCDemo/AppodealObjectiveCDemo.xcodeproj'
     appodeal
 end
+
+target 'AppodealSwiftUIDemo' do
+    project 'AppodealSwiftUIDemo/AppodealSwiftUIDemo.xcodeproj'
+    appodeal
+end
