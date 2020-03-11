@@ -13,7 +13,6 @@ import Appodeal
 import StackConsentManager
 
 
-
 /// Advertising interface that provides published state
 /// which can be used in SwiftUI
 final class AdvertisingProvider: NSObject, ObservableObject {
@@ -51,19 +50,19 @@ final class AdvertisingProvider: NSObject, ObservableObject {
             guard
                 let viewController = UIApplication.shared.rootViewController,
                 let uiView = uiView(for: viewController)
-            else {
-                return NativeView()
+                else {
+                    return NativeView()
             }
             return uiView
         }
-
+        
         func updateUIView(_ uiView: NativeView, context: UIViewRepresentableContext<Native>) {}
         
         private func uiView(for viewController: UIViewController) -> NativeView? {
             return try? ad.getViewForPlacement(
                 AdvertisingProvider.AppodealConstants.placement,
                 withRootViewController: viewController
-            ) as? NativeView
+                ) as? NativeView
         }
     }
     
@@ -78,7 +77,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     }()
     
     fileprivate lazy var bannerView: APDBannerView = {
-        // CHo
+        // Select banner ad size by current interface idiom
         let adSize = UIDevice.current.userInterfaceIdiom == .pad ?
             kAPDAdSize728x90 :
             kAPDAdSize320x50
@@ -87,7 +86,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
             size:  adSize,
             rootViewController: UIApplication.shared.rootViewController ?? UIViewController()
         )
-        
+        // Set banner initial frame
         banner.frame = CGRect(
             x: 0,
             y: 0,
@@ -100,7 +99,6 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         return banner
     }()
     
-    
     // MARK: Published properties
     @Published var isAdInitialised     = false
     @Published var isBannerReady       = false
@@ -109,6 +107,8 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     
     // MARK: Public methods
     func initialize() {
+        // Check user consent beforestak advertising
+        // initialisation
         synchroniseConsent { [weak self] in
             self?.initializeAppodeaSDK()
         }
@@ -116,10 +116,11 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     
     func presentInterstitial() {
         defer { isInterstitialReady = false }
+        // Check availability of interstial
         guard
             Appodeal.canShow(.interstitial, forPlacement: AppodealConstants.placement),
             let viewController = UIApplication.shared.rootViewController
-        else { return }
+            else { return }
         Appodeal.showAd(.interstitial,
                         forPlacement: AppodealConstants.placement,
                         rootViewController: viewController)
@@ -127,10 +128,11 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     
     func presentRewarded() {
         defer { isRewardedReady = false }
+        // Check availability of rewarded video
         guard
             Appodeal.canShow(.rewardedVideo, forPlacement: AppodealConstants.placement),
             let viewController = UIApplication.shared.rootViewController
-        else { return }
+            else { return }
         Appodeal.showAd(.rewardedVideo,
                         forPlacement: AppodealConstants.placement,
                         rootViewController: viewController)

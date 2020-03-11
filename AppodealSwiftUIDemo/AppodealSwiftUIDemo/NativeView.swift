@@ -11,6 +11,9 @@ import Appodeal
 import SwiftUI
 
 
+/// UIView is required for Appodeal native ad
+/// to correctly track impressions and user
+/// interactions
 final class NativeView: UIView {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var callToAction: UILabel!

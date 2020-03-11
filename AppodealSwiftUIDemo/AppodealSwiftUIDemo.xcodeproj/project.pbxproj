@@ -422,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppodealSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppodealSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppodealSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = WG4VFF78ZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppodealSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
