@@ -32,7 +32,7 @@
     // [Appodeal setTriggerPrecacheCallbacks:YES];
     // [Appodeal setLocationTracking:YES];
     /// Test Mode
-     [Appodeal setTestingEnabled:YES];
+    [Appodeal setTestingEnabled:YES];
     
     /// User Data
     // [Appodeal setUserId:@"user_id"];
@@ -43,10 +43,14 @@
     [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
     
     AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
-    BOOL consent = STKConsentManager.sharedManager.consentStatus != STKConsentStatusNonPersonalized;
-    [Appodeal initializeWithApiKey:APP_KEY
-                             types:types
-                        hasConsent:consent];
+    if (STKConsentManager.sharedManager.consent != nil) {
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types
+                         consentReport:STKConsentManager.sharedManager.consent];
+    } else {
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types];
+    }
 }
 
 - (void)synchoniseConsent {

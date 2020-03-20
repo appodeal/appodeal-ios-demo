@@ -80,7 +80,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         // Select banner ad size by current interface idiom
         let adSize = UIDevice.current.userInterfaceIdiom == .pad ?
             kAPDAdSize728x90 :
-            kAPDAdSize320x50
+        kAPDAdSize320x50
         
         let banner = APDBannerView(
             size:  adSize,
@@ -160,12 +160,19 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         Appodeal.setInterstitialDelegate(self)
         Appodeal.setRewardedVideoDelegate(self)
         
-        let consent = STKConsentManager.shared().consentStatus != .nonPersonalized
-        Appodeal.initialize(
-            withApiKey: AppodealConstants.key,
-            types: AppodealConstants.adTypes,
-            hasConsent: consent
-        )
+        // Initialise Appodeal SDK with consent report
+        if let consent = STKConsentManager.shared().consent {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes,
+                consentReport: consent
+            )
+        } else {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes
+            )
+        }
         
         // Trigger banner cache
         // It can be done after any moment after Appodeal initialisation

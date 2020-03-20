@@ -45,13 +45,19 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         // Appodeal.setUserGender(.male)
         Appodeal.setLogLevel(AppodealConstants.logLevel)
         Appodeal.setAutocache(true, types: AppodealConstants.adTypes)
-        
-        let consent = STKConsentManager.shared().consentStatus != .nonPersonalized
-        Appodeal.initialize(
-            withApiKey: AppodealConstants.key,
-            types: AppodealConstants.adTypes,
-            hasConsent: consent
-        )
+        // Initialise Appodeal SDK with consent report
+        if let consent = STKConsentManager.shared().consent {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes,
+                consentReport: consent
+            )
+        } else {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes
+            )
+        }
     }
     
     // MARK: Consent manager
