@@ -21,7 +21,7 @@
 @implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self synchoniseConsent];
+    [self synchroniseConsent];
     [self configureAppearance];
     return YES;
 }
@@ -49,7 +49,7 @@
                         hasConsent:consent];
 }
 
-- (void)synchoniseConsent {
+- (void)synchroniseConsent {
     __weak typeof(self) weakSelf = self;
     [STKConsentManager.sharedManager synchronizeWithAppKey:APP_KEY completion:^(NSError *error) {
         __strong typeof(self) strongSelf = weakSelf;
