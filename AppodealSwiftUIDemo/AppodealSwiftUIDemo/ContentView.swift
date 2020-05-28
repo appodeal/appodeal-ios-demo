@@ -31,13 +31,15 @@ struct ContentView: View {
                     }
                     NativeSection()
                 }.listStyle(GroupedListStyle())
-                AdvertisingProvider.Banner()
-                    .frame(
-                        minWidth: 320,
-                        idealWidth: .infinity,
-                        minHeight: ad.bannerHeight,
-                        maxHeight: ad.bannerHeight
-                )
+                if (ad.isBannerReady) {
+                    AdvertisingProvider.Banner()
+                        .frame(
+                            minWidth: 320,
+                            idealWidth: .infinity,
+                            minHeight: ad.bannerHeight,
+                            maxHeight: ad.bannerHeight
+                    )
+                }
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarTitle("SwiftUI Sample")
