@@ -2,7 +2,7 @@ platform :ios, '9.0'
 workspace 'AppodealDemo.xcworkspace'
 
 source 'https://github.com/appodeal/CocoaPods.git'
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 install! 'cocoapods', 
     :deterministic_uuids => false, 

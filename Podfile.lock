@@ -45,7 +45,7 @@ PODS:
     - Appodeal (= 2.6.5)
     - YandexMobileMetrica (< 4.0.0, >= 3.2.0)
   - Appodeal (2.6.5)
-  - FBSDKCoreKit/Basics (7.0.1)
+  - FBSDKCoreKit/Basics (7.1.1)
   - Google-Mobile-Ads-SDK (7.60.0):
     - GoogleAppMeasurement (~> 6.0)
   - GoogleAppMeasurement (6.6.1):
@@ -112,7 +112,7 @@ DEPENDENCIES:
   - StackConsentManager (~> 1.0.1)
 
 SPEC REPOS:
-  https://github.com/appodeal/CocoaPods.git:
+  trunk:
     - APDAdColonyAdapter
     - APDAmazonAdsAdapter
     - APDAppLovinAdapter
@@ -135,48 +135,47 @@ SPEC REPOS:
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
-    - StackConsentManager
-  https://github.com/CocoaPods/Specs.git:
     - FBSDKCoreKit
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - StackConsentManager
     - YandexMobileMetrica
 
 SPEC CHECKSUMS:
-  APDAdColonyAdapter: 11577235780f679e5e713004efa9aa2d7f9d5748
-  APDAmazonAdsAdapter: 9d6afa4f9544aa8cdbab5ec60ad3aba0fd741d23
-  APDAppLovinAdapter: c6fdeafe5e9eedfb6d48f3bb705fa7e0a54202a3
-  APDAppodealAdExchangeAdapter: 2f1a0463fce7b33fd4856166235c400d40c62f40
-  APDChartboostAdapter: 60f2b239171607c8c14769c4427491313b2f0f5c
-  APDFacebookAudienceAdapter: 6fac4fb400c990506cd27f03cecebad5d77396d3
-  APDGoogleAdMobAdapter: 3ba0cba950e52dc42f2da026d7ad6bafb5acfdfd
-  APDInMobiAdapter: 85aa01b06cc31b896b30aca41cb6fe39cc9b69af
-  APDInnerActiveAdapter: c2c06789c0a199519dd31bac503993f7c0bf64d3
-  APDIronSourceAdapter: 8d78f78424c51e2afc8446cab5ca4047d7dd3373
-  APDMintegralAdapter: c42321e83e0f560c9243ef1df23901bd9b70768d
-  APDMyTargetAdapter: 8237991a4b1a0edd71fafdeed63035250c550e41
-  APDOguryAdapter: dc2e4639a00826b6a661099632b0d9399be83c7d
-  APDOpenXAdapter: 2c85db859dbc80a042f3d9d8a56bf17c733bdc22
-  APDPubnativeAdapter: c2616105d2af82f8fb87fa549147faae78eac673
-  APDSmaatoAdapter: 36757f54eeeb78ef97ac192454aed372749da404
-  APDStartAppAdapter: 2bde4fa95724c0e2fb480b1a4a23d75afd8d0554
-  APDTapjoyAdapter: b05928090b99ff80a6508a57d180ed70a53d755d
-  APDUnityAdapter: 8e15cc97b3c6cdea4931b02bbc4a9a5fb2d83d1a
-  APDVungleAdapter: 75fb958270b8901547069b339975ab316676826d
-  APDYandexAdapter: b88880cfc04df822f7a6c4388d9caea38ed98eb7
-  Appodeal: 870fe9918c1cffa1b88cc2441d477a6ac880f0d7
-  FBSDKCoreKit: 9cc05bec0568a5955c82eb59ae95da0fe125b88d
+  APDAdColonyAdapter: 7ca6712ed93cbd24b931f9b2d281223cfe0b7665
+  APDAmazonAdsAdapter: cdbdfc9ef1c017e6dfd5738ad0fdb6bd80c612f8
+  APDAppLovinAdapter: 77fbe74ae827493992abee80265c1e441d32df05
+  APDAppodealAdExchangeAdapter: 349d775ef7c24084dea095f3e8d4007b9f104121
+  APDChartboostAdapter: 3554d81d48319279e85f4d0fca5919dd0fe3c2ba
+  APDFacebookAudienceAdapter: e4e5a15af80a8583dc90bec226bc37d982ac4ab5
+  APDGoogleAdMobAdapter: c8315113279071ea1f5f7328c962230ea01bc9c1
+  APDInMobiAdapter: 5ae0f7d42b61ca52d6bce80bd58cd8a5245b8ea8
+  APDInnerActiveAdapter: 992e54cb26587e7d8a18ae617273238fe14a934d
+  APDIronSourceAdapter: c96bae0895c57a3eef5178c97e348b07d7e83ed7
+  APDMintegralAdapter: 5cc46993d88458fdf73a6f0d7c1d0d43052f0ced
+  APDMyTargetAdapter: 6131ba97b16f0f27b37e750d41266913dc373d48
+  APDOguryAdapter: 5b70cb7e0b867fbe91c4e7680b697e0371a3b21a
+  APDOpenXAdapter: 936f675af6ee24370c25250156626eee278fb8ac
+  APDPubnativeAdapter: 5a63681573a7daafe3470bf79835b8f7904bc01a
+  APDSmaatoAdapter: c27820b0b7977b6bee1fd2d2bb51b6ab7c1ea8f0
+  APDStartAppAdapter: adbcbb31b060c991d31b5dc84ff1c52e917f9410
+  APDTapjoyAdapter: 11684a58f77c302e8bf4d752ab92e4be8fff408a
+  APDUnityAdapter: d5067f01f5e4ee7317cc083d85ebcce8d771a408
+  APDVungleAdapter: beee76a91ba997636666b63dd61266b8140cf6b3
+  APDYandexAdapter: 9ba8920db634812f34c532684cf7532463ddd184
+  Appodeal: 8b7785dda5b698d688fc9ff7872e2f8f395af638
+  FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
   Google-Mobile-Ads-SDK: d70efb31e7ea19fe99d466dc5d4788966b6914f8
   GoogleAppMeasurement: 2fd5c5a56c069db635c8e7b92d4809a9591d0a69
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
-  StackConsentManager: 01f09961a8bc8c590ca54edd8d4631a456cae0b3
+  StackConsentManager: 2e7c7512d4c1b5dddf248e7e9f78931d8d0142e8
   YandexMobileMetrica: 1030df2959c886a7be3bc3d274eb54c8e86afd6f
 
-PODFILE CHECKSUM: 4b0063b794ca9082708c94e22375eff33ca048d2
+PODFILE CHECKSUM: 9fcd9c2cbc3b7e30dd5a067e6e524209ffa77b88
 
 COCOAPODS: 1.9.3
