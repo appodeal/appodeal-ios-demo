@@ -12,6 +12,10 @@ import Combine
 import Appodeal
 import StackConsentManager
 
+#if canImport(AppTrackingTransparency)
+import AppTrackingTransparency
+#endif
+
 
 /// Advertising interface that provides published state
 /// which can be used in SwiftUI
@@ -109,9 +113,25 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     func initialize() {
         // Check user consent beforestak advertising
         // initialisation
-        synchroniseConsent { [weak self] in
-            self?.initializeAppodeaSDK()
+        requestTrackingAuthorization { [weak self] in
+            self?.synchroniseConsent { [weak self] in
+                self?.initializeAppodeaSDK()
+            }
         }
+    }
+    
+    private func requestTrackingAuthorization(completion: @escaping () -> Void) {
+        #if canImport(AppTrackingTransparency)
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                completion()
+            }
+        } else {
+            completion()
+        }
+        #else
+        completion()
+        #endif
     }
     
     func presentInterstitial() {
