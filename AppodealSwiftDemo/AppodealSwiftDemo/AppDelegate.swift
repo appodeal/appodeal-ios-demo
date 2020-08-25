@@ -10,6 +10,10 @@ import UIKit
 import Appodeal
 import StackConsentManager
 
+#if canImport(AppTrackingTransparency)
+import AppTrackingTransparency
+#endif
+
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,9 +28,23 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: Controller Life Cycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        synchroniseConsent()
+        requestTrackingAuthorization()
         configureAppearance()
         return true
+    }
+    
+    private func requestTrackingAuthorization() {
+        #if canImport(AppTrackingTransparency)
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { [weak self] status in
+                self?.synchroniseConsent()
+            }
+        } else {
+            synchroniseConsent()
+        }
+        #else
+        synchroniseConsent()
+        #endif
     }
     
     // MARK: Appodeal Initialization
