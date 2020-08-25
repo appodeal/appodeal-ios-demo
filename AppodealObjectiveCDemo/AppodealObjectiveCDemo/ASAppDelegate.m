@@ -25,7 +25,7 @@
 @implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self synchoniseConsent];
+    [self requestTrackingAuthorization];
     [self configureAppearance];
     return YES;
 }
@@ -57,7 +57,7 @@
     }
 }
 
-- (void)request {
+- (void)requestTrackingAuthorization {
 #if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
     if (@available(iOS 14, *)) {
         __weak typeof(self) weakSelf = self;
