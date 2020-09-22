@@ -272,6 +272,7 @@
 				TargetAttributes = {
 					03DBE13E1EE69DFA00549332 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = WG4VFF78ZM;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
@@ -545,7 +546,7 @@
 			baseConfigurationReference = 48E54CC2F5664009B3DA12DF /* Pods-AppodealSwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -564,7 +565,7 @@
 			baseConfigurationReference = 62904DBE8FB1F44E5023049C /* Pods-AppodealSwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
