@@ -27,7 +27,7 @@ def appodeal
     pod 'APDOguryAdapter', '2.7.4.1'
     pod 'APDOpenXAdapter', '2.7.4.1'
     pod 'APDPubnativeAdapter', '2.7.4.1'
-    pod 'APDSmaatoAdapter', '2.7.4.1'
+    pod 'APDSmaatoAdapter', '2.7.4.2'
     pod 'APDStartAppAdapter', '2.7.4.1'
     pod 'APDTapjoyAdapter', '2.7.4.1'
     pod 'APDUnityAdapter', '2.7.4.1'

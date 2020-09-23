@@ -31,7 +31,7 @@ PODS:
     - Appodeal (= 2.7.4)
   - APDPubnativeAdapter (2.7.4.1):
     - Appodeal (= 2.7.4)
-  - APDSmaatoAdapter (2.7.4.1):
+  - APDSmaatoAdapter (2.7.4.2):
     - Appodeal (= 2.7.4)
   - APDStartAppAdapter (2.7.4.1):
     - Appodeal (= 2.7.4)
@@ -105,7 +105,7 @@ DEPENDENCIES:
   - APDOguryAdapter (= 2.7.4.1)
   - APDOpenXAdapter (= 2.7.4.1)
   - APDPubnativeAdapter (= 2.7.4.1)
-  - APDSmaatoAdapter (= 2.7.4.1)
+  - APDSmaatoAdapter (= 2.7.4.2)
   - APDStartAppAdapter (= 2.7.4.1)
   - APDTapjoyAdapter (= 2.7.4.1)
   - APDUnityAdapter (= 2.7.4.1)
@@ -130,7 +130,6 @@ SPEC REPOS:
     - APDOguryAdapter
     - APDOpenXAdapter
     - APDPubnativeAdapter
-    - APDSmaatoAdapter
     - APDStartAppAdapter
     - APDTapjoyAdapter
     - APDUnityAdapter
@@ -138,6 +137,7 @@ SPEC REPOS:
     - APDYandexAdapter
     - Appodeal
   trunk:
+    - APDSmaatoAdapter
     - FBSDKCoreKit
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -164,7 +164,7 @@ SPEC CHECKSUMS:
   APDOguryAdapter: 5a28d948f0c876247ca715ac1c8bb23dabcb41d8
   APDOpenXAdapter: 1fe61ee65d3136a1ec24b57b9b06cb3c8ea0e0c9
   APDPubnativeAdapter: d574b32c8da6a0126f2b4afd4b094cab8c541e41
-  APDSmaatoAdapter: 55cec2d9555e48380288d861ef99784709c37536
+  APDSmaatoAdapter: 060f2cd99a55884b013ca5fa66c649a2752631f1
   APDStartAppAdapter: 4d3bc39dcdc6d145fadf7962faf993fa761fcc92
   APDTapjoyAdapter: 8337678e30adc58e8f560e47f93f4267388a5cba
   APDUnityAdapter: dd274b45b2dad6aff7fd2782ce278be70e024765
@@ -181,6 +181,6 @@ SPEC CHECKSUMS:
   StackConsentManager: 2e7c7512d4c1b5dddf248e7e9f78931d8d0142e8
   YandexMobileMetrica: e985e1f77e405390a2d13f11741d86ff2f00c4ce
 
-PODFILE CHECKSUM: 5cae81041624fc4b3f5aad1fa2b953cfedee8e32
+PODFILE CHECKSUM: e9a35395d46fdecf4c1f6926806144e87a336f22
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0.rc.1
