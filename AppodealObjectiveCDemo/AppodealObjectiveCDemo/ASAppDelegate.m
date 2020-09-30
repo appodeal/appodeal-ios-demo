@@ -9,6 +9,10 @@
 #import <Appodeal/Appodeal.h>
 #import <StackConsentManager/StackConsentManager.h>
 
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#endif
+
 
 #define APP_KEY                 @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
 
@@ -21,7 +25,7 @@
 @implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self synchroniseConsent];
+    [self requestTrackingAuthorization];
     [self configureAppearance];
     return YES;
 }
@@ -32,7 +36,7 @@
     // [Appodeal setTriggerPrecacheCallbacks:YES];
     // [Appodeal setLocationTracking:YES];
     /// Test Mode
-     [Appodeal setTestingEnabled:YES];
+    [Appodeal setTestingEnabled:YES];
     
     /// User Data
     // [Appodeal setUserId:@"user_id"];
@@ -43,10 +47,30 @@
     [Appodeal setAutocache:YES types:AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner];
     
     AppodealAdType types = AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo | AppodealAdTypeBanner | AppodealAdTypeNativeAd;
-    BOOL consent = STKConsentManager.sharedManager.consentStatus != STKConsentStatusNonPersonalized;
-    [Appodeal initializeWithApiKey:APP_KEY
-                             types:types
-                        hasConsent:consent];
+    if (STKConsentManager.sharedManager.consent != nil) {
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types
+                         consentReport:STKConsentManager.sharedManager.consent];
+    } else {
+        [Appodeal initializeWithApiKey:APP_KEY
+                                 types:types];
+    }
+}
+
+- (void)requestTrackingAuthorization {
+#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
+    if (@available(iOS 14, *)) {
+        __weak typeof(self) weakSelf = self;
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            __strong typeof(self) strongSelf = weakSelf;
+            [strongSelf synchroniseConsent];
+        }];
+    } else {
+        [self synchroniseConsent];
+    }
+#else
+    [self synchroniseConsent];
+#endif
 }
 
 - (void)synchroniseConsent {

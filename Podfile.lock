@@ -45,11 +45,11 @@ PODS:
     - Appodeal (= 2.7.4)
     - YandexMobileMetrica (< 4.0.0, >= 3.2.0)
   - Appodeal (2.7.4)
-  - FBSDKCoreKit/Basics (7.1.1)
+  - FBSDKCoreKit/Basics (8.0.0)
   - Google-Mobile-Ads-SDK (7.65.0):
     - GoogleAppMeasurement (~> 6.0)
     - GoogleUserMessagingPlatform (~> 1.1)
-  - GoogleAppMeasurement (6.8.2):
+  - GoogleAppMeasurement (6.8.3):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
     - GoogleUtilities/Network (~> 6.7)
@@ -130,14 +130,15 @@ SPEC REPOS:
     - APDOguryAdapter
     - APDOpenXAdapter
     - APDPubnativeAdapter
+    - APDSmaatoAdapter
     - APDStartAppAdapter
     - APDTapjoyAdapter
     - APDUnityAdapter
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
+    - StackConsentManager
   trunk:
-    - APDSmaatoAdapter
     - FBSDKCoreKit
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -145,7 +146,6 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
-    - StackConsentManager
     - YandexMobileMetrica
 
 SPEC CHECKSUMS:
@@ -164,23 +164,23 @@ SPEC CHECKSUMS:
   APDOguryAdapter: 5a28d948f0c876247ca715ac1c8bb23dabcb41d8
   APDOpenXAdapter: 1fe61ee65d3136a1ec24b57b9b06cb3c8ea0e0c9
   APDPubnativeAdapter: d574b32c8da6a0126f2b4afd4b094cab8c541e41
-  APDSmaatoAdapter: 060f2cd99a55884b013ca5fa66c649a2752631f1
+  APDSmaatoAdapter: 55bf1b5fd069b1362f93cc54d00e65ecac1e4288
   APDStartAppAdapter: 4d3bc39dcdc6d145fadf7962faf993fa761fcc92
   APDTapjoyAdapter: 8337678e30adc58e8f560e47f93f4267388a5cba
   APDUnityAdapter: dd274b45b2dad6aff7fd2782ce278be70e024765
   APDVungleAdapter: 98365ad36d4f16a81f67a30c058b78c99ddcfc86
   APDYandexAdapter: fb3c74afff3e212eaa14cf01fc37b277b7d29995
   Appodeal: d93e104655e230cbdebd70a9b373e5a32eb35195
-  FBSDKCoreKit: b46507dc8b8cefed31d644e74d7cc30e2a715ef8
+  FBSDKCoreKit: 9d27fe97a2fa2abe5eeefea8240e837623ab88e0
   Google-Mobile-Ads-SDK: af735e001ee534d9dd2ce0a87cd8c355b19844b5
-  GoogleAppMeasurement: 1a66f478c68ecd6c16ee63ee60c7c3a648e6b337
+  GoogleAppMeasurement: 966e88df9d19c15715137bb2ddaf52373f111436
   GoogleUserMessagingPlatform: c85530d930ba509583aa5a6d50a10aca22cf8502
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
-  StackConsentManager: 2e7c7512d4c1b5dddf248e7e9f78931d8d0142e8
+  StackConsentManager: 01f09961a8bc8c590ca54edd8d4631a456cae0b3
   YandexMobileMetrica: e985e1f77e405390a2d13f11741d86ff2f00c4ce
 
 PODFILE CHECKSUM: e9a35395d46fdecf4c1f6926806144e87a336f22
 
-COCOAPODS: 1.10.0.rc.1
+COCOAPODS: 1.9.3

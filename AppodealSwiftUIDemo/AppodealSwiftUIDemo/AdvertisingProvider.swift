@@ -12,6 +12,10 @@ import Combine
 import Appodeal
 import StackConsentManager
 
+#if canImport(AppTrackingTransparency)
+import AppTrackingTransparency
+#endif
+
 
 /// Advertising interface that provides published state
 /// which can be used in SwiftUI
@@ -80,7 +84,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         // Select banner ad size by current interface idiom
         let adSize = UIDevice.current.userInterfaceIdiom == .pad ?
             kAPDAdSize728x90 :
-            kAPDAdSize320x50
+        kAPDAdSize320x50
         
         let banner = APDBannerView(
             size:  adSize,
@@ -109,9 +113,25 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     func initialize() {
         // Check user consent beforestak advertising
         // initialisation
-        synchroniseConsent { [weak self] in
-            self?.initializeAppodeaSDK()
+        requestTrackingAuthorization { [weak self] in
+            self?.synchroniseConsent { [weak self] in
+                self?.initializeAppodeaSDK()
+            }
         }
+    }
+    
+    private func requestTrackingAuthorization(completion: @escaping () -> Void) {
+        #if canImport(AppTrackingTransparency)
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                completion()
+            }
+        } else {
+            completion()
+        }
+        #else
+        completion()
+        #endif
     }
     
     func presentInterstitial() {
@@ -160,12 +180,19 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         Appodeal.setInterstitialDelegate(self)
         Appodeal.setRewardedVideoDelegate(self)
         
-        let consent = STKConsentManager.shared().consentStatus != .nonPersonalized
-        Appodeal.initialize(
-            withApiKey: AppodealConstants.key,
-            types: AppodealConstants.adTypes,
-            hasConsent: consent
-        )
+        // Initialise Appodeal SDK with consent report
+        if let consent = STKConsentManager.shared().consent {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes,
+                consentReport: consent
+            )
+        } else {
+            Appodeal.initialize(
+                withApiKey: AppodealConstants.key,
+                types: AppodealConstants.adTypes
+            )
+        }
         
         // Trigger banner cache
         // It can be done after any moment after Appodeal initialisation

@@ -8,3 +8,4 @@ Appodeal iOS SDK Demo Project
 
 Stable version of Appodeal SDK is **2.7.4** 
 SDK integration documentation: [docs](https://wiki.appodeal.com/display/DE/iOS+SDK.+Integration+Guide)
+
