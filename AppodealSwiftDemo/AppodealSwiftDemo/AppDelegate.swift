@@ -36,8 +36,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     private func requestTrackingAuthorization() {
         #if canImport(AppTrackingTransparency)
         if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { [weak self] status in
-                self?.synchroniseConsent()
+            ATTrackingManager.requestTrackingAuthorization { _ in
+                DispatchQueue.main.async { [weak self] in
+                    self?.synchroniseConsent()
+                }
             }
         } else {
             synchroniseConsent()

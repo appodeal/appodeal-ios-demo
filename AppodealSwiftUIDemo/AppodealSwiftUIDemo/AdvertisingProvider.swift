@@ -123,8 +123,10 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     private func requestTrackingAuthorization(completion: @escaping () -> Void) {
         #if canImport(AppTrackingTransparency)
         if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { status in
-                completion()
+            ATTrackingManager.requestTrackingAuthorization { _ in
+                DispatchQueue.main.async {
+                    completion()
+                }
             }
         } else {
             completion()

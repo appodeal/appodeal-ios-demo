@@ -63,7 +63,9 @@
         __weak typeof(self) weakSelf = self;
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf synchroniseConsent];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [strongSelf synchroniseConsent];
+            });
         }];
     } else {
         [self synchroniseConsent];
