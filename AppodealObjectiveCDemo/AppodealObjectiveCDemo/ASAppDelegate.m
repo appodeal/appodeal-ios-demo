@@ -63,17 +63,17 @@
         __weak typeof(self) weakSelf = self;
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf synchoniseConsent];
+            [strongSelf synchroniseConsent];
         }];
     } else {
-        [self synchoniseConsent];
+        [self synchroniseConsent];
     }
 #else
-    [self synchoniseConsent];
+    [self synchroniseConsent];
 #endif
 }
 
-- (void)synchoniseConsent {
+- (void)synchroniseConsent {
     __weak typeof(self) weakSelf = self;
     [STKConsentManager.sharedManager synchronizeWithAppKey:APP_KEY completion:^(NSError *error) {
         __strong typeof(self) strongSelf = weakSelf;

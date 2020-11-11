@@ -4,33 +4,37 @@ workspace 'AppodealDemo.xcworkspace'
 source 'https://github.com/appodeal/CocoaPods.git'
 source 'https://cdn.cocoapods.org/'
 
-install! 'cocoapods', :deterministic_uuids => false, :warn_for_multiple_pod_sources => false
+install! 'cocoapods', 
+    :deterministic_uuids => false, 
+    :warn_for_multiple_pod_sources => false
+    
 use_frameworks!
 
 def appodeal
     pod 'StackConsentManager', '~> 1.0.1'
-    pod 'Appodeal', '2.8.0-Beta'
-    pod 'APDAdColonyAdapter', '2.8.0.1-Beta' 
-    pod 'APDAmazonAdsAdapter', '2.8.0.1-Beta' 
-    pod 'APDAppLovinAdapter', '2.8.0.1-Beta' 
-    pod 'APDBidMachineAdapter', '2.8.0.1-Beta' 
-    pod 'APDFacebookAudienceAdapter', '2.8.0.1-Beta' 
-    pod 'APDGoogleAdMobAdapter', '2.8.0.1-Beta' 
-    pod 'APDIronSourceAdapter', '2.8.0.1-Beta' 
-    pod 'APDMyTargetAdapter', '2.8.0.1-Beta' 
-    pod 'APDOguryAdapter', '2.8.0.1-Beta' 
-    pod 'APDSmaatoAdapter', '2.8.0.1-Beta' 
-    pod 'APDStartAppAdapter', '2.8.0.1-Beta' 
-    pod 'APDUnityAdapter', '2.8.0.1-Beta' 
-    pod 'APDVungleAdapter', '2.8.0.1-Beta' 
-    pod 'APDYandexAdapter', '2.8.0.1-Beta' 
+
+    pod 'Appodeal', '2.8.1-Beta'
+    pod 'APDAdColonyAdapter', '2.8.1.1-Beta' 
+    pod 'APDAmazonAdsAdapter', '2.8.1.1-Beta' 
+    pod 'APDAppLovinAdapter', '2.8.1.1-Beta' 
+    pod 'APDBidMachineAdapter', '2.8.1.1-Beta' 
+    pod 'APDFacebookAudienceAdapter', '2.8.1.1-Beta' 
+    pod 'APDGoogleAdMobAdapter', '2.8.1.1-Beta' 
+    pod 'APDIronSourceAdapter', '2.8.1.1-Beta' 
+    pod 'APDMyTargetAdapter', '2.8.1.1-Beta' 
+    pod 'APDOguryAdapter', '2.8.1.1-Beta' 
+    pod 'APDSmaatoAdapter', '2.8.1.1-Beta' 
+    pod 'APDStartAppAdapter', '2.8.1.1-Beta' 
+    pod 'APDUnityAdapter', '2.8.1.1-Beta' 
+    pod 'APDVungleAdapter', '2.8.1.1-Beta' 
+    pod 'APDYandexAdapter', '2.8.1.1-Beta' 
 
     # Optional adapter
-    # pod 'APDChartboostAdapter', '2.8.0.1-Beta' 
-    # pod 'APDInMobiAdapter', '2.8.0.1-Beta' 
-    # pod 'APDMintegralAdapter', '2.8.0.1-Beta' 
-    # pod 'APDSmaatoAdapter', '2.8.0.1-Beta' 
-    # pod 'APDTapjoyAdapter', '2.8.0.1-Beta' 
+    # pod 'APDChartboostAdapter', '2.8.1.1-Beta' 
+    # pod 'APDInMobiAdapter', '2.8.1.1-Beta' 
+    # pod 'APDMintegralAdapter', '2.8.1.1-Beta' 
+    # pod 'APDSmaatoAdapter', '2.8.1.1-Beta' 
+    # pod 'APDTapjoyAdapter', '2.8.1.1-Beta' 
 end
 
 target 'AppodealSwiftDemo' do
