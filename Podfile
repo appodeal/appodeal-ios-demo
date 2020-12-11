@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.0'
 workspace 'AppodealDemo.xcworkspace'
 
 source 'https://github.com/appodeal/CocoaPods.git'
@@ -12,31 +12,29 @@ use_frameworks!
 
 def appodeal
     pod 'StackConsentManager', '~> 1.0.1'
-    
-    pod 'Appodeal', '2.7.5'
-    pod 'APDAdColonyAdapter', '2.7.5.1'
-    pod 'APDAmazonAdsAdapter', '2.7.5.1'
-    pod 'APDAppLovinAdapter', '2.7.5.1'
-    pod 'APDAppodealAdExchangeAdapter', '2.7.5.1'
-    pod 'APDFacebookAudienceAdapter', '2.7.5.1'
-    pod 'APDGoogleAdMobAdapter', '2.7.5.1'
-    pod 'APDIronSourceAdapter', '2.7.5.1'
-    pod 'APDMyTargetAdapter', '2.7.5.1'
-    pod 'APDOguryAdapter', '2.7.5.1'
-    pod 'APDSmaatoAdapter', '2.7.5.1'
-    pod 'APDStartAppAdapter', '2.7.5.1'
-    pod 'APDUnityAdapter', '2.7.5.1'
-    pod 'APDVungleAdapter', '2.7.5.1'
-    pod 'APDYandexAdapter', '2.7.5.1'
+
+    pod 'Appodeal', '2.8.1'
+    pod 'APDAdColonyAdapter', '2.8.1.1' 
+    pod 'APDAmazonAdsAdapter', '2.8.1.1' 
+    pod 'APDAppLovinAdapter', '2.8.1.1' 
+    pod 'APDBidMachineAdapter', '2.8.1.1' 
+    pod 'APDFacebookAudienceAdapter', '2.8.1.1' 
+    pod 'APDGoogleAdMobAdapter', '2.8.1.1' 
+    pod 'APDIronSourceAdapter', '2.8.1.1' 
+    pod 'APDMyTargetAdapter', '2.8.1.1' 
+    pod 'APDOguryAdapter', '2.8.1.1' 
+    pod 'APDSmaatoAdapter', '2.8.1.1' 
+    pod 'APDStartAppAdapter', '2.8.1.1' 
+    pod 'APDUnityAdapter', '2.8.1.1' 
+    pod 'APDVungleAdapter', '2.8.1.1' 
+    pod 'APDYandexAdapter', '2.8.1.1' 
 
     # Optional adapter
-    # pod 'APDChartboostAdapter', '2.7.5.1'
-    # pod 'APDInMobiAdapter', '2.7.5.1'
-    # pod 'APDMintegralAdapter', '2.7.5.1'
-    # pod 'APDSmaatoAdapter', '2.7.5.1'
-    # pod 'APDTapjoyAdapter', '2.7.5.1'
-    # pod 'APDOpenXAdapter', '2.7.5.1'
-    # pod 'APDPubnativeAdapter', '2.7.5.1'
+    # pod 'APDChartboostAdapter', '2.8.1.1' 
+    # pod 'APDInMobiAdapter', '2.8.1.1' 
+    # pod 'APDMintegralAdapter', '2.8.1.1' 
+    # pod 'APDSmaatoAdapter', '2.8.1.1' 
+    # pod 'APDTapjoyAdapter', '2.8.1.1' 
 end
 
 target 'AppodealSwiftDemo' do
