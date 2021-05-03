@@ -11,30 +11,30 @@ install! 'cocoapods',
 use_frameworks!
 
 def appodeal
-    pod 'StackConsentManager', '~> 1.0.1'
+    pod 'StackConsentManager', '~> 1.1.0'
 
-    pod 'Appodeal', '2.9.1'
-    pod 'APDAdColonyAdapter', '2.9.1.1'
-    pod 'APDAmazonAdsAdapter', '2.9.1.1'
-    pod 'APDAppLovinAdapter', '2.9.1.1'
-    pod 'APDBidMachineAdapter', '2.9.1.1'
-    pod 'APDFacebookAudienceAdapter', '2.9.1.1'
-    pod 'APDGoogleAdMobAdapter', '2.9.1.1'
-    pod 'APDIronSourceAdapter', '2.9.1.1'
-    pod 'APDMyTargetAdapter', '2.9.1.1'
-    pod 'APDOguryAdapter', '2.9.1.1'
-    pod 'APDSmaatoAdapter', '2.9.1.1'
-    pod 'APDStartAppAdapter', '2.9.1.1'
-    pod 'APDUnityAdapter', '2.9.1.1'
-    pod 'APDVungleAdapter', '2.9.1.1'
-    pod 'APDYandexAdapter', '2.9.1.1'
+    pod 'Appodeal', '2.10.0-Beta'
+    pod 'APDAdColonyAdapter', '2.10.0.1-Beta'
+    pod 'APDAmazonAdsAdapter', '2.10.0.1-Beta'
+    pod 'APDAppLovinAdapter', '2.10.0.1-Beta'
+    pod 'APDBidMachineAdapter', '2.10.0.1-Beta'
+    pod 'APDFacebookAudienceAdapter', '2.10.0.1-Beta'
+    pod 'APDGoogleAdMobAdapter', '2.10.0.1-Beta'
+    pod 'APDIronSourceAdapter', '2.10.0.1-Beta'
+    pod 'APDMyTargetAdapter', '2.10.0.1-Beta'
+    pod 'APDOguryAdapter', '2.10.0.1-Beta'
+    pod 'APDSmaatoAdapter', '2.10.0.1-Beta'
+    pod 'APDStartAppAdapter', '2.10.0.1-Beta'
+    pod 'APDUnityAdapter', '2.10.0.1-Beta'
+    pod 'APDVungleAdapter', '2.10.0.1-Beta'
+    pod 'APDYandexAdapter', '2.10.0.1-Beta'
 
     # Optional adapter
-    # pod 'APDChartboostAdapter', '2.9.1.1'
-    # pod 'APDInMobiAdapter', '2.9.1.1'
-    # pod 'APDMintegralAdapter', '2.9.1.1'
-    # pod 'APDSmaatoAdapter', '2.9.1.1'
-    # pod 'APDTapjoyAdapter', '2.9.1.1' 
+    # pod 'APDChartboostAdapter', '2.10.0.1-Beta'
+    # pod 'APDInMobiAdapter', '2.10.0.1-Beta'
+    # pod 'APDMintegralAdapter', '2.10.0.1-Beta'
+    # pod 'APDSmaatoAdapter', '2.10.0.1-Beta'
+    # pod 'APDTapjoyAdapter', '2.10.0.1-Beta' 
 end
 
 target 'AppodealSwiftDemo' do
