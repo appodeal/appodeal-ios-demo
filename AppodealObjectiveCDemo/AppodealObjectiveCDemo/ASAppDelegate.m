@@ -7,11 +7,7 @@
 
 #import "ASAppDelegate.h"
 #import <Appodeal/Appodeal.h>
-#import <StackConsentManager/StackConsentManager.h>
-
-#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
-#import <AppTrackingTransparency/AppTrackingTransparency.h>
-#endif
+#import <StackConsentManager/StackConsentManager.h>\
 
 
 #define APP_KEY                 @"dee74c5129f53fc629a44a690a02296694e3eef99f2d3a5f"
@@ -25,7 +21,7 @@
 @implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self requestTrackingAuthorization];
+    [self synchroniseConsent];
     [self configureAppearance];
     return YES;
 }
@@ -55,24 +51,6 @@
         [Appodeal initializeWithApiKey:APP_KEY
                                  types:types];
     }
-}
-
-- (void)requestTrackingAuthorization {
-#if __has_include(<AppTrackingTransparency/AppTrackingTransparency.h>)
-    if (@available(iOS 14, *)) {
-        __weak typeof(self) weakSelf = self;
-        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
-            __strong typeof(self) strongSelf = weakSelf;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [strongSelf synchroniseConsent];
-            });
-        }];
-    } else {
-        [self synchroniseConsent];
-    }
-#else
-    [self synchroniseConsent];
-#endif
 }
 
 - (void)synchroniseConsent {

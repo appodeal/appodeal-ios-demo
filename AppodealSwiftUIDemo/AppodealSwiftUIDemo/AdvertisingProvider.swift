@@ -12,10 +12,6 @@ import Combine
 import Appodeal
 import StackConsentManager
 
-#if canImport(AppTrackingTransparency)
-import AppTrackingTransparency
-#endif
-
 
 /// Advertising interface that provides published state
 /// which can be used in SwiftUI
@@ -54,8 +50,8 @@ final class AdvertisingProvider: NSObject, ObservableObject {
             guard
                 let viewController = UIApplication.shared.rootViewController,
                 let uiView = uiView(for: viewController)
-                else {
-                    return NativeView()
+            else {
+                return NativeView()
             }
             return uiView
         }
@@ -66,7 +62,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
             return try? ad.getViewForPlacement(
                 AdvertisingProvider.AppodealConstants.placement,
                 withRootViewController: viewController
-                ) as? NativeView
+            ) as? NativeView
         }
     }
     
@@ -84,7 +80,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         // Select banner ad size by current interface idiom
         let adSize = UIDevice.current.userInterfaceIdiom == .pad ?
             kAPDAdSize728x90 :
-        kAPDAdSize320x50
+            kAPDAdSize320x50
         
         let banner = APDBannerView(
             size:  adSize,
@@ -111,29 +107,10 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     
     // MARK: Public methods
     func initialize() {
-        // Check user consent beforestak advertising
-        // initialisation
-        requestTrackingAuthorization { [weak self] in
-            self?.synchroniseConsent { [weak self] in
-                self?.initializeAppodeaSDK()
-            }
+        // Synchronise consent before initialisation
+        synchroniseConsent { [weak self] in
+            self?.initializeAppodeaSDK()
         }
-    }
-    
-    private func requestTrackingAuthorization(completion: @escaping () -> Void) {
-        #if canImport(AppTrackingTransparency)
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { _ in
-                DispatchQueue.main.async {
-                    completion()
-                }
-            }
-        } else {
-            completion()
-        }
-        #else
-        completion()
-        #endif
     }
     
     func presentInterstitial() {
@@ -142,7 +119,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         guard
             Appodeal.canShow(.interstitial, forPlacement: AppodealConstants.placement),
             let viewController = UIApplication.shared.rootViewController
-            else { return }
+        else { return }
         Appodeal.showAd(.interstitial,
                         forPlacement: AppodealConstants.placement,
                         rootViewController: viewController)
@@ -154,7 +131,7 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         guard
             Appodeal.canShow(.rewardedVideo, forPlacement: AppodealConstants.placement),
             let viewController = UIApplication.shared.rootViewController
-            else { return }
+        else { return }
         Appodeal.showAd(.rewardedVideo,
                         forPlacement: AppodealConstants.placement,
                         rootViewController: viewController)
@@ -214,10 +191,10 @@ final class AdvertisingProvider: NSObject, ObservableObject {
             STKConsentManager.shared().loadConsentDialog { [weak self] error in
                 error.map { print("Error while loading consent dialog: \($0)") }
                 guard let controller = UIApplication.shared.rootViewController,
-                    STKConsentManager.shared().isConsentDialogReady
-                    else {
-                        completion?()
-                        return
+                      STKConsentManager.shared().isConsentDialogReady
+                else {
+                    completion?()
+                    return
                 }
                 
                 self?.synchroniseConsentCompletion = completion
