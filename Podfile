@@ -30,11 +30,11 @@ def appodeal
     pod 'APDYandexAdapter', '2.10.2.1'
 
     # Optional adapter
-    pod 'APDChartboostAdapter', '2.10.2.1'
-    pod 'APDInMobiAdapter', '2.10.2.1'
-    pod 'APDMintegralAdapter', '2.10.2.1'
-    pod 'APDSmaatoAdapter', '2.10.2.1'
-    pod 'APDTapjoyAdapter', '2.10.2.1'
+    #pod 'APDChartboostAdapter', '2.10.2.1'
+    #pod 'APDInMobiAdapter', '2.10.2.1'
+    #pod 'APDMintegralAdapter', '2.10.2.1'
+    #pod 'APDSmaatoAdapter', '2.10.2.1'
+    #pod 'APDTapjoyAdapter', '2.10.2.1'
 end
 
 target 'AppodealSwiftDemo' do
