@@ -13,19 +13,19 @@ use_frameworks!
 def appodeal
     pod 'StackConsentManager', '~> 1.1.0'
 
-    pod 'Appodeal', '2.10.3'
-    pod 'APDAdColonyAdapter', '2.10.3.1'
-    pod 'APDAmazonAdsAdapter', '2.10.3.1'
-    pod 'APDAppLovinAdapter', '2.10.3.1'
-    pod 'APDBidMachineAdapter', '2.10.3.1' # Required
-    pod 'APDFacebookAudienceAdapter', '2.10.3.1'
-    pod 'APDGoogleAdMobAdapter', '2.10.3.1'
-    pod 'APDIronSourceAdapter', '2.10.3.1'
-    pod 'APDMyTargetAdapter', '2.10.3.1'
-    pod 'APDOguryAdapter', '2.10.3.1'
-    pod 'APDUnityAdapter', '2.10.3.1'
-    pod 'APDVungleAdapter', '2.10.3.1'
-    pod 'APDYandexAdapter', '2.10.3.1'
+    pod 'Appodeal', '2.11.0'
+    pod 'APDAdColonyAdapter', '2.11.0.1'
+    pod 'APDAmazonAdsAdapter', '2.11.0.1'
+    pod 'APDAppLovinAdapter', '2.11.0.1'
+    pod 'APDBidMachineAdapter', '2.11.0.1' # Required
+    pod 'APDFacebookAudienceAdapter', '2.11.0.1'
+    pod 'APDGoogleAdMobAdapter', '2.11.0.1'
+    pod 'APDIronSourceAdapter', '2.11.0.1'
+    pod 'APDMyTargetAdapter', '2.11.0.1'
+    pod 'APDOguryAdapter', '2.11.0.1'
+    pod 'APDUnityAdapter', '2.11.0.1'
+    pod 'APDVungleAdapter', '2.11.0.1'
+    pod 'APDYandexAdapter', '2.11.0.1'
 end
 
 target 'AppodealSwiftDemo' do
