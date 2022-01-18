@@ -9,52 +9,52 @@ PODS:
   - Ads-Global/International (3.7.0.7)
   - AmazonAd (3.1.0)
   - AmazonPublisherServicesSDK (3.3.0)
-  - APDAdColonyAdapter (2.11.0.1):
+  - APDAdColonyAdapter (2.11.1.1):
     - AdColony (= 4.7.2)
-    - Appodeal (= 2.11.0)
+    - Appodeal (= 2.11.1)
     - BDMAdColonyAdapter (~> 1.8.0.0)
-  - APDAmazonAdsAdapter (2.11.0.1):
+  - APDAmazonAdsAdapter (2.11.1.1):
     - AmazonAd (= 3.1.0)
-    - Appodeal (= 2.11.0)
+    - Appodeal (= 2.11.1)
     - BDMAmazonAdapter (~> 1.8.0.0)
-  - APDAppLovinAdapter (2.11.0.1):
-    - AppLovinSDK (~> 10.3.7)
-    - Appodeal (= 2.11.0)
-  - APDBidMachineAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDAppLovinAdapter (2.11.1.1):
+    - AppLovinSDK (~> 11.0.0)
+    - Appodeal (= 2.11.1)
+  - APDBidMachineAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - BDMCriteoAdapter (~> 1.8.0.0)
     - BDMIABAdapter (~> 1.8.0.0)
     - BDMPangleAdapter (~> 1.8.0.0)
     - BidMachine (= 1.8.0.3)
-  - APDFacebookAudienceAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDFacebookAudienceAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - BDMFacebookAdapter (~> 1.8.0.0)
     - FBAudienceNetwork (= 6.9.0)
-  - APDGoogleAdMobAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDGoogleAdMobAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - Google-Mobile-Ads-SDK (= 8.13.0)
-  - APDIronSourceAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
-    - IronSourceSDK (= 7.1.13.0)
-  - APDMyTargetAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDIronSourceAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
+    - IronSourceSDK (= 7.1.14.0)
+  - APDMyTargetAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - BDMMyTargetAdapter (~> 1.8.0.0)
     - myTargetSDK (= 5.14.4)
-  - APDOguryAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDOguryAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - OguryAds (~> 2.3.4)
-  - APDUnityAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDUnityAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - UnityAds (= 4.0.0)
-  - APDVungleAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDVungleAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - BDMVungleAdapter (~> 1.8.0.0)
     - VungleSDK-iOS (= 6.10.5)
-  - APDYandexAdapter (2.11.0.1):
-    - Appodeal (= 2.11.0)
+  - APDYandexAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
     - YandexMobileAds (= 4.4.2)
-  - AppLovinSDK (10.3.7)
-  - Appodeal (2.11.0):
+  - AppLovinSDK (11.0.0)
+  - Appodeal (2.11.1):
     - Protobuf
     - StackAnalytics (~> 1.2.0)
     - StackIAB (~> 1.5.0)
@@ -129,24 +129,24 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.6)"
     - nanopb (~> 2.30908.0)
   - GoogleUserMessagingPlatform (2.0.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.6.0):
+  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.6.0):
+  - GoogleUtilities/Environment (7.7.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.6.0):
+  - GoogleUtilities/Logger (7.7.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.6.0):
+  - GoogleUtilities/MethodSwizzler (7.7.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.6.0):
+  - GoogleUtilities/Network (7.7.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.6.0)"
-  - GoogleUtilities/Reachability (7.6.0):
+  - "GoogleUtilities/NSData+zlib (7.7.0)"
+  - GoogleUtilities/Reachability (7.7.0):
     - GoogleUtilities/Logger
-  - IronSourceSDK (7.1.13.0)
+  - IronSourceSDK (7.1.14.0)
   - myTargetSDK (5.14.4):
     - myTrackerSDK (~> 3.0.3)
   - myTrackerSDK (3.0.5)
@@ -235,19 +235,19 @@ PODS:
     - YandexMobileMetrica/Static/Core
 
 DEPENDENCIES:
-  - APDAdColonyAdapter (= 2.11.0.1)
-  - APDAmazonAdsAdapter (= 2.11.0.1)
-  - APDAppLovinAdapter (= 2.11.0.1)
-  - APDBidMachineAdapter (= 2.11.0.1)
-  - APDFacebookAudienceAdapter (= 2.11.0.1)
-  - APDGoogleAdMobAdapter (= 2.11.0.1)
-  - APDIronSourceAdapter (= 2.11.0.1)
-  - APDMyTargetAdapter (= 2.11.0.1)
-  - APDOguryAdapter (= 2.11.0.1)
-  - APDUnityAdapter (= 2.11.0.1)
-  - APDVungleAdapter (= 2.11.0.1)
-  - APDYandexAdapter (= 2.11.0.1)
-  - Appodeal (= 2.11.0)
+  - APDAdColonyAdapter (= 2.11.1.1)
+  - APDAmazonAdsAdapter (= 2.11.1.1)
+  - APDAppLovinAdapter (= 2.11.1.1)
+  - APDBidMachineAdapter (= 2.11.1.1)
+  - APDFacebookAudienceAdapter (= 2.11.1.1)
+  - APDGoogleAdMobAdapter (= 2.11.1.1)
+  - APDIronSourceAdapter (= 2.11.1.1)
+  - APDMyTargetAdapter (= 2.11.1.1)
+  - APDOguryAdapter (= 2.11.1.1)
+  - APDUnityAdapter (= 2.11.1.1)
+  - APDVungleAdapter (= 2.11.1.1)
+  - APDYandexAdapter (= 2.11.1.1)
+  - Appodeal (= 2.11.1)
   - StackConsentManager (~> 1.1.0)
 
 SPEC REPOS:
@@ -310,20 +310,20 @@ SPEC CHECKSUMS:
   Ads-Global: 181a0b751db8694b6a50798977f52f0ae803673a
   AmazonAd: 9adf416ea36ca2325ce2040c0cf124f071089904
   AmazonPublisherServicesSDK: 12ec8a797b49796f2714d5f99235370e24bf93e6
-  APDAdColonyAdapter: b87949c975593b8e276efeaf6b146ebf846f9e5c
-  APDAmazonAdsAdapter: 68580dd0bcbb56b3e24eb3da67891b854409ead8
-  APDAppLovinAdapter: a798829498c049e5ae49def817843b3a9873d5e9
-  APDBidMachineAdapter: ff55a6454063207df610ddbd8a18de782b8ac73d
-  APDFacebookAudienceAdapter: e82eb88a0cf948c770a46549fe82cb4cf590d592
-  APDGoogleAdMobAdapter: e74175a6e99dc6b6b5167576f5e27e7f82b5a59b
-  APDIronSourceAdapter: 58d84d59dce54256d2b3d8686eedd48f2a9f86a5
-  APDMyTargetAdapter: 59cc30779c3a7bfe9350d830c6aecdff01a4e2f3
-  APDOguryAdapter: 8ff047c4d527d437cac262c64a6ec42964c59f9f
-  APDUnityAdapter: 86b2550800844851c419f51ff15e5b7c7766c65a
-  APDVungleAdapter: b71a77070c25a1bd47196b64052723e2d2937576
-  APDYandexAdapter: 8b5d7ce0b75fbd0e2398ec400c2f1e4ad9d0a15c
-  AppLovinSDK: 3fe334c90106f1a15f32950c06b7d98cbcf73527
-  Appodeal: 1ec44a3361254bc5d6085158c4af0e7846703aff
+  APDAdColonyAdapter: bd1fa652442ff3d6acda47b1f8c80607c25f748b
+  APDAmazonAdsAdapter: 86bb8921ddc1dc8590aeeea7c85ec681d3aa6ceb
+  APDAppLovinAdapter: 1feaf3369cb693f4eb6bb2146fe8efd6f321c829
+  APDBidMachineAdapter: bcb3c9b547d568ea05c356e93218cc1018eae9e5
+  APDFacebookAudienceAdapter: 27aaa437de7faa43620eddf556becd388974eb4f
+  APDGoogleAdMobAdapter: 55bc5d6ce4fe721b43533671855fb458e32572b1
+  APDIronSourceAdapter: 757ff9f7d6c6432a16f8445cfa0dc636bfd56b9c
+  APDMyTargetAdapter: ba0f31a16cb6682c106b134054776b8e01404166
+  APDOguryAdapter: e8bf791426764d9f3b1ae6effa31c8c60b5148d7
+  APDUnityAdapter: 9a675e3a62f973287c97643ba3a9a400c5baa5c4
+  APDVungleAdapter: aaac8efe3cbad0641ea1a0153b507419c9d45568
+  APDYandexAdapter: a06d24bcfe1ee67816cc2374709bc1d33e19e151
+  AppLovinSDK: 2b7b5ba1f8523455b66d247f2a37c62354241283
+  Appodeal: 1188bd8b3a34557761ef79baa3a508b4b7961cf0
   BDMAdColonyAdapter: 9765250aaa1c3d635156be13c228842874c93fc1
   BDMAmazonAdapter: 3e3797ddbc6115ad41efaf58e0ae864fc53b192e
   BDMCriteoAdapter: fb140743f9cd57c1397d9c611d413c79813be241
@@ -338,8 +338,8 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 05e5d68bb42a61b2e5bef336a52789785605aa22
   GoogleAppMeasurement: a3311dbcf3ea651e5a070fe8559b57c174ada081
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
-  GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
-  IronSourceSDK: 033b226c38937202a597b53769e3c9b62f85e962
+  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  IronSourceSDK: 7359355050983d7efb5bb779f9129a32138c3c22
   myTargetSDK: 736ddd255b19f1ba16f7ddfea0d7934d9fe355d2
   myTrackerSDK: 849a3e17b0dcb2556d6825c8523deaf16aaadf0b
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -355,6 +355,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 1306a03792ac2a6576e7e52f49f86a9e7e65c49b
   YandexMobileMetrica: 9e713c16bb6aca0ba63b84c8d7b8b86d32f4ecc4
 
-PODFILE CHECKSUM: 4303a40fd9975cca2e0da4a3823b47257c34098d
+PODFILE CHECKSUM: 63931745b983a469cd2887202b7e842f5a68506d
 
 COCOAPODS: 1.11.2

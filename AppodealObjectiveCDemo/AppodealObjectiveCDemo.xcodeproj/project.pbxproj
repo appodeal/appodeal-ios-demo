@@ -371,7 +371,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-resources.sh",
 				"${PODS_ROOT}/Ads-Global/PangleSDK/LICENSE",
 				"${PODS_ROOT}/Ads-Global/PangleSDK/BUAdSDK.bundle",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-10.3.7/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.0.0/AppLovinSDKResources.bundle",
 				"${PODS_ROOT}/YandexMobileAds/static/YandexMobileAds.framework/YandexMobileAdsBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
