@@ -13,4 +13,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+Appodeal.setAutocache(false, types: .interstitial)
+Appodeal.cacheAd(.interstitial)
+Appodeal.setAutocache(false, types: .rewardedVideo)
 </Workspace>
