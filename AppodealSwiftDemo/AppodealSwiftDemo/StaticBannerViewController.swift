@@ -26,7 +26,7 @@ class StaticBannerViewController: RootViewController {
     @IBAction func bannerTopButtonPressed(_ sender: UIButton) {
         guard
             let placement = placementField.text,
-            Appodeal.isInitalized(for: . banner),
+            Appodeal.isInitialized(for: . banner),
             Appodeal.canShow(.banner, forPlacement: placement)
         else {
             return
@@ -39,7 +39,7 @@ class StaticBannerViewController: RootViewController {
     @IBAction func bannerBottomButtonPressed(_ sender: UIButton) {
         guard
             let placement = placementField.text,
-            Appodeal.isInitalized(for: . banner),
+            Appodeal.isInitialized(for: . banner),
             Appodeal.canShow(.banner, forPlacement: placement)
         else {
             return

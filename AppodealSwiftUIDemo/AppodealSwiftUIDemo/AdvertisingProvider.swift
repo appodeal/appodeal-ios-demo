@@ -10,7 +10,6 @@ import Foundation
 import SwiftUI
 import Combine
 import Appodeal
-import StackConsentManager
 
 
 /// Advertising interface that provides published state
@@ -107,10 +106,33 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     
     // MARK: Public methods
     func initialize() {
-        // Synchronise consent before initialisation
-        synchroniseConsent { [weak self] in
-            self?.initializeAppodeaSDK()
-        }
+        /// Custom settings
+        // Appodeal.setFramework(.native, version: "1.0.0")
+        // Appodeal.setTriggerPrecacheCallbacks(true)
+        // Appodeal.setLocationTracking(true)
+        Appodeal.setLogLevel(AppodealConstants.logLevel)
+        
+        /// Test Mode
+        Appodeal.setTestingEnabled(AppodealConstants.testMode)
+        
+        /// User Data
+        // Appodeal.setUserId("userID")
+        
+        // Disable autocache for banner and native ad
+        // we will cache it manually
+        Appodeal.setAutocache(false, types: [.banner, .nativeAd])
+        
+        // Set delegates
+        Appodeal.setInterstitialDelegate(self)
+        Appodeal.setRewardedVideoDelegate(self)
+        Appodeal.setInitializationDelegate(self)
+        
+        // Initialise Appodeal SDK
+        Appodeal.initialize(withApiKey: AppodealConstants.key, types: AppodealConstants.adTypes)
+        
+        // Trigger banner cache
+        // It can be done after any moment after Appodeal initialisation
+        bannerView.loadAd()
     }
     
     func presentInterstitial() {
@@ -136,78 +158,16 @@ final class AdvertisingProvider: NSObject, ObservableObject {
                         forPlacement: AppodealConstants.placement,
                         rootViewController: viewController)
     }
-    
-    // MARK: Private methods
-    private func initializeAppodeaSDK() {
-        /// Custom settings
-        // Appodeal.setFramework(.native, version: "1.0.0")
-        // Appodeal.setTriggerPrecacheCallbacks(true)
-        // Appodeal.setLocationTracking(true)
-        
-        /// Test Mode
-        Appodeal.setTestingEnabled(AppodealConstants.testMode)
-        
-        /// User Data
-        // Appodeal.setUserId("userID")
-        // Appodeal.setUserAge(25)
-        // Appodeal.setUserGender(.male)
-        Appodeal.setLogLevel(AppodealConstants.logLevel)
-        // Disable autocache for banner and native ad
-        // we will cache it manually
-        Appodeal.setAutocache(false, types: [.banner, .nativeAd])
-        // Set delegates
-        Appodeal.setInterstitialDelegate(self)
-        Appodeal.setRewardedVideoDelegate(self)
-        
-        // Initialise Appodeal SDK with consent report
-        if let consent = STKConsentManager.shared().consent {
-            Appodeal.initialize(
-                withApiKey: AppodealConstants.key,
-                types: AppodealConstants.adTypes,
-                consentReport: consent
-            )
-        } else {
-            Appodeal.initialize(
-                withApiKey: AppodealConstants.key,
-                types: AppodealConstants.adTypes
-            )
-        }
-        
-        // Trigger banner cache
-        // It can be done after any moment after Appodeal initialisation
-        bannerView.loadAd()
-        
-        self.isAdInitialised = true
-    }
-    
-    private func synchroniseConsent(completion: SynchroniseConsentCompletion?) {
-        STKConsentManager.shared().synchronize(withAppKey: AppodealConstants.key) { error in
-            error.map { print("Error while synchronising consent manager: \($0)") }
-            guard STKConsentManager.shared().shouldShowConsentDialog == .true else {
-                completion?()
-                return
-            }
-            
-            STKConsentManager.shared().loadConsentDialog { [weak self] error in
-                error.map { print("Error while loading consent dialog: \($0)") }
-                guard let controller = UIApplication.shared.rootViewController,
-                      STKConsentManager.shared().isConsentDialogReady
-                else {
-                    completion?()
-                    return
-                }
-                
-                self?.synchroniseConsentCompletion = completion
-                STKConsentManager.shared().showConsentDialog(
-                    fromRootViewController: controller,
-                    delegate: self
-                )
-            }
-        }
-    }
 }
 
 // MARK: Protocols implementations
+extension AdvertisingProvider: AppodealInitializationDelegate {
+    func appodealSDKDidInitialize() {
+        //here you can do any additional actions
+        self.isAdInitialised = true
+    }
+}
+
 extension AdvertisingProvider: APDBannerViewDelegate {
     func bannerViewDidLoadAd(_ bannerView: APDBannerView,
                              isPrecache precache: Bool) {
@@ -248,18 +208,4 @@ extension AdvertisingProvider: AppodealRewardedVideoDelegate {
     func rewardedVideoDidExpired() {
         isRewardedReady = false
     }
-}
-
-
-extension AdvertisingProvider: STKConsentManagerDisplayDelegate {
-    func consentManager(_ consentManager: STKConsentManager, didFailToPresent error: Error) {
-        synchroniseConsentCompletion?()
-    }
-    
-    func consentManagerDidDismissDialog(_ consentManager: STKConsentManager) {
-        synchroniseConsentCompletion?()
-    }
-    
-    // No-op
-    func consentManagerWillShowDialog(_ consentManager: STKConsentManager) {}
 }

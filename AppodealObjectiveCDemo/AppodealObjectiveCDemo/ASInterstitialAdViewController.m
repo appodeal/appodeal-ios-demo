@@ -25,7 +25,7 @@
 
 - (IBAction)showClick:(UIButton *)sender {
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal isInitalizedForAdType:AppodealAdTypeInterstitial] && [Appodeal canShow:AppodealAdTypeInterstitial forPlacement:placement]) {
+    if ([Appodeal isInitializedForAdType:AppodealAdTypeInterstitial] && [Appodeal canShow:AppodealAdTypeInterstitial forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleInterstitial forPlacement:placement rootViewController:self];
     }
 }

@@ -29,14 +29,14 @@
 
 - (IBAction)topClick:(UIButton *)sender {
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal isInitalizedForAdType:AppodealAdTypeBanner] && [Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
+    if ([Appodeal isInitializedForAdType:AppodealAdTypeBanner] && [Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleBannerTop forPlacement:placement rootViewController:self];
     }
 }
 
 - (IBAction)bottomClick:(UIButton *)sender {
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal isInitalizedForAdType:AppodealAdTypeBanner] && [Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
+    if ([Appodeal isInitializedForAdType:AppodealAdTypeBanner] && [Appodeal canShow:AppodealAdTypeBanner forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleBannerBottom forPlacement:placement rootViewController:self];
     }
 }

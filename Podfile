@@ -5,40 +5,42 @@ source 'https://github.com/appodeal/CocoaPods.git'
 source 'https://cdn.cocoapods.org/'
 
 install! 'cocoapods', 
-    :deterministic_uuids => false, 
-    :warn_for_multiple_pod_sources => false
-    
+:deterministic_uuids => false,
+:warn_for_multiple_pod_sources => false
+
 use_frameworks!
 
 def appodeal
-    pod 'StackConsentManager', '~> 1.1.0'
-
-    pod 'Appodeal', '2.11.1'
-    pod 'APDAdColonyAdapter', '2.11.1.1'
-    pod 'APDAmazonAdsAdapter', '2.11.1.1'
-    pod 'APDAppLovinAdapter', '2.11.1.1'
-    pod 'APDBidMachineAdapter', '2.11.1.1' # Required
-    pod 'APDFacebookAudienceAdapter', '2.11.1.1'
-    pod 'APDGoogleAdMobAdapter', '2.11.1.1'
-    pod 'APDIronSourceAdapter', '2.11.1.1'
-    pod 'APDMyTargetAdapter', '2.11.1.1'
-    pod 'APDOguryAdapter', '2.11.1.1'
-    pod 'APDUnityAdapter', '2.11.1.1'
-    pod 'APDVungleAdapter', '2.11.1.1'
-    pod 'APDYandexAdapter', '2.11.1.1'
+  pod 'APDBidMachineAdapter',          '3.0.0.1-Beta' # Required
+  pod 'APDIABAdapter',                 '3.0.0.1-Beta' # Required
+  pod 'APDStackAnalyticsAdapter',      '3.0.0.1-Beta' # Required
+  pod 'APDAdColonyAdapter',            '3.0.0.1-Beta'
+  pod 'APDAdjustAdapter',              '3.0.0.1-Beta'
+  pod 'APDAmazonAdsAdapter',           '3.0.0.1-Beta'
+  pod 'APDAppLovinAdapter',            '3.0.0.1-Beta'
+  pod 'APDAppsFlyerAdapter',           '3.0.0.1-Beta'
+  pod 'APDFirebaseAdapter',            '3.0.0.1-Beta'
+  pod 'APDGoogleAdMobAdapter',         '3.0.0.1-Beta'
+  pod 'APDIronSourceAdapter',          '3.0.0.1-Beta'
+  pod 'APDFacebookAdapter',            '3.0.0.1-Beta'
+  pod 'APDMetaAudienceNetworkAdapter', '3.0.0.1-Beta'
+  pod 'APDMyTargetAdapter',            '3.0.0.1-Beta'
+  pod 'APDUnityAdapter',               '3.0.0.1-Beta'
+  pod 'APDVungleAdapter',              '3.0.0.1-Beta'
+  pod 'APDYandexAdapter',              '3.0.0.1-Beta'
 end
 
 target 'AppodealSwiftDemo' do
-    project 'AppodealSwiftDemo/AppodealSwiftDemo.xcodeproj'
-    appodeal
+  project 'AppodealSwiftDemo/AppodealSwiftDemo.xcodeproj'
+  appodeal
 end
 
 target 'AppodealObjectiveCDemo' do
-    project 'AppodealObjectiveCDemo/AppodealObjectiveCDemo.xcodeproj'
-    appodeal
+  project 'AppodealObjectiveCDemo/AppodealObjectiveCDemo.xcodeproj'
+  appodeal
 end
 
 target 'AppodealSwiftUIDemo' do
-    project 'AppodealSwiftUIDemo/AppodealSwiftUIDemo.xcodeproj'
-    appodeal
+  project 'AppodealSwiftUIDemo/AppodealSwiftUIDemo.xcodeproj'
+  appodeal
 end
