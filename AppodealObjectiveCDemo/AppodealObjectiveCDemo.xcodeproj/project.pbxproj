@@ -349,6 +349,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Adjust/Adjust.framework",
+				"${BUILT_PRODUCTS_DIR}/BURelyFoundation_Global/BURelyFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseABTesting/FirebaseABTesting.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
@@ -359,15 +360,17 @@
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OMSDK_Appodeal/OMSDK_Appodeal.framework/OMSDK_Appodeal",
-				"${PODS_ROOT}/AmazonPublisherServicesSDK/APS_iOS_SDK-3.3.0/DTBiOSSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/OpenMeasurement/OMSDK_Smaato.framework/OMSDK_Smaato",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Adjust.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BURelyFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseABTesting.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
@@ -378,11 +381,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Appodeal.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Smaato.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -396,10 +400,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppodealObjectiveCDemo/Pods-AppodealObjectiveCDemo-resources.sh",
-				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.3.3/AppLovinSDKResources.bundle",
+				"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-11.4.2/AppLovinSDKResources.bundle",
 				"${PODS_ROOT}/YandexMobileAds/static/YandexMobileAds.xcframework/YandexMobileAdsBundle.bundle",
-				"${PODS_ROOT}/Ads-Global/PangleSDK/LICENSE",
-				"${PODS_ROOT}/Ads-Global/PangleSDK/BUAdSDK.bundle",
+				"${PODS_ROOT}/Ads-Global/SDK/LICENSE",
+				"${PODS_ROOT}/Ads-Global/SDK/BUAdSDK.bundle",
+				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Core/APMInsightCore.bundle",
+				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Crash/APMInsightCrash.bundle",
+				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Hybrid/APMInsightHybrid.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -407,6 +414,9 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMobileAdsBundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCrash.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightHybrid.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
