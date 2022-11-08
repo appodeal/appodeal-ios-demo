@@ -25,7 +25,7 @@
 
 - (IBAction)showClick:(UIButton *)sender {
     NSString * placement = [self.placementField.text length] ? self.placementField.text : nil;
-    if ([Appodeal isInitalizedForAdType:AppodealAdTypeRewardedVideo] && [Appodeal canShow:AppodealAdTypeRewardedVideo forPlacement:placement]) {
+    if ([Appodeal isInitializedForAdType:AppodealAdTypeRewardedVideo] && [Appodeal canShow:AppodealAdTypeRewardedVideo forPlacement:placement]) {
         [Appodeal showAd:AppodealShowStyleRewardedVideo forPlacement:placement rootViewController:self];
     }
 }

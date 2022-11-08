@@ -22,7 +22,7 @@ class RewardedVideoViewController: RootViewController {
     @IBAction func showButtonPressed(_ sender: UIButton) {
         guard
             let placement = placementField.text,
-            Appodeal.isInitalized(for: .rewardedVideo),
+            Appodeal.isInitialized(for: .rewardedVideo),
             Appodeal.canShow(.rewardedVideo, forPlacement: placement)
         else {
             return

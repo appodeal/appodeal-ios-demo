@@ -20,6 +20,7 @@
 		4271638A240CFD9800D8F1DC /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42716389240CFD9800D8F1DC /* NativeView.swift */; };
 		4271638C240D050400D8F1DC /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4271638B240D050400D8F1DC /* NewsFeed.swift */; };
 		69F3EC2D75C560EC065BAB81 /* Pods_AppodealSwiftUIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD90C8716F962776FF96A26 /* Pods_AppodealSwiftUIDemo.framework */; };
+		8AC7841328451F01008FE012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC7841228451F01008FE012 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		42716389240CFD9800D8F1DC /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
 		4271638B240D050400D8F1DC /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		8309ABDEBB7624B9B4524624 /* Pods-AppodealSwiftUIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealSwiftUIDemo.release.xcconfig"; path = "Target Support Files/Pods-AppodealSwiftUIDemo/Pods-AppodealSwiftUIDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8AC7841228451F01008FE012 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../AppodealSwiftDemo/AppodealSwiftDemo/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A73F30BE087761C75AC62990 /* Pods-AppodealSwiftUIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealSwiftUIDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppodealSwiftUIDemo/Pods-AppodealSwiftUIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 				4271636C240CE00000D8F1DC /* Assets.xcassets */,
 				42716371240CE00000D8F1DC /* LaunchScreen.storyboard */,
 				42716385240CFD5B00D8F1DC /* Native.xib */,
+				8AC7841228451F01008FE012 /* GoogleService-Info.plist */,
 				42716374240CE00000D8F1DC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +200,7 @@
 			files = (
 				42716373240CE00000D8F1DC /* LaunchScreen.storyboard in Resources */,
 				42716370240CE00000D8F1DC /* Preview Assets.xcassets in Resources */,
+				8AC7841328451F01008FE012 /* GoogleService-Info.plist in Resources */,
 				42716387240CFD5B00D8F1DC /* Native.xib in Resources */,
 				4271636D240CE00000D8F1DC /* Assets.xcassets in Resources */,
 			);
@@ -422,7 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppodealSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppodealSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AppodealSwiftUIDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AppodealSwiftUIDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
