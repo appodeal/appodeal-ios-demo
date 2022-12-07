@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 workspace 'AppodealDemo.xcworkspace'
 
 source 'https://github.com/appodeal/CocoaPods.git'
@@ -22,8 +22,8 @@ def appodeal
   pod 'BDMSmaatoAdapter', '~> 1.9.5'
   pod 'BDMNotsyAdapter', '~> 1.9.5'
   pod 'BDMTapjoyAdapter', '~> 1.9.5'
-  pod 'APDFirebaseAdapter', '3.0.1.1'
-  pod 'APDGoogleAdMobAdapter', '3.0.1.1'
+  pod 'APDFirebaseAdapter', '3.0.1.2'
+  pod 'APDGoogleAdMobAdapter', '3.0.1.2'
   pod 'APDIABAdapter', '3.0.1.1' # Required
   pod 'BDMIABAdapter', '~> 1.9.5'
   pod 'APDFacebookAdapter', '3.0.1.1'
@@ -53,6 +53,7 @@ end
 
 target 'AppodealSwiftDemo' do
   project 'AppodealSwiftDemo/AppodealSwiftDemo.xcodeproj'
+
   appodeal
 end
 

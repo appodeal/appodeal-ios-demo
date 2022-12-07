@@ -42,17 +42,17 @@ PODS:
   - APDFacebookAdapter (3.0.1.1):
     - Appodeal (= 3.0.1)
     - FBSDKCoreKit (~> 12.3.2)
-  - APDFirebaseAdapter (3.0.1.1):
+  - APDFirebaseAdapter (3.0.1.2):
     - Appodeal (= 3.0.1)
-    - Firebase/Analytics (~> 9.6.0)
-    - Firebase/Core (~> 9.6.0)
-    - Firebase/RemoteConfig (~> 9.6.0)
+    - Firebase/Analytics (~> 10.2)
+    - Firebase/Core (~> 10.2)
+    - Firebase/RemoteConfig (~> 10.2)
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
-  - APDGoogleAdMobAdapter (3.0.1.1):
+  - APDGoogleAdMobAdapter (3.0.1.2):
     - Appodeal (= 3.0.1)
-    - Google-Mobile-Ads-SDK (= 9.11.0)
+    - Google-Mobile-Ads-SDK (= 9.13.0)
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
@@ -111,9 +111,9 @@ PODS:
   - BDMMyTargetAdapter (1.9.5.1):
     - BidMachine (~> 1.9.5.0)
     - myTargetSDK (= 5.16.0)
-  - BDMNotsyAdapter (1.9.5.1):
+  - BDMNotsyAdapter (1.9.5.3):
     - BidMachine (~> 1.9.5.0)
-    - Google-Mobile-Ads-SDK (= 9.11.0)
+    - Google-Mobile-Ads-SDK (= 9.13.0)
   - BDMPangleAdapter (1.9.5.0):
     - Ads-Global (= 4.3.1.9)
     - BidMachine (~> 1.9.5.0)
@@ -146,119 +146,109 @@ PODS:
     - FBAEMKit (= 12.3.2)
     - FBSDKCoreKit_Basics (= 12.3.2)
   - FBSDKCoreKit_Basics (12.3.2)
-  - Firebase/Analytics (9.6.0):
+  - Firebase/Analytics (10.3.0):
     - Firebase/Core
-  - Firebase/Core (9.6.0):
+  - Firebase/Core (10.3.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (~> 9.6.0)
-  - Firebase/CoreOnly (9.6.0):
-    - FirebaseCore (= 9.6.0)
-  - Firebase/RemoteConfig (9.6.0):
+    - FirebaseAnalytics (~> 10.3.0)
+  - Firebase/CoreOnly (10.3.0):
+    - FirebaseCore (= 10.3.0)
+  - Firebase/RemoteConfig (10.3.0):
     - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 9.6.0)
-  - FirebaseABTesting (9.6.0):
-    - FirebaseCore (~> 9.0)
-  - FirebaseAnalytics (9.6.0):
-    - FirebaseAnalytics/AdIdSupport (= 9.6.0)
-    - FirebaseCore (~> 9.0)
-    - FirebaseInstallations (~> 9.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+    - FirebaseRemoteConfig (~> 10.3.0)
+  - FirebaseABTesting (10.3.0):
+    - FirebaseCore (~> 10.0)
+  - FirebaseAnalytics (10.3.0):
+    - FirebaseAnalytics/AdIdSupport (= 10.3.0)
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseAnalytics/AdIdSupport (9.6.0):
-    - FirebaseCore (~> 9.0)
-    - FirebaseInstallations (~> 9.0)
-    - GoogleAppMeasurement (= 9.6.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - FirebaseAnalytics/AdIdSupport (10.3.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleAppMeasurement (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseCore (9.6.0):
-    - FirebaseCoreDiagnostics (~> 9.0)
-    - FirebaseCoreInternal (~> 9.0)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/Logger (~> 7.7)
-  - FirebaseCoreDiagnostics (9.6.0):
-    - GoogleDataTransport (< 10.0.0, >= 9.1.4)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/Logger (~> 7.7)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-  - FirebaseCoreInternal (9.6.0):
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-  - FirebaseInstallations (9.6.0):
-    - FirebaseCore (~> 9.0)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/UserDefaults (~> 7.7)
+  - FirebaseCore (10.3.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.3.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.3.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
     - PromisesObjC (~> 2.1)
-  - FirebaseRemoteConfig (9.6.0):
-    - FirebaseABTesting (~> 9.0)
-    - FirebaseCore (~> 9.0)
-    - FirebaseInstallations (~> 9.0)
-    - GoogleUtilities/Environment (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
-  - Google-Mobile-Ads-SDK (9.11.0):
-    - GoogleAppMeasurement (< 10.0, >= 7.0)
+  - FirebaseRemoteConfig (10.3.0):
+    - FirebaseABTesting (~> 10.0)
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - Google-Mobile-Ads-SDK (9.13.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (9.6.0):
-    - GoogleAppMeasurement/AdIdSupport (= 9.6.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - GoogleAppMeasurement (10.3.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (9.6.0):
-    - GoogleAppMeasurement/WithoutAdIdSupport (= 9.6.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - GoogleAppMeasurement/AdIdSupport (10.3.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.3.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleAppMeasurement/WithoutAdIdSupport (9.6.0):
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/MethodSwizzler (~> 7.7)
-    - GoogleUtilities/Network (~> 7.7)
-    - "GoogleUtilities/NSData+zlib (~> 7.7)"
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/MethodSwizzler (~> 7.8)
+    - GoogleUtilities/Network (~> 7.8)
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - GoogleDataTransport (9.2.0):
-    - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
   - GoogleUserMessagingPlatform (2.0.1)
-  - GoogleUtilities (7.8.0):
-    - GoogleUtilities/AppDelegateSwizzler (= 7.8.0)
-    - GoogleUtilities/Environment (= 7.8.0)
-    - GoogleUtilities/ISASwizzler (= 7.8.0)
-    - GoogleUtilities/Logger (= 7.8.0)
-    - GoogleUtilities/MethodSwizzler (= 7.8.0)
-    - GoogleUtilities/Network (= 7.8.0)
-    - "GoogleUtilities/NSData+zlib (= 7.8.0)"
-    - GoogleUtilities/Reachability (= 7.8.0)
-    - GoogleUtilities/SwizzlerTestHelpers (= 7.8.0)
-    - GoogleUtilities/UserDefaults (= 7.8.0)
-  - GoogleUtilities/AppDelegateSwizzler (7.8.0):
+  - GoogleUtilities (7.10.0):
+    - GoogleUtilities/AppDelegateSwizzler (= 7.10.0)
+    - GoogleUtilities/Environment (= 7.10.0)
+    - GoogleUtilities/ISASwizzler (= 7.10.0)
+    - GoogleUtilities/Logger (= 7.10.0)
+    - GoogleUtilities/MethodSwizzler (= 7.10.0)
+    - GoogleUtilities/Network (= 7.10.0)
+    - "GoogleUtilities/NSData+zlib (= 7.10.0)"
+    - GoogleUtilities/Reachability (= 7.10.0)
+    - GoogleUtilities/SwizzlerTestHelpers (= 7.10.0)
+    - GoogleUtilities/UserDefaults (= 7.10.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.10.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.8.0):
+  - GoogleUtilities/Environment (7.10.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/ISASwizzler (7.8.0)
-  - GoogleUtilities/Logger (7.8.0):
+  - GoogleUtilities/ISASwizzler (7.10.0)
+  - GoogleUtilities/Logger (7.10.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (7.8.0):
+  - GoogleUtilities/MethodSwizzler (7.10.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (7.8.0):
+  - GoogleUtilities/Network (7.10.0):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.8.0)"
-  - GoogleUtilities/Reachability (7.8.0):
+  - "GoogleUtilities/NSData+zlib (7.10.0)"
+  - GoogleUtilities/Reachability (7.10.0):
     - GoogleUtilities/Logger
-  - GoogleUtilities/SwizzlerTestHelpers (7.8.0):
+  - GoogleUtilities/SwizzlerTestHelpers (7.10.0):
     - GoogleUtilities/MethodSwizzler
-  - GoogleUtilities/UserDefaults (7.8.0):
+  - GoogleUtilities/UserDefaults (7.10.0):
     - GoogleUtilities/Logger
   - IronSourceSDK (7.2.5.0)
   - myTargetSDK (5.16.0):
@@ -312,7 +302,7 @@ PODS:
     - OneKit-Pangle/BaseKit
     - OneKit-Pangle/Reachability
   - PromisesObjC (2.1.1)
-  - Protobuf (3.21.9)
+  - Protobuf (3.21.10)
   - RangersAPM-Pangle (2.3.2-pangle):
     - RangersAPM-Pangle/CN (= 2.3.2-pangle)
     - RangersAPM-Pangle/Core (= 2.3.2-pangle)
@@ -498,12 +488,12 @@ PODS:
     - StackModules (~> 1.3.0)
   - StackIAB/StackXML (1.8.0):
     - StackModules (~> 1.3.0)
-  - StackModules (1.3.2):
-    - StackModules/StackProductPresentation (= 1.3.2)
-  - StackModules/StackFoundation (1.3.2)
-  - StackModules/StackProductPresentation (1.3.2):
+  - StackModules (1.3.4):
+    - StackModules/StackProductPresentation (= 1.3.4)
+  - StackModules/StackFoundation (1.3.4)
+  - StackModules/StackProductPresentation (1.3.4):
     - StackModules/StackUIKit
-  - StackModules/StackUIKit (1.3.2):
+  - StackModules/StackUIKit (1.3.4):
     - StackModules/StackFoundation
   - StackProtobuf (0.8.3):
     - Protobuf (~> 3.13)
@@ -531,8 +521,8 @@ DEPENDENCIES:
   - APDAppsFlyerAdapter (= 3.0.1.1)
   - APDBidMachineAdapter (= 3.0.1.1)
   - APDFacebookAdapter (= 3.0.1.1)
-  - APDFirebaseAdapter (= 3.0.1.1)
-  - APDGoogleAdMobAdapter (= 3.0.1.1)
+  - APDFirebaseAdapter (= 3.0.1.2)
+  - APDGoogleAdMobAdapter (= 3.0.1.2)
   - APDIABAdapter (= 3.0.1.1)
   - APDIronSourceAdapter (= 3.0.1.1)
   - APDMetaAudienceNetworkAdapter (= 3.0.1.1)
@@ -612,13 +602,11 @@ SPEC REPOS:
     - FirebaseABTesting
     - FirebaseAnalytics
     - FirebaseCore
-    - FirebaseCoreDiagnostics
     - FirebaseCoreInternal
     - FirebaseInstallations
     - FirebaseRemoteConfig
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
-    - GoogleDataTransport
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - IronSourceSDK
@@ -650,8 +638,8 @@ SPEC CHECKSUMS:
   APDAppsFlyerAdapter: 3e5774cd9cc75ea11d3ddb71a17eaa27df70701e
   APDBidMachineAdapter: 87e6837db8675adbe2efc25ef4e9ccecac8595f0
   APDFacebookAdapter: 8210d8cff560971c039e2d3542c565bd6be09caa
-  APDFirebaseAdapter: 76209889479ea068005b09165e0e0f3e26015019
-  APDGoogleAdMobAdapter: 7e3e8b0e96be563fd52f75800c496899de31fffe
+  APDFirebaseAdapter: 06ea9859f07c3062da0642b1f81bd7055af5ab24
+  APDGoogleAdMobAdapter: 361f723e3c5e19121adcc3931d1f23029b5bf803
   APDIABAdapter: 5dcde13fa074987e1018d04f2d8533d00cb7f76f
   APDIronSourceAdapter: d217b9bed4f1cc30e9097fb79baf5a5603a606fc
   APDMetaAudienceNetworkAdapter: 0564d191b04422f03b2a5f75f832a2aed2859bad
@@ -670,7 +658,7 @@ SPEC CHECKSUMS:
   BDMIABAdapter: 9e5690d0075ce27fc81d2256bf1e079328b22c3b
   BDMMetaAudienceAdapter: 51d1ed73b44a1bc473ec2ca0d5b5fc2331ac3acb
   BDMMyTargetAdapter: 52067545d2f9cc1beb26ec673678cee85aba6933
-  BDMNotsyAdapter: 1d8a00859cb6687be155370edda79dd919b53087
+  BDMNotsyAdapter: 3b68df4008d8d784f234d258cbfd0364101b10c9
   BDMPangleAdapter: d4e9b52651dca8ea5cf2984713cdd6998d664694
   BDMSmaatoAdapter: 15a609822d38fe13409863775bff28f7059c7031
   BDMTapjoyAdapter: 669e0e8c7095be3eb61168628ee716d474619f22
@@ -682,19 +670,17 @@ SPEC CHECKSUMS:
   FBAudienceNetwork: e0fcc9091fced34910ed0b6da06f129db46ac9e6
   FBSDKCoreKit: 678f64eda3f0ff25c189c2ebbfe87b1d96a85a6d
   FBSDKCoreKit_Basics: 6bee7c1f0932432901781203fa5e587ec5099148
-  Firebase: 5ae8b7cf8efce559a653aef0ad95bab3f427c351
-  FirebaseABTesting: 61826730ce9eee8781ba99a2b3420e9bce148dc9
-  FirebaseAnalytics: 89ad762c6c3852a685794174757e2c60a36b6a82
-  FirebaseCore: 2082fffcd855f95f883c0a1641133eb9bbe76d40
-  FirebaseCoreDiagnostics: 99a495094b10a57eeb3ae8efa1665700ad0bdaa6
-  FirebaseCoreInternal: bca76517fe1ed381e989f5e7d8abb0da8d85bed3
-  FirebaseInstallations: 0a115432c4e223c5ab20b0dbbe4cbefa793a0e8e
-  FirebaseRemoteConfig: ee09d77a7d7c7e31da6a0d1cf956cd611c85609c
-  Google-Mobile-Ads-SDK: e0322ce0f304126547185fa254dfe66ac66153d8
-  GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
-  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
+  Firebase: f92fc551ead69c94168d36c2b26188263860acd9
+  FirebaseABTesting: e6660693429b4663573c82f8d2f1041deff1753a
+  FirebaseAnalytics: 036232b6a1e2918e5f67572417be1173576245f3
+  FirebaseCore: 988754646ab3bd4bdcb740f1bfe26b9f6c0d5f2a
+  FirebaseCoreInternal: 29b76f784d607df8b2a1259d73c3f04f1210137b
+  FirebaseInstallations: e2f26126089dcf41e215f7b8925af8d953c7d602
+  FirebaseRemoteConfig: c24f767c17b0440ee63c7e93380d599173556113
+  Google-Mobile-Ads-SDK: 465532d33dfc878f2f9aca281fddbcd4bf9c0197
+  GoogleAppMeasurement: c7d6fff39bf2d829587d74088d582e32d75133c3
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
-  GoogleUtilities: 1d20a6ad97ef46f67bbdec158ce00563a671ebb7
+  GoogleUtilities: bad72cb363809015b1f7f19beb1f1cd23c589f95
   IronSourceSDK: 59c9e16fa10f7b27e07df9edfbcf5a4bfc9ccfb3
   myTargetSDK: f7f09df5c9934bf19b18fa1bdbc8d990f655df70
   myTrackerSDK: 3b21ddcc191b818d0f39a518413ff98bf6544c76
@@ -702,13 +688,13 @@ SPEC CHECKSUMS:
   OMSDK_Appodeal: 9b6015e83dfbfc7988375efdb81cdcd373f5180a
   OneKit-Pangle: 68a778c39d36ed8feffd667a6b49225427bcf286
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  Protobuf: 02524ec14183fe08fb259741659e79683788158b
+  Protobuf: ced4c17d029d7566cbfc51cfb44193e4aaafae27
   RangersAPM-Pangle: 97c8fe91af08574a739cc72a714b735efb6c891f
   smaato-ios-sdk: f2c145efd3e3e322795d892c9a88eb499339262a
   StackAnalytics: cb0aebd802551f76992b03067aee061fbc78bdb9
   StackConsentManager: ac09704d4a8ddfc1091fd8eb6a9e02dc5f797574
   StackIAB: e66c3e950a0e73b39e3d41599a45f76668d2ead3
-  StackModules: f32f02e62fbe40cbf22d753616e5542e4f7d23a2
+  StackModules: f754390de2f6fe270340c755778809589ddd86b8
   StackProtobuf: 4ce3cf175993834536fbb7260a278400cabeb463
   TapjoySDK: 3dcd899e69eb3e36f231390c95c7105730619bcb
   UnityAds: 1af6c4fdd7030c2593c58f520504e167561175ab
@@ -716,6 +702,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 3d7708df615f92815a3acedf9869da46d0b4d65e
   YandexMobileMetrica: baf7cea47cb87fc9af963c4f747ce8dd7df3d7c0
 
-PODFILE CHECKSUM: 37658766c6454fa0d068b4a45005f7e185e3da27
+PODFILE CHECKSUM: db6b3634594f05006c62e3a83ea3dc274b32873d
 
 COCOAPODS: 1.11.3
