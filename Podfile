@@ -1,4 +1,4 @@
-platform :ios, '12.0'
+platform :ios, '13.0'
 workspace 'AppodealDemo.xcworkspace'
 
 source 'https://github.com/appodeal/CocoaPods.git'
@@ -11,33 +11,33 @@ install! 'cocoapods',
 use_frameworks!
 
 def appodeal
-  pod 'Appodeal', '3.1.3'
-  pod 'APDAdColonyAdapter', '3.1.3.0'
+  pod 'Appodeal', '3.2.0-beta.1'
+  pod 'APDAdColonyAdapter', '3.2.0.0-beta.1'
   pod 'BidMachineAdColonyAdapter', '~> 2.3.0.0'
-  pod 'APDAdjustAdapter', '3.1.3.0'
-  pod 'APDAppLovinAdapter', '3.1.3.0'
-  pod 'APDAppsFlyerAdapter', '3.1.3.0'
-  pod 'APDBidMachineAdapter', '3.1.3.0' # Required
+  pod 'APDAdjustAdapter', '3.2.0.0-beta.1'
+  pod 'APDAppLovinAdapter', '3.2.0.0-beta.1'
+  pod 'APDAppsFlyerAdapter', '3.2.0.0-beta.1'
+  pod 'APDBidMachineAdapter', '3.2.0.0-beta.1' # Required
   pod 'BidMachineMintegralAdapter', '~> 2.3.0.0'
   pod 'BidMachineAmazonAdapter', '~> 2.3.0.0'
   pod 'BidMachineCriteoAdapter', '~> 2.3.0.0'
   pod 'BidMachineSmaatoAdapter', '~> 2.3.0.0'
   pod 'BidMachineTapjoyAdapter', '~> 2.3.0.0'
   pod 'BidMachinePangleAdapter', '~> 2.3.0.0'
-  pod 'APDFirebaseAdapter', '3.1.3.0'
-  pod 'APDGoogleAdMobAdapter', '3.1.3.0'
-  pod 'APDIABAdapter', '3.1.3.0' # Required
-  pod 'APDIronSourceAdapter', '3.1.3.0'
-  pod 'APDFacebookAdapter', '3.1.3.0'
-  pod 'APDMetaAudienceNetworkAdapter', '3.1.3.0'
+  pod 'APDFirebaseAdapter', '3.2.0.0-beta.1'
+  pod 'APDGoogleAdMobAdapter', '3.2.0.0-beta.1'
+  pod 'APDIABAdapter', '3.2.0.0-beta.1' # Required
+  pod 'APDIronSourceAdapter', '3.2.0.0-beta.1'
+  pod 'APDFacebookAdapter', '3.2.0.0-beta.1'
+  pod 'APDMetaAudienceNetworkAdapter', '3.2.0.0-beta.1'
   pod 'BidMachineMetaAudienceAdapter', '~> 2.3.0.0'
-  pod 'APDMyTargetAdapter', '3.1.3.0'
+  pod 'APDMyTargetAdapter', '3.2.0.0-beta.1'
   pod 'BidMachineMyTargetAdapter', '~> 2.3.0.0'
-  pod 'APDStackAnalyticsAdapter', '3.1.3.0' # Required
-  pod 'APDUnityAdapter', '3.1.3.0'
-  pod 'APDVungleAdapter', '3.1.3.0'
+  pod 'APDStackAnalyticsAdapter', '3.2.0.0-beta.1' # Required
+  pod 'APDUnityAdapter', '3.2.0.0-beta.1'
+  pod 'APDVungleAdapter', '3.2.0.0-beta.1'
   pod 'BidMachineVungleAdapter', '~> 2.3.0.0'
-  pod 'APDYandexAdapter', '3.1.3.0'
+  pod 'APDYandexAdapter', '3.2.0.0-beta.1'
 end
 
 
