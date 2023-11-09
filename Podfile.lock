@@ -490,7 +490,6 @@ SPEC REPOS:
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
-    - BidMachine
     - BidMachineAdColonyAdapter
     - BidMachineAmazonAdapter
     - BidMachineCriteoAdapter
@@ -573,7 +572,7 @@ SPEC CHECKSUMS:
   Appodeal: caf6521230a2e296edf50ce21b7d5c14f8cbfb4e
   AppsFlyer-AdRevenue: a38170b0b59f74cd07c7a9b91ee026f147b5c968
   AppsFlyerFramework: 88a6eed37ad52bcee4ad74232efa8e22809d06c9
-  BidMachine: 3dc30795a118b73d2ff72b89508140bf58585975
+  BidMachine: d4eaeb15d61764721d9a6e18c3e07a864ce1c351
   BidMachineAdColonyAdapter: 90b4be91688decd68cd3aad940102b4354f59520
   BidMachineAmazonAdapter: daec28c0d4e31159b1abed475fa88d4f10173522
   BidMachineCriteoAdapter: 3b1c9eb82da1e5b449d4c0d50d91d056d6540e1d
@@ -623,4 +622,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8af5306a183c732db7a3f91e2fd6d0db7400d820
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.13.0

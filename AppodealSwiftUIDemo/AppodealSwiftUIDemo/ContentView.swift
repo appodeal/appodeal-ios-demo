@@ -27,7 +27,7 @@ struct ContentView: View {
                         ad: self.ad,
                         keyPath: \.isRewardedReady
                     ) {
-                        self.ad.presentInterstitial()
+                        self.ad.presentRewarded()
                     }
                     NativeSection()
                 }.listStyle(GroupedListStyle())
