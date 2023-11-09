@@ -523,7 +523,6 @@ SPEC REPOS:
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
-    - BidMachine
     - BidMachineAdColonyAdapter
     - BidMachineAmazonAdapter
     - BidMachineCriteoAdapter
@@ -538,7 +537,6 @@ SPEC REPOS:
     - StackAnalytics
     - StackConsentManager
     - StackIAB
-    - StackModules
     - StackProtobuf
   trunk:
     - AdColony
@@ -616,7 +614,7 @@ SPEC CHECKSUMS:
   Appodeal: 7ef14474bb7c2353e098a3a49db17bd83c6a69a3
   AppsFlyer-AdRevenue: a38170b0b59f74cd07c7a9b91ee026f147b5c968
   AppsFlyerFramework: 6eb4d89d2eb9a6632317f1055b359d9fd85fd5ff
-  BidMachine: af2b5a2d335a858d12f1f47ab521e64aacb27477
+  BidMachine: cfb3e056683e0dea0bf597dbca9865f420b00c99
   BidMachineAdColonyAdapter: 90b4be91688decd68cd3aad940102b4354f59520
   BidMachineAmazonAdapter: daec28c0d4e31159b1abed475fa88d4f10173522
   BidMachineCriteoAdapter: 3b1c9eb82da1e5b449d4c0d50d91d056d6540e1d
@@ -665,7 +663,7 @@ SPEC CHECKSUMS:
   StackAnalytics: 42307f033e611586dab85081731e1b639327e738
   StackConsentManager: b4ede83061d59bebe0206255651e04a9e1e80d66
   StackIAB: 980dc7abff4c2a1f579718917b35af946a900049
-  StackModules: daf958afce04e3480079cde783cd0e76b0fb5049
+  StackModules: f31cd1057b6b2ed4bda25f2730fbbefe96cba785
   StackProtobuf: 6b78e9e5c5f7ead500a5d1527e569c4d49599a74
   TapjoySDK: 7edeac6d20f9d941fab1352c81ecd3e885c36167
   UnityAds: 390144b2029ac9ce2ec81c3cfd0007686b59236a
@@ -675,4 +673,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 7b3eb141b9302c75506b5e10690430ebd397cd3b
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.13.0
