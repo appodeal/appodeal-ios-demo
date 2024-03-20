@@ -114,7 +114,7 @@ PODS:
   - APDYandexAdapter (3.3.0.0-beta.3):
     - Appodeal (= 3.3.0-beta.3)
     - YandexMobileAds (= 5.2.1)
-  - AppLovinMediationAmazonAdMarketplaceAdapter (4.7.6.0):
+  - AppLovinMediationAmazonAdMarketplaceAdapter (4.9.0.0):
     - AppLovinSDK
   - AppLovinMediationGoogleAdapter (10.14.0.1):
     - AppLovinSDK
@@ -122,10 +122,10 @@ PODS:
   - AppLovinMediationGoogleAdManagerAdapter (10.14.0.0):
     - AppLovinSDK
     - Google-Mobile-Ads-SDK (= 10.14.0)
-  - AppLovinMediationMintegralAdapter (7.5.3.0.0):
+  - AppLovinMediationMintegralAdapter (7.5.9.0.0):
     - AppLovinSDK
-    - MintegralAdSDK (= 7.5.3)
-    - MintegralAdSDK/BidSplashAd (= 7.5.3)
+    - MintegralAdSDK (= 7.5.9)
+    - MintegralAdSDK/BidSplashAd (= 7.5.9)
   - AppLovinMediationUnityAdsAdapter (4.9.3.0):
     - AppLovinSDK
     - UnityAds (= 4.9.3)
@@ -182,30 +182,30 @@ PODS:
   - BidonAdapterBidMachine (0.4.7.2):
     - BidMachine (~> 2.4.0)
     - Bidon (= 0.4.7)
-  - BidonAdapterBigoAds (0.4.7.3):
+  - BidonAdapterBigoAds (0.4.7.4):
     - Bidon (= 0.4.7)
-    - BigoADS (~> 4.2.0)
-  - BidonAdapterDTExchange (0.4.7.3):
+    - BigoADS (~> 4.2.1)
+  - BidonAdapterDTExchange (0.4.7.4):
     - Bidon (= 0.4.7)
-    - Fyber_Marketplace_SDK (~> 8.2.4)
+    - Fyber_Marketplace_SDK (~> 8.2.7)
   - BidonAdapterGoogleAdManager (0.4.7.1):
     - Bidon (= 0.4.7)
     - Google-Mobile-Ads-SDK
   - BidonAdapterGoogleMobileAds (0.4.7.1):
     - Bidon (= 0.4.7)
     - Google-Mobile-Ads-SDK
-  - BidonAdapterInMobi (0.4.7.1):
+  - BidonAdapterInMobi (0.4.7.2):
     - Bidon (= 0.4.7)
-    - InMobiSDK (~> 10.6.0)
+    - InMobiSDK (~> 10.6.4)
   - BidonAdapterMetaAudienceNetwork (0.4.7.1):
     - Bidon (= 0.4.7)
     - FBAudienceNetwork (~> 6.12.0)
   - BidonAdapterMintegral (0.4.7.2):
     - Bidon (= 0.4.7)
     - MintegralAdSDK (~> 7.5.3)
-  - BidonAdapterUnityAds (0.4.7.1):
+  - BidonAdapterUnityAds (0.4.7.2):
     - Bidon (= 0.4.7)
-    - UnityAds (~> 4.9.0)
+    - UnityAds (~> 4.9.3)
   - BidonAdapterVungle (0.4.7.2):
     - Bidon (= 0.4.7)
     - VungleAds (~> 7.2.0)
@@ -368,45 +368,45 @@ PODS:
     - GoogleUtilities/Privacy
   - InMobiSDK (10.6.4)
   - IronSourceSDK (7.9.0.0)
-  - MintegralAdSDK (7.5.3):
-    - MintegralAdSDK/BannerAd (= 7.5.3)
-    - MintegralAdSDK/BidBannerAd (= 7.5.3)
-    - MintegralAdSDK/BidInterstitialVideoAd (= 7.5.3)
-    - MintegralAdSDK/BidNativeAd (= 7.5.3)
-    - MintegralAdSDK/BidNewInterstitialAd (= 7.5.3)
-    - MintegralAdSDK/BidRewardVideoAd (= 7.5.3)
-    - MintegralAdSDK/InterstitialVideoAd (= 7.5.3)
-    - MintegralAdSDK/NativeAd (= 7.5.3)
-    - MintegralAdSDK/NewInterstitialAd (= 7.5.3)
-    - MintegralAdSDK/RewardVideoAd (= 7.5.3)
-  - MintegralAdSDK/BannerAd (7.5.3):
+  - MintegralAdSDK (7.5.9):
+    - MintegralAdSDK/BannerAd (= 7.5.9)
+    - MintegralAdSDK/BidBannerAd (= 7.5.9)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.5.9)
+    - MintegralAdSDK/BidNativeAd (= 7.5.9)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.5.9)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.5.9)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.5.9)
+    - MintegralAdSDK/NativeAd (= 7.5.9)
+    - MintegralAdSDK/NewInterstitialAd (= 7.5.9)
+    - MintegralAdSDK/RewardVideoAd (= 7.5.9)
+  - MintegralAdSDK/BannerAd (7.5.9):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidBannerAd (7.5.3):
+  - MintegralAdSDK/BidBannerAd (7.5.9):
     - MintegralAdSDK/BannerAd
     - MintegralAdSDK/BidNativeAd
-  - MintegralAdSDK/BidInterstitialVideoAd (7.5.3):
+  - MintegralAdSDK/BidInterstitialVideoAd (7.5.9):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/InterstitialVideoAd
-  - MintegralAdSDK/BidNativeAd (7.5.3):
+  - MintegralAdSDK/BidNativeAd (7.5.9):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidNewInterstitialAd (7.5.3):
+  - MintegralAdSDK/BidNewInterstitialAd (7.5.9):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/NewInterstitialAd
-  - MintegralAdSDK/BidRewardVideoAd (7.5.3):
+  - MintegralAdSDK/BidRewardVideoAd (7.5.9):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/RewardVideoAd
-  - MintegralAdSDK/BidSplashAd (7.5.3):
+  - MintegralAdSDK/BidSplashAd (7.5.9):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/SplashAd
-  - MintegralAdSDK/InterstitialVideoAd (7.5.3):
+  - MintegralAdSDK/InterstitialVideoAd (7.5.9):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/NativeAd (7.5.3)
-  - MintegralAdSDK/NewInterstitialAd (7.5.3):
+  - MintegralAdSDK/NativeAd (7.5.9)
+  - MintegralAdSDK/NewInterstitialAd (7.5.9):
     - MintegralAdSDK/InterstitialVideoAd
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/RewardVideoAd (7.5.3):
+  - MintegralAdSDK/RewardVideoAd (7.5.9):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/SplashAd (7.5.3):
+  - MintegralAdSDK/SplashAd (7.5.9):
     - MintegralAdSDK/NativeAd
   - myTargetSDK (5.20.2):
     - myTrackerSDK (~> 3.1.1)
@@ -581,14 +581,14 @@ DEPENDENCIES:
   - BidonAdapterAmazon (= 0.4.7.1)
   - BidonAdapterAppLovin (= 0.4.7.1)
   - BidonAdapterBidMachine (= 0.4.7.2)
-  - BidonAdapterBigoAds (= 0.4.7.3)
-  - BidonAdapterDTExchange (= 0.4.7.3)
+  - BidonAdapterBigoAds (= 0.4.7.4)
+  - BidonAdapterDTExchange (= 0.4.7.4)
   - BidonAdapterGoogleAdManager (= 0.4.7.1)
   - BidonAdapterGoogleMobileAds (= 0.4.7.1)
-  - BidonAdapterInMobi (= 0.4.7.1)
+  - BidonAdapterInMobi (= 0.4.7.2)
   - BidonAdapterMetaAudienceNetwork (= 0.4.7.1)
   - BidonAdapterMintegral (= 0.4.7.2)
-  - BidonAdapterUnityAds (= 0.4.7.1)
+  - BidonAdapterUnityAds (= 0.4.7.2)
   - BidonAdapterVungle (= 0.4.7.2)
 
 SPEC REPOS:
@@ -621,6 +621,16 @@ SPEC REPOS:
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
+    - BidMachineCriteoAdapter
+    - BidMachineMetaAudienceAdapter
+    - BidMachinePangleAdapter
+    - BidMachineSmaatoAdapter
+    - BidMachineTapjoyAdapter
+    - BidMachineVungleAdapter
+    - OMSDK_Appodeal
+    - StackConsentManager
+    - StackIAB
+    - StackModules
   trunk:
     - Adjust
     - Ads-Global
@@ -634,12 +644,6 @@ SPEC REPOS:
     - AppsFlyer-AdRevenue
     - AppsFlyerFramework
     - BidMachine
-    - BidMachineCriteoAdapter
-    - BidMachineMetaAudienceAdapter
-    - BidMachinePangleAdapter
-    - BidMachineSmaatoAdapter
-    - BidMachineTapjoyAdapter
-    - BidMachineVungleAdapter
     - Bidon
     - BidonAdapterAmazon
     - BidonAdapterAppLovin
@@ -680,15 +684,11 @@ SPEC REPOS:
     - myTargetSDK
     - myTrackerSDK
     - nanopb
-    - OMSDK_Appodeal
     - PromisesObjC
     - Protobuf
     - Sentry
     - SentryPrivate
     - smaato-ios-sdk
-    - StackConsentManager
-    - StackIAB
-    - StackModules
     - TapjoySDK
     - UnityAds
     - VungleAds
@@ -726,34 +726,34 @@ SPEC CHECKSUMS:
   APDUnityAdapter: 7abbd9535aafdc2c20fae43b69c1bce899a199a9
   APDVungleAdapter: 7bae17fd84ff57c939bc0833c1e4989392860ef1
   APDYandexAdapter: a76c8e991ac87bfd87b5848d419bfa6423e964e7
-  AppLovinMediationAmazonAdMarketplaceAdapter: 48f809099da51041b0c2a28ba730c7c9925636e1
+  AppLovinMediationAmazonAdMarketplaceAdapter: 6c94c37d0b3d35088faae3db611e38bed3db432a
   AppLovinMediationGoogleAdapter: 415bacc5d03794737c23a03dd1677caf72a175d9
   AppLovinMediationGoogleAdManagerAdapter: 5bb0d2e3e485a9af80b062f63fc5d394476c0bb8
-  AppLovinMediationMintegralAdapter: b77cdfbbe1eaad900c1517f60eadbd93e14c2ff9
+  AppLovinMediationMintegralAdapter: 430d4bacd45652b6cc86eca1e937175e2c6cc30e
   AppLovinMediationUnityAdsAdapter: 7aa76cf5e1bfb2162469a7f92ed6522d138d23d7
   AppLovinSDK: d99a5a32b00e844932f4583f863780e1af835722
   Appodeal: 84d32b8b5666a781f9b27ccac33ed821777d51b7
   AppsFlyer-AdRevenue: a38170b0b59f74cd07c7a9b91ee026f147b5c968
   AppsFlyerFramework: 971521cf5b890c2afeab2f2c91734547b8b169ca
   BidMachine: 8cf42ea824283af93a58f8f41d89cc29ca2a0dee
-  BidMachineCriteoAdapter: 54d4d55b7c1c0d7df8a4a3bbeac56698dfa6ff41
-  BidMachineMetaAudienceAdapter: bb030101ec26b452315ef65c707a3c92f9c30bfd
-  BidMachinePangleAdapter: fdc94b4c65af97aa71bfd0bbe442e20131c6fc62
-  BidMachineSmaatoAdapter: 95bbde25edd88855a3d8b1606bf8310a7349595c
-  BidMachineTapjoyAdapter: 1f565fc0d49c43b4b536154842a90fe0dd3cd437
-  BidMachineVungleAdapter: 11d2eeb46a9857a6fc12e8078cdb7000b7ae6cd5
+  BidMachineCriteoAdapter: 43a2fca76e05ccdcc6afa0838177c874d39cc818
+  BidMachineMetaAudienceAdapter: b5aa268f49be02556c50bc1994f8a87317a94ae5
+  BidMachinePangleAdapter: f19aad536afb3e08bf36bf87fe4ea366e5bef6fd
+  BidMachineSmaatoAdapter: ccc75b4ea6060acf002f3df7d06d1433e045dc82
+  BidMachineTapjoyAdapter: 21e9397e69eac61ea10a33ec162913788a22d108
+  BidMachineVungleAdapter: 0e8685b6e52520b8b9ff9e60175816539045a236
   Bidon: 994a3e881b9ce1870dab4e0cf15edcaf558a8170
   BidonAdapterAmazon: 196e8faea329e196c39832f3b3e8d96f8dc522a6
   BidonAdapterAppLovin: 9dd5fde37b8fca18b47204e45c5952dd041e4055
   BidonAdapterBidMachine: c6bf9c0c4508d6482db283f98b034b70d6adc5da
-  BidonAdapterBigoAds: 03cbdbe3543ff7aea52061331f58b2daed4e0cf4
-  BidonAdapterDTExchange: 4ea99b945001f9ca039cecb2cb50c649f16e57b6
+  BidonAdapterBigoAds: 79b1fe678ea9892d7a2142d9353992b40b203670
+  BidonAdapterDTExchange: a25337d3de37b210d7e06c75fb62eb202f706169
   BidonAdapterGoogleAdManager: a74b61f6e0927439326a123e72fb3dd42f869983
   BidonAdapterGoogleMobileAds: bd17a8dcc15e2ed323c2aac622d5b3ace592dfef
-  BidonAdapterInMobi: 978ab7466899a98d021f1c5248cc9e592522954a
+  BidonAdapterInMobi: ae7b928c963c7e09b8ae54129c842120b88b05f1
   BidonAdapterMetaAudienceNetwork: 339f4b568afa0085af21adacb24f0d8ead826cee
   BidonAdapterMintegral: ebc30d3b2e0ea00337e3c58cd8788d0ed32e7124
-  BidonAdapterUnityAds: b20d9bf2f0604fda6f6de27cdcbcb1ddb67274f0
+  BidonAdapterUnityAds: e12affa206fdb19c89e594cdf420bbbc01dc3c16
   BidonAdapterVungle: 9efdac89e229a8ed7985faca4301654ff904166c
   BigoADS: 49c3cf0764c2edab09cdff65a5a297ab1df16844
   BURelyFoundation_Global: 1d1813784aecc249311d4df1b7e80e1dbd559dc3
@@ -778,25 +778,25 @@ SPEC CHECKSUMS:
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   InMobiSDK: 40cc7a6fcd4952f15fc662cf40a27bcfaeacfb72
   IronSourceSDK: 3fb6845fabf7b6e84e73fff61fe7a4d75691e4ac
-  MintegralAdSDK: 8a50d604e6d6f7c2842a24645a7a260ec3805d15
+  MintegralAdSDK: 310ae24bd4f0a6c1099161ba4675ba0f771e9b14
   myTargetSDK: e89c7750ae10be5fa9deb4c01fce50c8ec1e078d
   myTrackerSDK: 6cb0a8af287a7481764d06648a4d5cb315e52e44
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
-  OMSDK_Appodeal: c3e648a353665dc4c0a8235d6e7efa66b8277ab5
+  OMSDK_Appodeal: f4e97878c54edd6be63259a4ba38a5491be6226a
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   Protobuf: 5685c66a07eaad9d18ce5ab618e9ac01fd04b5aa
   Sentry: 64a9f9c3637af913adcf53deced05bbe452d1410
   SentryPrivate: 024c6fed507ac39ae98e6d087034160f942920d5
   smaato-ios-sdk: 4533e9c8c24ecefd0445a78ea89afba35412e1d1
-  StackConsentManager: bf5d97b5056f90c3ed9e07300e0d261f5c8897be
-  StackIAB: 0ced2f5112b0a1bea80b9e807398c0b4bb32f8cd
-  StackModules: 6a6ab95b2438b97f9ce685a16bfa4addf8b7f52d
+  StackConsentManager: a2bebf77e1a18cfb7299161f43ae3c5ba3c3ce38
+  StackIAB: 5c11cebe2916bb814e884a95d5186ff272a493e0
+  StackModules: a2d96a26eaeca0b83567626f86ea738abbf5836d
   TapjoySDK: 7edeac6d20f9d941fab1352c81ecd3e885c36167
   UnityAds: c503b06232a002ff6dc9677f4e32c6e1ae286232
   VungleAds: 85eb3468e8a6dfcf86f2b2e7891181df426c0433
   YandexMobileAds: 3d7708df615f92815a3acedf9869da46d0b4d65e
   YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
 
-PODFILE CHECKSUM: cdc3492f9f9920f095ae8955a7a984061426022d
+PODFILE CHECKSUM: 046ce31da35ca7ef81e1c1f2d95a3e2d889136a6
 
 COCOAPODS: 1.13.0

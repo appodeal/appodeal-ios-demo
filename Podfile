@@ -53,14 +53,14 @@ def appodeal
       pod 'BidonAdapterAmazon', '0.4.7.1'
       pod 'BidonAdapterAppLovin', '0.4.7.1'
       pod 'BidonAdapterBidMachine', '0.4.7.2'
-      pod 'BidonAdapterBigoAds', '0.4.7.3'
-      pod 'BidonAdapterDTExchange', '0.4.7.3'
+      pod 'BidonAdapterBigoAds', '0.4.7.4'
+      pod 'BidonAdapterDTExchange', '0.4.7.4'
       pod 'BidonAdapterGoogleAdManager', '0.4.7.1'
       pod 'BidonAdapterGoogleMobileAds', '0.4.7.1'
-      pod 'BidonAdapterInMobi', '0.4.7.1'
+      pod 'BidonAdapterInMobi', '0.4.7.2'
       pod 'BidonAdapterMetaAudienceNetwork', '0.4.7.1'
       pod 'BidonAdapterMintegral', '0.4.7.2'
-      pod 'BidonAdapterUnityAds', '0.4.7.1'
+      pod 'BidonAdapterUnityAds', '0.4.7.2'
       pod 'BidonAdapterVungle', '0.4.7.2'
 
 end
