@@ -9,7 +9,7 @@ PODS:
   - Ads-Global/BURelyAdSDK (5.2.1.0)
   - Ads-Global/Dep_Compatible (5.2.1.0):
     - BURelyFoundation_Global/Pangle (~> 0.1.1.0)
-  - AmazonPublisherServicesSDK (4.9.0)
+  - AmazonPublisherServicesSDK (4.7.6)
   - APDAdjustAdapter (3.3.0.0-beta.3):
     - Adjust (~> 4.37.0)
     - AdjustPurchase (= 1.0.1)
@@ -114,21 +114,45 @@ PODS:
   - APDYandexAdapter (3.3.0.0-beta.3):
     - Appodeal (= 3.3.0-beta.3)
     - YandexMobileAds (= 5.2.1)
-  - AppLovinMediationAmazonAdMarketplaceAdapter (4.9.0.0):
+  - AppLovinMediationAmazonAdMarketplaceAdapter (4.7.6.0):
     - AppLovinSDK
+  - AppLovinMediationBidMachineAdapter (2.4.0.1.0):
+    - AppLovinSDK
+    - BidMachine (= 2.4.0.1)
+  - AppLovinMediationFacebookAdapter (6.12.0.3):
+    - AppLovinSDK
+    - FBAudienceNetwork (= 6.12.0)
+  - AppLovinMediationFyberAdapter (8.2.7.0):
+    - AppLovinSDK
+    - Fyber_Marketplace_SDK (= 8.2.7)
   - AppLovinMediationGoogleAdapter (10.14.0.1):
     - AppLovinSDK
     - Google-Mobile-Ads-SDK (= 10.14.0)
   - AppLovinMediationGoogleAdManagerAdapter (10.14.0.0):
     - AppLovinSDK
     - Google-Mobile-Ads-SDK (= 10.14.0)
-  - AppLovinMediationMintegralAdapter (7.5.9.0.0):
+  - AppLovinMediationInMobiAdapter (10.6.4.0):
     - AppLovinSDK
-    - MintegralAdSDK (= 7.5.9)
-    - MintegralAdSDK/BidSplashAd (= 7.5.9)
+    - InMobiSDK (= 10.6.4)
+  - AppLovinMediationIronSourceAdapter (7.9.0.0.0):
+    - AppLovinSDK
+    - IronSourceSDK (= 7.9.0.0)
+  - AppLovinMediationMintegralAdapter (7.5.3.0.0):
+    - AppLovinSDK
+    - MintegralAdSDK (= 7.5.3)
+    - MintegralAdSDK/BidSplashAd (= 7.5.3)
+  - AppLovinMediationMyTargetAdapter (5.20.1.1):
+    - AppLovinSDK (>= 12.0.0)
+    - myTargetSDK (= 5.20.1)
   - AppLovinMediationUnityAdsAdapter (4.9.3.0):
     - AppLovinSDK
     - UnityAds (= 4.9.3)
+  - AppLovinMediationVungleAdapter (7.2.0.0):
+    - AppLovinSDK
+    - VungleAds (= 7.2.0)
+  - AppLovinMediationYandexAdapter (5.2.1.0):
+    - AppLovinSDK
+    - YandexMobileAds (= 5.2.1)
   - AppLovinSDK (12.3.1)
   - Appodeal (3.3.0-beta.3):
     - Protobuf
@@ -153,12 +177,21 @@ PODS:
     - BidMachine/ModulesCore
   - BidMachine/ModulesCore (2.4.0.1):
     - BidMachine/ApiCore
+  - BidMachineAmazonAdapter (2.4.0.0):
+    - AmazonPublisherServicesSDK (= 4.7.6)
+    - BidMachine (~> 2.4.0.0)
   - BidMachineCriteoAdapter (2.4.0.0):
     - BidMachine (~> 2.4.0.0)
     - CriteoPublisherSdk (= 4.9.0)
   - BidMachineMetaAudienceAdapter (2.4.0.1):
     - BidMachine (~> 2.4.0.0)
     - FBAudienceNetwork (= 6.12.0)
+  - BidMachineMintegralAdapter (2.4.0.1):
+    - BidMachine (~> 2.4.0.0)
+    - MintegralAdSDK (= 7.5.3)
+  - BidMachineMyTargetAdapter (2.4.0.2):
+    - BidMachine (~> 2.4.0.0)
+    - myTargetSDK (= 5.20.1)
   - BidMachinePangleAdapter (2.4.0.0):
     - Ads-Global/BUAdSDK_Compatible (= 5.2.1.0)
     - BidMachine (~> 2.4.0.0)
@@ -368,47 +401,47 @@ PODS:
     - GoogleUtilities/Privacy
   - InMobiSDK (10.6.4)
   - IronSourceSDK (7.9.0.0)
-  - MintegralAdSDK (7.5.9):
-    - MintegralAdSDK/BannerAd (= 7.5.9)
-    - MintegralAdSDK/BidBannerAd (= 7.5.9)
-    - MintegralAdSDK/BidInterstitialVideoAd (= 7.5.9)
-    - MintegralAdSDK/BidNativeAd (= 7.5.9)
-    - MintegralAdSDK/BidNewInterstitialAd (= 7.5.9)
-    - MintegralAdSDK/BidRewardVideoAd (= 7.5.9)
-    - MintegralAdSDK/InterstitialVideoAd (= 7.5.9)
-    - MintegralAdSDK/NativeAd (= 7.5.9)
-    - MintegralAdSDK/NewInterstitialAd (= 7.5.9)
-    - MintegralAdSDK/RewardVideoAd (= 7.5.9)
-  - MintegralAdSDK/BannerAd (7.5.9):
+  - MintegralAdSDK (7.5.3):
+    - MintegralAdSDK/BannerAd (= 7.5.3)
+    - MintegralAdSDK/BidBannerAd (= 7.5.3)
+    - MintegralAdSDK/BidInterstitialVideoAd (= 7.5.3)
+    - MintegralAdSDK/BidNativeAd (= 7.5.3)
+    - MintegralAdSDK/BidNewInterstitialAd (= 7.5.3)
+    - MintegralAdSDK/BidRewardVideoAd (= 7.5.3)
+    - MintegralAdSDK/InterstitialVideoAd (= 7.5.3)
+    - MintegralAdSDK/NativeAd (= 7.5.3)
+    - MintegralAdSDK/NewInterstitialAd (= 7.5.3)
+    - MintegralAdSDK/RewardVideoAd (= 7.5.3)
+  - MintegralAdSDK/BannerAd (7.5.3):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidBannerAd (7.5.9):
+  - MintegralAdSDK/BidBannerAd (7.5.3):
     - MintegralAdSDK/BannerAd
     - MintegralAdSDK/BidNativeAd
-  - MintegralAdSDK/BidInterstitialVideoAd (7.5.9):
+  - MintegralAdSDK/BidInterstitialVideoAd (7.5.3):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/InterstitialVideoAd
-  - MintegralAdSDK/BidNativeAd (7.5.9):
+  - MintegralAdSDK/BidNativeAd (7.5.3):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidNewInterstitialAd (7.5.9):
+  - MintegralAdSDK/BidNewInterstitialAd (7.5.3):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/NewInterstitialAd
-  - MintegralAdSDK/BidRewardVideoAd (7.5.9):
+  - MintegralAdSDK/BidRewardVideoAd (7.5.3):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/RewardVideoAd
-  - MintegralAdSDK/BidSplashAd (7.5.9):
+  - MintegralAdSDK/BidSplashAd (7.5.3):
     - MintegralAdSDK/BidNativeAd
     - MintegralAdSDK/SplashAd
-  - MintegralAdSDK/InterstitialVideoAd (7.5.9):
+  - MintegralAdSDK/InterstitialVideoAd (7.5.3):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/NativeAd (7.5.9)
-  - MintegralAdSDK/NewInterstitialAd (7.5.9):
+  - MintegralAdSDK/NativeAd (7.5.3)
+  - MintegralAdSDK/NewInterstitialAd (7.5.3):
     - MintegralAdSDK/InterstitialVideoAd
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/RewardVideoAd (7.5.9):
+  - MintegralAdSDK/RewardVideoAd (7.5.3):
     - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/SplashAd (7.5.9):
+  - MintegralAdSDK/SplashAd (7.5.3):
     - MintegralAdSDK/NativeAd
-  - myTargetSDK (5.20.2):
+  - myTargetSDK (5.20.1):
     - myTrackerSDK (~> 3.1.1)
   - myTrackerSDK (3.1.6)
   - nanopb (2.30910.0):
@@ -539,7 +572,6 @@ PODS:
     - YandexMobileMetrica/Static/Core
 
 DEPENDENCIES:
-  - AmazonPublisherServicesSDK
   - APDAdjustAdapter (= 3.3.0.0-beta.3)
   - APDAmazonAdapter (= 3.3.0.0-beta.3)
   - APDAppLovinAdapter (= 3.3.0.0-beta.3)
@@ -566,14 +598,25 @@ DEPENDENCIES:
   - APDUnityAdapter (= 3.3.0.0-beta.3)
   - APDVungleAdapter (= 3.3.0.0-beta.3)
   - APDYandexAdapter (= 3.3.0.0-beta.3)
-  - AppLovinMediationAmazonAdMarketplaceAdapter
+  - AppLovinMediationAmazonAdMarketplaceAdapter (= 4.7.6.0)
+  - AppLovinMediationBidMachineAdapter (= 2.4.0.1.0)
+  - AppLovinMediationFacebookAdapter (= 6.12.0.3)
+  - AppLovinMediationFyberAdapter
   - AppLovinMediationGoogleAdapter
   - AppLovinMediationGoogleAdManagerAdapter
-  - AppLovinMediationMintegralAdapter
+  - AppLovinMediationInMobiAdapter (= 10.6.4.0)
+  - AppLovinMediationIronSourceAdapter
+  - AppLovinMediationMintegralAdapter (= 7.5.3.0.0)
+  - AppLovinMediationMyTargetAdapter (= 5.20.1.1)
   - AppLovinMediationUnityAdsAdapter
+  - AppLovinMediationVungleAdapter (= 7.2.0.0)
+  - AppLovinMediationYandexAdapter (= 5.2.1.0)
   - Appodeal (= 3.3.0-beta.3)
+  - BidMachineAmazonAdapter (= 2.4.0.0)
   - BidMachineCriteoAdapter (= 2.4.0.0)
   - BidMachineMetaAudienceAdapter (= 2.4.0.1)
+  - BidMachineMintegralAdapter (= 2.4.0.1)
+  - BidMachineMyTargetAdapter (= 2.4.0.2)
   - BidMachinePangleAdapter (= 2.4.0.0)
   - BidMachineSmaatoAdapter (= 2.4.0.0)
   - BidMachineTapjoyAdapter (= 2.4.0.0)
@@ -621,8 +664,11 @@ SPEC REPOS:
     - APDVungleAdapter
     - APDYandexAdapter
     - Appodeal
+    - BidMachine
+    - BidMachineAmazonAdapter
     - BidMachineCriteoAdapter
     - BidMachineMetaAudienceAdapter
+    - BidMachineMintegralAdapter
     - BidMachinePangleAdapter
     - BidMachineSmaatoAdapter
     - BidMachineTapjoyAdapter
@@ -636,14 +682,23 @@ SPEC REPOS:
     - Ads-Global
     - AmazonPublisherServicesSDK
     - AppLovinMediationAmazonAdMarketplaceAdapter
+    - AppLovinMediationBidMachineAdapter
+    - AppLovinMediationFacebookAdapter
+    - AppLovinMediationFyberAdapter
     - AppLovinMediationGoogleAdapter
     - AppLovinMediationGoogleAdManagerAdapter
+    - AppLovinMediationInMobiAdapter
+    - AppLovinMediationIronSourceAdapter
     - AppLovinMediationMintegralAdapter
+    - AppLovinMediationMyTargetAdapter
     - AppLovinMediationUnityAdsAdapter
+    - AppLovinMediationVungleAdapter
+    - AppLovinMediationYandexAdapter
     - AppLovinSDK
     - AppsFlyer-AdRevenue
     - AppsFlyerFramework
     - BidMachine
+    - BidMachineMyTargetAdapter
     - Bidon
     - BidonAdapterAmazon
     - BidonAdapterAppLovin
@@ -699,7 +754,7 @@ SPEC CHECKSUMS:
   Adjust: a830d963025334aee8a62a7bac87825e297a841e
   AdjustPurchase: a6688375a589f10a455adb9217c7de55eba93d63
   Ads-Global: 4a4434e2041e974a4f4e2d6aeb0bc003f2f05925
-  AmazonPublisherServicesSDK: b4fde6fda89991cb9bd03ecaf5140a4fe44ad235
+  AmazonPublisherServicesSDK: 42e44affd14820c7ca17e55934fe8e53f5fb9ca0
   APDAdjustAdapter: 7f70f39f3bce44812043a3e5363fd810336e5c43
   APDAmazonAdapter: 99c4cfb81c72cdf58beab1bf2ddbada22bb312fb
   APDAppLovinAdapter: 19b865527162f61ae83c028b32c32f4ad24c9c5b
@@ -726,18 +781,29 @@ SPEC CHECKSUMS:
   APDUnityAdapter: 7abbd9535aafdc2c20fae43b69c1bce899a199a9
   APDVungleAdapter: 7bae17fd84ff57c939bc0833c1e4989392860ef1
   APDYandexAdapter: a76c8e991ac87bfd87b5848d419bfa6423e964e7
-  AppLovinMediationAmazonAdMarketplaceAdapter: 6c94c37d0b3d35088faae3db611e38bed3db432a
+  AppLovinMediationAmazonAdMarketplaceAdapter: 48f809099da51041b0c2a28ba730c7c9925636e1
+  AppLovinMediationBidMachineAdapter: 1e42a4e1273e2f97a3fd7a59c8b8b2d26e25ec14
+  AppLovinMediationFacebookAdapter: 296b4b4faeda8b70103ae5c4134b5604082defbd
+  AppLovinMediationFyberAdapter: 41e1c8f340e40d703b99a838ad1c0ec444accc13
   AppLovinMediationGoogleAdapter: 415bacc5d03794737c23a03dd1677caf72a175d9
   AppLovinMediationGoogleAdManagerAdapter: 5bb0d2e3e485a9af80b062f63fc5d394476c0bb8
-  AppLovinMediationMintegralAdapter: 430d4bacd45652b6cc86eca1e937175e2c6cc30e
+  AppLovinMediationInMobiAdapter: 428531e2a79f035917aa78355d905f8c40642079
+  AppLovinMediationIronSourceAdapter: d7b2190fecb58a9bef8b5ff083327b4516d3c39f
+  AppLovinMediationMintegralAdapter: b77cdfbbe1eaad900c1517f60eadbd93e14c2ff9
+  AppLovinMediationMyTargetAdapter: d355b11245a385d32fda90bb3c3549b25b0c8a1f
   AppLovinMediationUnityAdsAdapter: 7aa76cf5e1bfb2162469a7f92ed6522d138d23d7
+  AppLovinMediationVungleAdapter: 495a6a662cde25920e72da4357026a79491a0242
+  AppLovinMediationYandexAdapter: 959c5e6d0df3b20d3cb7ecc2336a718ab51aa6be
   AppLovinSDK: d99a5a32b00e844932f4583f863780e1af835722
   Appodeal: 84d32b8b5666a781f9b27ccac33ed821777d51b7
   AppsFlyer-AdRevenue: a38170b0b59f74cd07c7a9b91ee026f147b5c968
   AppsFlyerFramework: 971521cf5b890c2afeab2f2c91734547b8b169ca
-  BidMachine: 8cf42ea824283af93a58f8f41d89cc29ca2a0dee
+  BidMachine: 14e8969e2cce77732bcefb6ee34ec1c2505c89cb
+  BidMachineAmazonAdapter: aed4ef61e8e780c25e00d17af2c27e39f23c6894
   BidMachineCriteoAdapter: 43a2fca76e05ccdcc6afa0838177c874d39cc818
   BidMachineMetaAudienceAdapter: b5aa268f49be02556c50bc1994f8a87317a94ae5
+  BidMachineMintegralAdapter: b997e37dedf47adab480ef10669851f59adbb4dd
+  BidMachineMyTargetAdapter: a712f9ae79a56d2e74f9f4023288434b2f88188f
   BidMachinePangleAdapter: f19aad536afb3e08bf36bf87fe4ea366e5bef6fd
   BidMachineSmaatoAdapter: ccc75b4ea6060acf002f3df7d06d1433e045dc82
   BidMachineTapjoyAdapter: 21e9397e69eac61ea10a33ec162913788a22d108
@@ -778,8 +844,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   InMobiSDK: 40cc7a6fcd4952f15fc662cf40a27bcfaeacfb72
   IronSourceSDK: 3fb6845fabf7b6e84e73fff61fe7a4d75691e4ac
-  MintegralAdSDK: 310ae24bd4f0a6c1099161ba4675ba0f771e9b14
-  myTargetSDK: e89c7750ae10be5fa9deb4c01fce50c8ec1e078d
+  MintegralAdSDK: 8a50d604e6d6f7c2842a24645a7a260ec3805d15
+  myTargetSDK: affba499915fed67642f39e3ecebe235441cf278
   myTrackerSDK: 6cb0a8af287a7481764d06648a4d5cb315e52e44
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   OMSDK_Appodeal: f4e97878c54edd6be63259a4ba38a5491be6226a
@@ -797,6 +863,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 3d7708df615f92815a3acedf9869da46d0b4d65e
   YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
 
-PODFILE CHECKSUM: 046ce31da35ca7ef81e1c1f2d95a3e2d889136a6
+PODFILE CHECKSUM: 4e0746b9d7d867e395be6beed03ad9ce58c03094
 
 COCOAPODS: 1.13.0
