@@ -5,12 +5,10 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-## Build generated
-build/
-DerivedData
-
 ## CocoaPods
 Pods/
+*/Legacy/Pods/*
+Podfile.lock
 
 ## Carthage
 Carthage
@@ -31,3 +29,40 @@ SDK/*
 !SDK/.gitkeep
 !SDK/ASExtentions.framework
 !SDK/ASGDPR.framework
+
+## Fastlane and test files
+report/
+result/
+report.xcresult
+report.json
+report.junit
+report.html
+**.p8
+**.asc
+allure-results/
+allure-result/
+allure-report/
+allure-reports/
+appium/
+
+## Builds & DerivedData various possible locations
+build/
+DerivedData**/
+.DerivedData/
+Build/DerivedData/
+Builds/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.app
+*.dSYM.zip
+*.dSYM
+
+## Brew
+Brewfile.lock.json
+
+## Other
+xcresults
+allurectl
+.idea/
