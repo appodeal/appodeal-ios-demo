@@ -28,16 +28,18 @@ jobs:
           path: 'appodeal-ios-demo'
           
       - name: instal ruby deps
+        working-directory: 'appodeal-ios-demo'
         run: bundle install
       
       - name: build ios app
+        working-directory: 'appodeal-ios-demo'
         run: bundle exec fastlane ios build_app_for_uitests
       
       - name: save debug build for aws
         uses: actions/upload-artifact@v4
         with:
           name: AppodealSwiftDemo
-          path: appium/AppodealSwiftDemo.ipa
+          path: appodeal-ios-demo/appium/AppodealSwiftDemo.ipa
           retention-days: 14
 
 #  tests:
