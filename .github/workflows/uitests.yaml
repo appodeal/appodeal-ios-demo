@@ -13,7 +13,7 @@ on:
 
 jobs:
   build:
-    name: build android application for ui tests
+    name: build ios application for ui tests
     runs-on: ${{ github.event.inputs.runner || 'debugmachine' }}
     timeout-minutes: 30
     steps:
@@ -27,17 +27,18 @@ jobs:
           clean: true
           path: 'appodeal-ios-demo'
           
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-      - run: bundle install
+      - name: instal ruby deps
+        run: bundle install
       
-#      - name: save debug build for aws
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: banner-debug.apk
-#          path: appodeal-android-sdk/banner/build/outputs/apk/debug/banner-debug.apk
-#          retention-days: 14
+      - name: build ios app
+        run: bundle exec fastlane ios build_app_for_uitests
+      
+      - name: save debug build for aws
+        uses: actions/upload-artifact@v4
+        with:
+          name: AppodealSwiftDemo
+          path: appium/AppodealSwiftDemo.ipa
+          retention-days: 14
 
 #  tests:
 #    name: run ui tests on aws with appium
