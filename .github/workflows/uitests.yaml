@@ -58,7 +58,7 @@ jobs:
           path: 'SDK-Auto-Test'
           clean: true
           repository: 'appodeal/SDK-Auto-Test'
-          ref: 'aws_ios'
+          ref: 'aws'
           token: ${{ secrets.UITESTREPOACCESS }}
 
       - name: Set up JDK 11
