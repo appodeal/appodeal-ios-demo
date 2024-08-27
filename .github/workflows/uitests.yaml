@@ -128,7 +128,7 @@ jobs:
                 "name": "GitHubAction-${{ github.workflow }}_${{ github.run_id }}_${{ github.run_attempt }}",
                 "projectArn": "arn:aws:devicefarm:us-west-2:381491970378:project:4c28c1e5-8344-4d34-919c-a1e9377d3b2f",
                 "appArn": "${{ env.APP_ARN }}",
-                "devicePoolArn": "arn:aws:devicefarm:us-west-2:381491970378:devicepool:4c28c1e5-8344-4d34-919c-a1e9377d3b2f/86ebd86a-2150-4997-b71f-2e3d72510e0d",
+                "devicePoolArn": "arn:aws:devicefarm:us-west-2:381491970378:devicepool:4c28c1e5-8344-4d34-919c-a1e9377d3b2f/fab38d5b-3c14-4a91-a3a2-9edbe0ea18a9",
                 "test": {
                   "type": "APPIUM_JAVA_TESTNG",
                   "testPackageArn": "${{ env.TEST_PACKAGE_ARN }}",
