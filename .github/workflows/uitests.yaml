@@ -90,7 +90,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-2
-#
+          
       - name: Upload IPA to AWS Device Farm
         id: upload-ipa
         run: |
@@ -118,24 +118,24 @@ jobs:
               echo "Waiting for Test Package upload to complete..."
               sleep 10
             done
-#
-#      - name: Schedule Device Farm Automated Test
-#        id: run-test
-#        uses: aws-actions/aws-devicefarm-mobile-device-testing@v2.3
-#        with:
-#            run-settings-json: |
-#              {
-#                "name": "GitHubAction-${{ github.workflow }}_${{ github.run_id }}_${{ github.run_attempt }}",
-#                "projectArn": "arn:aws:devicefarm:us-west-2:381491970378:project:4c28c1e5-8344-4d34-919c-a1e9377d3b2f",
-#                "appArn": "${{ env.APP_ARN }}",
-#                "devicePoolArn": "arn:aws:devicefarm:us-west-2:381491970378:devicepool:4c28c1e5-8344-4d34-919c-a1e9377d3b2f/86ebd86a-2150-4997-b71f-2e3d72510e0d",
-#                "test": {
-#                  "type": "APPIUM_JAVA_TESTNG",
-#                  "testPackageArn": "${{ env.TEST_PACKAGE_ARN }}",
-#                  "testSpecArn": "default.yml"
-#                }
-#              }
-#            artifact-types: ALL
+
+      - name: Schedule Device Farm Automated Test
+        id: run-test
+        uses: aws-actions/aws-devicefarm-mobile-device-testing@v2.3
+        with:
+            run-settings-json: |
+              {
+                "name": "GitHubAction-${{ github.workflow }}_${{ github.run_id }}_${{ github.run_attempt }}",
+                "projectArn": "arn:aws:devicefarm:us-west-2:381491970378:project:4c28c1e5-8344-4d34-919c-a1e9377d3b2f",
+                "appArn": "${{ env.APP_ARN }}",
+                "devicePoolArn": "arn:aws:devicefarm:us-west-2:381491970378:run:4c28c1e5-8344-4d34-919c-a1e9377d3b2f/5d86aa35-762e-4282-a93b-9ecbd812c2b4",
+                "test": {
+                  "type": "APPIUM_JAVA_TESTNG",
+                  "testPackageArn": "${{ env.TEST_PACKAGE_ARN }}",
+                  "testSpecArn": "default.yml"
+                }
+              }
+            artifact-types: ALL
 #
 #      - uses: actions/upload-artifact@v4
 #        if: always()
