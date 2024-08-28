@@ -132,25 +132,25 @@ jobs:
                 "test": {
                   "type": "APPIUM_JAVA_TESTNG",
                   "testPackageArn": "${{ env.TEST_PACKAGE_ARN }}",
-                  "testSpecArn": "default.yml"
+                  "testSpecArn": "arn:aws:devicefarm:us-west-2:381491970378:upload:4c28c1e5-8344-4d34-919c-a1e9377d3b2f/e535ea08-6cb2-41c0-a946-36b2e6537768"
                 }
               }
             artifact-types: ALL
-#
-#      - uses: actions/upload-artifact@v4
-#        if: always()
-#        with:
-#          name: AutomatedTestOutputFiles
-#          path: ${{ steps.run-test.outputs.artifact-folder }}
-#
-#      - name: Adding summary
-#        if: ${{ always() }}
-#        run: |
-#          echo "### Results of test execution :fire:" >> $GITHUB_STEP_SUMMARY
-#          echo "Launch: ${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
-#          echo "Device: ${{ github.event.inputs.device }}" >> $GITHUB_STEP_SUMMARY
-#          echo "Build agent: ${{ github.event.inputs.runner }}" >> $GITHUB_STEP_SUMMARY
-#
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AutomatedTestOutputFiles
+          path: ${{ steps.run-test.outputs.artifact-folder }}
+
+      - name: Adding summary
+        if: ${{ always() }}
+        run: |
+          echo "### Results of test execution :fire:" >> $GITHUB_STEP_SUMMARY
+          echo "Launch: ${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
+          echo "Device: ${{ github.event.inputs.device }}" >> $GITHUB_STEP_SUMMARY
+          echo "Build agent: ${{ github.event.inputs.runner }}" >> $GITHUB_STEP_SUMMARY
+
 ##      - name: Download allure-notifications.jar
 ##        if: ${{ always() }}
 ##        run: |
