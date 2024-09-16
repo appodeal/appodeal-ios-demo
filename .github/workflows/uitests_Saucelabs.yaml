@@ -40,7 +40,7 @@ jobs:
         with:
           name: AppodealSwiftDemo
           path: appodeal-ios-demo/appium/AppodealSwiftDemo.ipa
-          retention-days: 14
+          retention-days: 13
           
       - name: Upload ipa to SauceLabs
         run: |
