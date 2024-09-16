@@ -1,0 +1,51 @@
+name: UITest
+
+on:
+  workflow_dispatch:
+    inputs:
+      runner:
+        required: true
+        default: 'debugmachine'
+        type: choice
+        options:
+          - 'debugmachine'
+          - 'macos-latest'
+
+jobs:
+  build:
+    name: build ios application for ui tests
+    runs-on: ${{ github.event.inputs.runner || 'debugmachine' }}
+    timeout-minutes: 30
+    steps:
+      - name: Print Env Variables
+        run: env
+        working-directory: ${{ github.workspace }}
+
+      - name: checkout source code of application
+        uses: actions/checkout@v4
+        with:
+          clean: true
+          path: 'appodeal-ios-demo'
+          
+      - name: instal ruby deps
+        working-directory: 'appodeal-ios-demo'
+        run: bundle install
+      
+      - name: build ios app
+        working-directory: 'appodeal-ios-demo'
+        run: bundle exec fastlane ios build_app_for_uitests
+      
+      - name: save debug build for SauceLabs
+        uses: actions/upload-artifact@v4
+        with:
+          name: AppodealSwiftDemo
+          path: appodeal-ios-demo/appium/AppodealSwiftDemo.ipa
+          retention-days: 14
+          
+      - name: Upload ipa to SauceLabs
+        run: |
+          curl -u "oauth-ivan.litvinau-000ce:2e96055e-b4b1-43e3-a558-8555ffe8ebc6" --location \
+          --request POST 'https://api.eu-central-1.saucelabs.com/v1/storage/upload' \
+          --form 'payload=@"appodeal-ios-demo/appium/AppodealSwiftDemo.ipa"' \
+          --form 'name="AppodealSwiftDemo.ipa"' \
+          --form 'description="iOS APD demo local upload"'
