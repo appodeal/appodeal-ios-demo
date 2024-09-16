@@ -1,4 +1,4 @@
-name: UITest
+name: UITest_SauceLabs
 
 on:
   workflow_dispatch:
