@@ -180,9 +180,6 @@ PODS:
     - BidMachine (~> 3.0.1)
     - VungleAds (= 7.4.1)
   - Bidon (0.7.0-beta.1)
-  - BidonAdapterAmazon (0.7.0.0-beta.1):
-    - AmazonPublisherServicesSDK (~> 4.9.7)
-    - Bidon (= 0.7.0-beta.1)
   - BidonAdapterAppLovin (0.7.0.0-beta.1):
     - AppLovinSDK (= 13.0.0)
     - Bidon (= 0.7.0-beta.1)
@@ -560,7 +557,6 @@ DEPENDENCIES:
   - BidMachinePangleAdapter (= 3.0.1.0)
   - BidMachineSmaatoAdapter (= 3.0.1.0)
   - BidMachineVungleAdapter (= 3.0.1.0)
-  - BidonAdapterAmazon (= 0.7.0.0-beta.1)
   - BidonAdapterAppLovin (= 0.7.0.0-beta.1)
   - BidonAdapterBidMachine (= 0.7.0.0-beta.1)
   - BidonAdapterBigoAds (= 0.7.0.0-beta.1)
@@ -615,7 +611,6 @@ SPEC REPOS:
     - StackConsentManager
   https://github.com/bidon-io/CocoaPods_Specs.git:
     - Bidon
-    - BidonAdapterAmazon
     - BidonAdapterAppLovin
     - BidonAdapterBidMachine
     - BidonAdapterBigoAds
@@ -743,7 +738,6 @@ SPEC CHECKSUMS:
   BidMachineSmaatoAdapter: ee29e3630e250e8bee841e01986a49cf84f98f21
   BidMachineVungleAdapter: 3e5aed538e552bd0ebfc3566cecc38c84500192f
   Bidon: 8f902f13ae0efc6261197937532b68203fd6413a
-  BidonAdapterAmazon: 0a375a8e3ca3ce64b524f7f70f8f6ba2e608c562
   BidonAdapterAppLovin: 22f498f8ef91410237387ab4c81e8f0a792f61e6
   BidonAdapterBidMachine: 0a5da97ecbcc29e464de241e4de4459e20e60884
   BidonAdapterBigoAds: a2a98fb77ff8ba7f8ef5b73a97664eaef574a104
@@ -798,6 +792,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 3d7708df615f92815a3acedf9869da46d0b4d65e
   YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
 
-PODFILE CHECKSUM: 6608ad8e05d57a4d724f95249c90bd31d2c04487
+PODFILE CHECKSUM: 7fdbc93592f161e7ed57200874d434c482d59f7b
 
 COCOAPODS: 1.15.2

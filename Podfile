@@ -58,7 +58,6 @@ def appodeal
   pod 'BidMachinePangleAdapter', '3.0.1.0'
   pod 'BidMachineSmaatoAdapter', '3.0.1.0'
   pod 'BidMachineVungleAdapter', '3.0.1.0'
-  pod 'BidonAdapterAmazon', '0.7.0.0-beta.1'
   pod 'BidonAdapterAppLovin', '0.7.0.0-beta.1'
   pod 'BidonAdapterBidMachine', '0.7.0.0-beta.1'
   pod 'BidonAdapterBigoAds', '0.7.0.0-beta.1'
