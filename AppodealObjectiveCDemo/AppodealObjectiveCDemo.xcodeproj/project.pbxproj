@@ -368,6 +368,17 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InMobiSDK/InMobiSDK.framework/InMobiSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OMSDK_Appodeal/OMSDK_Appodeal.framework/OMSDK_Appodeal",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Banner/SmaatoSDKBanner.framework/SmaatoSDKBanner",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Core/SmaatoSDKCore.framework/SmaatoSDKCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Interstitial/SmaatoSDKInterstitial.framework/SmaatoSDKInterstitial",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Native/SmaatoSDKNative.framework/SmaatoSDKNative",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/OpenMeasurement/SmaatoSDKOpenMeasurement.framework/SmaatoSDKOpenMeasurement",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/OpenMeasurement/OMSDK_Smaato.framework/OMSDK_Smaato",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Outstream/SmaatoSDKOutstream.framework/SmaatoSDKOutstream",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/RewardedAds/SmaatoSDKRewardedAds.framework/SmaatoSDKRewardedAds",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/RichMedia/SmaatoSDKRichMedia.framework/SmaatoSDKRichMedia",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/UnifiedBidding/SmaatoSDKUnifiedBidding.framework/SmaatoSDKUnifiedBidding",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Video/SmaatoSDKVideo.framework/SmaatoSDKVideo",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -391,6 +402,17 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InMobiSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Appodeal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKInterstitial.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKNative.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKOpenMeasurement.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Smaato.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKOutstream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKRewardedAds.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKRichMedia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKUnifiedBidding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKVideo.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,6 +448,7 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/UnityAds/UnityAdsResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/VungleAds/VungleAds.bundle",
 				"${PODS_ROOT}/YandexMobileAds/static/YandexMobileAds.xcframework/YandexMobileAdsBundle.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/smaato-ios-sdk/SmaatoResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -451,6 +474,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UnityAdsResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VungleAds.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMobileAdsBundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SmaatoResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
