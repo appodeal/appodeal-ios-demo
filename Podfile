@@ -23,7 +23,7 @@ def appodeal
   pod 'APDBigoAdsAdapter', '3.6.0.0'
   pod 'APDDTExchangeAdapter', '3.6.0.0'
   pod 'APDFacebookAdapter', '3.6.0.0'
-  pod 'APDFirebaseAdapter', '3.6.0.0'
+  pod 'APDFirebaseAdapter', '3.6.0.1'
   pod 'APDGoogleAdMobAdapter', '3.6.0.0'
   pod 'APDIABAdapter', '3.6.0.0'
   pod 'APDInMobiAdapter', '3.6.0.0'
@@ -40,6 +40,7 @@ def appodeal
   pod 'APDYandexAdapter', '3.6.0.0'
   pod 'AppLovinMediationAmazonAdMarketplaceAdapter', '5.0.1.0'
   pod 'AppLovinMediationBidMachineAdapter', '3.2.0.0.0'
+  pod 'AppLovinMediationBidonAdapter', '0.7.19.0'
   pod 'AppLovinMediationBigoAdsAdapter', '4.6.0.0'
   pod 'AppLovinMediationByteDanceAdapter', '6.4.1.2.0'
   pod 'AppLovinMediationChartboostAdapter', '9.8.0.0'
@@ -98,7 +99,6 @@ def appodeal
   pod 'IronSourceVerveAdapter', '4.3.4.0'
   pod 'IronSourceVungleAdapter', '4.3.42.0'
   pod 'BidMachineIronSourceCustomAdapter', '3.2.0.1'
-  pod 'AppLovinMediationBidonAdapter', '0.7.19.0'
 end
 
 
