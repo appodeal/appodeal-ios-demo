@@ -239,8 +239,8 @@
 				03DBE13B1EE69DFA00549332 /* Sources */,
 				03DBE13C1EE69DFA00549332 /* Frameworks */,
 				03DBE13D1EE69DFA00549332 /* Resources */,
-				704AA2D40CFDE1DDF6389186 /* [CP] Embed Pods Frameworks */,
-				5F9B7EF6C36E64C7102CD3DB /* [CP] Copy Pods Resources */,
+				8087D85E7A03173B95F108EA /* [CP] Embed Pods Frameworks */,
+				7E302D2D4F87B4A712D72BD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,7 +325,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F9B7EF6C36E64C7102CD3DB /* [CP] Copy Pods Resources */ = {
+		7E302D2D4F87B4A712D72BD4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,7 +397,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppodealSwiftDemo/Pods-AppodealSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		704AA2D40CFDE1DDF6389186 /* [CP] Embed Pods Frameworks */ = {
+		8087D85E7A03173B95F108EA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,6 +464,8 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryAds/OMID/OMSDK_Ogury.framework/OMSDK_Ogury",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OpenWrapSDK.framework/OpenWrapSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OMSDK_Pubmatic.framework/OMSDK_Pubmatic",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/StartAppSDK/StartApp.framework/StartApp",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TaurusxAdsSDK/TaurusxAds/TaurusxAdsSDK.framework/TaurusxAdsSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/InApp/SmaatoSDKInAppBidding.framework/SmaatoSDKInAppBidding",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Banner/SmaatoSDKBanner.framework/SmaatoSDKBanner",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Core/SmaatoSDKCore.framework/SmaatoSDKCore",
@@ -538,6 +540,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Ogury.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenWrapSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Pubmatic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StartApp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TaurusxAdsSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKInAppBidding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKCore.framework",
