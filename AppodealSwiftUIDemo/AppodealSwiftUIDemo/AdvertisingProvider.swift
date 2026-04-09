@@ -110,6 +110,10 @@ final class AdvertisingProvider: NSObject, ObservableObject {
         // Appodeal.setFramework(.native, version: "1.0.0")
         // Appodeal.setTriggerPrecacheCallbacks(true)
         // Appodeal.setLocationTracking(true)
+        // Appodeal.setEndpoint("https://example.com/api")
+        // let endpoint = Appodeal.getEndpoint()
+        // Appodeal.setBidonEndpoint("https://example.com/api")
+        // let bidonEndpoint = Appodeal.getBidonEndpoint()
         Appodeal.setLogLevel(AppodealConstants.logLevel)
         
         /// Test Mode
