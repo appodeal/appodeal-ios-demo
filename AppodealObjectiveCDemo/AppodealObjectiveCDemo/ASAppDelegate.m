@@ -29,6 +29,10 @@
     // [Appodeal setFramework:APDFrameworkNative version:@"1.0.0"]
     // [Appodeal setTriggerPrecacheCallbacks:YES];
     // [Appodeal setLocationTracking:YES];
+    // [Appodeal setEndpoint:@"https://example.com/api"];
+    // NSString *endpoint = [Appodeal getEndpoint];
+    // [Appodeal setBidonEndpoint:@"https://example.com/api"];
+    // NSString *bidonEndpoint = [Appodeal getBidonEndpoint];
     /// Test Mode
     [Appodeal setTestingEnabled:YES];
     [Appodeal setLogLevel:APDLogLevelDebug];
