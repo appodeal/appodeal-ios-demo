@@ -165,9 +165,9 @@ PODS:
   - AppodealBidMachineAdapter (3.7.0.0):
     - Appodeal (< 5.0.0, >= 4.0.0)
     - BidMachine (= 3.7.0)
-  - AppodealBidonAdapter (0.15.0.0):
+  - AppodealBidonAdapter (0.14.0.1):
     - Appodeal (< 5.0.0, >= 4.0.0)
-    - Bidon (= 0.15.0)
+    - Bidon (= 0.14.0)
   - AppodealBigoAdsAdapter (5.0.0.0):
     - Appodeal (< 5.0.0, >= 4.0.0)
     - BigoADS (= 5.0.0)
@@ -187,7 +187,7 @@ PODS:
     - GoogleUtilities
   - AppodealGoogleAdMobAdapter (12.13.0.0):
     - Appodeal (< 5.0.0, >= 4.0.0)
-    - Bidon (= 0.15.0)
+    - Bidon (= 0.14.0)
     - Google-Mobile-Ads-SDK (= 12.13.0)
   - AppodealIABAdapter (3.5.0.0):
     - Appodeal (< 5.0.0, >= 4.0.0)
@@ -231,7 +231,7 @@ PODS:
     - BidMachine/Static (= 3.7.0)
   - BidMachine/Static (3.7.0):
     - OMSDK_Appodeal/Static (= 1.6.3)
-  - Bidon (0.15.0)
+  - Bidon (0.14.0)
   - BidonAdapterAmazon (5.3.2.0):
     - AmazonPublisherServicesSDK (= 5.3.2)
     - Bidon (>= 0.12.0)
@@ -689,7 +689,7 @@ DEPENDENCIES:
   - AppodealAppLovinMAXAdapter (= 13.5.1.1)
   - AppodealAppsFlyerAdapter (= 6.17.7.1)
   - AppodealBidMachineAdapter (= 3.7.0.0)
-  - AppodealBidonAdapter (= 0.15.0.0)
+  - AppodealBidonAdapter (= 0.14.0.1)
   - AppodealBigoAdsAdapter (= 5.0.0.0)
   - AppodealDTExchangeAdapter (= 8.4.1.0)
   - AppodealFacebookAdapter (= 18.0.1.0)
@@ -758,7 +758,6 @@ SPEC REPOS:
     - AppodealDTExchangeAdapter
     - AppodealFacebookAdapter
     - AppodealFirebaseAdapter
-    - AppodealGoogleAdMobAdapter
     - AppodealIABAdapter
     - AppodealInMobiAdapter
     - AppodealIronSourceAdapter
@@ -771,7 +770,6 @@ SPEC REPOS:
     - AppodealVungleAdapter
     - AppodealYandexAdapter
   https://github.com/bidon-io/CocoaPods-Specs.git:
-    - Bidon
     - BidonAdapterAmazon
     - BidonAdapterAppLovin
     - BidonAdapterBidMachine
@@ -837,9 +835,11 @@ SPEC REPOS:
     - AppMetricaProtobufUtils
     - AppMetricaStorageUtils
     - AppMetricaSynchronization
+    - AppodealGoogleAdMobAdapter
     - AppsFlyerFramework
     - ATOM-Standalone
     - BidMachine
+    - Bidon
     - BigoADS
     - ChartboostSDK
     - DivKit
@@ -970,12 +970,12 @@ SPEC CHECKSUMS:
   AppodealAppLovinMAXAdapter: 344c1e5063ce6cfeebea1b6997a52597c6cf4e37
   AppodealAppsFlyerAdapter: 134f80e319db955ea08ab20092b80ffcb623bca5
   AppodealBidMachineAdapter: 94d19ad4259698820495492579edc54ab7148a1f
-  AppodealBidonAdapter: b4b91d50676f68269814a35900ebafdfe249a71c
+  AppodealBidonAdapter: 89d39f59f607234cda5bd697d5ac6dedd17409a0
   AppodealBigoAdsAdapter: a760d091f94365f46d71833804a7410e5ce3831c
   AppodealDTExchangeAdapter: 23386851b63504cb6e207d9a0139269b8fd312e7
   AppodealFacebookAdapter: c25717821d0005f6caf2d9db1d3f71df7d96f057
   AppodealFirebaseAdapter: 01e589905b28f06f8f2fe1202fb1ff82f019797e
-  AppodealGoogleAdMobAdapter: f9a178c9aeaa15ff8e551776cfd68636c4b6d284
+  AppodealGoogleAdMobAdapter: 5d04c6ce710b3b6dfe283cf26785c93b1c8e382a
   AppodealIABAdapter: f8687ae81fc3a165cdfeb81daf43f4256230d106
   AppodealInMobiAdapter: f80961e0895c458e853f7469af124d27100d0640
   AppodealIronSourceAdapter: d3927e54a5bfcc2596420efcc973220c4e1985cf
@@ -990,7 +990,7 @@ SPEC CHECKSUMS:
   AppsFlyerFramework: ae7caf1688348f2d7a742037bd4fc6966d39d362
   ATOM-Standalone: cd8bed8eb43e48d0f2e778aa0db893cb7f8ceb93
   BidMachine: 22f85513d1c0403daaed38ec8f368b6a0865aa32
-  Bidon: 78b9e311d1961a5bedea4bbe58fc3c0d55da7159
+  Bidon: 9ca2319f62c67dd0e6b9d466562ab7479d9292d8
   BidonAdapterAmazon: 31ad5ed15ad7b691530639a4b90d39e1ce54f1b8
   BidonAdapterAppLovin: 456e0d3f7826ea3f5f33e904457e85e3fc481888
   BidonAdapterBidMachine: 2d34ca8ce26c9bb0d018624d2d2ccee2ae5ac927
@@ -1086,6 +1086,6 @@ SPEC CHECKSUMS:
   YandexMobileAds: 9f5355c2faffc575004ca2b267625a323686a368
   zMaticoo: d33bd88817532aeb4aef580011d43a0a418767b5
 
-PODFILE CHECKSUM: 53dadf0e53357ab940dd4a62f1150d538b797f47
+PODFILE CHECKSUM: 5e4f449565bc77ce0d2e2335d6491beb235c4ad8
 
 COCOAPODS: 1.16.2
