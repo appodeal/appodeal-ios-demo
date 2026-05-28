@@ -61,7 +61,7 @@ def appodeal
      pod 'AppodealAppLovinMAXAdapter', '13.5.1.1'
      pod 'AppodealAppsFlyerAdapter', '6.17.7.1'
      pod 'AppodealBidMachineAdapter', '3.7.0.0'
-     pod 'AppodealBidonAdapter', '0.15.0.0'
+     pod 'AppodealBidonAdapter', '0.14.0.1'
      pod 'AppodealBigoAdsAdapter', '5.0.0.0'
      pod 'AppodealDTExchangeAdapter', '8.4.1.0'
      pod 'AppodealFacebookAdapter', '18.0.1.0'
