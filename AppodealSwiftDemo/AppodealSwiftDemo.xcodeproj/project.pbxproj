@@ -14,6 +14,7 @@
 		033043811EE6C89800FBF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033043801EE6C89800FBF3E4 /* Assets.xcassets */; };
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
+		199E4613E3234598B62179C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
 		8AC7840F2844D67F008FE012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC7840E2844D67F008FE012 /* GoogleService-Info.plist */; };
 		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
@@ -67,6 +68,7 @@
 		03BB6E061EE7D98C007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Swift.storyboard; sourceTree = "<group>"; };
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		48E54CC2F5664009B3DA12DF /* Pods-AppodealSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppodealSwiftDemo/Pods-AppodealSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				B9CDF1E0205676EA00925C5B /* RootViewController.swift */,
 				B9CDF1E22056770A00925C5B /* RoundButton.swift */,
 				03DBE1421EE69DFA00549332 /* AppDelegate.swift */,
+				A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */,
 				033043801EE6C89800FBF3E4 /* Assets.xcassets */,
 				03BB6E051EE7D98C007638E2 /* Swift.storyboard */,
 				B9CC73C0202C581E005EA2A7 /* Native.xib */,
@@ -326,7 +329,7 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceAdMobAdapter/ISAdMobResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceAdQualitySDK/IronSourceAdQualityPrivacyInfo.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/IronSourceSDK/IronSourcePrivacyInfo.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MintegralAdSDK/MTGSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MintegralAdSDK/MTGResources.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/MolocoSDKiOS/MolocoSDK.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/OMSDK_Appodeal/OMSDK_Appodeal.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/PurchaseConnector/PurchaseConnector_Privacy.bundle",
@@ -338,6 +341,7 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/VungleAds/VungleAds.bundle",
 				"${PODS_ROOT}/YandexMobileAds/static/YandexMobileAds.xcframework/MobileAdsBundle.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/YandexMobileAds/YandexMobileAds_PrivacyInfo.bundle",
+				"${PODS_ROOT}/zMaticoo/MaticooSDK/Frameworks/MaticooSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -357,7 +361,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ISAdMobResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourceAdQualityPrivacyInfo.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IronSourcePrivacyInfo.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MTGSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MTGResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MolocoSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OMSDK_Appodeal.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PurchaseConnector_Privacy.bundle",
@@ -369,6 +373,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VungleAds.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MobileAdsBundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMobileAds_PrivacyInfo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaticooSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -412,6 +417,7 @@
 				"${BUILT_PRODUCTS_DIR}/AppMetricaEncodingUtils/AppMetricaEncodingUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaFMDB/AppMetricaFMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaHostState/AppMetricaHostState.framework",
+				"${BUILT_PRODUCTS_DIR}/AppMetricaIDSync/AppMetricaIDSync.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaIdentifiers/AppMetricaIdentifiers.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaKeychain/AppMetricaKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaLibraryAdapter/AppMetricaLibraryAdapter.framework",
@@ -450,6 +456,7 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AmazonPublisherServicesSDK/DTBiOSSDK.framework/DTBiOSSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AppLovinSDK/AppLovinSDK.framework/AppLovinSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAudienceNetwork/FBAudienceNetwork.framework/FBAudienceNetwork",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/HyBid/Core/OMSDK_Pubnativenet.framework/OMSDK_Pubnativenet",
@@ -463,6 +470,7 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OpenWrapSDK.framework/OpenWrapSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OMSDK_Pubmatic.framework/OMSDK_Pubmatic",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/StartAppSDK/StartApp.framework/StartApp",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TaurusxAdsSDK/TaurusxAds/TaurusxAdsSDK.framework/TaurusxAdsSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/InApp/SmaatoSDKInAppBidding.framework/SmaatoSDKInAppBidding",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Banner/SmaatoSDKBanner.framework/SmaatoSDKBanner",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/smaato-ios-sdk/Modules/Core/SmaatoSDKCore.framework/SmaatoSDKCore",
@@ -482,6 +490,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaEncodingUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaFMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaHostState.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaIDSync.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaIdentifiers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaLibraryAdapter.framework",
@@ -520,6 +529,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTBiOSSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppLovinSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAudienceNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Pubnativenet.framework",
@@ -533,6 +543,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenWrapSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Pubmatic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StartApp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TaurusxAdsSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKInAppBidding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKBanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SmaatoSDKCore.framework",
@@ -558,6 +569,7 @@
 				B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */,
 				033043611EE6AA8100FBF3E4 /* InterstitialViewController.swift in Sources */,
 				03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */,
+				199E4613E3234598B62179C6 /* SceneDelegate.swift in Sources */,
 				B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */,
 				033043741EE6BD7000FBF3E4 /* RewardedVideoViewController.swift in Sources */,
 				033043771EE6BF2A00FBF3E4 /* StaticBannerViewController.swift in Sources */,
@@ -717,7 +729,7 @@
 				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.1.50;
@@ -737,7 +749,7 @@
 				DEVELOPMENT_TEAM = WG4VFF78ZM;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AppodealSwiftDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 2.1.50;
