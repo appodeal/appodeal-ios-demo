@@ -24,6 +24,9 @@
 		B9CA2A3420298F1000434E37 /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9CA2A3220298F1000434E37 /* Native.xib */; };
 		B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A372029903500434E37 /* ASNativeViewController.m */; };
 		B9CA2A3B2029983100434E37 /* ASNativeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA2A3A2029983100434E37 /* ASNativeView.m */; };
+		6FF391F541E542F7BBF8D8DF /* ASSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASSceneDelegate.h; sourceTree = "<group>"; };
+		CA3ACA0D4C5544B5BCC2C568 /* ASSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASSceneDelegate.m; sourceTree = "<group>"; };
+		4D843A529B5149D69863524E /* ASSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3ACA0D4C5544B5BCC2C568 /* ASSceneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -165,6 +168,8 @@
 			children = (
 				B936CE9C1EE00D8000CDFF89 /* ASAppDelegate.h */,
 				B936CE9D1EE00D8000CDFF89 /* ASAppDelegate.m */,
+				6FF391F541E542F7BBF8D8DF /* ASSceneDelegate.h */,
+				CA3ACA0D4C5544B5BCC2C568 /* ASSceneDelegate.m */,
 				B936CF4D1EE036D800CDFF89 /* ASRoundButton.h */,
 				B936CF4E1EE036D800CDFF89 /* ASRoundButton.m */,
 				B9B301681EE191360016F22D /* ASRootViewController.h */,
@@ -600,6 +605,7 @@
 				B9CA2A382029903500434E37 /* ASNativeViewController.m in Sources */,
 				B936CF4F1EE036D800CDFF89 /* ASRoundButton.m in Sources */,
 				B936CE9E1EE00D8000CDFF89 /* ASAppDelegate.m in Sources */,
+				4D843A529B5149D69863524E /* ASSceneDelegate.m in Sources */,
 				B936CEA11EE00D8000CDFF89 /* ASInterstitialAdViewController.m in Sources */,
 				B936CEBE1EE0183200CDFF89 /* ASCustomBannerViewController.m in Sources */,
 				B936CE9B1EE00D8000CDFF89 /* main.m in Sources */,
