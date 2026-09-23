@@ -14,8 +14,8 @@
 		033043811EE6C89800FBF3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033043801EE6C89800FBF3E4 /* Assets.xcassets */; };
 		03BB6E071EE7D98C007638E2 /* Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BB6E051EE7D98C007638E2 /* Swift.storyboard */; };
 		03DBE1431EE69DFA00549332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBE1421EE69DFA00549332 /* AppDelegate.swift */; };
-		199E4613E3234598B62179C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */; };
 		03DBE14D1EE69DFA00549332 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DBE14B1EE69DFA00549332 /* LaunchScreen.storyboard */; };
+		199E4613E3234598B62179C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */; };
 		8AC7840F2844D67F008FE012 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AC7840E2844D67F008FE012 /* GoogleService-Info.plist */; };
 		B95571D5202B2A45008A16D4 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D4202B2A45008A16D4 /* NativeView.swift */; };
 		B95571D7202B30E6008A16D4 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95571D6202B30E6008A16D4 /* NativeViewController.swift */; };
@@ -68,7 +68,6 @@
 		03BB6E061EE7D98C007638E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Swift.storyboard; sourceTree = "<group>"; };
 		03DBE13F1EE69DFA00549332 /* AppodealSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppodealSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DBE1421EE69DFA00549332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		03DBE14C1EE69DFA00549332 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42BFEAF821CBCF28002F41B7 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		48E54CC2F5664009B3DA12DF /* Pods-AppodealSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealSwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-AppodealSwiftDemo/Pods-AppodealSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +75,7 @@
 		62904DBE8FB1F44E5023049C /* Pods-AppodealSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealSwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-AppodealSwiftDemo/Pods-AppodealSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8AC7840E2844D67F008FE012 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C1CAA3120AD642B00C20A3A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		A55114B8EF6F4E12847955E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B95571D4202B2A45008A16D4 /* NativeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
 		B95571D6202B30E6008A16D4 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		B9CC73C1202C581E005EA2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Native.xib; sourceTree = "<group>"; };
@@ -334,12 +334,10 @@
 				"${PODS_CONFIGURATION_BUILD_DIR}/OMSDK_Appodeal/OMSDK_Appodeal.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/PurchaseConnector/PurchaseConnector_Privacy.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/StackConsentManager/ConsentPrivacyInfo.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/StackModules/StackModules.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/StackModules/StackProductPresentation.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/StackModules/StackRendering.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/UnityAds/UnityAdsResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/UnityCoherenceLib/UnityCoherenceLib.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/VungleAds/VungleAds.bundle",
-				"${PODS_ROOT}/YandexMobileAds/static/YandexMobileAds.xcframework/MobileAdsBundle.bundle",
+				"${PODS_ROOT}/YandexMobileAds/YandexMobileAds.xcframework/MobileAdsBundle.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/YandexMobileAds/YandexMobileAds_PrivacyInfo.bundle",
 				"${PODS_ROOT}/zMaticoo/MaticooSDK/Frameworks/MaticooSDK.bundle",
 			);
@@ -366,10 +364,8 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OMSDK_Appodeal.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PurchaseConnector_Privacy.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ConsentPrivacyInfo.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StackModules.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StackProductPresentation.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StackRendering.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UnityAdsResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UnityCoherenceLib.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VungleAds.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MobileAdsBundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YandexMobileAds_PrivacyInfo.bundle",
@@ -414,6 +410,7 @@
 				"${BUILT_PRODUCTS_DIR}/AppMetricaCore/AppMetricaCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaCoreExtension/AppMetricaCoreExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaCoreUtils/AppMetricaCoreUtils.framework",
+				"${BUILT_PRODUCTS_DIR}/AppMetricaCrashes/AppMetricaCrashes.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaEncodingUtils/AppMetricaEncodingUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaFMDB/AppMetricaFMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaHostState/AppMetricaHostState.framework",
@@ -429,11 +426,6 @@
 				"${BUILT_PRODUCTS_DIR}/AppMetricaProtobufUtils/AppMetricaProtobufUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaStorageUtils/AppMetricaStorageUtils.framework",
 				"${BUILT_PRODUCTS_DIR}/AppMetricaSynchronization/AppMetricaSynchronization.framework",
-				"${BUILT_PRODUCTS_DIR}/DivKit/DivKit.framework",
-				"${BUILT_PRODUCTS_DIR}/DivKitBinaryCompatibilityFacade/DivKitBinaryCompatibilityFacade.framework",
-				"${BUILT_PRODUCTS_DIR}/DivKit_LayoutKit/LayoutKit.framework",
-				"${BUILT_PRODUCTS_DIR}/DivKit_LayoutKitInterface/LayoutKitInterface.framework",
-				"${BUILT_PRODUCTS_DIR}/DivKit_Serialization/Serialization.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseABTesting/FirebaseABTesting.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreInternal/FirebaseCoreInternal.framework",
@@ -443,13 +435,9 @@
 				"${BUILT_PRODUCTS_DIR}/FirebaseSharedSwift/FirebaseSharedSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/HyBid/HyBid.framework",
+				"${BUILT_PRODUCTS_DIR}/KSCrash/KSCrash.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
-				"${BUILT_PRODUCTS_DIR}/VGSL/VGSL.framework",
-				"${BUILT_PRODUCTS_DIR}/VGSLFundamentals/VGSLFundamentals.framework",
-				"${BUILT_PRODUCTS_DIR}/VGSLNetworking/VGSLNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/VGSLUI/VGSLUI.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ATOM-Standalone/ATOM.framework/ATOM",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AdjustSignature/AdjustSigSdk.framework/AdjustSigSdk",
@@ -463,8 +451,8 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InMobiSDK/InMobiSDK.framework/InMobiSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MobileFuseSDK/MobileFuseSDK.framework/MobileFuseSDK",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MolocoSDKiOS/MolocoSDK.framework/MolocoSDK",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OMSDK_Ogury/OMSDK_Ogury.framework/OMSDK_Ogury",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryAds/OguryAds.framework/OguryAds",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryAds/OMID/OMSDK_Ogury.framework/OMSDK_Ogury",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OguryCore/OguryCore.framework/OguryCore",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OgurySdk/OgurySdk.framework/OgurySdk",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenWrapSDK/OpenWrapSDK.framework/OpenWrapSDK",
@@ -487,6 +475,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaCoreExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaCoreUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaCrashes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaEncodingUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaFMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaHostState.framework",
@@ -502,11 +491,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaProtobufUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaStorageUtils.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppMetricaSynchronization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DivKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DivKitBinaryCompatibilityFacade.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LayoutKitInterface.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Serialization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseABTesting.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreInternal.framework",
@@ -516,13 +500,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseSharedSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HyBid.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSCrash.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGSL.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGSLFundamentals.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGSLNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VGSLUI.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ATOM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdjustSigSdk.framework",
@@ -536,8 +516,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InMobiSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileFuseSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MolocoSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OguryAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OMSDK_Ogury.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OguryAds.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OguryCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OgurySdk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenWrapSDK.framework",
