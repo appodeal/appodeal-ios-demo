@@ -9,8 +9,7 @@ Stable version of Appodeal SDK is **4.4.2**
 SDK integration documentation: [docs](https://docs.appodeal.com/ios/get-started)
 
 The native examples in Swift, Objective-C and SwiftUI use `APDNativeAdContainerView`
-with Appodeal 4.4.2 and AppodealAppLovinMAXAdapter 13.6.4.4. This API is required
-for Google AdMob and Google Ad Manager native clicks through MAX.
+with Appodeal 4.4.2 for native ad presentation and interaction handling.
 
 Keep the existing native template registered through `adViewClass`. Add the returned
 container to your layout and retain its `APDNativeAd` while it is displayed. To
