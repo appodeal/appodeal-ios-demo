@@ -12,7 +12,7 @@ install! 'cocoapods',
 use_frameworks!
 
 def appodeal
-  pod 'Appodeal', '4.4.1'
+  pod 'Appodeal', '4.4.2'
   # AppLovin MAX
   pod 'AppLovinMediationAmazonAdMarketplaceAdapter', '5.5.0.0'
   pod 'AppLovinMediationBidMachineAdapter', '3.8.0.0.1'
@@ -59,7 +59,7 @@ def appodeal
   pod 'AppodealAdjustAdapter', '5.7.0.3'
   pod 'AppodealAmazonAdapter', '5.5.0.1'
   pod 'AppodealAppLovinAdapter', '13.6.4.1'
-  pod 'AppodealAppLovinMAXAdapter', '13.6.4.3'
+  pod 'AppodealAppLovinMAXAdapter', '13.6.4.4'
   pod 'AppodealAppsFlyerAdapter', '6.18.0.3'
   pod 'AppodealBidMachineAdapter', '3.8.0.2'
   pod 'AppodealBidonAdapter', '0.17.0.1'

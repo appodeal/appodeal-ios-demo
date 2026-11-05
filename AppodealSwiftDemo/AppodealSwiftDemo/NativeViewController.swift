@@ -83,15 +83,14 @@ extension NativeViewController : APDNativeAdQueueDelegate {
 
 private extension APDNativeAd {
     func show(on superview: UIView, controller: UIViewController) {
-        getViewFor(controller).map {
-            superview.addSubview($0)
-            $0.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                $0.leftAnchor.constraint(equalTo: superview.leftAnchor),
-                $0.rightAnchor.constraint(equalTo: superview.rightAnchor),
-                $0.topAnchor.constraint(equalTo: superview.topAnchor),
-                $0.bottomAnchor.constraint(equalTo: superview.bottomAnchor)
-            ])
-        }
+        guard let container = getContainerFor(controller) else { return }
+        superview.addSubview(container)
+        container.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            container.leftAnchor.constraint(equalTo: superview.leftAnchor),
+            container.rightAnchor.constraint(equalTo: superview.rightAnchor),
+            container.topAnchor.constraint(equalTo: superview.topAnchor),
+            container.bottomAnchor.constraint(equalTo: superview.bottomAnchor)
+        ])
     }
 }

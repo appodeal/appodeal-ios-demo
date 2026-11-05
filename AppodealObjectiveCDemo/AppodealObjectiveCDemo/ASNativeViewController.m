@@ -36,7 +36,7 @@ NSUInteger const period = 5;
     APDNativeAd *nativeAd = [self.adCache objectForKey:index];
     // Get ad from cache
     if (nativeAd != nil) {
-        UIView *adView = [nativeAd getAdViewForController:self];
+        APDNativeAdContainerView *adView = [nativeAd getAdContainerForController:self];
         [self layoutAdView:adView superview:view];
         return;
     }
@@ -45,7 +45,7 @@ NSUInteger const period = 5;
     if (nativeAd != nil) {
         // Save native ad for future use
         [self.adCache setObject:nativeAd forKey:index];
-        UIView *adView = [nativeAd getAdViewForController:self];
+        APDNativeAdContainerView *adView = [nativeAd getAdContainerForController:self];
         [self layoutAdView:adView superview:view];
     }
 }

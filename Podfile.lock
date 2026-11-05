@@ -154,7 +154,7 @@ PODS:
     - AppMetricaLog (= 6.5.1)
   - AppMetricaSynchronization (6.5.1):
     - AppMetricaLogSwift (= 6.5.1)
-  - Appodeal (4.4.1):
+  - Appodeal (4.4.2):
     - StackConsentManager (= 4.2.1)
   - AppodealAdjustAdapter (5.7.0.3):
     - Adjust (= 5.7.0)
@@ -166,9 +166,9 @@ PODS:
   - AppodealAppLovinAdapter (13.6.4.1):
     - AppLovinSDK (= 13.6.4)
     - Appodeal (< 5.0.0, >= 4.0.0)
-  - AppodealAppLovinMAXAdapter (13.6.4.3):
+  - AppodealAppLovinMAXAdapter (13.6.4.4):
     - AppLovinSDK (= 13.6.4)
-    - Appodeal (< 5.0.0, >= 4.0.0)
+    - Appodeal (< 5.0.0, >= 4.4.2)
   - AppodealAppsFlyerAdapter (6.18.0.3):
     - Appodeal (< 5.0.0, >= 4.0.0)
     - AppsFlyerFramework (= 6.18.0)
@@ -662,11 +662,11 @@ DEPENDENCIES:
   - AppLovinMediationVerveAdapter (= 3.8.1.0)
   - AppLovinMediationVungleAdapter (= 7.7.3.0)
   - AppLovinMediationYandexAdapter (= 8.3.0.0)
-  - Appodeal (= 4.4.1)
+  - Appodeal (= 4.4.2)
   - AppodealAdjustAdapter (= 5.7.0.3)
   - AppodealAmazonAdapter (= 5.5.0.1)
   - AppodealAppLovinAdapter (= 13.6.4.1)
-  - AppodealAppLovinMAXAdapter (= 13.6.4.3)
+  - AppodealAppLovinMAXAdapter (= 13.6.4.4)
   - AppodealAppsFlyerAdapter (= 6.18.0.3)
   - AppodealBidMachineAdapter (= 3.8.0.2)
   - AppodealBidonAdapter (= 0.17.0.1)
@@ -934,11 +934,11 @@ SPEC CHECKSUMS:
   AppMetricaProtobufUtils: b94718aed0bf9f4f7eac7660f1acf9d5d6a85484
   AppMetricaStorageUtils: e3f938688b7de0ba5720ef6be71af1a8a0de2513
   AppMetricaSynchronization: 7db1bf4019aa90790be1173d7862439728434540
-  Appodeal: f6118ec9c41e32c0dafc33fbf77577550f9c33df
+  Appodeal: 87066190a1e2558ac795ff8f71554c88e1d233d8
   AppodealAdjustAdapter: fe1f51ac1da1512adb5c6b088b2e8f9c37577e19
   AppodealAmazonAdapter: a901eaeb0dd68569c5383944fd34d25d09599bf3
   AppodealAppLovinAdapter: 51be9d4eb1b65b1d42a438fb0ec050cddc11db49
-  AppodealAppLovinMAXAdapter: 11d1886de8ccdb4555779160429427db2d02dc3f
+  AppodealAppLovinMAXAdapter: 8e683ed3005e0d216d22abfea2348e1c330b73cc
   AppodealAppsFlyerAdapter: b1273313f1c2fe1f88076f93aca9adf6467cfc68
   AppodealBidMachineAdapter: a0db0b0675978f51812ebef16bd289cb66b09b25
   AppodealBidonAdapter: 964c78609fa8c00bffbfc7609d1e71de776d1c9f
@@ -1048,6 +1048,6 @@ SPEC CHECKSUMS:
   zMaticoo: 6cac7aa686c926c8e0bc3af331c1d9586fec5461
   zMaticooMAXAdapter: a63c6dfadf723778cbe9503da902ca2e8f40616c
 
-PODFILE CHECKSUM: 4f979ad6d9bc8ed9b2dba3f401dc6ca3fb20eab5
+PODFILE CHECKSUM: 0fcf6fc425d026a81d21da6241ae2445e661fd8d
 
 COCOAPODS: 1.16.2
