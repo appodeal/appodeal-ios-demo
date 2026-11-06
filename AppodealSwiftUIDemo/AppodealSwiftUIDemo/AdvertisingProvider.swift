@@ -45,23 +45,23 @@ final class AdvertisingProvider: NSObject, ObservableObject {
     struct Native: UIViewRepresentable {
         let ad: APDNativeAd
         
-        func makeUIView(context: UIViewRepresentableContext<Native>) -> NativeView {
+        func makeUIView(context: UIViewRepresentableContext<Native>) -> UIView {
             guard
                 let viewController = UIApplication.shared.rootViewController,
                 let uiView = uiView(for: viewController)
             else {
-                return NativeView()
+                return UIView()
             }
             return uiView
         }
         
-        func updateUIView(_ uiView: NativeView, context: UIViewRepresentableContext<Native>) {}
+        func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<Native>) {}
         
-        private func uiView(for viewController: UIViewController) -> NativeView? {
-            return try? ad.getViewForPlacement(
+        private func uiView(for viewController: UIViewController) -> APDNativeAdContainerView? {
+            return try? ad.getContainerForPlacement(
                 AdvertisingProvider.AppodealConstants.placement,
                 withRootViewController: viewController
-            ) as? NativeView
+            )
         }
     }
     
